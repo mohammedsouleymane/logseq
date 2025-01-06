@@ -1,4 +1,4 @@
-## Questions aaa bbbb eeee
+## Questions
 	- #### 1: p 15
 	  collapsed:: true
 		-
@@ -245,8 +245,10 @@
 		  
 		  ---
 	- #### 5: p18,19
+	  collapsed:: true
 		- p18,19
 	- #### 6: p35
+	  collapsed:: true
 		-
 		- p35
 		- ---
