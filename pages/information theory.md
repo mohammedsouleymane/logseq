@@ -1,74 +1,5 @@
-## Information Theory - Off the top of your head
-	- The entropy $H(X)$ of the discrete source $X$ equals.
-	  $$H(X) = - \sum^n_{i=1}{p(x_{i})\cdot logp(x_{i})}$$
-	- The self-information of a symbol $x_{i}$ equals
-	  $$S(x_{i}) = - log(p(x_i)$$
-	- The entropy of a discrete source $X$ is maximal for a uniform distribution with
-	  $$p(x_i) = \frac{1}{n} \; \; \; \forall{i}$$
-	- The entropy of a discrete source with alphabet length n is bounded by
-	  $$0 \leq H(X) \leq log n$$
-	- The information rate $R(X)$ equals
-	  $$R(X) = - \sum^n_{i=1} f(x_i)logp(x_i)$$
-	- The information rate $R(X)$ equals
-	  $$R(X) = \frac{1}{<T>} H(X)$$
-	- The Markov property demands that
-	  $$p(x_j(k) | x_{i_{k-1}}(k-1) \cap ... \cap x_{i_{1}}(1) )  = p(x_j(k)|x_{i_{k-1}}(k-1 )    )$$
-	- A stationary Markov process that has a state-transitio probability which staties 
-	  $$p_{ij}(k) = p(x_j(k) | x_{i_{k-1}} (k-1) ) = p_{ij}  \; \;\; \forall{k}$$
-	- The joint entropy of two random variables X and Y:
-	  $$H(X,Y) = \sum\sum p(x_i,y_i) log p(x_i, y_i)$$
-	- X and Y are statistically independent if and only if 
-	  $$H(X,Y) = H(X) + H(Y)$$
-	- The conditional entropy of two random variables X and Y
-	  $$H(Y|X) = \sum\sum{p(x_i,y_i) logp(y_i | x_i)}$$
-	- Relation between entropy definitions
-	  $$H(Y|X) = H(X,Y) - H(X)$$
-	- Conditional entropy for an ideal channel
-	  $$H(Y|X) = H(X|Y) = 0$$
-	- Conditional entropy for independent random variables
-	  $$H(Y|X) = H(Y) \; and \; H(X|Y) = H(X)$$
-	- The condition entropy H(Y|X) is bounded
-	  $$0 \leq H(Y|X) \leq H(Y)$$
-	- H(X,Y) is bounded
-	  $$0 \leq max([H(X), H(Y)]) \leq H(X,Y) \leq H(X) + H(Y)$$
-	- The mutual information is defined as
-	  $$I(X;Y) = H(X) - H(X|Y)$$
-	- For two discrete random variables X and Y , the mutual information equals
-	  $$\sum \sum p(x_i,y_j) log(\frac{p(x_i,y_j)}{p(x_i)p(y_j)})$$
-	- Mutual information for an ideal channel
-	  $$I(X;Y) = H(X) = H(Y)$$
-	- Mutual information for independent random variables
-	  $$I(X;Y) = 0$$
-	- The mutual information is bounded
-	  $$0 \leq I(X;Y) \leq H(X)$$
-	- The channel capacity is defined as
-	  $$\sup\limits_{X} I(X; Y)$$
-	  where the supremum is taken over all possible choices of $X$.
-	- A transducer with input X and output Y satisfies
-	  $$R(Y) \leq R(X)$$
-	- Shannon theorem (1): If $R \leq C$ there exists a coding system resulting in an arbitrary small frequency of errors
-	- Shannon theorem (2): If $R > C$ it is possible to encode the source such that the frequency of errors is less than $R - C + \epsilon$
-	- Shannon theorem (3): There is no encoding system which give a frequency of errors less than $R - C$.
-	- The entropy of a continuous distribution with pdf $f_X (x)$
-	  $$H(X) - \int^{+\infty}_{-\infty} f_{X}(x) logf_{X}(x) dx$$
-	- The joint entropy of continuous distributions equals
-	  $$H(X,Y) = - \int^{+\infty}_{-\infty} \int^{+\infty}_{-\infty} f(x,y) log f(x,y) dxdy$$
-	- The conditional entropy of continuous distributions equals
-	  $$H(Y|X) = - \int^{+\infty}_{-\infty} \int^{+\infty}_{-\infty} f(x,y)log\frac{f(x,y)}{f(x)} dxdy$$
-	- A uniform distribution maximizes the entropy under bounded amplitude constraint.
-	- The entropy of a uniform distribution in $[-a,a]$ equals
-	  $$H(X) = log(2a)$$
-	- A Gaussian distribution maximizes the entropy under fixed power constraint.
-	- The entropy of a single variable Gaussian distribution equals
-	  $$H(X) = \frac{1}{2} log(2\pi e \sigma^2)$$
-	- Nyquist-Shannon sampling theorem:
-	  $x(t)$ can be perfectly reconstructed by
-	  $$x(t) = \sum^{\infty}_{k=-\infty} x(nT)sinc(\frac{t}{T_s} - k)$$
-	  with
-	  $$sinc(x) = \frac{sin \pi x}{ \pi x}$$
-	  if $x(t)$ is band limited with $f_{max} \leq W$ and $T_s = \frac{1}{(2W)}$
-- ## Questions
-  collapsed:: true
+## Questions
+collapsed:: true
 	- #### 1: p 15
 	  collapsed:: true
 		-
@@ -2001,3 +1932,362 @@
 		  The Nyquist-Shannon sampling theorem establishes the minimum sampling rate required for perfect signal reconstruction. For lowpass signals, this rate is twice the maximum frequency. For passband signals, an equivalent baseband representation with complex-valued symbols is used, and the minimum sampling rate becomes equal to the signal bandwidth. Understanding these differences is crucial for signal processing and communication system design.
 		  
 		  ---
+- ## Information Theory - Off the top of your head
+	- The entropy $H(X)$ of the discrete source $X$ equals. #card
+	  card-last-interval:: 4.75
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T12:37:15.686Z
+	  card-last-reviewed:: 2025-01-07T18:37:15.686Z
+	  card-last-score:: 5
+		- $$H(X) = - \sum^n_{i=1}{p(x_{i})\cdot logp(x_{i})}$$
+	- The self-information of a symbol $x_{i}$ equals #card
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.7
+	  card-next-schedule:: 2025-01-11T18:16:47.484Z
+	  card-last-reviewed:: 2025-01-07T18:16:47.484Z
+	  card-last-score:: 5
+		- $$S(x_{i}) = - log(p(x_i)$$
+	- The entropy of a discrete source $X$ is maximal for a uniform distribution with #card
+	  card-last-interval:: 4.75
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T12:36:41.388Z
+	  card-last-reviewed:: 2025-01-07T18:36:41.388Z
+	  card-last-score:: 5
+		- $$p(x_i) = \frac{1}{n} \; \; \; \forall{i}$$
+	- The entropy of a discrete source with alphabet length n is bounded by #card
+	  card-last-interval:: 4
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-11T18:10:31.741Z
+	  card-last-reviewed:: 2025-01-07T18:10:31.742Z
+	  card-last-score:: 5
+		- $$0 \leq H(X) \leq log n$$
+	- The information rate $R(X)$ equals #card
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.7
+	  card-next-schedule:: 2025-01-11T18:17:33.140Z
+	  card-last-reviewed:: 2025-01-07T18:17:33.140Z
+	  card-last-score:: 5
+		- $$R(X) = - \sum^n_{i=1} f(x_i)logp(x_i)$$
+	- The information rate $R(X)$ equals #card
+	  card-last-interval:: 4.75
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T12:37:34.683Z
+	  card-last-reviewed:: 2025-01-07T18:37:34.684Z
+	  card-last-score:: 5
+		- $$R(X) = \frac{1}{<T>} H(X)$$
+	- The Markov property demands that #card
+	  id:: 67716ce4-1ab7-4474-96d5-196734cd8a91
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:27:54.804Z
+	  card-last-reviewed:: 2025-01-07T18:27:54.805Z
+	  card-last-score:: 5
+		- $$p(x_j(k) | x_{i_{k-1}}(k-1) \cap ... \cap x_{i_{1}}(1) )  = p(x_j(k)|x_{i_{k-1}}(k-1 )    )$$
+	- A stationary Markov process that has a state-transitio probability which staties #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:22:02.391Z
+	  card-last-reviewed:: 2025-01-07T18:22:02.391Z
+	  card-last-score:: 5
+		- $$P_{ij}(k) = p(x_j(k) | x_{i_{k-1}} (k-1) ) = P_{ij}  \; \;\; \forall{k}$$
+	- The joint entropy of two random variables X and Y: #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:22:46.445Z
+	  card-last-reviewed:: 2025-01-07T18:22:46.445Z
+	  card-last-score:: 5
+		- $$H(X,Y) = \sum\sum p(x_i,y_i) log p(x_i, y_i)$$
+	- X and Y are statistically independent if and only if #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:26:52.286Z
+	  card-last-reviewed:: 2025-01-07T18:26:52.287Z
+	  card-last-score:: 5
+		- $$H(X,Y) = H(X) + H(Y)$$
+	- The conditional entropy of two random variables X and Y #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:28:36.975Z
+	  card-last-reviewed:: 2025-01-07T18:28:36.976Z
+	  card-last-score:: 5
+		- $$H(Y|X) = \sum\sum{p(x_i,y_i) logp(y_i | x_i)}$$
+	- Relation between entropy definitions #card
+	  card-last-interval:: 4
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-11T18:14:10.287Z
+	  card-last-reviewed:: 2025-01-07T18:14:10.287Z
+	  card-last-score:: 5
+		- $$H(Y|X) = H(X,Y) - H(X)$$
+	- Conditional entropy for an ideal channel #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:29:34.937Z
+	  card-last-reviewed:: 2025-01-07T18:29:34.937Z
+	  card-last-score:: 5
+		- $$H(Y|X) = H(X|Y) = 0$$
+	- Conditional entropy for independent random variables #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:19:13.155Z
+	  card-last-reviewed:: 2025-01-07T18:19:13.156Z
+	  card-last-score:: 5
+		- $$H(Y|X) = H(Y) \; and \; H(X|Y) = H(X)$$
+	- The condition entropy H(Y|X) is bounded #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:18:45.116Z
+	  card-last-reviewed:: 2025-01-07T18:18:45.116Z
+	  card-last-score:: 5
+		- $$0 \leq H(Y|X) \leq H(Y)$$
+	- H(X,Y) is bounded #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:20:37.704Z
+	  card-last-reviewed:: 2025-01-07T18:20:37.704Z
+	  card-last-score:: 5
+		- $$0 \leq max([H(X), H(Y)]) \leq H(X,Y) \leq H(X) + H(Y)$$
+	- The mutual information is defined as #card
+	  card-last-interval:: 11.2
+	  card-repeats:: 3
+	  card-ease-factor:: 2.8
+	  card-next-schedule:: 2025-01-18T22:19:55.520Z
+	  card-last-reviewed:: 2025-01-07T18:19:55.520Z
+	  card-last-score:: 5
+		- $$I(X;Y) = H(X) - H(X|Y)$$
+	- For two discrete random variables X and Y , the mutual information equals #card
+	  card-last-interval:: 4
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2025-01-11T18:42:05.921Z
+	  card-last-reviewed:: 2025-01-07T18:42:05.921Z
+	  card-last-score:: 3
+		- $$\sum \sum p(x_i,y_j) log(\frac{p(x_i,y_j)}{p(x_i)p(y_j)})$$
+	- Mutual information for an ideal channel #card
+	  card-last-interval:: 4
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2025-01-11T18:19:48.091Z
+	  card-last-reviewed:: 2025-01-07T18:19:48.091Z
+	  card-last-score:: 3
+		- $$I(X;Y) = H(X) = H(Y)$$
+	- Mutual information for independent random variables #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:20:17.351Z
+	  card-last-reviewed:: 2025-01-07T18:20:17.351Z
+	  card-last-score:: 5
+		- $$I(X;Y) = 0$$
+	- The mutual information is bounded #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:27:11.719Z
+	  card-last-reviewed:: 2025-01-07T18:27:11.719Z
+	  card-last-score:: 5
+		- $$0 \leq I(X;Y) \leq H(X)$$
+	- The channel capacity is defined as #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:26:36.016Z
+	  card-last-reviewed:: 2025-01-07T18:26:36.017Z
+	  card-last-score:: 5
+		- $$\sup\limits_{X} I(X; Y)$$
+		  where the supremum is taken over all possible choices of $X$.
+	- A transducer with input X and output Y satisfies #card
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.7
+	  card-next-schedule:: 2025-01-11T18:32:31.320Z
+	  card-last-reviewed:: 2025-01-07T18:32:31.321Z
+	  card-last-score:: 5
+		- $$R(Y) \leq R(X)$$
+	- Shannon theorem (1): If $R \leq C$ there exists a coding system resulting in an arbitrary small frequency of errors #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:31:45.085Z
+	  card-last-reviewed:: 2025-01-07T18:31:45.085Z
+	  card-last-score:: 5
+	- Shannon theorem (2): If $R > C$ it is possible to encode the source such that the frequency of errors is less than $R - C + \epsilon$ #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:29:58.438Z
+	  card-last-reviewed:: 2025-01-07T18:29:58.438Z
+	  card-last-score:: 5
+	- Shannon theorem (3): There is no encoding system which give a frequency of errors less than $R - C$. #card
+	  card-last-interval:: 4
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-11T18:14:33.899Z
+	  card-last-reviewed:: 2025-01-07T18:14:33.899Z
+	  card-last-score:: 5
+	- The entropy of a continuous distribution with pdf $f_X (x)$ #card
+	  card-last-interval:: 4
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-11T18:10:10.350Z
+	  card-last-reviewed:: 2025-01-07T18:10:10.350Z
+	  card-last-score:: 5
+		- $$H(X) - \int^{+\infty}_{-\infty} f_{X}(x) logf_{X}(x) dx$$
+	- The joint entropy of continuous distributions equals #card
+	  card-last-interval:: 4
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-11T18:09:24.848Z
+	  card-last-reviewed:: 2025-01-07T18:09:24.849Z
+	  card-last-score:: 5
+		- $$H(X,Y) = - \int^{+\infty}_{-\infty} \int^{+\infty}_{-\infty} f(x,y) log f(x,y) dxdy$$
+	- The conditional entropy of continuous distributions equals #card
+	  card-last-interval:: 4
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-11T18:13:49.124Z
+	  card-last-reviewed:: 2025-01-07T18:13:49.124Z
+	  card-last-score:: 5
+		- $$H(Y|X) = - \int^{+\infty}_{-\infty} \int^{+\infty}_{-\infty} f(x,y)log\frac{f(x,y)}{f(x)} dxdy$$
+	- A uniform distribution maximizes the entropy under bounded amplitude constraint. #card
+	  card-last-interval:: 4
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-11T18:14:43.561Z
+	  card-last-reviewed:: 2025-01-07T18:14:43.562Z
+	  card-last-score:: 5
+	- The entropy of a uniform distribution in $[-a,a]$ equals #card
+	  card-last-interval:: 4.75
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T12:40:02.414Z
+	  card-last-reviewed:: 2025-01-07T18:40:02.414Z
+	  card-last-score:: 5
+		- $$H(X) = log(2a)$$
+	- A Gaussian distribution maximizes the entropy under fixed power constraint. #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:17:49.213Z
+	  card-last-reviewed:: 2025-01-07T18:17:49.214Z
+	  card-last-score:: 5
+	- The entropy of a single variable Gaussian distribution equals #card
+	  card-last-interval:: 4.75
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T12:38:04.766Z
+	  card-last-reviewed:: 2025-01-07T18:38:04.767Z
+	  card-last-score:: 5
+		- $$H(X) = \frac{1}{2} log(2\pi e \sigma^2)$$
+	- Nyquist-Shannon sampling theorem: #card
+	  card-last-interval:: 4.75
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T12:39:46.571Z
+	  card-last-reviewed:: 2025-01-07T18:39:46.571Z
+	  card-last-score:: 5
+		- $x(t)$ can be perfectly reconstructed by
+		  $$x(t) = \sum^{\infty}_{k=-\infty} x(nT)sinc(\frac{t}{T_s} - k)$$
+		  with
+		  $$sinc(x) = \frac{sin \pi x}{ \pi x}$$
+		  if $x(t)$ is band limited with $f_{max} \leq W$ and $T_s = \frac{1}{(2W)}$
+	- Nyquist Inter Symbol Interference (ISI) criterion #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:18:10.336Z
+	  card-last-reviewed:: 2025-01-07T18:18:10.336Z
+	  card-last-score:: 5
+		- $$
+		  h(nT_s) =
+		  \begin{cases} 
+		  1 & n = 0 \\
+		  0 & n \neq 0 
+		  \end{cases}
+		  $$
+	- The band-pass signal #card
+	  card-last-interval:: 4.59
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T08:31:34.177Z
+	  card-last-reviewed:: 2025-01-07T18:31:34.177Z
+	  card-last-score:: 5
+		- $$X_{BP} = I(t)cos(2\pi f_e t) - Q(t)sin(2 \pi f_e t)$$
+		  can be represented efficiently using its equivalent baseband representation
+		  $$ Z(t) = I(t) + jQ(t)$$
+		  with
+		  $$X_{BP} = \Re(Z(t)e^{j2\pi f_e t})$$
+	- Channel capacity for additive noise channel $Y = X + N$ #card
+	  card-last-interval:: 11.2
+	  card-repeats:: 3
+	  card-ease-factor:: 2.8
+	  card-next-schedule:: 2025-01-18T22:32:18.442Z
+	  card-last-reviewed:: 2025-01-07T18:32:18.443Z
+	  card-last-score:: 5
+		- $$C = \sup\limits_{X} (H(Y)) - H(N)$$
+	- Shannon-Hartley theorem for independent continuous variables (as a function of the SNR) #card
+	  card-last-interval:: -1
+	  card-repeats:: 1
+	  card-ease-factor:: 2.5
+	  card-next-schedule:: 2025-01-07T23:00:00.000Z
+	  card-last-reviewed:: 2025-01-07T18:33:04.655Z
+	  card-last-score:: 1
+		- $$C = \frac{1}{2} log(1 + SNR)$$
+	- Shannon-Hartley theorem: #card
+	  card-last-interval:: 4.75
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T16:05:22.761Z
+	  card-last-reviewed:: 2025-01-07T22:05:22.762Z
+	  card-last-score:: 5
+		- The band-limited Gaussian channel $Y (t) = X(t) + N (t)$ with bandwidth
+		  W and noise power spectral density $N_0$ has the capacity
+		  $$C = log (1 + \frac{P}{N_0 W})$$
+		  which is attained when X(t) is zero-mean Gaussian distributed with power P.
+	- Shannon’s limit of the channel capacity #card
+	  card-last-interval:: 4.75
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T16:05:04.418Z
+	  card-last-reviewed:: 2025-01-07T22:05:04.419Z
+	  card-last-score:: 5
+		- $$R \leq C = W log (1 + SNR)$$
+	- The average length of the output symbol $\langle N \rangle$ and the entropy of the source are related by #card
+	  card-last-interval:: 4.75
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T16:05:14.895Z
+	  card-last-reviewed:: 2025-01-07T22:05:14.895Z
+	  card-last-score:: 5
+		- $H(X) \leq \langle N \rangle$.
+	- Shannon's fundamental source coding theorem: the average code length $\langle N \rangle$ to binary encode (m = 2) a single symbols of X with entropy H(X) #card
+	  card-last-interval:: 4.75
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T16:04:25.427Z
+	  card-last-reviewed:: 2025-01-07T22:04:25.427Z
+	  card-last-score:: 5
+		- $$H(X) \leq \langle N \rangle < H(X) + 1$$
+	- General Shannon's source coding theorem: the average code length $\langle N \rangle$ (per symbol) to binary encode (m = 2) a block with entropy $H(X)$ satisfies #card
+	  card-last-interval:: 4.75
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2025-01-12T16:04:02.387Z
+	  card-last-reviewed:: 2025-01-07T22:04:02.388Z
+	  card-last-score:: 5
+		- $$H(X) \leq \langle N \rangle < H(X) + \epsilon$$
