@@ -1,4 +1,74 @@
-## Questions
+## Information Theory - Off the top of your head
+	- The entropy $H(X)$ of the discrete source $X$ equals.
+	  $$H(X) = - \sum^n_{i=1}{p(x_{i})\cdot logp(x_{i})}$$
+	- The self-information of a symbol $x_{i}$ equals
+	  $$S(x_{i}) = - log(p(x_i)$$
+	- The entropy of a discrete source $X$ is maximal for a uniform distribution with
+	  $$p(x_i) = \frac{1}{n} \; \; \; \forall{i}$$
+	- The entropy of a discrete source with alphabet length n is bounded by
+	  $$0 \leq H(X) \leq log n$$
+	- The information rate $R(X)$ equals
+	  $$R(X) = - \sum^n_{i=1} f(x_i)logp(x_i)$$
+	- The information rate $R(X)$ equals
+	  $$R(X) = \frac{1}{<T>} H(X)$$
+	- The Markov property demands that
+	  $$p(x_j(k) | x_{i_{k-1}}(k-1) \cap ... \cap x_{i_{1}}(1) )  = p(x_j(k)|x_{i_{k-1}}(k-1 )    )$$
+	- A stationary Markov process that has a state-transitio probability which staties 
+	  $$p_{ij}(k) = p(x_j(k) | x_{i_{k-1}} (k-1) ) = p_{ij}  \; \;\; \forall{k}$$
+	- The joint entropy of two random variables X and Y:
+	  $$H(X,Y) = \sum\sum p(x_i,y_i) log p(x_i, y_i)$$
+	- X and Y are statistically independent if and only if 
+	  $$H(X,Y) = H(X) + H(Y)$$
+	- The conditional entropy of two random variables X and Y
+	  $$H(Y|X) = \sum\sum{p(x_i,y_i) logp(y_i | x_i)}$$
+	- Relation between entropy definitions
+	  $$H(Y|X) = H(X,Y) - H(X)$$
+	- Conditional entropy for an ideal channel
+	  $$H(Y|X) = H(X|Y) = 0$$
+	- Conditional entropy for independent random variables
+	  $$H(Y|X) = H(Y) \; and \; H(X|Y) = H(X)$$
+	- The condition entropy H(Y|X) is bounded
+	  $$0 \leq H(Y|X) \leq H(Y)$$
+	- H(X,Y) is bounded
+	  $$0 \leq max([H(X), H(Y)]) \leq H(X,Y) \leq H(X) + H(Y)$$
+	- The mutual information is defined as
+	  $$I(X;Y) = H(X) - H(X|Y)$$
+	- For two discrete random variables X and Y , the mutual information equals
+	  $$\sum \sum p(x_i,y_j) log(\frac{p(x_i,y_j)}{p(x_i)p(y_j)})$$
+	- Mutual information for an ideal channel
+	  $$I(X;Y) = H(X) = H(Y)$$
+	- Mutual information for independent random variables
+	  $$I(X;Y) = 0$$
+	- The mutual information is bounded
+	  $$0 \leq I(X;Y) \leq H(X)$$
+	- The channel capacity is defined as
+	  $$\sup\limits_{X} I(X; Y)$$
+	  where the supremum is taken over all possible choices of $X$.
+	- A transducer with input X and output Y satisfies
+	  $$R(Y) \leq R(X)$$
+	- Shannon theorem (1): If $R \leq C$ there exists a coding system resulting in an arbitrary small frequency of errors
+	- Shannon theorem (2): If $R > C$ it is possible to encode the source such that the frequency of errors is less than $R - C + \epsilon$
+	- Shannon theorem (3): There is no encoding system which give a frequency of errors less than $R - C$.
+	- The entropy of a continuous distribution with pdf $f_X (x)$
+	  $$H(X) - \int^{+\infty}_{-\infty} f_{X}(x) logf_{X}(x) dx$$
+	- The joint entropy of continuous distributions equals
+	  $$H(X,Y) = - \int^{+\infty}_{-\infty} \int^{+\infty}_{-\infty} f(x,y) log f(x,y) dxdy$$
+	- The conditional entropy of continuous distributions equals
+	  $$H(Y|X) = - \int^{+\infty}_{-\infty} \int^{+\infty}_{-\infty} f(x,y)log\frac{f(x,y)}{f(x)} dxdy$$
+	- A uniform distribution maximizes the entropy under bounded amplitude constraint.
+	- The entropy of a uniform distribution in $[-a,a]$ equals
+	  $$H(X) = log(2a)$$
+	- A Gaussian distribution maximizes the entropy under fixed power constraint.
+	- The entropy of a single variable Gaussian distribution equals
+	  $$H(X) = \frac{1}{2} log(2\pi e \sigma^2)$$
+	- Nyquist-Shannon sampling theorem:
+	  $x(t)$ can be perfectly reconstructed by
+	  $$x(t) = \sum^{\infty}_{k=-\infty} x(nT)sinc(\frac{t}{T_s} - k)$$
+	  with
+	  $$sinc(x) = \frac{sin \pi x}{ \pi x}$$
+	  if $x(t)$ is band limited with $f_{max} \leq W$ and $T_s = \frac{1}{(2W)}$
+- ## Questions
+  collapsed:: true
 	- #### 1: p 15
 	  collapsed:: true
 		-
@@ -553,8 +623,10 @@
 	  collapsed:: true
 		- p49
 		- **Conditional Entropy Definition**
+		  collapsed:: true
 			- \( H(Y \mid X) \) measures the uncertainty of \( Y \) when \( X \) is known.
 			- Given two random variables \( X \) and \( Y \) with alphabets \( x_i \) (for \( i = 1, \ldots, n \)) and \( y_j \) (for \( j = 1, \ldots, m \)), \( H(Y \mid X) \) is defined as:
+			  collapsed:: true
 			  $$ 
 			  H(Y \mid X) = - \sum_{i=1}^n \sum_{j=1}^m p(x_i, y_j) \log p(y_j \mid x_i) 
 			  $$
@@ -563,7 +635,9 @@
 				  
 				  ---
 		- **Derivation**
+		  collapsed:: true
 			- Conditional entropy is the weighted sum of the entropy of \( Y \) conditioned on a specific value of \( X \), averaged over all possible values of \( X \):
+			  collapsed:: true
 			  $$ 
 			  H(Y \mid X) = \sum_{i=1}^n p(x_i) H(Y \mid X = x_i) 
 			  $$
@@ -579,7 +653,9 @@
 			  
 			  ---
 		- **Non-Negativity of Conditional Entropy**
+		  collapsed:: true
 			- To prove \( H(Y \mid X) \geq 0 \):
+			  collapsed:: true
 				- Probabilities \( p(x_i, y_j) \) and \( p(y_j \mid x_i) \) satisfy:
 				  $$ 
 				  0 \leq p(x_i, y_j) \leq 1 \quad \text{and} \quad 0 \leq p(y_j \mid x_i) \leq 1. 
@@ -638,7 +714,9 @@
 		  
 		  ---
 		- **Interpretation for an Ideal Channel**
+		  collapsed:: true
 			- For an **ideal channel**, the conditional entropies are zero:
+			  collapsed:: true
 			  $$
 			  H(X \mid Y) = H(Y \mid X) = 0
 			  $$
@@ -652,6 +730,7 @@
 			  H(X, Y) = H(X) = H(Y)
 			  $$
 			- **Explanation**:
+			  collapsed:: true
 				- For an ideal channel, the **joint entropy** is equal to the entropy of either the input or the output because there is no loss of information during transmission.
 				- In other words, the input and output are perfectly correlated, and the joint uncertainty \( H(X, Y) \) equals the uncertainty of either variable alone.
 				  
@@ -699,6 +778,7 @@
 		  
 		  ---
 		- **Proof Using the Relationship Between Entropies**
+		  collapsed:: true
 			- Recall the relationship between conditional entropy, joint entropy, and entropy:
 			  $$
 			  H(Y \mid X) = H(X, Y) - H(X)
@@ -718,11 +798,13 @@
 			  
 			  ---
 		- **Conclusion**
+		  collapsed:: true
 			- Using both the definition of conditional entropy and the relationship between entropies, we have proven that:
 			  $$
 			  H(Y \mid X) = H(Y) \quad \text{if } X \text{ and } Y \text{ are independent.}
 			  $$
 			- **Intuition**:
+			  collapsed:: true
 				- If \( X \) and \( Y \) are independent, knowing \( X \) provides no information about \( Y \).
 				- Therefore, the uncertainty of \( Y \) remains unchanged regardless of whether we know \( X \) or not.
 				  
@@ -1418,6 +1500,7 @@
 		- This result demonstrates that the uniform distribution, by assigning equal probability to all values within the bounded interval, maximizes the uncertainty associated with the random variable.
 		- ---
 	- #### 27: p77,78
+	  collapsed:: true
 		- p77,78
 		- ---
 		- **Maximizing Entropy under a Fixed Power Constraint**
@@ -1442,6 +1525,7 @@
 		- In summary, the Gaussian distribution, by optimally distributing probability mass subject to a fixed power constraint, achieves maximum entropy among continuous distributions.
 		- ---
 	- #### 28: p79
+	  collapsed:: true
 		- p79
 		- ---
 		- **Additive White Gaussian Noise (AWGN) Channel**
@@ -1470,6 +1554,7 @@
 		- where \( \sigma_z^2 \) represents the variance of the complex noise variable \( Z \).
 		- ---
 	- #### 29: p82,83
+	  collapsed:: true
 		- p82,83
 		- ---
 		- **Nyquist-Shannon Sampling Theorem**
@@ -1510,6 +1595,7 @@
 		- **Conclusion**: The Nyquist-Shannon sampling theorem enables the perfect reconstruction of a band-limited signal from its samples taken at the Nyquist rate. In a band-limited Gaussian channel, the noise samples taken at this rate exhibit crucial properties: they are independent, zero-mean, and Gaussian distributed. These properties are essential in the analysis and design of communication systems operating over noisy channels.
 		- ---
 	- #### 30: p85-88
+	  collapsed:: true
 		- p85-88
 		- ---
 		- **Nyquist ISI Criterion**
@@ -1555,6 +1641,7 @@
 		- **Conclusion**: Both the sinc filter and the raised-cosine filter satisfy the Nyquist ISI criterion, ensuring that transmitted symbols do not interfere with each other at the sampling instants. The raised-cosine filter offers practical advantages over the sinc filter, making it widely used in digital communication systems.
 		- ---
 	- #### 31: p90,96
+	  collapsed:: true
 		- p90...
 		- diagram p96
 		- ---
@@ -1610,6 +1697,7 @@
 		- ---
 		-
 	- #### 32: p91,95
+	  collapsed:: true
 		- p91,95
 		- ---
 		  
@@ -1709,6 +1797,7 @@
 		  
 		  ---
 	- #### 33: p96-99
+	  collapsed:: true
 		- p96-99
 		- In digital communication systems, visual representations like **constellation diagrams, Gray codes, and eye diagrams** are crucial for analyzing and understanding the characteristics of digitally modulated signals. Here's a discussion of these concepts, illustrated with PAM-2 and PAM-4 modulation examples.
 		- ### Constellation Diagram
@@ -1749,6 +1838,7 @@
 		  
 		  Figures 4.10, 11.6, and 11.7 provide examples of eye diagrams, illustrating the concept of eye opening and the impact of noise [3, 6, 7].
 	- #### 34: p96-101
+	  collapsed:: true
 		- p96-101
 		- In digital communication systems, **constellation diagrams and Gray codes** are essential tools for understanding how information is encoded and transmitted using different modulation schemes. Here's an explanation of these concepts, illustrated with **rectangular QAM-16 and PSK-8 modulation** examples, along with a discussion of the relationship between **QAM-16 and PAM-4**.
 		- ### Constellation Diagram
@@ -1779,6 +1869,7 @@
 		  
 		  In summary, constellation diagrams provide a clear visual representation of symbol mapping in different digital modulation schemes. Gray codes are crucial for minimizing the impact of transmission errors by ensuring that neighboring symbols in the constellation diagram differ by only one bit. Understanding these concepts is fundamental for analyzing and designing robust digital communication systems.
 	- #### 35: p102,103
+	  collapsed:: true
 		- p102,103
 		- **BPSK (Binary Phase-Shift Keying), QPSK (Quadrature Phase-Shift Keying), OQPSK (Offset QPSK), and π/4-QPSK** are all digital modulation techniques that belong to the **PSK (Phase-Shift Keying)** family. They encode data by changing the phase of a constant frequency carrier wave. Here's a breakdown of their differences:
 		  
@@ -1808,6 +1899,7 @@
 		  
 		  The choice of modulation scheme depends on factors like **data rate requirements, desired robustness to noise, and the need to limit amplitude fluctuations** to minimize interference with neighboring channels.
 	- #### 36: p102,105
+	  collapsed:: true
 		- p102,105
 		- ---
 		- ### **Continuous Phase Modulation (CPM)**
@@ -1860,6 +1952,7 @@
 		  
 		  ---
 	- #### 37: p105
+	  collapsed:: true
 		- p105
 		- ---
 		- ### **Nyquist-Shannon Sampling Theorem**
