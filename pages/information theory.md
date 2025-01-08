@@ -2295,7 +2295,7 @@ collapsed:: true
 	  id:: 677d7639-1e93-42b1-8dbc-4efab9f60636
 		- The band-limited Gaussian channel $Y (t) = X(t) + N (t)$ with bandwidth
 		  W and noise power spectral density $N_0$ has the capacity
-		  $$C = log (1 + \frac{P}{N_0 W})$$
+		  $$C = Wlog(1 + \frac{P}{N_0 W})$$
 		  which is attained when X(t) is zero-mean Gaussian distributed with power P.
 	- Shannon’s limit of the channel capacity #card
 	  card-last-interval:: 4.75
