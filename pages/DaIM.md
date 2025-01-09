@@ -9,8 +9,10 @@
 	- Given q1 and q2 both are cyclic we can’t proceed GYO  find minimal query (remove Self Joins)
 - Are the queries cyclic or acyclic
 	- Apply GYO Calculate Fractional edge
-- Explain in your own words Canonical apply chase method and  does it always terminate when infinite step ?
-  yes chase apply until you reach fixed point.So it always terminate
+- Explain in your own words Canonical apply chase method and  does it always terminate when there are infinite set?
+	- You will always reach a fixedpoint so it will always terminate.
+	- alt
+	  ---
 - Here the schema Product database given create universal solution
   Create universal solution TGDS(Source to target)
   Glav, GAV, LAV comparison according to question 3.2
