@@ -10,11 +10,18 @@
 - Explain full reducer => remove dangling tuples and consistent instance
 	- Given q1 and q2 both are cyclic we can’t proceed GYO  find minimal query (remove Self Joins)
 	  id:: 67800f0c-0a5c-47f8-82f4-d03bfdc9662b
-- Are the queries cyclic or acyclic
-	- Apply GYO Calculate Fractional edge
-	  ---
+- Compute the following join using the Yannakakis algorithm.
+	- (x,y) <- R(x,y,z),S(v,y,w),T(x,y,v),U(y,v,u,s),V(y,u),W(u,s).
+		- Is this query minimal ? if no give me equivalent query ?
+		- Verify that this query is acyclic
+		- Apply the GYO algorithm
+		- Give a full reducer for the query
+		- Give a join tree for the query
+		- Illustrate the Yannakakis algorithm by computing it step by step over an example
+		  database instance.
+		  ---
 - Explain in your own words Canonical apply chase method and  does it always terminate when there are infinite set?
-	- You will always reach a fixedpoint so it will always terminate.
+	- You will always reach a fixpoint so it will always terminate.
 	- alt: Yes, we are always removing variables and never adding so it will always terminate because the set is finite.
 	  
 	  ---
