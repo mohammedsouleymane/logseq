@@ -1,17 +1,15 @@
 - here the exam questions that I remember please give me feedback to complete questions =>
 - Explain in your own words SNRF and domain independence relation
 - If connected return true —> . —->  if not connected return false —> .  <——
-  write stratify datalog program 
-  Write while loop datalog program
-  If you reach {()} empty set it will return false
-  Convert to RC query
-- `Q2`
-  Explain full reducer => remove dangling tuples and consistent instance 
-  Given q1 and q2 both are cyclic we can’t proceed GYO  find minimal query (remove Self Joins)
-  Does the queries cyclic or acyclic
-  Apply GYO Calculate Fractional edge
-- `Q3`
-  Explain own word Canonical apply chase method does it always terminate when infinite step  ?
+- write a stratisfied datalog program
+- Write while loop datalog program
+	- If you reach {()} empty set it will return false
+	- Convert to RC query
+- Explain full reducer => remove dangling tuples and consistent instance
+	- Given q1 and q2 both are cyclic we can’t proceed GYO  find minimal query (remove Self Joins)
+- Are the queries cyclic or acyclic
+	- Apply GYO Calculate Fractional edge
+- Explain in your own words Canonical apply chase method and  does it always terminate when infinite step ?
   yes chase apply until you reach fixed point.So it always terminate
 - Here the schema Product database given create universal solution
   Create universal solution TGDS(Source to target)
