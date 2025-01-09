@@ -7,9 +7,6 @@
 	- Convert to RC query
 	  id:: 67800f01-846f-4005-b68d-e256f1d107a4
 	  ---
-- Explain full reducer => remove dangling tuples and consistent instance
-	- Given q1 and q2 both are cyclic we can’t proceed GYO  find minimal query (remove Self Joins)
-	  id:: 67800f0c-0a5c-47f8-82f4-d03bfdc9662b
 - Compute the following join using the Yannakakis algorithm.
 	- (x,y) <- R(x,y,z),S(v,y,w),T(x,y,v),U(y,v,u,s),V(y,u),W(u,s).
 		- Is this query minimal ? if no give me equivalent query ?
@@ -19,15 +16,13 @@
 		- Give a join tree for the query
 		- Illustrate the Yannakakis algorithm by computing it step by step over an example
 		  database instance.
-		  ---
+- ---
 - Explain in your own words Canonical apply chase method and  does it always terminate when there are infinite set?
 	- You will always reach a fixpoint so it will always terminate.
 	- alt: Yes, we are always removing variables and never adding so it will always terminate because the set is finite.
-	  
-	  ---
+- ---
 - Here the schema Product database give create universal solution
   Create universal solution TGDS(Source to target)
   Glav, GAV, LAV comparison according to question 3.2
   If you find acyclic apply yannakakis algorithm
 - 10 multiple choice questions only 1 answer is correct
--
