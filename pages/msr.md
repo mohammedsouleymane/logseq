@@ -1,5 +1,4 @@
 - literature
-  collapsed:: true
 	- ### **Overview**
 	  
 	  This document focuses on the importance of literature in scientific research, covering the following topics:
@@ -114,7 +113,6 @@
 	  
 	  <!--EndFragment-->
 - experiments
-  collapsed:: true
 	- ### **Overview**
 	  
 	  This document discusses:
@@ -229,7 +227,6 @@
 	  
 	  <!--EndFragment-->
 - statistics
-  collapsed:: true
 	- ### **Overview**
 	- The document explores basic concepts, principles, and applications of statistics in analyzing experimental data.
 	- Emphasis is placed on using statistics for hypothesis testing, modeling relationships, and interpreting results, with applications in various fields.
@@ -329,7 +326,6 @@
 		  
 		  <!--EndFragment-->
 - writing
-  collapsed:: true
 	- ### 1.  **Introduction to Scientific Writing**
 	- **Characteristics**: Scientific writing has a neutral, impersonal style and follows a fixed organizational pattern.
 	- **Learning Approach**:
@@ -390,7 +386,6 @@
 	  
 	  <!--EndFragment-->
 - review
-  collapsed:: true
   
   ---
 	- ### 1.  **Introduction to the Review Process**
