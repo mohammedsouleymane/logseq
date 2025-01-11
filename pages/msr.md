@@ -1,4 +1,5 @@
 - literature
+  collapsed:: true
 	- ### **Overview**
 	  
 	  This document focuses on the importance of literature in scientific research, covering the following topics:
@@ -113,6 +114,7 @@
 	  
 	  <!--EndFragment-->
 - experiments
+  collapsed:: true
 	- ### **Overview**
 	  
 	  This document discusses:
@@ -227,6 +229,7 @@
 	  
 	  <!--EndFragment-->
 - statistics
+  collapsed:: true
 	- ### **Overview**
 	- The document explores basic concepts, principles, and applications of statistics in analyzing experimental data.
 	- Emphasis is placed on using statistics for hypothesis testing, modeling relationships, and interpreting results, with applications in various fields.
@@ -326,6 +329,7 @@
 		  
 		  <!--EndFragment-->
 - writing
+  collapsed:: true
 	- ### 1.  **Introduction to Scientific Writing**
 	- **Characteristics**: Scientific writing has a neutral, impersonal style and follows a fixed organizational pattern.
 	- **Learning Approach**:
@@ -386,6 +390,7 @@
 	  
 	  <!--EndFragment-->
 - review
+  collapsed:: true
   
   ---
 	- ### 1.  **Introduction to the Review Process**
@@ -452,10 +457,86 @@
 	- **Alternatives**: While promising, they also have drawbacks and require further refinement.
 - Now you know sections
   ---
+	- ### **Literature ("Now You Know" Solutions)**
+	  collapsed:: true
+		- **Reasons to Use Literature**:
+			- To understand prior research and avoid redundancy.
+			- To identify open questions and guide your research direction.
+			- To provide a foundation for situating your work within the field.
+		- **Reasons to Refer to Literature**:
+			- To acknowledge others' contributions.
+			- To situate your research in the broader context of previous findings.
+			- To prevent plagiarism by properly crediting sources.
+		- **What a Literature Review Is**:
+			- A structured discussion of relevant works that highlights their contributions to a specific research question.
+			- Includes historical context, major trends, and open questions.
+		- **How to Start Looking for Literature**:
+			- Use textbooks, journals, conferences, and citation networks (e.g., Google Scholar).
+			- Read abstracts and introductions to assess relevance.
+		- **How to Assess Literature Quality**:
+			- Check journal impact factors and reputation.
+			- Consider biases in citations (e.g., popularity vs. substance).
+			- Account for field-specific publishing norms.
+		- **How to Refer to Different Types of Sources**:
+			- Follow specific citation styles (e.g., APA, MLA) and use tools like EndNote or Zotero.
+			- Ensure completeness with DOIs, publication years, and journal names.
+		- **How to Avoid Plagiarism**:
+			- Properly paraphrase and cite sources.
+			- Avoid copying directly without quotes or attribution.
+			- Cite all data, figures, and code when used.
+			  
+			  ---
+	- ### **Experiments ("Now You Know" Solutions)**
+	  collapsed:: true
+		- **Introduction Section**:
+			- **Why Scientists Do Experiments**:
+				- To test hypotheses and establish causal relationships in a controlled manner.
+				- To gather reliable data in a reproducible format.
+			- **The Importance of Experimental Theory**:
+				- Guides experiment design and statistical analysis.
+				- Standardizes terminology for effective communication.
+		- **Computer Experiment Example**:
+			- **Basic Terminology**:
+				- **Independent Variables**: Factors manipulated (e.g., increment type).
+				- **Dependent Variables**: Factors measured (e.g., execution time).
+			- **Issues When Designing Experiments**:
+				- Noise requires statistical analysis to establish confidence intervals.
+				- Confounds (e.g., order effects) must be randomized or eliminated.
+		- **Human Experiment Example**:
+			- **Working with Human Participants**:
+				- Consider subjective and objective measurements (e.g., usability scores vs. task performance).
+				- Account for variability in participants through pre-testing and sampling.
+			- **Within- and Between-Subject Designs**:
+				- Within-subjects: Participants experience all conditions, reducing inter-participant variability.
+				- Between-subjects: Participants experience only one condition, avoiding fatigue or learning effects.
+			- **Randomized Controlled Trials**:
+				- Randomize participants into treatment and control groups for unbiased comparisons.
+		- **Theory Section**:
+			- **Noise vs. Bias**:
+				- **Noise**: Random variability manageable through statistics.
+				- **Bias**: Systematic error requiring elimination (e.g., confounds, observer bias).
+			- **Experimental Design Goals**:
+				- Minimize noise and eliminate bias to improve reliability.
+		- **Sampling Section**:
+			- **Types of Sampling**:
+				- Random sampling ensures representativeness but is challenging.
+				- Non-random methods (e.g., quota, purposive) have specific applications but may introduce bias.
+			- **Practical Approaches to Random Sampling**:
+				- Cluster sampling helps achieve representative sub-samples.
+		- **Research Plan Section**:
+			- **Steps in Research Planning**:
+				- Familiarize with the field and define a focused research question.
+				- Operationalize variables, design pilot studies, and refine experimental setups.
+				- Seek ethical approval for human studies.
+		- **Why Planning is Crucial**:
+			- Prevents disorganized or opportunistic research.
+			- Facilitates data analysis and report writing.
+			  
+			  ---
+			  
+			  <!--EndFragment-->
 	- ### **Statistics ("Now You Know" Solutions)**
 	  collapsed:: true
-	  
-	  ---
 		- ### **Statistics PDF (Expanded "Now You Know" Solutions)**
 		- #### **Why Scientists Use Statistics**
 		- **Descriptive Statistics**:
@@ -536,98 +617,6 @@
 			- Transparently report all statistical methods and decisions to enhance reproducibility.
 			  
 			  ---
-	- ### **Literature ("Now You Know" Solutions)**
-	  collapsed:: true
-		- collapsed:: true
-		  
-		  **Reasons to Use Literature**:
-			- To understand prior research and avoid redundancy.
-			- To identify open questions and guide your research direction.
-			- To provide a foundation for situating your work within the field.
-		- collapsed:: true
-		  
-		  **Reasons to Refer to Literature**:
-			- To acknowledge others' contributions.
-			- To situate your research in the broader context of previous findings.
-			- To prevent plagiarism by properly crediting sources.
-		- collapsed:: true
-		  
-		  **What a Literature Review Is**:
-			- A structured discussion of relevant works that highlights their contributions to a specific research question.
-			- Includes historical context, major trends, and open questions.
-		- collapsed:: true
-		  
-		  **How to Start Looking for Literature**:
-			- Use textbooks, journals, conferences, and citation networks (e.g., Google Scholar).
-			- Read abstracts and introductions to assess relevance.
-		- collapsed:: true
-		  
-		  **How to Assess Literature Quality**:
-			- Check journal impact factors and reputation.
-			- Consider biases in citations (e.g., popularity vs. substance).
-			- Account for field-specific publishing norms.
-		- collapsed:: true
-		  
-		  **How to Refer to Different Types of Sources**:
-			- Follow specific citation styles (e.g., APA, MLA) and use tools like EndNote or Zotero.
-			- Ensure completeness with DOIs, publication years, and journal names.
-		- collapsed:: true
-		  
-		  **How to Avoid Plagiarism**:
-			- Properly paraphrase and cite sources.
-			- Avoid copying directly without quotes or attribution.
-			- Cite all data, figures, and code when used.
-			  
-			  ---
-	- ### **Experiments ("Now You Know" Solutions)**
-	  collapsed:: true
-		- **Introduction Section**:
-			- **Why Scientists Do Experiments**:
-				- To test hypotheses and establish causal relationships in a controlled manner.
-				- To gather reliable data in a reproducible format.
-			- **The Importance of Experimental Theory**:
-				- Guides experiment design and statistical analysis.
-				- Standardizes terminology for effective communication.
-		- **Computer Experiment Example**:
-			- **Basic Terminology**:
-				- **Independent Variables**: Factors manipulated (e.g., increment type).
-				- **Dependent Variables**: Factors measured (e.g., execution time).
-			- **Issues When Designing Experiments**:
-				- Noise requires statistical analysis to establish confidence intervals.
-				- Confounds (e.g., order effects) must be randomized or eliminated.
-		- **Human Experiment Example**:
-			- **Working with Human Participants**:
-				- Consider subjective and objective measurements (e.g., usability scores vs. task performance).
-				- Account for variability in participants through pre-testing and sampling.
-			- **Within- and Between-Subject Designs**:
-				- Within-subjects: Participants experience all conditions, reducing inter-participant variability.
-				- Between-subjects: Participants experience only one condition, avoiding fatigue or learning effects.
-			- **Randomized Controlled Trials**:
-				- Randomize participants into treatment and control groups for unbiased comparisons.
-		- **Theory Section**:
-			- **Noise vs. Bias**:
-				- **Noise**: Random variability manageable through statistics.
-				- **Bias**: Systematic error requiring elimination (e.g., confounds, observer bias).
-			- **Experimental Design Goals**:
-				- Minimize noise and eliminate bias to improve reliability.
-		- **Sampling Section**:
-			- **Types of Sampling**:
-				- Random sampling ensures representativeness but is challenging.
-				- Non-random methods (e.g., quota, purposive) have specific applications but may introduce bias.
-			- **Practical Approaches to Random Sampling**:
-				- Cluster sampling helps achieve representative sub-samples.
-		- **Research Plan Section**:
-			- **Steps in Research Planning**:
-				- Familiarize with the field and define a focused research question.
-				- Operationalize variables, design pilot studies, and refine experimental setups.
-				- Seek ethical approval for human studies.
-		- **Why Planning is Crucial**:
-			- Prevents disorganized or opportunistic research.
-			- Facilitates data analysis and report writing.
-			  
-			  ---
-			  
-			  <!--EndFragment-->
 	- ### **Writing ("Now You Know" Solutions)**
 	  collapsed:: true
 		- #### 1.  **Preparation**
