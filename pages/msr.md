@@ -575,6 +575,7 @@
 		- ### **Now You Know**
 		- #### **What a confidence interval is**
 		- A confidence interval (CI) provides a range within which the true population parameter is likely to lie.
+			- We are 95% confident that the true population mean lies within this interval.
 		- Confidence intervals are often used to indicate how uncertain a measurement is.
 		- ---
 		- #### **How to use it and interpret it**
