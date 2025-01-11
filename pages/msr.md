@@ -711,6 +711,9 @@
 		- #### **Using power analysis**
 		- Plan sample size for adequate power.
 		- Avoid using power analysis post hoc to justify results.
+		- It is useful to think about the power of an experimental
+		  approach, especially if it is to be used many times
+			- For instance a setup for testing user interfaces
 		-
 		- Neyman and Pearson
 			- not good for science
