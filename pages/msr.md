@@ -697,7 +697,7 @@
 		- **Is not**: The probability that H₀ is true or the probability of the observed data.
 		  
 		  ---
-		- ### **Now You Know**
+		- ### **Power and Significance**
 		- #### **What power and significance are**
 		- **Significance (α)**: Probability of Type I error (false positive).
 		- **Power (1 - β)**: Probability of correctly rejecting H₀ (avoiding a Type II error).
@@ -712,6 +712,9 @@
 		- Plan sample size for adequate power.
 		- Avoid using power analysis post hoc to justify results.
 		-
+		- Neyman and Pearson
+			- not good for science
+			- good for finding false positives(covids test, quality control)
 	- ### **Writing ("Now You Know" Solutions)**
 	  collapsed:: true
 		- Here’s a detailed solution for the **"Now You Know" sections** from the **Writing Guide ("Methods of Scientific Research")**:
