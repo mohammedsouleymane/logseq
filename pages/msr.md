@@ -30,7 +30,7 @@
 		  
 		  ---
 	- ### **Finding Literature**
-	- **Strategies for Literature Search**:
+	- **Strategies for Literature Search**:(TCJO)
 		- **Textbooks**: Offer foundational knowledge but may not reflect the latest advancements.
 		- **Conferences**: Provide cutting-edge work and identify active researchers.
 		- **Journals**: Contain polished and peer-reviewed work; many journals specialize in review articles.
