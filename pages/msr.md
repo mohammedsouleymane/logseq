@@ -693,7 +693,7 @@
 		  
 		  ---
 		- #### **What a p-value is (and is not)**
-		- **Is**: Probability of observing results as extreme as the sample, assuming H₀ is true.
+		- **Is**: Probability of observing results as extreme as the sample, assuming H₀ is true. (the area under the curve that you consider is unacceptable)
 		- **Is not**: The probability that H₀ is true or the probability of the observed data.
 		  
 		  ---
