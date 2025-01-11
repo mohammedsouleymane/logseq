@@ -575,9 +575,8 @@
 		- ### **Now You Know**
 		- #### **What a confidence interval is**
 		- A confidence interval (CI) provides a range within which the true population parameter is likely to lie.
-			- Example: A 95% CI means we are 95% confident that the interval contains the true value.
-			  
-			  ---
+		- Confidence intervals are often used to indicate how uncertain a measurement is.
+		- ---
 		- #### **How to use it and interpret it**
 		- Use CIs to express **uncertainty** in estimates.
 		- Narrow intervals indicate **high precision**, while wide intervals suggest more variability.
