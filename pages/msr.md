@@ -623,7 +623,6 @@
 		- #### 2.  **Organization**
 		- **Key Points**:
 			- Understand and apply the canonical structure of scientific texts:
-			  collapsed:: true
 				- Abstract, Introduction, Methods, Results, Conclusion, and Discussion.
 			- Use this structure for effective reading and writing, keeping the audience's ease of navigation in mind.
 		- #### 3.  **Writing Text**
