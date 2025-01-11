@@ -673,6 +673,8 @@
 		- I: interval, D: interval -> scatterplot
 		- I: nominal, D: interval -> hexbin plot
 		- I: nominal, D: ratio -> histogram
+		- I: nominal, D: nominal -> bubble plot in table format
+		- I: interval, D: nominal(binary) -> scatter plot
 		- ---
 		- ### **Now You Know**
 		- #### **Steps of a statistical test**
