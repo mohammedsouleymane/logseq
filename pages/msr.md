@@ -16,7 +16,6 @@
 		- Learn new methods and skills.
 		- Find relevant data for tuning or testing models.
 		  
-		  > 
 		  
 		  *Science is an incremental process, building on the work of predecessors.*
 	- **Importance of Referencing Literature**:
