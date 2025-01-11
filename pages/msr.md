@@ -458,7 +458,6 @@
 - Now you know sections
   ---
 	- ### **1. Statistics PDF ("Now You Know" Solutions)**
-	  collapsed:: true
 		- **Why Scientists Use Statistics**:
 			- To summarize and describe data using **descriptive statistics** (e.g., means, medians).
 			- To make inferences about populations based on samples using **inferential statistics**.
@@ -473,74 +472,97 @@
 			  
 			  ---
 	- ### **2. Literature PDF ("Now You Know" Solutions)**
-	- **Reasons to Use Literature**:
-		- To understand prior research and avoid redundancy.
-		- To identify open questions and guide your research direction.
-		- To provide a foundation for situating your work within the field.
-	- **Reasons to Refer to Literature**:
-		- To acknowledge others' contributions.
-		- To situate your research in the broader context of previous findings.
-		- To prevent plagiarism by properly crediting sources.
-	- **What a Literature Review Is**:
-		- A structured discussion of relevant works that highlights their contributions to a specific research question.
-		- Includes historical context, major trends, and open questions.
-	- **How to Start Looking for Literature**:
-		- Use textbooks, journals, conferences, and citation networks (e.g., Google Scholar).
-		- Read abstracts and introductions to assess relevance.
-	- **How to Assess Literature Quality**:
-		- Check journal impact factors and reputation.
-		- Consider biases in citations (e.g., popularity vs. substance).
-		- Account for field-specific publishing norms.
-	- **How to Refer to Different Types of Sources**:
-		- Follow specific citation styles (e.g., APA, MLA) and use tools like EndNote or Zotero.
-		- Ensure completeness with DOIs, publication years, and journal names.
-	- **How to Avoid Plagiarism**:
-		- Properly paraphrase and cite sources.
-		- Avoid copying directly without quotes or attribution.
-		- Cite all data, figures, and code when used.
+		- **Reasons to Use Literature**:
+			- To understand prior research and avoid redundancy.
+			- To identify open questions and guide your research direction.
+			- To provide a foundation for situating your work within the field.
+		- collapsed:: true
 		  
-		  ---
+		  **Reasons to Refer to Literature**:
+			- To acknowledge others' contributions.
+			- To situate your research in the broader context of previous findings.
+			- To prevent plagiarism by properly crediting sources.
+		- collapsed:: true
+		  
+		  **What a Literature Review Is**:
+			- A structured discussion of relevant works that highlights their contributions to a specific research question.
+			- Includes historical context, major trends, and open questions.
+		- collapsed:: true
+		  
+		  **How to Start Looking for Literature**:
+			- Use textbooks, journals, conferences, and citation networks (e.g., Google Scholar).
+			- Read abstracts and introductions to assess relevance.
+		- collapsed:: true
+		  
+		  **How to Assess Literature Quality**:
+			- Check journal impact factors and reputation.
+			- Consider biases in citations (e.g., popularity vs. substance).
+			- Account for field-specific publishing norms.
+		- collapsed:: true
+		  
+		  **How to Refer to Different Types of Sources**:
+			- Follow specific citation styles (e.g., APA, MLA) and use tools like EndNote or Zotero.
+			- Ensure completeness with DOIs, publication years, and journal names.
+		- collapsed:: true
+		  
+		  **How to Avoid Plagiarism**:
+			- Properly paraphrase and cite sources.
+			- Avoid copying directly without quotes or attribution.
+			- Cite all data, figures, and code when used.
+			  
+			  ---
 	- ### **3. Experiments PDF ("Now You Know" Solutions)**
-	- **Introduction Section**:
-		- **Why Scientists Do Experiments**:
-			- To test hypotheses and establish causal relationships in a controlled manner.
-			- To gather reliable data in a reproducible format.
-		- **The Importance of Experimental Theory**:
-			- Guides experiment design and statistical analysis.
-			- Standardizes terminology for effective communication.
-	- **Computer Experiment Example**:
-		- **Basic Terminology**:
-			- **Independent Variables**: Factors manipulated (e.g., increment type).
-			- **Dependent Variables**: Factors measured (e.g., execution time).
-		- **Issues When Designing Experiments**:
-			- Noise requires statistical analysis to establish confidence intervals.
-			- Confounds (e.g., order effects) must be randomized or eliminated.
-	- **Human Experiment Example**:
-		- **Working with Human Participants**:
-			- Consider subjective and objective measurements (e.g., usability scores vs. task performance).
-			- Account for variability in participants through pre-testing and sampling.
-		- **Within- and Between-Subject Designs**:
-			- Within-subjects: Participants experience all conditions, reducing inter-participant variability.
-			- Between-subjects: Participants experience only one condition, avoiding fatigue or learning effects.
-		- **Randomized Controlled Trials**:
-			- Randomize participants into treatment and control groups for unbiased comparisons.
-	- **Theory Section**:
-		- **Noise vs. Bias**:
-			- **Noise**: Random variability manageable through statistics.
-			- **Bias**: Systematic error requiring elimination (e.g., confounds, observer bias).
-		- **Experimental Design Goals**:
-			- Minimize noise and eliminate bias to improve reliability.
-	- **Sampling Section**:
-		- **Types of Sampling**:
-			- Random sampling ensures representativeness but is challenging.
-			- Non-random methods (e.g., quota, purposive) have specific applications but may introduce bias.
-		- **Practical Approaches to Random Sampling**:
-			- Cluster sampling helps achieve representative sub-samples.
-	- **Research Plan Section**:
-		- **Steps in Research Planning**:
-			- Familiarize with the field and define a focused research question.
-			- Operationalize variables, design pilot studies, and refine experimental setups.
-			- Seek ethical approval for human studies.
+		- **Introduction Section**:
+			- **Why Scientists Do Experiments**:
+			  collapsed:: true
+				- To test hypotheses and establish causal relationships in a controlled manner.
+				- To gather reliable data in a reproducible format.
+			- **The Importance of Experimental Theory**:
+			  collapsed:: true
+				- Guides experiment design and statistical analysis.
+				- Standardizes terminology for effective communication.
+		- **Computer Experiment Example**:
+			- **Basic Terminology**:
+			  collapsed:: true
+				- **Independent Variables**: Factors manipulated (e.g., increment type).
+				- **Dependent Variables**: Factors measured (e.g., execution time).
+			- **Issues When Designing Experiments**:
+			  collapsed:: true
+				- Noise requires statistical analysis to establish confidence intervals.
+				- Confounds (e.g., order effects) must be randomized or eliminated.
+		- **Human Experiment Example**:
+			- **Working with Human Participants**:
+			  collapsed:: true
+				- Consider subjective and objective measurements (e.g., usability scores vs. task performance).
+				- Account for variability in participants through pre-testing and sampling.
+			- **Within- and Between-Subject Designs**:
+			  collapsed:: true
+				- Within-subjects: Participants experience all conditions, reducing inter-participant variability.
+				- Between-subjects: Participants experience only one condition, avoiding fatigue or learning effects.
+			- **Randomized Controlled Trials**:
+			  collapsed:: true
+				- Randomize participants into treatment and control groups for unbiased comparisons.
+		- **Theory Section**:
+			- **Noise vs. Bias**:
+			  collapsed:: true
+				- **Noise**: Random variability manageable through statistics.
+				- **Bias**: Systematic error requiring elimination (e.g., confounds, observer bias).
+			- **Experimental Design Goals**:
+			  collapsed:: true
+				- Minimize noise and eliminate bias to improve reliability.
+		- **Sampling Section**:
+			- **Types of Sampling**:
+			  collapsed:: true
+				- Random sampling ensures representativeness but is challenging.
+				- Non-random methods (e.g., quota, purposive) have specific applications but may introduce bias.
+			- **Practical Approaches to Random Sampling**:
+			  collapsed:: true
+				- Cluster sampling helps achieve representative sub-samples.
+		- **Research Plan Section**:
+			- **Steps in Research Planning**:
+				- Familiarize with the field and define a focused research question.
+				- Operationalize variables, design pilot studies, and refine experimental setups.
+				- Seek ethical approval for human studies.
 		- **Why Planning is Crucial**:
 			- Prevents disorganized or opportunistic research.
 			- Facilitates data analysis and report writing.
