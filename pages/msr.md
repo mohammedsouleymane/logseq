@@ -531,10 +531,6 @@
 		- **Why Planning is Crucial**:
 			- Prevents disorganized or opportunistic research.
 			- Facilitates data analysis and report writing.
-			  
-			  ---
-			  
-			  <!--EndFragment-->
 	- ### **Statistics ("Now You Know" Solutions)**
 	  collapsed:: true
 		- ### **Statistics PDF (Expanded "Now You Know" Solutions)**
