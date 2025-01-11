@@ -458,6 +458,7 @@
 - Now you know sections
   ---
 	- ### **1. Statistics PDF ("Now You Know" Solutions)**
+	  collapsed:: true
 		- **Why Scientists Use Statistics**:
 			- To summarize and describe data using **descriptive statistics** (e.g., means, medians).
 			- To make inferences about populations based on samples using **inferential statistics**.
@@ -471,7 +472,7 @@
 			- Recognize the difference between **statistical significance** and **effect size**.
 			  
 			  ---
-	- ### **2. Literature PDF ("Now You Know" Solutions)**
+	- ### **Literature PDF ("Now You Know" Solutions)**
 	  collapsed:: true
 		- collapsed:: true
 		  
@@ -514,7 +515,7 @@
 			- Cite all data, figures, and code when used.
 			  
 			  ---
-	- ### **3. Experiments PDF ("Now You Know" Solutions)**
+	- ### **Experiments PDF ("Now You Know" Solutions)**
 	  collapsed:: true
 		- **Introduction Section**:
 			- **Why Scientists Do Experiments**:
@@ -563,74 +564,50 @@
 			  ---
 			  
 			  <!--EndFragment-->
-	- ---
-	- ### 1.  **Introduction to the Review ("Now You Know" Solutions)**
-	- **Purpose**: Peer review acts as the quality control system for science, ensuring published work is reliable and well-vetted.
-	- **Involvement**: All scientists contribute as reviewers or editors, requiring mastery of various aspects of the discipline.
-	- **Discussion**: While essential, the process invites debates on its effectiveness and fairness.
-	  
-	  ---
-	- ### 2.  **Theoretical Foundations**
-	- **Reliability**: Publications must meet criteria of clarity, completeness, correctness, validity, and sometimes relevance.
-	- **Broad Application**: Peer review applies not only to publications but also to grants, tenure decisions, and other resource allocations.
-	- **Process**:
-		- Peers, typically three per paper, evaluate the work anonymously.
-		- Reviewers provide constructive feedback, improving both accepted and rejected manuscripts.
+	- ### **First PDF: Writing Guide ("Methods of Scientific Research")**
+		- #### 1.  **Preparation**
+		- **Key Points**:
+			- Identify the purpose, audience, and venue for your writing.
+			- Understand how these factors influence your content and style.
+			- Prepare a clear storyline to maintain logical flow and avoid redundancy.
+		- #### 2.  **Organization**
+		- **Key Points**:
+			- Understand and apply the canonical structure of scientific texts:
+			  collapsed:: true
+				- Abstract, Introduction, Methods, Results, Conclusion, and Discussion.
+			- Use this structure for effective reading and writing, keeping the audience's ease of navigation in mind.
+		- #### 3.  **Writing Text**
+		- **Key Points**:
+			- Writing scientific texts differs from literary writing.
+			- Develop skills through reading scientific works, practicing writing, and iterating based on feedback.
+			- Learning to write effectively is an experiential process.
+		- #### 4.  **Illustrations**
+		- **Key Points**:
+			- Use diagrams, graphs, tables, and other non-text elements effectively to convey information.
+			- Ensure they are clear, relevant, and properly formatted.
+			- Avoid poor practices like cluttered visuals, irrelevant graphics, or unclear labels.
+			  
+			  ---
+	- ### **Second PDF: Review Process Guide**
+	- #### 1.  **The Review Process**
+	- **Key Points**:
+		- Understand the purpose of peer review as quality control for scientific research.
+		- Familiarize yourself with the roles of different actors (reviewers, authors, and editors) and the workflow.
+		- Recognize the elements of a good review and how it contributes to improving scientific work.
+	- #### 2.  **Challenges of Peer Review**
+	- **Key Points**:
+		- Acknowledge the weaknesses of the peer review process, such as biases, expertise limitations, and opportunities for manipulation or fraud.
+		- Understand the role of human factors in shaping the review process.
+		- Appreciate the need for fairness and rigor in addressing these challenges.
+	- #### 3.  **Alternatives to Peer Review**
+	- **Key Points**:
+		- Learn about potential alternatives to traditional peer review, such as open or double-blind reviews.
+		- Recognize the strengths and weaknesses of these approaches.
+		- Understand that while these alternatives address some challenges, they introduce new complexities.
 		  
 		  ---
-	- ### 3.  **Practical Implementation**
-	- **Participants**:
-		- Reviewers: Often experienced and overworked, they can lean conservative.
-		- Authors: Must adhere to submission guidelines.
-		- Editors: Oversee both scientific and administrative aspects, often multitasking across roles.
-	- **Workflow**:
-		- Manuscript Submission: Authors prepare and electronically submit papers.
-		- Administrative Screening: Initial filtering by editors for alignment with the journal's scope.
-		- Reviewer Selection: Editors choose reviewers based on expertise, keywords, or author suggestions.
-		- Review Process: Reviewers assess manuscripts for clarity, validity, relevance, and methodological soundness.
-		- Feedback: Reviewers submit reports, including numerical evaluations and open comments for authors and editors.
-		- Editorial Decision: Based on reviews, the editor decides to accept, request revisions, or reject the paper.
-	- **Review Outcomes**:
-		- Accept, minor/major revisions, resubmit, or outright rejection.
-		- Revisions may require extensive effort and detailed response letters from authors.
 		  
-		  ---
-	- ### 4.  **Characteristics of a Good Review**
-	- **Structure**:
-		- Summarize the paper's content succinctly.
-		- Provide an opinion with justifications.
-		- Suggest improvements in both content and presentation.
-	- **Engagement**: Reviewers should actively engage with the scientific aspects, offering insights into the literature, methodology, and findings.
-	- **Diplomacy**: Feedback should be constructive and professional, avoiding unnecessary criticisms on trivial details.
-	  
-	  ---
-	- ### 5.  **Challenges and Criticisms of Peer Review**
-	- **Human Bias**:
-		- Personal biases (e.g., institutional reputation, nationality, gender) can influence decisions.
-		- Conformist research often fares better than innovative or interdisciplinary work.
-	- **Expertise Limitations**: Finding qualified reviewers for niche or interdisciplinary topics is difficult.
-	- **Social Engineering**:
-		- Networking or favoritism can unfairly influence the process.
-		- Groups may manipulate journal quality by collectively supporting each other's work.
-	- **Fraud**: Ethical breaches include delaying reviews, rejecting competitors’ work, or stealing ideas.
-	  
-	  ---
-	- ### 6.  **Alternatives to Peer Review**
-	- **No Review**: Publishing without peer review or limited to checking for methodological soundness.
-	- **Open Review**: Reviewers and authors openly identify themselves.
-	- **Non-Anonymous Peer Review**: Transparency but potential for retaliation or bias.
-	- **Double-Blind Peer Review**: Concealing both author and reviewer identities, though it doesn't eliminate all biases.
-	  
-	  ---
-	- ### 7.  **Key Takeaways**
-	- **Strengths**: Peer review ensures quality, offers improvement opportunities, and validates research credibility.
-	- **Weaknesses**: It is prone to human error, biases, and systemic inefficiencies.
-	- **Alternatives**: While promising, they also have drawbacks and require further refinement.
-	  
-	  ---
-	  
-	  The document provides a thorough exploration of the review process, highlighting its essential role in maintaining scientific rigor while also acknowledging its imperfections. Would you like to delve into any specific section or discuss potential improvements to the system?
-	  
-	  <!--EndFragment-->
-	-
+		  Each "Now You Know" section encapsulates critical takeaways, reinforcing the main ideas of their respective sections. Would you like further exploration or practical examples based on these insights?
+		  
+		  <!--EndFragment-->
 -
