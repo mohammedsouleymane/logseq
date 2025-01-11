@@ -539,19 +539,17 @@
 			  
 			  ---
 		- #### **The different measurement scales**
-		- **Nominal**: Categories without an inherent order (e.g., gender, colors).
-		- **Ordinal**: Categories with an order but unequal intervals (e.g., Likert scales[disagree, somewhat agree, agree]) no difference.
-		- **Interval**: Ordered categories with meaningful intervals but no true zero (e.g., temperature in Celsius, dates) you can calculate differences.
-		- **Ratio**: Ordered categories with meaningful intervals and a true zero (e.g., weight, height, temp in kelvin).
-		  
-		  ---
+			- **Nominal**: Categories without an inherent order (e.g., gender, colors).
+			- **Ordinal**: Categories with an order but unequal intervals (e.g., Likert scales[disagree, somewhat agree, agree]) no difference.
+			- **Interval**: Ordered categories with meaningful intervals but no true zero (e.g., temperature in Celsius, dates) you can calculate differences.
+			- **Ratio**: Ordered categories with meaningful intervals and a true zero (e.g., weight, height, temp in kelvin).
 		- #### **A little bit about distributions**
-		- Distributions show how data points are spread.
-			- Common distributions include **normal distribution** (bell curve) and **skewed distributions**.
-			- **Probability Density Function (PDF)** describes the likelihood of values within a range.
-			- **Cumulative Distribution Function (CDF)** shows cumulative probabilities up to a value.
-			  
-			  ---
+			- Distributions show how data points are spread.
+				- Common distributions include **normal distribution** (bell curve) and **skewed distributions**.
+				- **Probability Density Function (PDF)** describes the likelihood of values within a range.
+				- **Cumulative Distribution Function (CDF)** shows cumulative probabilities up to a value.
+				  
+				  ---
 		- ### **Now You Know**
 		- #### **Several measures of central tendency and their use**
 		- **Mean**: Average value; sensitive to outliers.
