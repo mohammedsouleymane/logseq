@@ -658,8 +658,7 @@
 		- Effect size: Spearman’s rho (ranges from -1 to 1).
 		  
 		  ---
-		- ### **Now You Know**
-		- # Useful Plots
+		- ### **Useful plots**
 		- #### **Different types of plots and when to use them**
 			- **Histograms**: Show frequency distributions.
 			- **Boxplots**: Visualize medians and IQRs, highlighting outliers, whiskers indicating extent of the dataset.
