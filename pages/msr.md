@@ -669,7 +669,10 @@
 			- Deviations from the diagonal line indicate departures from normality.
 		- Independent variable: Horizontal axis
 		  Dependent variable: Vertical axis
-		-
+		- I: nominal, D: interval -> use boxplot
+		- I: interval, D: interval -> scatterplot
+		- I: nominal, D: interval -> hexbin plot
+		- I: nominal, D: ratio -> histogram
 		- ---
 		- ### **Now You Know**
 		- #### **Steps of a statistical test**
