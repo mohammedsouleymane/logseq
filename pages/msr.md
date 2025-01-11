@@ -568,7 +568,7 @@
 		- **Skewness**: Measures asymmetry in the data distribution.
 			- Positive skew: Tail on the right.
 			- Negative skew: Tail on the left.
-		- **Kurtosis**: Measures "peakedness" or tail heaviness.
+		- **Kurtosis**: Measures "peakness" or tail heaviness(how frequent extreme values occur).
 		- **Outliers**: Extreme values that lie far from most data.
 		  
 		  ---
