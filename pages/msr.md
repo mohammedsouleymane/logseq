@@ -709,28 +709,93 @@
 		- Avoid using power analysis post hoc to justify results.
 	- ### **Writing ("Now You Know" Solutions)**
 	  collapsed:: true
-		- #### 1.  **Preparation**
+		- Here’s a detailed solution for the **"Now You Know" sections** from the **Writing Guide ("Methods of Scientific Research")**:
+		  
+		  ---
+		- ### **Preparation**
 		- **Key Points**:
-			- Identify the purpose, audience, and venue for your writing.
-			- Understand how these factors influence your content and style.
-			- Prepare a clear storyline to maintain logical flow and avoid redundancy.
-		- #### 2.  **Organization**
+			- **Purpose**:
+				- Define the purpose of your text (e.g., reporting results, reviewing, proposing).
+				- Tailor the content based on this purpose.
+			- **Audience**:
+				- Determine whether the audience is academic, professional, or lay.
+				- Adjust background detail and technicality accordingly.
+			- **Venue**:
+				- Understand the publication format (journal, thesis, conference).
+				- Align word count, tone, and level of detail with the venue's requirements.
+			- **Message**:
+				- Clearly articulate the key message and conclusion of your work.
+				- Highlight your contribution and ensure relevance to the target audience.
+			- **Background**:
+				- Provide sufficient context to bridge the audience's knowledge gaps.
+				- Avoid assumptions; cite references to clarify methods and sources.
+			- **Storyline**:
+				- Sketch a logical flow of ideas to prevent redundancy and confusion.
+				  
+				  **Solution**:
+		- Invest time in defining these parameters before writing.
+		- Use preparation to streamline your work and enhance clarity.
+		  
+		  ---
+		- ### **Organization**
 		- **Key Points**:
-			- Understand and apply the canonical structure of scientific texts:
-				- Abstract, Introduction, Methods, Results, Conclusion, and Discussion.
-			- Use this structure for effective reading and writing, keeping the audience's ease of navigation in mind.
-		- #### 3.  **Writing Text**
+			- **Canonical Structure**:
+				- Follow the standard scientific structure:
+					- **Abstract**: Condense the essence of the study.
+					- **Introduction**: Present the context and research questions.
+					- **Methods**: Detail replicable procedures.
+					- **Results**: Present factual findings without interpretation.
+					- **Discussion/Conclusion**: Interpret results and propose implications.
+			- **Chapter Management**:
+				- Keep chapters balanced and logically ordered.
+				- Avoid excessive subsections; keep headings clear and informative.
+			- **Supplementary Elements**:
+				- Use appendices for detailed data or background information.
+				- Include acknowledgments and bibliographies appropriately.
+				  
+				  **Solution**:
+		- Use the canonical structure to organize both reading and writing effectively.
+		- Ensure chapters flow cohesively, aiding comprehension.
+		  
+		  ---
+		- ### **Writing Text**
 		- **Key Points**:
-			- Writing scientific texts differs from literary writing.
-			- Develop skills through reading scientific works, practicing writing, and iterating based on feedback.
-			- Learning to write effectively is an experiential process.
-		- #### 4.  **Illustrations**
+			- **Parallel Process**:
+				- Write alongside research to identify gaps and refine questions.
+				- Use writing to document and clarify your methodology and findings.
+			- **Iterative Process**:
+				- Write drafts, review them with time, and seek feedback.
+				- Edit and revise to maintain consistency and clarity.
+			- **Feedback**:
+				- Accept critiques from supervisors and colleagues.
+				- Address feedback constructively to improve quality.
+			- **Style**:
+				- Avoid jargon, over-complicated language, and inconsistent voice.
+				- Write concise, precise, and reader-friendly paragraphs.
+				  
+				  **Solution**:
+		- Embrace writing as a continual and reflective process.
+		- Prioritize clarity and responsiveness to feedback to enhance the final text.
+		  
+		  ---
+		- ### **Illustrations**
 		- **Key Points**:
-			- Use diagrams, graphs, tables, and other non-text elements effectively to convey information.
-			- Ensure they are clear, relevant, and properly formatted.
-			- Avoid poor practices like cluttered visuals, irrelevant graphics, or unclear labels.
-			  
-			  ---
+			- **Diagrams and Graphs**:
+				- Use clear, labeled visuals that add value to the text.
+				- Ensure readability in both color and grayscale.
+			- **Tables**:
+				- Include tables only when they convey information succinctly.
+				- Simplify data presentation; move complex data to appendices if necessary.
+			- **Algorithms and Equations**:
+				- Present algorithms as pseudocode for clarity.
+				- Define all symbols and number equations for easy referencing.
+			- **Style and Accessibility**:
+				- Avoid overly complex visuals, poor formatting, or illegible designs.
+				- Use formats and color schemes that accommodate colorblind readers.
+				  
+				  **Solution**:
+		- Use non-text elements thoughtfully to complement and enhance your writing.
+		- Maintain aesthetic and functional quality in all visuals.
 	- ### **Review ("Now You Know" Solutions)**
 	  collapsed:: true
 		- ### **Why Peer Review?**
