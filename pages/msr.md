@@ -548,8 +548,8 @@
 				- Common distributions include **normal distribution** (bell curve) and **skewed distributions**.
 				- **Probability Density Function (PDF)** describes the likelihood of values within a range.
 				- **Cumulative Distribution Function (CDF)** shows cumulative probabilities up to a value.
-				  
-				  ---
+				- Quantile the opposite of CDF
+				- ---
 		- ### **Now You Know**
 		- #### **Several measures of central tendency and their use**
 		- **Mean**: Average value; sensitive to outliers.
