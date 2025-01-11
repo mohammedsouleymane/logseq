@@ -1,5 +1,5 @@
 - literature
-  ---
+  collapsed:: true
 	- ### **Overview**
 	  
 	  This document focuses on the importance of literature in scientific research, covering the following topics:
@@ -116,8 +116,6 @@
 	  <!--EndFragment-->
 - statistic
   collapsed:: true
-  
-  ---
 	- ### **Overview**
 	- The document explores basic concepts, principles, and applications of statistics in analyzing experimental data.
 	- Emphasis is placed on using statistics for hypothesis testing, modeling relationships, and interpreting results, with applications in various fields.
@@ -216,4 +214,119 @@
 		- Interpret statistical results critically.
 		  
 		  <!--EndFragment-->
+- experiments
+  ---
+	- ### **Overview**
+	  
+	  This document discusses:
+	- **Why experiments are vital in scientific inquiry.**
+	- **Theoretical and practical aspects of experimental design.**
+	- **Examples of experiments involving computers and humans.**
+	- **Strategies to mitigate errors, biases, and confounds.**
+	- **The importance of research planning and sampling.**
+	  
+	  ---
+	- ### **Why Experiments?**
+	- **Purpose**:
+		- A controlled way to test hypotheses about causal relationships.
+		- Gather data in a structured, reproducible manner.
+		- Provide incremental insights into complex systems.
+	- **Hypothesis Testing**:
+		- A hypothesis is a testable proposition about how the world works.
+		- Experiments cannot "prove" a hypothesis but can assess its likelihood.
+	- **Importance of Experimental Theory**:
+		- Guides effective experimental design.
+		- Ensures appropriate use of statistical tools.
+		- Improves communication through shared terminology.
+		  
+		  ---
+	- ### **Experiment Design Examples**
+	- #### **1. Computer-Based Experiment**
+	- **Research Question**: What is the fastest increment operation in C++?
+		- **Independent Variable**: Type of increment (`i++`, `++i`, `i += 1`).
+		- **Dependent Variable**: Execution time measured in processor cycles.
+		- **Findings**: While slight differences were observed initially, repeated measurements revealed no significant differences.
+	- **Key Issues**:
+		- **Variability and Noise**: Repeated trials are required to calculate confidence intervals.
+		- **Order Effects**: The position of conditions in the testing sequence influenced results. Addressed by randomizing the order of operations.
+		- **Confounds**: Systematic biases like background processes affected results.
+	- #### **2. Human-Based Experiment**
+	- **Research Question**: What is the optimal button size for a mobile app?
+		- **Independent Variable**: Button size (large, intermediate, small).
+		- **Dependent Variables**:
+			- Objective: Selection time and error rate.
+			- Subjective: User satisfaction (measured via Likert scale).
+	- **Experimental Designs**:
+		- **Within-Subjects**: Each participant tests all conditions, reducing variability by controlling for individual differences.
+		- **Between-Subjects**: Each participant experiences only one condition, avoiding potential learning or fatigue effects.
+	- **Pretesting and Fine-Tuning**:
+		- Pre-tests assess participant familiarity with apps or tasks.
+		- Pilot studies refine the experimental design and analysis.
+		  
+		  ---
+	- ### **Core Concepts in Experimental Theory**
+	- **Key Variables**:
+		- **Independent Variables**: Factors manipulated by the experimenter.
+		- **Dependent Variables**: Outcomes measured to assess the impact of manipulations.
+	- **Noise and Bias**:
+		- **Noise**: Random variability unrelated to experimental conditions, manageable with statistical techniques.
+		- **Bias**: Systematic distortions, such as confounding variables or observer/participant biases, which must be eliminated.
+	- **Null Hypothesis**:
+		- Often posits no effect or difference between conditions.
+		- Experiments are designed to reject the null hypothesis, avoiding confirmation bias.
+	- **Qualitative vs. Quantitative Analysis**:
+		- Qualitative: Identifies measurable properties and potential manipulations.
+		- Quantitative: Collects data, applies statistics, and refines or rejects hypotheses.
+	- **Empirical Cycle**:
+		- Formulate hypotheses → Design experiments → Collect data → Analyze results → Revise theories.
+		  
+		  ---
+	- ### **Sampling Strategies**
+	- **Types of Sampling**:
+		- **Random Sampling**: Ensures representativeness but is challenging to achieve.
+		- **Non-Random Sampling**:
+			- Accidental: Convenient but potentially biased.
+			- Quota: Ensures representation of specific groups.
+			- Purposive: Targets specific expertise or traits.
+	- **Practical Approaches**:
+		- **Cluster Sampling**: Hierarchical random sampling (e.g., city → school → student).
+		- Adjustments for population structure can improve generalizability.
+		  
+		  ---
+	- ### **The Research Plan**
+	- **Purpose**:
+		- Prevents opportunistic or poorly structured research.
+		- Guides systematic execution and facilitates reporting.
+	- **Steps**:
+		- Familiarize yourself with the field through literature and discussions.
+		- Define a focused, feasible research question.
+		- Operationalize the question into measurable components.
+		- Plan data analysis methods.
+		- Obtain ethical permissions, especially for human subjects.
+		- Conduct pilot experiments and fine-tune setups.
+		- Execute the full experiment.
+	- **Ethical Considerations**:
+		- Recruitment methods, participant consent, and privacy must meet ethical standards.
+		- Universities often require approval from ethics committees.
+		  
+		  ---
+	- ### **Mitigating Experimental Issues**
+	- **Pilot Experiments**:
+		- Validate measurements, participant behavior, and analysis methods.
+		- Identify and address issues with internal validity.
+	- **Randomization**:
+		- Prevents systematic biases by evenly distributing potential confounds.
+	- **Control Groups**:
+		- Essential for distinguishing treatment effects from other influences.
+		- Randomized Controlled Trials (RCTs) provide robust evidence by comparing treatment and control groups.
+		  
+		  ---
+	- ### **Key Takeaways**
+	- Experiments allow precise, controlled investigations into hypotheses.
+	- Thoughtful design mitigates noise, bias, and confounds.
+	- Clear research planning ensures ethical and effective execution.
+	- Statistical analysis is crucial for interpreting results and assessing variability.
+	  
+	  
+	  <!--EndFragment-->
 -
