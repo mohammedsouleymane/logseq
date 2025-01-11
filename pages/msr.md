@@ -540,8 +540,8 @@
 			  ---
 		- #### **The different measurement scales**
 		- **Nominal**: Categories without an inherent order (e.g., gender, colors).
-		- **Ordinal**: Categories with an order but unequal intervals (e.g., Likert scales[disagree, somewhat agree, agree]).
-		- **Interval**: Ordered categories with meaningful intervals but no true zero (e.g., temperature in Celsius).
+		- **Ordinal**: Categories with an order but unequal intervals (e.g., Likert scales[disagree, somewhat agree, agree]) no difference.
+		- **Interval**: Ordered categories with meaningful intervals but no true zero (e.g., temperature in Celsius) you can calculate differences.
 		- **Ratio**: Ordered categories with meaningful intervals and a true zero (e.g., weight, height).
 		  
 		  ---
