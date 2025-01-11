@@ -659,17 +659,16 @@
 		  
 		  ---
 		- ### **Now You Know**
+		- # Useful Plots
 		- #### **Different types of plots and when to use them**
-		- **Histograms**: Show frequency distributions.
-		- **Boxplots**: Visualize medians and IQRs, highlighting outliers, whiskers indicating extent of the dataset.
-		- **Scatterplots**: Explore relationships between two variables.
-		  
-		  ---
+			- **Histograms**: Show frequency distributions.
+			- **Boxplots**: Visualize medians and IQRs, highlighting outliers, whiskers indicating extent of the dataset.
+			- **Scatterplots**: Explore relationships between two variables.
 		- #### **Using quantile-quantile (Q-Q) plots**
-		- Compare data distribution to a theoretical distribution (e.g., normal).
-		- Deviations from the diagonal line indicate departures from normality.
-		  
-		  ---
+			- Compare data distribution to a theoretical distribution (e.g., normal).
+			- Deviations from the diagonal line indicate departures from normality.
+			  
+			  ---
 		- ### **Now You Know**
 		- #### **Steps of a statistical test**
 		- Define null and alternative hypotheses.
