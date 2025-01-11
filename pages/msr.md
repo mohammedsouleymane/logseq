@@ -579,8 +579,8 @@
 			  
 			  ---
 		- #### **How to use it and interpret it**
-		- Use CIs to express uncertainty in estimates.
-		- Narrow intervals indicate high precision, while wide intervals suggest more variability.
+		- Use CIs to express **uncertainty** in estimates.
+		- Narrow intervals indicate **high precision**, while wide intervals suggest more variability.
 		  
 		  ---
 		- #### **How not to use it**
