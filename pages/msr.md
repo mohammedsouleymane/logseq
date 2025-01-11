@@ -472,7 +472,10 @@
 			  
 			  ---
 	- ### **2. Literature PDF ("Now You Know" Solutions)**
-		- **Reasons to Use Literature**:
+	  collapsed:: true
+		- collapsed:: true
+		  
+		  **Reasons to Use Literature**:
 			- To understand prior research and avoid redundancy.
 			- To identify open questions and guide your research direction.
 			- To provide a foundation for situating your work within the field.
@@ -512,51 +515,41 @@
 			  
 			  ---
 	- ### **3. Experiments PDF ("Now You Know" Solutions)**
+	  collapsed:: true
 		- **Introduction Section**:
 			- **Why Scientists Do Experiments**:
-			  collapsed:: true
 				- To test hypotheses and establish causal relationships in a controlled manner.
 				- To gather reliable data in a reproducible format.
 			- **The Importance of Experimental Theory**:
-			  collapsed:: true
 				- Guides experiment design and statistical analysis.
 				- Standardizes terminology for effective communication.
 		- **Computer Experiment Example**:
 			- **Basic Terminology**:
-			  collapsed:: true
 				- **Independent Variables**: Factors manipulated (e.g., increment type).
 				- **Dependent Variables**: Factors measured (e.g., execution time).
 			- **Issues When Designing Experiments**:
-			  collapsed:: true
 				- Noise requires statistical analysis to establish confidence intervals.
 				- Confounds (e.g., order effects) must be randomized or eliminated.
 		- **Human Experiment Example**:
 			- **Working with Human Participants**:
-			  collapsed:: true
 				- Consider subjective and objective measurements (e.g., usability scores vs. task performance).
 				- Account for variability in participants through pre-testing and sampling.
 			- **Within- and Between-Subject Designs**:
-			  collapsed:: true
 				- Within-subjects: Participants experience all conditions, reducing inter-participant variability.
 				- Between-subjects: Participants experience only one condition, avoiding fatigue or learning effects.
 			- **Randomized Controlled Trials**:
-			  collapsed:: true
 				- Randomize participants into treatment and control groups for unbiased comparisons.
 		- **Theory Section**:
 			- **Noise vs. Bias**:
-			  collapsed:: true
 				- **Noise**: Random variability manageable through statistics.
 				- **Bias**: Systematic error requiring elimination (e.g., confounds, observer bias).
 			- **Experimental Design Goals**:
-			  collapsed:: true
 				- Minimize noise and eliminate bias to improve reliability.
 		- **Sampling Section**:
 			- **Types of Sampling**:
-			  collapsed:: true
 				- Random sampling ensures representativeness but is challenging.
 				- Non-random methods (e.g., quota, purposive) have specific applications but may introduce bias.
 			- **Practical Approaches to Random Sampling**:
-			  collapsed:: true
 				- Cluster sampling helps achieve representative sub-samples.
 		- **Research Plan Section**:
 			- **Steps in Research Planning**:
@@ -571,7 +564,7 @@
 			  
 			  <!--EndFragment-->
 	- ---
-	- ### 1.  **Introduction to the Review Process**
+	- ### 1.  **Introduction to the Review ("Now You Know" Solutions)**
 	- **Purpose**: Peer review acts as the quality control system for science, ensuring published work is reliable and well-vetted.
 	- **Involvement**: All scientists contribute as reviewers or editors, requiring mastery of various aspects of the discipline.
 	- **Discussion**: While essential, the process invites debates on its effectiveness and fairness.
