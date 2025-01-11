@@ -733,21 +733,38 @@
 			  ---
 	- ### **Review ("Now You Know" Solutions)**
 	  collapsed:: true
-		- #### 1.  **The Review Process**
-		- **Key Points**:
-			- Understand the purpose of peer review as quality control for scientific research.
-			- Familiarize yourself with the roles of different actors (reviewers, authors, and editors) and the workflow.
-			- Recognize the elements of a good review and how it contributes to improving scientific work.
-		- #### 2.  **Challenges of Peer Review**
-		- **Key Points**:
-			- Acknowledge the weaknesses of the peer review process, such as biases, expertise limitations, and opportunities for manipulation or fraud.
-			- Understand the role of human factors in shaping the review process.
-			- Appreciate the need for fairness and rigor in addressing these challenges.
-		- #### 3.  **Alternatives to Peer Review**
-		- **Key Points**:
-			- Learn about potential alternatives to traditional peer review, such as open or double-blind reviews.
-			- Recognize the strengths and weaknesses of these approaches.
-			- Understand that while these alternatives address some challenges, they introduce new complexities.
+		- ### **Why Peer Review?**
+		- Peer review ensures quality control in science by vetting research for clarity, validity, relevance, and correctness. It provides a system of checks to maintain the reliability of published work.
+		  
+		  ---
+		- ### **How Peer Review Works**
+			- **The Process**:
+				- Authors submit manuscripts.
+				- Editors filter for suitability and select reviewers based on expertise.
+				- Reviewers evaluate and provide structured feedback.
+				- Editors decide based on reviewer input, leading to acceptance, revision, or rejection.
+			- **The Actors**:
+				- Reviewers: Assess the paper’s quality and suggest improvements.
+				- Editors: Facilitate and oversee the review process.
+				- Authors: Address feedback constructively and resubmit if necessary.
+				  
+				  ---
+		- ### **What a Good Review Should Contain**
+			- **Summary**: Briefly outline what the paper is about and its key contributions.
+			- **Opinion**: Provide reasoned judgments about its significance and validity.
+			- **Suggestions**: Offer constructive criticism for improving content, methodology, and presentation.
+			- **Engagement**: Actively engage with the science, contributing insights rather than focusing on trivial issues.
 			  
 			  ---
+		- ### **The Weaknesses of Peer Review**
+			- **Bias**: Mitigate biases (personal, institutional, or cultural) by using double-blind or open review systems.
+			- **Expertise**: Match manuscripts with appropriately skilled reviewers, especially for interdisciplinary work.
+			- **Social Engineering**: Increase transparency to discourage favoritism or retaliatory behavior.
+			- **Fraud**: Implement stricter oversight and accountability to curb unethical practices like idea theft.
+			  
+			  ---
+		- ### **Alternatives to Peer Review**
+			- Evaluate alternatives such as **open review** (transparent identities) and **double-blind review** (anonymity for both authors and reviewers).
+			- Consider "soundness-only" review, focusing on methodological validity over novelty.
+			- Balance the trade-offs of these systems to address biases and improve fairness while maintaining rigorous standards.
 -
