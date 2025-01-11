@@ -391,8 +391,6 @@
 	  <!--EndFragment-->
 - review
   collapsed:: true
-  
-  ---
 	- ### 1.  **Introduction to the Review Process**
 	- **Purpose**: Peer review acts as the quality control system for science, ensuring published work is reliable and well-vetted.
 	- **Involvement**: All scientists contribute as reviewers or editors, requiring mastery of various aspects of the discipline.
@@ -455,8 +453,7 @@
 	- **Strengths**: Peer review ensures quality, offers improvement opportunities, and validates research credibility.
 	- **Weaknesses**: It is prone to human error, biases, and systemic inefficiencies.
 	- **Alternatives**: While promising, they also have drawbacks and require further refinement.
-- Now you know sections
-  ---
+- ---
 	- ### **Literature ("Now You Know" Solutions)**
 	  collapsed:: true
 		- **Reasons to Use Literature**:
