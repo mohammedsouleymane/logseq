@@ -661,7 +661,7 @@
 		- ### **Now You Know**
 		- #### **Different types of plots and when to use them**
 		- **Histograms**: Show frequency distributions.
-		- **Boxplots**: Visualize medians and IQRs, highlighting outliers.
+		- **Boxplots**: Visualize medians and IQRs, highlighting outliers, whiskers indicating extent of the dataset.
 		- **Scatterplots**: Explore relationships between two variables.
 		  
 		  ---
