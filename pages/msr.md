@@ -590,7 +590,7 @@
 		  ---
 		- ### **Now You Know**
 		- #### **What an effect size is**
-		- Effect size measures the strength or magnitude of a relationship or difference.
+		- Effect size measures the strength or magnitude of a relationship or difference.(how well a independent predicts the dependent variable)
 			- **Cohen’s d**: Used for mean differences.
 			- **η² (Eta-squared)**: Used for variance explained.
 			- **Odds Ratio (OR)**: Used for binary outcomes.
