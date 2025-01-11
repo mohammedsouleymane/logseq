@@ -599,8 +599,9 @@
 		- #### **To look out for them when we go through the individual tests**
 		- Effect sizes complement p-values by showing practical significance.
 		- A significant p-value with a small effect size might indicate limited practical importance.
-		  
-		  ---
+		- Significance is about the sample.
+		- Effect shouldn't really change even then the sample becomes bigger.
+		- ---
 		- ### **Now You Know**
 		- #### **Analyzing data from nominal and interval independent variables with interval dependent variables**
 		- **Nominal Independent Variable**:
