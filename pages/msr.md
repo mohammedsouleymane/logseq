@@ -457,22 +457,91 @@
 	- **Alternatives**: While promising, they also have drawbacks and require further refinement.
 - Now you know sections
   ---
-	- ### **1. Statistics PDF ("Now You Know" Solutions)**
+	- ### **Statistics ("Now You Know" Solutions)**
 	  collapsed:: true
-		- **Why Scientists Use Statistics**:
-			- To summarize and describe data using **descriptive statistics** (e.g., means, medians).
-			- To make inferences about populations based on samples using **inferential statistics**.
-			- To test hypotheses, quantify relationships, and provide robust interpretations.
-		- **Reasons for Choosing Certain Statistical Tests**:
-			- Based on the types of variables (e.g., nominal, ordinal, interval).
-			- Matched to the research question (e.g., t-tests for comparing means, correlation for relationships).
-		- **How to Interpret Statistical Results**:
-			- Use **p-values** to assess significance.
-			- Use **confidence intervals** to estimate reliability.
-			- Recognize the difference between **statistical significance** and **effect size**.
+	  
+	  ---
+		- ### **Statistics PDF (Expanded "Now You Know" Solutions)**
+		- #### **Why Scientists Use Statistics**
+		- **Descriptive Statistics**:
+			- Summarizes raw data into understandable measures such as **mean**, **median**, and **mode**.
+			- Quantifies data spread using measures like **variance**, **standard deviation**, and **interquartile range**.
+			- Visual tools like **histograms** and **box plots** reveal distribution patterns.
+		- **Inferential Statistics**:
+			- Generalizes findings from a sample to the population.
+			- Involves **hypothesis testing**, **confidence intervals**, and **effect size** to assess data significance and strength.
 			  
 			  ---
-	- ### **Literature PDF ("Now You Know" Solutions)**
+		- #### **Choosing Appropriate Statistical Tests**
+		- **Dependent on Variable Types**:
+			- **Nominal**: Use Chi-square or Fisher’s exact test.
+			- **Ordinal**: Employ Mann-Whitney U or Kruskal-Wallis tests for comparisons.
+			- **Interval/Ratio**:
+				- **Two Groups**: Independent or paired t-tests.
+				- **Multiple Groups**: Use ANOVA or repeated-measures ANOVA.
+				- **Relationships**: Apply Pearson correlation or linear regression.
+		- **By Research Question**:
+			- Determine relationships (e.g., correlation, regression).
+			- Compare groups (e.g., t-tests, ANOVA).
+			- Test predictions (e.g., logistic regression for categorical outcomes).
+			  
+			  ---
+		- #### **How to Interpret Statistical Results**
+		- **Significance Testing**:
+			- **P-Value**:
+				- Probability of observing the results assuming the null hypothesis is true.
+				- A smaller p-value (e.g., <0.05) indicates stronger evidence against the null hypothesis.
+		- **Confidence Intervals (CI)**:
+			- Range within which the true population parameter is likely to lie.
+			- Wider CIs indicate more uncertainty, while narrow CIs suggest precise estimates.
+		- **Effect Size**:
+			- Measures the magnitude of differences or relationships (e.g., **Cohen’s d** for mean differences, **η²** for variance explained).
+			- A significant p-value with a small effect size highlights caution: the difference may lack practical importance.
+		- **Distributions and Assumptions**:
+			- Understand data distribution (e.g., normality, skewness) to apply appropriate tests.
+			- Violation of assumptions (e.g., non-normal data) requires non-parametric alternatives.
+			  
+			  ---
+		- #### **When to Use Specific Methods**
+		- **Hypothesis Testing Framework**:
+			- **Null Hypothesis (H₀)**: Assumes no effect or no difference.
+			- **Alternative Hypothesis (H₁)**: Indicates the presence of an effect or difference.
+			- Example: Testing if a new teaching method improves scores over a traditional method.
+		- **Correlation and Causation**:
+			- Correlation quantifies the strength of a linear relationship but **does not imply causation**.
+			- Experimental designs are necessary to establish causality.
+		- **Power and Sample Size**:
+			- Adequate sample size ensures statistical power (the ability to detect a true effect).
+			- **Power analysis** helps determine the minimum sample size required for reliable results.
+			  
+			  ---
+		- #### **Advanced Statistical Tools**
+		- **Regression Analysis**:
+			- Predicts one variable based on another (e.g., linear regression for continuous outcomes, logistic regression for binary outcomes).
+			- Incorporates multiple predictors using **multiple regression** or **generalized linear models (GLMs)**.
+		- **ANOVA Extensions**:
+			- **Repeated Measures ANOVA**: For within-subject designs.
+			- **MANOVA**: Handles multiple dependent variables simultaneously.
+		- **Non-Parametric Tests**:
+			- Useful when data violate parametric assumptions (e.g., Wilcoxon signed-rank test, Spearman’s rank correlation).
+		- **Exploring Variability**:
+			- **F-tests**: Compare variances across groups.
+			- **Post-hoc Tests**: Identify which groups differ after a significant ANOVA (e.g., Tukey’s HSD).
+			  
+			  ---
+		- #### **Key Considerations**
+		- **Practical vs. Statistical Significance**:
+			- A statistically significant result may not always have practical relevance.
+			- Always pair significance tests with effect size for meaningful interpretation.
+		- **Robustness of Results**:
+			- Ensure assumptions (e.g., normality, independence) are met.
+			- Conduct sensitivity analyses to test the reliability of conclusions.
+		- **Visualization and Reporting**:
+			- Use clear and effective plots (e.g., scatterplots, violin plots) to communicate findings.
+			- Transparently report all statistical methods and decisions to enhance reproducibility.
+			  
+			  ---
+	- ### **Literature ("Now You Know" Solutions)**
 	  collapsed:: true
 		- collapsed:: true
 		  
@@ -515,7 +584,7 @@
 			- Cite all data, figures, and code when used.
 			  
 			  ---
-	- ### **Experiments PDF ("Now You Know" Solutions)**
+	- ### **Experiments ("Now You Know" Solutions)**
 	  collapsed:: true
 		- **Introduction Section**:
 			- **Why Scientists Do Experiments**:
@@ -564,7 +633,8 @@
 			  ---
 			  
 			  <!--EndFragment-->
-	- ### **First PDF: Writing Guide ("Methods of Scientific Research")**
+	- ### **Writing ("Now You Know" Solutions)**
+	  collapsed:: true
 		- #### 1.  **Preparation**
 		- **Key Points**:
 			- Identify the purpose, audience, and venue for your writing.
@@ -588,26 +658,23 @@
 			- Avoid poor practices like cluttered visuals, irrelevant graphics, or unclear labels.
 			  
 			  ---
-	- ### **Second PDF: Review Process Guide**
-	- #### 1.  **The Review Process**
-	- **Key Points**:
-		- Understand the purpose of peer review as quality control for scientific research.
-		- Familiarize yourself with the roles of different actors (reviewers, authors, and editors) and the workflow.
-		- Recognize the elements of a good review and how it contributes to improving scientific work.
-	- #### 2.  **Challenges of Peer Review**
-	- **Key Points**:
-		- Acknowledge the weaknesses of the peer review process, such as biases, expertise limitations, and opportunities for manipulation or fraud.
-		- Understand the role of human factors in shaping the review process.
-		- Appreciate the need for fairness and rigor in addressing these challenges.
-	- #### 3.  **Alternatives to Peer Review**
-	- **Key Points**:
-		- Learn about potential alternatives to traditional peer review, such as open or double-blind reviews.
-		- Recognize the strengths and weaknesses of these approaches.
-		- Understand that while these alternatives address some challenges, they introduce new complexities.
-		  
-		  ---
-		  
-		  Each "Now You Know" section encapsulates critical takeaways, reinforcing the main ideas of their respective sections. Would you like further exploration or practical examples based on these insights?
-		  
-		  <!--EndFragment-->
+	- ### **Review ("Now You Know" Solutions)**
+	  collapsed:: true
+		- #### 1.  **The Review Process**
+		- **Key Points**:
+			- Understand the purpose of peer review as quality control for scientific research.
+			- Familiarize yourself with the roles of different actors (reviewers, authors, and editors) and the workflow.
+			- Recognize the elements of a good review and how it contributes to improving scientific work.
+		- #### 2.  **Challenges of Peer Review**
+		- **Key Points**:
+			- Acknowledge the weaknesses of the peer review process, such as biases, expertise limitations, and opportunities for manipulation or fraud.
+			- Understand the role of human factors in shaping the review process.
+			- Appreciate the need for fairness and rigor in addressing these challenges.
+		- #### 3.  **Alternatives to Peer Review**
+		- **Key Points**:
+			- Learn about potential alternatives to traditional peer review, such as open or double-blind reviews.
+			- Recognize the strengths and weaknesses of these approaches.
+			- Understand that while these alternatives address some challenges, they introduce new complexities.
+			  
+			  ---
 -
