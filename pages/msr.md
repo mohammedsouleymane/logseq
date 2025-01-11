@@ -711,6 +711,7 @@
 		- #### **Using power analysis**
 		- Plan sample size for adequate power.
 		- Avoid using power analysis post hoc to justify results.
+		-
 	- ### **Writing ("Now You Know" Solutions)**
 	  collapsed:: true
 		- Here’s a detailed solution for the **"Now You Know" sections** from the **Writing Guide ("Methods of Scientific Research")**:
