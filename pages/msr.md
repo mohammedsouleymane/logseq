@@ -659,23 +659,25 @@
 		  
 		  ---
 		- ### **Useful plots**
-		- #### **Different types of plots and when to use them**
-			- **Histograms**: Show frequency distributions.(bar chart)
-			- **Boxplots**: Visualize medians and IQRs, highlighting outliers, whiskers indicating extent of the dataset.
-			- **Scatterplots**: Explore relationships between two variables.
-				- if scatterplot is too crowded use hexbin plot
-		- #### **Using quantile-quantile (Q-Q) plots**
-			- Compare data distribution to a theoretical distribution (e.g., normal).
-			- Deviations from the diagonal line indicate departures from normality.
-		- Independent variable: Horizontal axis
-		  Dependent variable: Vertical axis
-		- I: nominal, D: interval -> use boxplot
-		- I: interval, D: interval -> scatterplot
-		- I: nominal, D: interval -> hexbin plot
-		- I: nominal, D: ratio -> histogram
-		- I: nominal, D: nominal -> bubble plot in table format
-		- I: interval, D: nominal(binary) -> scatter plot
-		- ---
+			- #### **Different types of plots and when to use them**
+			  collapsed:: true
+				- **Histograms**: Show frequency distributions.(bar chart)
+				- **Boxplots**: Visualize medians and IQRs, highlighting outliers, whiskers indicating extent of the dataset.
+				- **Scatterplots**: Explore relationships between two variables.
+					- if scatterplot is too crowded use hexbin plot
+			- #### **Using quantile-quantile (Q-Q) plots**
+			  collapsed:: true
+				- Compare data distribution to a theoretical distribution (e.g., normal).
+				- Deviations from the diagonal line indicate departures from normality.
+			- Independent variable: Horizontal axis
+			  Dependent variable: Vertical axis
+			- I: nominal, D: interval -> use boxplot
+			- I: interval, D: interval -> scatterplot
+			- I: nominal, D: interval -> hexbin plot
+			- I: nominal, D: ratio -> histogram
+			- I: nominal, D: nominal -> bubble plot in table format
+			- I: interval, D: nominal(binary) -> scatter plot
+			- ---
 		- ### **Now You Know**
 		- #### **Steps of a statistical test**
 		- Define null and alternative hypotheses.
