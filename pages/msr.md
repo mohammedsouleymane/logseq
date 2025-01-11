@@ -215,7 +215,7 @@
 		  
 		  <!--EndFragment-->
 - experiments
-  ---
+  collapsed:: true
 	- ### **Overview**
 	  
 	  This document discusses:
@@ -329,4 +329,129 @@
 	  
 	  
 	  <!--EndFragment-->
--
+- writing
+  collapsed:: true
+	- ### 1.  **Introduction to Scientific Writing**
+	- **Characteristics**: Scientific writing has a neutral, impersonal style and follows a fixed organizational pattern.
+	- **Learning Approach**:
+		- Read scientific and popular scientific texts.
+		- Refer to style manuals and guidelines.
+		- Practice writing, both scientific and non-scientific texts.
+		  
+		  ---
+	- ### 2.  **Preparation**
+	- **Purpose**: Define the purpose of your writing (e.g., project report, proposal, review, etc.).
+	- **Audience**: Understand your target audience (e.g., colleagues, professors, broader scientific community).
+	- **Venue**: Tailor the length and detail to the type of publication (journal, thesis, or conference paper).
+	- **Message**: Clearly outline the core message, conclusions, and contributions of your work.
+	- **Background**: Assess the knowledge level of your audience and avoid assumptions.
+	- **Storyline**: Draft a schematic structure of your content to maintain logical flow and coherence.
+	  
+	  ---
+	- ### 3.  **Organization of Scientific Texts**
+	- **Canonical Structure**:
+		- Abstract
+		- Introduction
+		- Methods
+		- Results
+		- Discussion/Conclusion
+	- **Chapters**: Keep chapters evenly distributed and readable in one sitting. Use headings judiciously to avoid excessive sub-levels.
+	- **Abstract**: Self-contained, concise, and includes the research question, method essence, and main results.
+	- **Keywords**: Use specific and field-relevant keywords for easy classification and search.
+	- **Introduction**: Sets the scientific context, research questions, and summarizes methods and objectives.
+	- **Methods & Results**: Methods detail procedures for reproducibility; results focus on factual findings, avoiding interpretation.
+	- **Conclusion**: Summarizes findings and links them to research questions.
+	- **Discussion**: Compares results with prior work, highlights broader implications, and suggests future work.
+	- **Acknowledgments and Appendices**: Recognize contributors and provide supplementary material as needed.
+	  
+	  ---
+	- ### 4.  **Writing the Text**
+	- **Parallel Process**: Writing should proceed alongside research to identify gaps and weaknesses early.
+	- **Iterative Process**: Writing, revising, and seeking feedback are critical for improvement.
+	- **Style**: Maintain consistency in perspective (e.g., first-person plural) and optimize paragraph structure for clarity and logical flow.
+	- **Advice**:
+		- Avoid jargon and overly complex sentences.
+		- Strive for simplicity without losing precision.
+		- Read widely to adopt good practices.
+		  
+		  ---
+	- ### 5.  **Illustrations and Non-Text Elements**
+	- **Diagrams**: Use clear, spacious, and relevant vector graphics to explain concepts.
+	- **Graphs**: Choose appropriate types (line graphs, bar charts, etc.), ensure clarity with proper labels, titles, and readable formatting.
+	- **Tables**: Reserve for simple, quickly interpretable data. Complex data is better visualized as graphs or in appendices.
+	- **Algorithms and Equations**: Use pseudocode for clarity and ensure all symbols in equations are well-defined and explained.
+	- **Color Usage**: Optimize for both color and grayscale readability, ensuring accessibility for color-blind readers.
+	  
+	  ---
+	- ### 6.  **General Recommendations**
+	- **Quality Improvement**: Regular reading, writing, and critiquing enhance skill.
+	- **Presentation**: Aim for clarity, aesthetics, and utility in every aspect of the document.
+	- **Learning by Doing**: Practical experience and iterative refinement are emphasized as essential components of mastering scientific writing.
+	  
+	  
+	  <!--EndFragment-->
+- review
+  
+  ---
+	- ### 1.  **Introduction to the Review Process**
+	- **Purpose**: Peer review acts as the quality control system for science, ensuring published work is reliable and well-vetted.
+	- **Involvement**: All scientists contribute as reviewers or editors, requiring mastery of various aspects of the discipline.
+	- **Discussion**: While essential, the process invites debates on its effectiveness and fairness.
+	  
+	  ---
+	- ### 2.  **Theoretical Foundations**
+	- **Reliability**: Publications must meet criteria of clarity, completeness, correctness, validity, and sometimes relevance.
+	- **Broad Application**: Peer review applies not only to publications but also to grants, tenure decisions, and other resource allocations.
+	- **Process**:
+		- Peers, typically three per paper, evaluate the work anonymously.
+		- Reviewers provide constructive feedback, improving both accepted and rejected manuscripts.
+		  
+		  ---
+	- ### 3.  **Practical Implementation**
+	- **Participants**:
+		- Reviewers: Often experienced and overworked, they can lean conservative.
+		- Authors: Must adhere to submission guidelines.
+		- Editors: Oversee both scientific and administrative aspects, often multitasking across roles.
+	- **Workflow**:
+		- Manuscript Submission: Authors prepare and electronically submit papers.
+		- Administrative Screening: Initial filtering by editors for alignment with the journal's scope.
+		- Reviewer Selection: Editors choose reviewers based on expertise, keywords, or author suggestions.
+		- Review Process: Reviewers assess manuscripts for clarity, validity, relevance, and methodological soundness.
+		- Feedback: Reviewers submit reports, including numerical evaluations and open comments for authors and editors.
+		- Editorial Decision: Based on reviews, the editor decides to accept, request revisions, or reject the paper.
+	- **Review Outcomes**:
+		- Accept, minor/major revisions, resubmit, or outright rejection.
+		- Revisions may require extensive effort and detailed response letters from authors.
+		  
+		  ---
+	- ### 4.  **Characteristics of a Good Review**
+	- **Structure**:
+		- Summarize the paper's content succinctly.
+		- Provide an opinion with justifications.
+		- Suggest improvements in both content and presentation.
+	- **Engagement**: Reviewers should actively engage with the scientific aspects, offering insights into the literature, methodology, and findings.
+	- **Diplomacy**: Feedback should be constructive and professional, avoiding unnecessary criticisms on trivial details.
+	  
+	  ---
+	- ### 5.  **Challenges and Criticisms of Peer Review**
+	- **Human Bias**:
+		- Personal biases (e.g., institutional reputation, nationality, gender) can influence decisions.
+		- Conformist research often fares better than innovative or interdisciplinary work.
+	- **Expertise Limitations**: Finding qualified reviewers for niche or interdisciplinary topics is difficult.
+	- **Social Engineering**:
+		- Networking or favoritism can unfairly influence the process.
+		- Groups may manipulate journal quality by collectively supporting each other's work.
+	- **Fraud**: Ethical breaches include delaying reviews, rejecting competitors’ work, or stealing ideas.
+	  
+	  ---
+	- ### 6.  **Alternatives to Peer Review**
+	- **No Review**: Publishing without peer review or limited to checking for methodological soundness.
+	- **Open Review**: Reviewers and authors openly identify themselves.
+	- **Non-Anonymous Peer Review**: Transparency but potential for retaliation or bias.
+	- **Double-Blind Peer Review**: Concealing both author and reviewer identities, though it doesn't eliminate all biases.
+	  
+	  ---
+	- ### 7.  **Key Takeaways**
+	- **Strengths**: Peer review ensures quality, offers improvement opportunities, and validates research credibility.
+	- **Weaknesses**: It is prone to human error, biases, and systemic inefficiencies.
+	- **Alternatives**: While promising, they also have drawbacks and require further refinement.
