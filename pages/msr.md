@@ -533,86 +533,180 @@
 			- Facilitates data analysis and report writing.
 	- ### **Statistics ("Now You Know" Solutions)**
 	  collapsed:: true
-		- ### **Statistics PDF (Expanded "Now You Know" Solutions)**
-		- #### **Why Scientists Use Statistics**
-		- **Descriptive Statistics**:
-			- Summarizes raw data into understandable measures such as **mean**, **median**, and **mode**.
-			- Quantifies data spread using measures like **variance**, **standard deviation**, and **interquartile range**.
-			- Visual tools like **histograms** and **box plots** reveal distribution patterns.
-		- **Inferential Statistics**:
-			- Generalizes findings from a sample to the population.
-			- Involves **hypothesis testing**, **confidence intervals**, and **effect size** to assess data significance and strength.
+		- ### **Now You Know**
+		- #### **Why we need descriptive statistics**
+		- Descriptive statistics summarize raw data to make it comprehensible.
+			- **Measures of central tendency** (e.g., mean, median) provide insights into the "center" of data.
+			- **Measures of spread** (e.g., range, standard deviation) describe variability.
+			- Visual tools like histograms, boxplots, and scatterplots reveal patterns and distributions.
 			  
 			  ---
-		- #### **Choosing Appropriate Statistical Tests**
-		- **Dependent on Variable Types**:
-			- **Nominal**: Use Chi-square or Fisher’s exact test.
-			- **Ordinal**: Employ Mann-Whitney U or Kruskal-Wallis tests for comparisons.
-			- **Interval/Ratio**:
-				- **Two Groups**: Independent or paired t-tests.
-				- **Multiple Groups**: Use ANOVA or repeated-measures ANOVA.
-				- **Relationships**: Apply Pearson correlation or linear regression.
-		- **By Research Question**:
-			- Determine relationships (e.g., correlation, regression).
-			- Compare groups (e.g., t-tests, ANOVA).
-			- Test predictions (e.g., logistic regression for categorical outcomes).
+		- #### **The different measurement scales**
+		- **Nominal**: Categories without an inherent order (e.g., gender, colors).
+		- **Ordinal**: Categories with an order but unequal intervals (e.g., Likert scales).
+		- **Interval**: Ordered categories with meaningful intervals but no true zero (e.g., temperature in Celsius).
+		- **Ratio**: Ordered categories with meaningful intervals and a true zero (e.g., weight, height).
+		  
+		  ---
+		- #### **A little bit about distributions**
+		- Distributions show how data points are spread.
+			- Common distributions include **normal distribution** (bell curve) and **skewed distributions**.
+			- **Probability Density Function (PDF)** describes the likelihood of values within a range.
+			- **Cumulative Distribution Function (CDF)** shows cumulative probabilities up to a value.
 			  
 			  ---
-		- #### **How to Interpret Statistical Results**
-		- **Significance Testing**:
-			- **P-Value**:
-				- Probability of observing the results assuming the null hypothesis is true.
-				- A smaller p-value (e.g., <0.05) indicates stronger evidence against the null hypothesis.
-		- **Confidence Intervals (CI)**:
-			- Range within which the true population parameter is likely to lie.
-			- Wider CIs indicate more uncertainty, while narrow CIs suggest precise estimates.
-		- **Effect Size**:
-			- Measures the magnitude of differences or relationships (e.g., **Cohen’s d** for mean differences, **η²** for variance explained).
-			- A significant p-value with a small effect size highlights caution: the difference may lack practical importance.
-		- **Distributions and Assumptions**:
-			- Understand data distribution (e.g., normality, skewness) to apply appropriate tests.
-			- Violation of assumptions (e.g., non-normal data) requires non-parametric alternatives.
+		- ### **Now You Know**
+		- #### **Several measures of central tendency and their use**
+		- **Mean**: Average value; sensitive to outliers.
+		- **Median**: Middle value; robust to outliers.
+		- **Mode**: Most frequent value; useful for categorical data.
+		  
+		  ---
+		- #### **Several measures of spread and their use**
+		- **Range**: Difference between the highest and lowest values.
+		- **Variance**: Average squared deviation from the mean.
+		- **Standard Deviation**: Square root of variance; shows average deviation.
+		- **Interquartile Range (IQR)**: Range of the middle 50% of data; resistant to outliers.
+		  
+		  ---
+		- #### **A few other measures of a distribution’s shape**
+		- **Skewness**: Measures asymmetry in the data distribution.
+			- Positive skew: Tail on the right.
+			- Negative skew: Tail on the left.
+		- **Kurtosis**: Measures "peakedness" or tail heaviness.
+		- **Outliers**: Extreme values that lie far from most data.
+		  
+		  ---
+		- ### **Now You Know**
+		- #### **What a confidence interval is**
+		- A confidence interval (CI) provides a range within which the true population parameter is likely to lie.
+			- Example: A 95% CI means we are 95% confident that the interval contains the true value.
 			  
 			  ---
-		- #### **When to Use Specific Methods**
-		- **Hypothesis Testing Framework**:
-			- **Null Hypothesis (H₀)**: Assumes no effect or no difference.
-			- **Alternative Hypothesis (H₁)**: Indicates the presence of an effect or difference.
-			- Example: Testing if a new teaching method improves scores over a traditional method.
-		- **Correlation and Causation**:
-			- Correlation quantifies the strength of a linear relationship but **does not imply causation**.
-			- Experimental designs are necessary to establish causality.
-		- **Power and Sample Size**:
-			- Adequate sample size ensures statistical power (the ability to detect a true effect).
-			- **Power analysis** helps determine the minimum sample size required for reliable results.
+		- #### **How to use it and interpret it**
+		- Use CIs to express uncertainty in estimates.
+		- Narrow intervals indicate high precision, while wide intervals suggest more variability.
+		  
+		  ---
+		- #### **How not to use it**
+		- Do not interpret a CI as the probability that the true value is in the range (the true value is either inside or outside).
+		- Avoid using CIs without considering the context or effect size.
+		  
+		  ---
+		- ### **Now You Know**
+		- #### **What an effect size is**
+		- Effect size measures the strength or magnitude of a relationship or difference.
+			- **Cohen’s d**: Used for mean differences.
+			- **η² (Eta-squared)**: Used for variance explained.
+			- **Odds Ratio (OR)**: Used for binary outcomes.
 			  
 			  ---
-		- #### **Advanced Statistical Tools**
-		- **Regression Analysis**:
-			- Predicts one variable based on another (e.g., linear regression for continuous outcomes, logistic regression for binary outcomes).
-			- Incorporates multiple predictors using **multiple regression** or **generalized linear models (GLMs)**.
-		- **ANOVA Extensions**:
-			- **Repeated Measures ANOVA**: For within-subject designs.
-			- **MANOVA**: Handles multiple dependent variables simultaneously.
-		- **Non-Parametric Tests**:
-			- Useful when data violate parametric assumptions (e.g., Wilcoxon signed-rank test, Spearman’s rank correlation).
-		- **Exploring Variability**:
-			- **F-tests**: Compare variances across groups.
-			- **Post-hoc Tests**: Identify which groups differ after a significant ANOVA (e.g., Tukey’s HSD).
+		- #### **To look out for them when we go through the individual tests**
+		- Effect sizes complement p-values by showing practical significance.
+		- A significant p-value with a small effect size might indicate limited practical importance.
+		  
+		  ---
+		- ### **Now You Know**
+		- #### **Analyzing data from nominal and interval independent variables with interval dependent variables**
+		- **Nominal Independent Variable**:
+			- **Two values**: Use a **t-test**.
+			- **Multiple values**: Use **ANOVA**.
+		- **Interval Independent Variable**:
+			- Use **linear regression** to test relationships.
 			  
 			  ---
-		- #### **Key Considerations**
-		- **Practical vs. Statistical Significance**:
-			- A statistically significant result may not always have practical relevance.
-			- Always pair significance tests with effect size for meaningful interpretation.
-		- **Robustness of Results**:
-			- Ensure assumptions (e.g., normality, independence) are met.
-			- Conduct sensitivity analyses to test the reliability of conclusions.
-		- **Visualization and Reporting**:
-			- Use clear and effective plots (e.g., scatterplots, violin plots) to communicate findings.
-			- Transparently report all statistical methods and decisions to enhance reproducibility.
+		- #### **Interpreting a fitted linear model**
+		- **Coefficients**: Show the relationship between predictors and the dependent variable.
+		- **R²**: Proportion of variance explained by the model.
+		- **Residuals**: Check if assumptions (e.g., normality) are met.
+		  
+		  ---
+		- ### **Now You Know**
+		- #### **Analyzing data with interval independent and dependent variables**
+		- Use **correlation** to test linear relationships.
+		- Use **linear regression** for predictive modeling.
+		- Effect size: **Pearson’s r** (e.g., r = 0.1 is small, r = 0.5 is medium, r = 0.8 is large).
+		  
+		  ---
+		- #### **Calculating sample size**
+		- Use **power analysis** based on:
+			- Expected effect size.
+			- Desired significance level (α).
+			- Power (1 - β, where β is the Type II error rate).
 			  
 			  ---
+		- ### **Now You Know**
+		- #### **Analyzing data with interval independent and nominal dependent variables**
+		- Use **logistic regression** for binary outcomes.
+		- Effect size: **Odds Ratio (OR)** (e.g., OR > 1 indicates increased likelihood).
+		  
+		  ---
+		- ### **Now You Know**
+		- #### **Analyzing data with nominal independent variables (2 or more values) and interval dependent variables**
+		- **Two values**: Use **independent or paired t-tests**.
+		- **More values**: Use **ANOVA** or **repeated-measures ANOVA**.
+		- Effect size: **Cohen’s d** for t-tests, **η²** for ANOVA.
+		  
+		  ---
+		- ### **Now You Know**
+		- #### **Analyzing data with ordinal or non-normal interval dependent variables**
+		- Use non-parametric tests:
+			- **Mann-Whitney U** (for two groups).
+			- **Kruskal-Wallis** (for multiple groups).
+		- Effect size: **Rank-Biserial Correlation** for Mann-Whitney U.
+		  
+		  ---
+		- ### **Now You Know**
+		- #### **Analyzing data with ordinal independent and dependent variables**
+		- Use **Spearman’s rank correlation**.
+		- Effect size: Spearman’s rho (ranges from -1 to 1).
+		  
+		  ---
+		- ### **Now You Know**
+		- #### **Different types of plots and when to use them**
+		- **Histograms**: Show frequency distributions.
+		- **Boxplots**: Visualize medians and IQRs, highlighting outliers.
+		- **Scatterplots**: Explore relationships between two variables.
+		  
+		  ---
+		- #### **Using quantile-quantile (Q-Q) plots**
+		- Compare data distribution to a theoretical distribution (e.g., normal).
+		- Deviations from the diagonal line indicate departures from normality.
+		  
+		  ---
+		- ### **Now You Know**
+		- #### **Steps of a statistical test**
+		- Define null and alternative hypotheses.
+		- Select the appropriate test.
+		- Compute the test statistic and p-value.
+		- Compare the p-value to the significance threshold (α).
+		- Draw conclusions.
+		  
+		  ---
+		- #### **Why steps matter even with software**
+		- Understanding steps ensures proper test selection and interpretation.
+		- Helps diagnose issues like violations of assumptions.
+		  
+		  ---
+		- #### **What a p-value is (and is not)**
+		- **Is**: Probability of observing results as extreme as the sample, assuming H₀ is true.
+		- **Is not**: The probability that H₀ is true or the probability of the observed data.
+		  
+		  ---
+		- ### **Now You Know**
+		- #### **What power and significance are**
+		- **Significance (α)**: Probability of Type I error (false positive).
+		- **Power (1 - β)**: Probability of correctly rejecting H₀ (avoiding a Type II error).
+		  
+		  ---
+		- #### **Relation to Type I and Type II errors**
+		- Lower α reduces Type I errors but increases Type II errors.
+		- High power reduces Type II errors but requires larger sample sizes.
+		  
+		  ---
+		- #### **Using power analysis**
+		- Plan sample size for adequate power.
+		- Avoid using power analysis post hoc to justify results.
 	- ### **Writing ("Now You Know" Solutions)**
 	  collapsed:: true
 		- #### 1.  **Preparation**
