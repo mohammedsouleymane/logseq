@@ -431,7 +431,7 @@
 	- **Diplomacy**: Feedback should be constructive and professional, avoiding unnecessary criticisms on trivial details.
 	  
 	  ---
-	- ### 5.  **Challenges and Criticisms of Peer Review**
+	- ### 5.  **Challenges and Criticisms of Peer Review(hesf)**
 	- **Human Bias**:
 		- Personal biases (e.g., institutional reputation, nationality, gender) can influence decisions.
 		- Conformist research often fares better than innovative or interdisciplinary work.
@@ -442,7 +442,7 @@
 	- **Fraud**: Ethical breaches include delaying reviews, rejecting competitors’ work, or stealing ideas.
 	  
 	  ---
-	- ### 6.  **Alternatives to Peer Review**
+	- ### 6.  **Alternatives to Peer Review**(nond)
 	- **No Review**: Publishing without peer review or limited to checking for methodological soundness.
 	- **Open Review**: Reviewers and authors openly identify themselves.
 	- **Non-Anonymous Peer Review**: Transparency but potential for retaliation or bias.
