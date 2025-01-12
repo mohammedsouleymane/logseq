@@ -529,6 +529,7 @@
 			- Prevents disorganized or opportunistic research.
 			- Facilitates data analysis and report writing.
 	- ### **Statistics ("Now You Know" Solutions)**
+	  collapsed:: true
 		- ### **Now You Know**
 		- #### **Why we need descriptive statistics**
 		- Descriptive statistics summarize raw data to make it comprehensible.
