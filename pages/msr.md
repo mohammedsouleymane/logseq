@@ -726,7 +726,7 @@
 		- Here’s a detailed solution for the **"Now You Know" sections** from the **Writing Guide ("Methods of Scientific Research")**:
 		  
 		  ---
-		- ### **Preparation**
+		- ### **Preparation** (pavmbs)
 		- **Key Points**:
 			- **Purpose**:
 				- Define the purpose of your text (e.g., reporting results, reviewing, proposing).
