@@ -753,7 +753,7 @@
 		  ---
 		- ### **Organization**
 		- **Key Points**:
-			- **Canonical Structure**:
+			- **Canonical Structure**: AIMRD
 				- Follow the standard scientific structure:
 					- **Abstract**: Condense the essence of the study.
 					- **Introduction**: Present the context and research questions.
