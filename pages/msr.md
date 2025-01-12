@@ -529,21 +529,23 @@
 			- Prevents disorganized or opportunistic research.
 			- Facilitates data analysis and report writing.
 	- ### **Statistics ("Now You Know" Solutions)**
-	  collapsed:: true
 		- ### **Now You Know**
 		- #### **Why we need descriptive statistics**
 		- Descriptive statistics summarize raw data to make it comprehensible.
+		  collapsed:: true
 			- **Measures of central tendency** (e.g., mean, median) provide insights into the "center" of data.
 			- **Measures of spread** (e.g., range, standard deviation) describe variability.
 			- Visual tools like histograms, boxplots, and scatterplots reveal patterns and distributions.
 			  
 			  ---
 		- #### **The different measurement scales**
+		  collapsed:: true
 			- **Nominal**: Categories without an inherent order (e.g., gender, colors).
 			- **Ordinal**: Categories with an order but unequal intervals (e.g., Likert scales[disagree, somewhat agree, agree]) no difference.
 			- **Interval**: Ordered categories with meaningful intervals but no true zero (e.g., temperature in Celsius, dates) you can calculate differences.
 			- **Ratio**: Ordered categories with meaningful intervals and a true zero (e.g., weight, height, temp in kelvin).
 		- #### **A little bit about distributions**
+		  collapsed:: true
 			- Distributions show how data points are spread.
 				- Common distributions include **normal distribution** (bell curve) and **skewed distributions**.
 				- **Probability Density Function (PDF)** describes the likelihood of values within a range.
