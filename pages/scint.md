@@ -9,13 +9,18 @@
 - What is FFP + example + causes + reasons
   logseq.order-list-type:: number
 	- FFP(Falsification, Fabrication, Plagiarism) is science fraud. It includes any deliberate act that hinders the positive development of scientific thinking.
-	- Examples: Making up experiments to convince others of a perceived truth. Publishing a translation of an already published article without disclosing that is a translation.
+	- Examples:
+	  collapsed:: true
+		- Making up experiments to convince others of a perceived truth.
+		- Publishing a translation of an already published article without disclosing that is a translation.
 	- Causes:
+	  collapsed:: true
 		- Insufficient instruction on methodology,
 		- lack of ethics training, time constraints,
 		- publication pressure,
 		- personal attitude.
 	- Reasons:
+	  collapsed:: true
 		- Feeling one's work is insignificant,
 		- lack of time, lack of awareness,
 		- believing that the data is wrong while personal beliefs are right,
@@ -24,14 +29,18 @@
   logseq.order-list-type:: number
 	- QRP(Questionable Research Practices) is sloppy science. It includes thoughtless acts that may hinder scientific thinking. QRP is worse than science fraud because it is much more prevalent.
 	- Examples:
+	  collapsed:: true
 		- Cherry-picking data,
-		- omitting data to achieve significant results, and inadequate peer review.
+		- omitting data to achieve significant results,
+		- inadequate peer review.
 	- Causes:
+	  collapsed:: true
 		- Insufficient instruction on methodology,
 		- lack of ethics training, time constraints,
 		- publication pressure,
 		- personal attitude.
 	- Reasons:
+	  collapsed:: true
 		- Feeling one's work is insignificant,
 		- lack of time,
 		- lack of awareness,
