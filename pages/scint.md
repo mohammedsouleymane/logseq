@@ -132,8 +132,12 @@
 	- The current way of science if facing challenges due to various factors, including the increasing pressure to publish, the influence of funding sources, and the rise of questionable research practice. There are concerns that these pressures can compromise the integrity and reliability of scientific research. The focus on generating publishable results can lead to a neglect of potentially important research that might not yield immediate or sensational findings. This can hinder the progress of science and limit its ability to address crucial societal and scientific challenges.
 - Why is the importance of Hanna Arendt as a philosopher of science?
   logseq.order-list-type:: number
+  collapsed:: true
 	- Important for her work on the nature of evil can be applied to understanding the motivations behind scientific misconduct.
 	- In her book Eichmann in Jerusalem, she argues that Adolf Eichmann, a key figure in the Holocaust, was not a monster but rather a thoughtless bureaucrat who failed to engage in critical thinking and moral reflection. He simply followed orders without considering the ethical implications of his actions.
 	- The sources connect this idea to the realm of sloppy science and fraud, suggesting that some researchers might engage in these practices not out of malice, but because they fail to think critically about the consequences of their actions.
 	- Just as Eichmann's thoughtlessness enabled him to participate in horrific acts, a lack of critical reflection among researchers could lead them o produce flawed or fabricated data, potentially causing harm to others.
-	- Most researchers do not intentionally set out to harm others. Applying Arendt's framework, the sources imply that promoting a culture of critical thinking and moral reflection within the scientific community could help to prevent sloppy science and fraud. By encouraging researchers to think deeply about the ethical implication of their work, the sources gug
+	- Most researchers do not intentionally set out to harm others. Applying Arendt's framework, the sources imply that promoting a culture of critical thinking and moral reflection within the scientific community could help to prevent sloppy science and fraud. By encouraging researchers to think deeply about the ethical implication of their work, the sources suggest that the scientific community can foster a greater sense of responsibility and intergrity.
+- What is the importance of Randy Schekman as a philosopher of science?
+  logseq.order-list-type:: number
+	- Schekmans argues that the pursuit of high impact factor publications has become and end in itself, leading to a "bonus culture" in science t
