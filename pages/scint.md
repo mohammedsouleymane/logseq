@@ -106,4 +106,7 @@
 	- The problem of induction falls into the category of circular reasoning. In essence, the argument for induction is: "Induction works because it has worked before." While this might seem intuitively sound, it doesn't provide a solid, independent foundation for the validity of inductive reasoning.
 - Explain the challenger problem (with O-ring) + importance
   logseq.order-list-type:: number
-	- The challenger space shuttle disaster exemplifies the critical role of data presentation and analysis in scientific decision-making. A key factor in the tragedy was the failure of the engineers to effectively communicate the risks associated with low temperatures and the perfor
+	- The challenger space shuttle disaster exemplifies the critical role of data presentation and analysis in scientific decision-making. A key factor in the tragedy was the failure of the engineers to effectively communicate the risks associated with low temperatures and the performance of the shuttle's O-rings.
+	- The O-ring issue: the space shuttle solid rocket booster were composed of segments joined by rubber O-rings. These rings were designed to seal the joints and prevent hot gases from escaping during launch. However, engineers had concerns about the O-rings' ability to function properly at low temperatures.
+	  
+	  During the pre-launch discussions, engineers presented data on previous O-ring problems using qualitative diagrams
