@@ -48,4 +48,9 @@
 		- prioritizing career advancement
 - Predatory journals and predatory conferences? Why are they a problem?
   logseq.order-list-type:: number
-	- They do not contribute to the advancements of science
+	- They do not contribute to the advancements of science. They often lack rigorous peer review processes, which are crucial for ensuring the quality and reliability of research.
+	- They can damage the reputation of researchers who publish in them. Publications in predatory journals are often not recognized by the scientific community and can harm a researchers career prospects.
+	- They waste resources. Money spent on publishing in these venues could be used to support legitimate research.
+- What was the war of sciences + what does it mean to you
+  logseq.order-list-type:: number
+	- The war of
