@@ -132,4 +132,5 @@
 	- The current way of science if facing challenges due to various factors, including the increasing pressure to publish, the influence of funding sources, and the rise of questionable research practice. There are concerns that these pressures can compromise the integrity and reliability of scientific research. The focus on generating publishable results can lead to a neglect of potentially important research that might not yield immediate or sensational findings. This can hinder the progress of science and limit its ability to address crucial societal and scientific challenges.
 - Why is the importance of Hanna Arendt as a philosopher of science?
   logseq.order-list-type:: number
-	-
+	- Important for her work on the nature of evil can be applied to understanding the motivations behind scientific misconduct.
+	- In her book Eichmann in Jerusalem, she argues that Adolf Eichmann, a key figure in the Holocaust, was not a monster but rather a thoughtless bureaucrat who failed to engage in critical thinking and moral reflection
