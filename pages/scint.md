@@ -14,4 +14,7 @@
 	- Reasons: Feeling one's work is insignificant, lack of time, lack of awareness, believing that the data is wrong while personal beliefs are right, and prioritizing career advancement.
 - What is QRP + examples + causes + reasons
   logseq.order-list-type:: number
-	- QRP(Questionable Research Practices) is sloppy science. It includes thoughtless acts that may
+	- QRP(Questionable Research Practices) is sloppy science. It includes thoughtless acts that may hinder scientific thinking. QRP is worse than science fraud because it is much more prevalent.
+	- Examples: Cherry-picking data, omitting data to achieve significant results, and inadequate peer review.
+	- Causes:
+	- Reasons: insignificant work, lack of time, lack of awareness, believe that data is wrong while personal beliefs are right,
