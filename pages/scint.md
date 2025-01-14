@@ -77,6 +77,7 @@
 		- Conduct research
 		- Implement control measures
 		- Disseminate findings
+	- In essence, the research cycle provides a basic framework for understanding the iterative nature of scientific inquiry. However, the research process recognizes that real-world scientific work is far more complex, dynamic, and influenced by external factors than this simplified cycle suggests.
 - What is Sextus Empiricus Trilemma?
   logseq.order-list-type:: number
 	- Sextus Empiricus's Trilemma: A challenge to epistemic justification
