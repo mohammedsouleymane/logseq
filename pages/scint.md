@@ -104,4 +104,6 @@
 	- The nature of induction: We trust induction because it has worked in the past. We observe that repeated instances of a phenomenon lead to a consistent outcome, and we infer that this outcome will continue to occur in the future. This reliance on past experience to predict future event is the essence of induction.
 	- Circular justificatoin: When we attempt to prove the reliability of induction, we inevitable fall back on inductive reasoning. We might argue: "Induction has worked successfully in many scientific disciplines" (multiple observations). Therefore, "induction is a reliable method" (general conclusion). This argument uses induction to justify itself, making it circular.
 	- The problem of induction falls into the category of circular reasoning. In essence, the argument for induction is: "Induction works because it has worked before." While this might seem intuitively sound, it doesn't provide a solid, independent foundation for the validity of inductive reasoning.
-- logseq.order-list-type:: number
+- Explain the challenger problem (with O-ring) + importance
+  logseq.order-list-type:: number
+	- The challenger space shuttle disaster exemplifies the critical role of data presentation and analysis in scientific decision-making. A key factor in the tragedy was the failure of the engineers to effectively communicate the risks associated with low temperatures and the perfor
