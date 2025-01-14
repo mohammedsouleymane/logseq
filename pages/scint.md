@@ -108,5 +108,5 @@
   logseq.order-list-type:: number
 	- The challenger space shuttle disaster exemplifies the critical role of data presentation and analysis in scientific decision-making. A key factor in the tragedy was the failure of the engineers to effectively communicate the risks associated with low temperatures and the performance of the shuttle's O-rings.
 	- The O-ring issue: the space shuttle solid rocket booster were composed of segments joined by rubber O-rings. These rings were designed to seal the joints and prevent hot gases from escaping during launch. However, engineers had concerns about the O-rings' ability to function properly at low temperatures.
-	  
-	  During the pre-launch discussions, engineers presented data on previous O-ring problems using qualitative diagrams
+	- Data presentation: During the pre-launch discussions, engineers presented data on previous O-ring problems using qualitative diagrams. These diagrams were visually appealing but failed to highlight the crucial correlation between low temperatures and O-ring damage. The diagrams showed instances of O-ring damage across a range of temperatures, leading decision-making to believe that temperature was not a significant factor.
+	- Importance of is
