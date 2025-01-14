@@ -6,7 +6,6 @@
 	  Latour's Philosophy: Science is like Janus, looking forward and back. From a historical perspective, it looks like a series of successes, but for scientists, it's filled with failures. Science is a black box. To understand it, you have to open it up and look at the details of its development, the inconsistencies, and the collaborative efforts involved.
 - What are predatory journals
   logseq.order-list-type:: number
-  collapsed:: true
 	- Predatory journals exploit the pressure to publish. They are journals or conferences that charge fees for the publication but do not provide quality peer review or editorial services.
 - What is FFP + example + causes + reasons
   logseq.order-list-type:: number
@@ -140,14 +139,17 @@
 	- Most researchers do not intentionally set out to harm others. Applying Arendt's framework, the sources imply that promoting a culture of critical thinking and moral reflection within the scientific community could help to prevent sloppy science and fraud. By encouraging researchers to think deeply about the ethical implication of their work, the sources suggest that the scientific community can foster a greater sense of responsibility and intergrity.
 - What is the importance of Randy Schekman as a philosopher of science?
   logseq.order-list-type:: number
+  collapsed:: true
 	- Schekmans argues that the pursuit of high impact factor publications has become and end in itself, leading to a "bonus culture" in science that is as detrimental as the bonus culture in banking. This emphasis on impact factors encourages researches to chase "sexy subjects" and make "challenging claims" to get published in prestigious journals, even if the research is not robust or replicable.
 	- The focus on high-impact publications can discourage important but less flashy research, such as replication studies, which are essential for ensuring the reliability of scientific findings. Schekman's concerns echo a broader discussion in the sources about the pressures faced by academics, including the pressure to publish and the pressure to excel. Schekman advocates for a shift in focus from impact factors to other metrics that better reflect the quality and rigor of research.
 	- Schekman's critique of the current publishing system contributes to a broader discussion in the sources about the need for reform in how scientific research is evaluated and disseminated. His perspective, offers valuable insights into the ethical and practical challenges facing the scientific community
 - What is a reason for sloppiness?
   logseq.order-list-type:: number
+  collapsed:: true
 	- Sloppiness in research stem from factors like insufficient methodological training, time constraints, publication pressure, and personal attitudes. The increasing pressure to publish can incentivize researchers to cut corners or engage in QRPs to produce results quickly. This can lead to a decline and reliability of scientific research.
 - What is the sloppy science spectrum? And why is it not a single group/category?
   logseq.order-list-type:: number
+  collapsed:: true
 	- The sloppy science spectrum encompasses a range of behaviors in the realm of scientific research, spanning from ethically acceptable practices to those that are ethically unacceptable. The spectrum is not a single group or category because it recognizes the diversity and complexity of questionable research practices.
 	- The spectrum acknowledges that there are gray areas where certain actions might be considered tolerable depending on the context and disciplinary norms, while others are clearly reprehensible.
 		- for instance, opportunism or cutting and pasting information might be view as minor infractions, where as fabrication data or engaging in plagiarism are unequivocally serious offenses.
@@ -155,17 +157,21 @@
 	- The concept of a spectrum helps to move beyond a simplistic dichotomy of "good" vs "bad" science, recognizing that research practices exist on a continuum of ethical considerations.
 - What is happening with young scientists?
   logseq.order-list-type:: number
+  collapsed:: true
 	- Young scientists are facing a challenging environment due to intense competition, job insecurity, and the pressure to publish in high-impact journals. This can lead to discouragement and burnout, and some may choose to leave academia altogether. The increasing demands and pressures on young researchers can hinder the development of new generation of scientists and stifle scientific innovation.
 - Give 3 kinds of pressure that academic researchers face
   logseq.order-list-type:: number
+  collapsed:: true
 	- Pressure to excel: They need to excel in all aspects of their work, including research, teaching, management and public engagement
 	  This creates an environment where mediocrity is unacceptable, leading to significant pressure on researchers to perform on a high level across all domains.
 	- High work pressure: Academics often work long hours, with an average work week ranging from 55 to 70 hours -> can lead to burnout
 	- High publication pressure: The system heavily emphasizes publications as a measure of success -> create immense pressure to produce a high volume of publications often at the expense of quality.
 - What did Francis Bacon say?
   logseq.order-list-type:: number
+  collapsed:: true
 	- **Overcoming Human Limitations**:  Bacon argued that human understanding is inherently flawed due to the influence of "traditions, education, senses, passions". He believed that these factors distort our perception of reality, making it difficult to attain objective knowledge. To overcome these limitations, he stressed the importance of researchers working together, engaging in a structured and collaborative process to minimize individual biases and errors.
 	- **The Importance of a Scientific Method**: Bacon advocated for a systematic approach to scientific investigation. He believed that science should be based on a clear protocol, involving the collection of empirical data, careful observation, and logical reasoning.
-	- This emphasis on a structured methodology aimed to ensure the reliability and reproducibility of scientific findings.
+	  This emphasis on a structured methodology aimed to ensure the reliability and reproducibility of scientific findings.
 	- **The True Ends of Knowledge**: Bacon believed that the ultimate goal of science should be to improve human life and well-being.
 	- He argued that knowledge should be pursued "for the benefit and use of life", rather than for personal gain, fame, or power. This ethical dimension of Bacon's thought highlights the responsibility of scientists to use their knowledge for the betterment of society.
+-
