@@ -79,5 +79,7 @@
 		- Conduct research
 		- Implement control measures
 		- Disseminate findings
-- What is sextus empi
+- What is Sextus Empiricus Trilemma?
   logseq.order-list-type:: number
+	- Sextus Empiricus's Trilemma: A challenge to epistemic justification
+	- Sextus Empiricus, a philosopher who proposed a trilemma that challenges our ability to justi
