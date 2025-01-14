@@ -89,3 +89,6 @@
 		   the beliefs we take for granted, things we accept without proof because
 		   they’re seen as “common sense” or “just the way things are.”
 	- The trilemma highlights the difficulty of finding a secure foundation for knowledge. Each of the three options presents a logical flaw, suggesting that absolute certainty in knowledge might be unattainable.
+- Why is induction only provable by induction?
+  logseq.order-list-type:: number
+	-
