@@ -164,4 +164,8 @@
 	- High publication pressure: The system heavily emphasizes publications as a measure of success -> create immense pressure to produce a high volume of publications often at the expense of quality.
 - What did Francis Bacon say?
   logseq.order-list-type:: number
-	- Francis Bacon, in his work Novum Organum, argued that scientific knowledge should be pursued for the betterment of human life, not for personal gain or glory. He advocated for a systematic and empirical approach to scientific inquiry, emphasizing the importance of observation, experiment
+	- **Overcoming Human Limitations**:  Bacon argued that human understanding is inherently flawed due to the influence of "traditions, education, senses, passions". He believed that these factors distort our perception of reality, making it difficult to attain objective knowledge. To overcome these limitations, he stressed the importance of researchers working together, engaging in a structured and collaborative process to minimize individual biases and errors.
+	- **The Importance of a Scientific Method**: Bacon advocated for a systematic approach to scientific investigation. He believed that science should be based on a clear protocol, involving the collection of empirical data, careful observation, and logical reasoning.
+	- This emphasis on a structured methodology aimed to ensure the reliability and reproducibility of scientific findings.
+	- **The True Ends of Knowledge**: Bacon believed that the ultimate goal of science should be to improve human life and well-being.
+	- He argued that knowledge should be pursued "for the benefit and use of life", rather than for personal gain, fame, or power. This ethical dimension of Bacon's thought highlights the responsibility of scientists to use their knowledge for the betterment of society.
