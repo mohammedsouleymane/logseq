@@ -86,4 +86,4 @@
 		- Based on previous knowledge
 		- Based on something that already belongs to our knowledge
 		- Based on knowledge we do not dispute
-	- The trilemma highlights the difficulty of finding a secure foundation for knowledge. Each of the three options presents a logical flaw, suggesting that absolute certain
+	- The trilemma highlights the difficulty of finding a secure foundation for knowledge. Each of the three options presents a logical flaw, suggesting that absolute certainty in knowledge might be unattainable.
