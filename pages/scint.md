@@ -115,5 +115,7 @@
 		- Effective communication
 		- Critical evaluation of data
 		- Openness to dissenting opinions
-	- The Challenger disaster serves as a po
-- logseq.order-list-type:: number
+	- The Challenger disaster serves as a potent reminder that scientific and engineering decisions must be grounded in rigorous analysis, clear communication and a culture that prioritizes safety and critical thinking. It highlights the importance of understanding and addressing the human factors that can influence complex decision-making process
+- What is the problem of the traditional view of science?
+  logseq.order-list-type:: number
+	- The traditional view of science, often presented in textbooks, is often portrayed as a linear, straightforward proces
