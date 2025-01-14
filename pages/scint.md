@@ -55,11 +55,12 @@
   logseq.order-list-type:: number
 	- There is no single scientific method but rather a collection of disciplinary methods. There is also a universal academic method:
 	- Academic method(universal): Referencing providing a foundation for ideas using recognized reference sysetems.
-	- Juxtaposing: Confront and comparing ideas for coherence through publication and presentation.
-	- Assessment: Controlling the quality of ideas through peer review.
-	- Persuasion: Convincingly communication ideas using disciplinary argumentation and rhetorical tools.
-	- Scientific methods (disciplinary): Qualitative: Case studies, interviews and grounded theory. These methods focus on understanding the complexities and nuances of phenomena in their natural settings.
-	- Quantitative: Experiments and surveys. These methods involve the collection of numerical data and statistical analysis to test hypotheses and make predictions.
+		- Juxtaposing: Confront and comparing ideas for coherence through publication and presentation.
+		- Assessment: Controlling the quality of ideas through peer review.
+		- Persuasion: Convincingly communication ideas using disciplinary argumentation and rhetorical tools.
+	- Scientific methods (disciplinary):
+		- Qualitative: Case studies, interviews and grounded theory. These methods focus on understanding the complexities and nuances of phenomena in their natural settings.
+		- Quantitative: Experiments and surveys. These methods involve the collection of numerical data and statistical analysis to test hypotheses and make predictions.
 - What is the importance of Galileo Galilei for publishing
   logseq.order-list-type:: number
 	- GG, published in 1610, is considered a landmark in the history of science communication. It was one of the first works to disseminate scientific findings widely and directly to the public, challenging the traditional control of knowledge by academic institutions. This helped to establish the importance of open communication and sharing of scientific discoveries.
