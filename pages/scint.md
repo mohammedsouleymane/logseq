@@ -146,4 +146,7 @@
 - What is the sloppy science spectrum? And why is it not a single group/category?
   logseq.order-list-type:: number
 	- The sloppy science spectrum encompasses a range of behaviors in the realm of scientific research, spanning from ethically acceptable practices to those that are ethically unacceptable. The spectrum is not a single group or category because it recognizes the diversity and complexity of questionable research practices.
-	- The spectrum acknowledges that there are gray areas where certain actions might be considered tolerable depending on the context and disciplinary norms, while others
+	- The spectrum acknowledges that there are gray areas where certain actions might be considered tolerable depending on the context and disciplinary norms, while others are clearly reprehensible.
+		- for instance, opportunism or cutting and pasting information might be view as minor infractions, where as fabrication data or engaging in plagiarism are unequivocally serious offenses.
+		- The spectrum highlights the dynamic and evolving nature of scientific integrity, where societal and disciplinary standards influence what is deemed acceptable or unacceptable behavior.
+	-
