@@ -8,4 +8,6 @@
 	- Predatory journals exploit the pressure to publish. They are journals or conferences that charge fees for the publication but do not provide quality peer review or editorial services.
 - What is FFP + example + causes + reasons
   logseq.order-list-type:: number
-	- FFP(F
+	- FFP(Falsification, Fabrication, Plagiarism) is science fraud. It includes any deliberate act that hinders the positive development of scientific thinking.
+	- Examples: Making up experiments to convince others of a perceived truth. Publishing a translation of an already published article without disclosing that is a translation.
+	- Causes: Insufficient instruction on methodology, lack of ethics training, time constraints, publication pressure
