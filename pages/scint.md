@@ -133,4 +133,6 @@
 - Why is the importance of Hanna Arendt as a philosopher of science?
   logseq.order-list-type:: number
 	- Important for her work on the nature of evil can be applied to understanding the motivations behind scientific misconduct.
-	- In her book Eichmann in Jerusalem, she argues that Adolf Eichmann, a key figure in the Holocaust, was not a monster but rather a thoughtless bureaucrat who failed to engage in critical thinking and moral reflection
+	- In her book Eichmann in Jerusalem, she argues that Adolf Eichmann, a key figure in the Holocaust, was not a monster but rather a thoughtless bureaucrat who failed to engage in critical thinking and moral reflection. He simply followed orders without considering the ethical implications of his actions.
+	- The sources connect this idea to the realm of sloppy science and fraud, suggesting that some researchers might engage in these practices not out of malice, but because they fail to think critically about the consequences of their actions.
+	- Just as Eichmann's thoughtlessness enabled him to participate in horrific acts, a lack of critical reflection among researchers could lead them o produce flawed or fr
