@@ -160,5 +160,5 @@
   logseq.order-list-type:: number
 	- Pressure to excel: They need to excel in all aspects of their work, including research, teaching, management and public engagement
 	  This creates an environment where mediocrity is unacceptable, leading to significant pressure on researchers to perform on a high level across all domains.
-	- High work pressure:
-	- High publication pressure: The system heavily emphasizes publications as a measure of success
+	- High work pressure: Academics often work long hours, with an average work week ranging from 55 to 70 hours -> can lead to burnout
+	- High publication pressure: The system heavily emphasizes publications as a measure of success -> create immense pressure to produce a high volume of publications often at the expense of quality.
