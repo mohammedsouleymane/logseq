@@ -82,4 +82,8 @@
 - What is Sextus Empiricus Trilemma?
   logseq.order-list-type:: number
 	- Sextus Empiricus's Trilemma: A challenge to epistemic justification
-	- Sextus Empiricus, a philosopher who proposed a trilemma that challenges our ability to justi
+	- Sextus Empiricus, a philosopher who proposed a trilemma that challenges our ability to justify knowledge claims. This trilemma, as outlined in the sources, presents three possible ways to base what we know:
+		- Based on previous knowledge
+		- Based on something that already belongs to our knowledge
+		- Based on knowledge we do not dispute
+	- The trilemma highlights the difficulty of finding a secure foundation for knowledge. Each of the three options presents a logical flaw, suggesting that absolute certain
