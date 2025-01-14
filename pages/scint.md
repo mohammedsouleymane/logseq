@@ -53,4 +53,7 @@
 	- They waste resources. Money spent on publishing in these venues could be used to support legitimate research.
 - What was the war of sciences + what does it mean to you
   logseq.order-list-type:: number
-	- The war of sciences was a conflict that arose in the 1990s between scientist and postmodernist thinkers. It was sparked by the postmodernist critique of the objectivity and universality of scientific knowledge, which some scientists perceived as an attack on science itself. The conflict was intensified by the Sokal hoax, in which in a physicist published a nonsensical paper in a postmodernist journal, highlighting the lack of a rigor in some areas of postmodernist thought. Meaning: The War of sciences
+	- The war of sciences was a conflict that arose in the 1990s between scientist and postmodernist thinkers. It was sparked by the postmodernist critique of the objectivity and universality of scientific knowledge, which some scientists perceived as an attack on science itself. The conflict was intensified by the Sokal hoax, in which in a physicist published a nonsensical paper in a postmodernist journal, highlighting the lack of a rigor in some areas of postmodernist thought.
+	- Meaning: The War of sciences brought to light important issues about the nature of sciences, its relationship to other disciplines, and the role of objectivity and rigor in academic discourse. It led to increased awareness of the importance of clear communication critical thinking in all academic discipline.
+- What is the scientific method for you? (refer to disciplinary )
+  logseq.order-list-type:: number
