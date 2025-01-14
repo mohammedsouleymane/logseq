@@ -155,4 +155,9 @@
 	- The concept of a spectrum helps to move beyond a simplistic dichotomy of "good" vs "bad" science, recognizing that research practices exist on a continuum of ethical considerations.
 - What is happening with young scientists?
   logseq.order-list-type:: number
-	- Young scientists are facing a challenging environment due to intense competetion
+	- Young scientists are facing a challenging environment due to intense competition, job insecurity, and the pressure to publish in high-impact journals. This can lead to discouragement and burnout, and some may choose to leave academia altogether. The increasing demands and pressures on young researchers can hinder the development of new generation of scientists and stifle scientific innovation.
+- Give 3 kinds of pressure that academic researchers face
+  logseq.order-list-type:: number
+	- Pressure to excel
+	- High work pressure
+	- High public
