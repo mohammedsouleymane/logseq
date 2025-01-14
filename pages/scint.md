@@ -1,5 +1,6 @@
 - What does science mean to you + refer to some philosopher of science
   logseq.order-list-type:: number
+  collapsed:: true
 	- Science is a structured way to understand the world and to prevent us from fooling ourselves, as stated by Professor Basterboer. This means there are checks and balances in place. Science can be seen as a product of humans, such as cars and ideas. Ultimately, the goals of science should be well-being, welfare, technological progress, or satisfying the cognitive need of humans to find answers to fundamental questions. Science should develop in an unconstrained manner to maximize the creativity of the researchers. The publication of scientific results should only be for the purpose of controlling and disseminating scientific knowledge.
 	- Different philosophers have different views on science: 
 	  Latour's Philosophy: Science is like Janus, looking forward and back. From a historical perspective, it looks like a series of successes, but for scientists, it's filled with failures. Science is a black box. To understand it, you have to open it up and look at the details of its development, the inconsistencies, and the collaborative efforts involved.
@@ -63,7 +64,7 @@
 - What is the scientific method for you? (refer to disciplinary & academic)
   logseq.order-list-type:: number
   collapsed:: true
-  There is no single scientific method but rather a collection of disciplinary methods. There is also a universal academic method:
+	- There is no single scientific method but rather a collection of disciplinary methods. There is also a universal academic method:
 	- Academic method(universal): Referencing providing a foundation for ideas using recognized reference sysetems.
 	- Juxtaposing: Confront and comparing ideas for coherence through publication and presentation.
 	- Assessment: Controlling the quality of ideas through peer review.
@@ -105,6 +106,7 @@
 	- The problem of induction falls into the category of circular reasoning. In essence, the argument for induction is: "Induction works because it has worked before." While this might seem intuitively sound, it doesn't provide a solid, independent foundation for the validity of inductive reasoning.
 - Explain the challenger problem (with O-ring) + importance
   logseq.order-list-type:: number
+  collapsed:: true
 	- The challenger space shuttle disaster exemplifies the critical role of data presentation and analysis in scientific decision-making. A key factor in the tragedy was the failure of the engineers to effectively communicate the risks associated with low temperatures and the performance of the shuttle's O-rings.
 	- The O-ring issue: the space shuttle solid rocket booster were composed of segments joined by rubber O-rings. These rings were designed to seal the joints and prevent hot gases from escaping during launch. However, engineers had concerns about the O-rings' ability to function properly at low temperatures.
 	- Data presentation: During the pre-launch discussions, engineers presented data on previous O-ring problems using qualitative diagrams. These diagrams were visually appealing but failed to highlight the crucial correlation between low temperatures and O-ring damage. The diagrams showed instances of O-ring damage across a range of temperatures, leading decision-making to believe that temperature was not a significant factor.
@@ -117,10 +119,12 @@
 	- The Challenger disaster serves as a potent reminder that scientific and engineering decisions must be grounded in rigorous analysis, clear communication and a culture that prioritizes safety and critical thinking. It highlights the importance of understanding and addressing the human factors that can influence complex decision-making process
 - What is the problem of the traditional view of science?
   logseq.order-list-type:: number
+  collapsed:: true
 	- The traditional view of science, often presented in textbooks, is often portrayed as a linear, straightforward process. This view can be problematic because it does not accurately reflect the complexities and non-linearity of actual scientific research. The traditional view can give a false impression that science is a simple process of following a set of steps, which can lead to misunderstandings about the nature of scientific inquiry.
 	- Latour: Science is like Janus, looking forward and back. It looks like a series of successes, but for scientists, it's filled with failures. Science is a black box, to understand it, you have to open it up and look at the details of its development, the inconsistencies, and the collaborative efforts involved.
 - How adequate is the traditional view of science? (Hypothetical, experiment, conclusion)
   logseq.order-list-type:: number
+  collapsed:: true
 	- The traditional view of science, which often involves a hypothesis, an experiment, and a conclusion, is not entirely adequate. Real research is much more complex and iterative, and it often involves going back and forth between different stages, adjusting hypotheses, and considering various factors that my influence the results. Trial and error. When you hit a roadblock  you go back make adjustments.
 - How adequate is the current way of science?
   logseq.order-list-type:: number
