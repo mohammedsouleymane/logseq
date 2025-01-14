@@ -158,6 +158,7 @@
 	- Young scientists are facing a challenging environment due to intense competition, job insecurity, and the pressure to publish in high-impact journals. This can lead to discouragement and burnout, and some may choose to leave academia altogether. The increasing demands and pressures on young researchers can hinder the development of new generation of scientists and stifle scientific innovation.
 - Give 3 kinds of pressure that academic researchers face
   logseq.order-list-type:: number
-	- Pressure to excel
-	- High work pressure
-	- High public
+	- Pressure to excel: They need to excel in all aspects of their work, including research, teaching, management and public engagement
+	  This creates an environment where mediocrity is unacceptable, leading to significant pressure on researchers to perform on a high level across all domains.
+	- High work pressure:
+	- High publication pressure: The system heavily emphasizes publications as a measure of success
