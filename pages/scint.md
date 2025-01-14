@@ -122,4 +122,7 @@
 	- Latour: Science is like Janus, looking forward and back. It looks like a series of successes, but for scientists, it's filled with failures. Science is a black box, to understand it, you have to open it up and look at the details of its development, the inconsistencies, and the collaborative efforts involved.
 - How adequate is the traditional view of science? (Hypothetical, experiment, conclusion)
   logseq.order-list-type:: number
-	- The traditional view of science, which often involves a hypothesis, an experiment, and a conclusion, is not entirely adequate. Real research is much more complex and iterative, and it often involves going back and forth between different stages, adjusting hypotheses, and considering various factors that my influence the results. Trial and error always keeps going back and forth
+	- The traditional view of science, which often involves a hypothesis, an experiment, and a conclusion, is not entirely adequate. Real research is much more complex and iterative, and it often involves going back and forth between different stages, adjusting hypotheses, and considering various factors that my influence the results. Trial and error. When you hit a roadblock  you go back make adjustments.
+- How adequate is the current way of science?
+  logseq.order-list-type:: number
+	- The current way of science if facing challenges due to various factors, including the increasing pressure to publish, the influence of funding sources, and the rise of questionable research practice. There are concerns that these pressures can compromise the integrity and reliability of scientific research
