@@ -75,3 +75,9 @@
 		- Adapt the model
 		- Validate and verify
 		- Arrive at a new model
+	- Research Process
+		- Conduct research
+		- Implement control measures
+		- Disseminate findings
+- What is sextus empi
+  logseq.order-list-type:: number
