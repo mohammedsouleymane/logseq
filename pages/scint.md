@@ -145,7 +145,7 @@
 	- Schekman's critique of the current publishing system contributes to a broader discussion in the sources about the need for reform in how scientific research is evaluated and disseminated. His perspective, offers valuable insights into the ethical and practical challenges facing the scientific community
 - What is a reason for sloppiness?
   logseq.order-list-type:: number
-	- Sloppiness in research stem from factors like insufficient metoh
+	- Sloppiness in research stem from factors like insufficient methodological training, time constraints, publication pressure, and personal attitudes. The increasing pressure to publish can incentivize researchers to cut corners or engage in QRPs to produce results quickly. This can lead to a decline and reliability of scientific research.
 - What is the sloppy science spectrum? And why is it not a single group/category?
   logseq.order-list-type:: number
 	- The sloppy science spectrum encompasses a range of behaviors in the realm of scientific research, spanning from ethically acceptable practices to those that are ethically unacceptable. The spectrum is not a single group or category because it recognizes the diversity and complexity of questionable research practices.
@@ -153,4 +153,6 @@
 		- for instance, opportunism or cutting and pasting information might be view as minor infractions, where as fabrication data or engaging in plagiarism are unequivocally serious offenses.
 		- The spectrum highlights the dynamic and evolving nature of scientific integrity, where societal and disciplinary standards influence what is deemed acceptable or unacceptable behavior.
 	- The concept of a spectrum helps to move beyond a simplistic dichotomy of "good" vs "bad" science, recognizing that research practices exist on a continuum of ethical considerations.
-- logseq.order-list-type:: number
+- What is happening with young scientists?
+  logseq.order-list-type:: number
+	- Young scientists are facing a challenging environment due to intense competetion
