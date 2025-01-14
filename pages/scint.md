@@ -120,3 +120,6 @@
   logseq.order-list-type:: number
 	- The traditional view of science, often presented in textbooks, is often portrayed as a linear, straightforward process. This view can be problematic because it does not accurately reflect the complexities and non-linearity of actual scientific research. The traditional view can give a false impression that science is a simple process of following a set of steps, which can lead to misunderstandings about the nature of scientific inquiry.
 	- Latour: Science is like Janus, looking forward and back. It looks like a series of successes, but for scientists, it's filled with failures. Science is a black box, to understand it, you have to open it up and look at the details of its development, the inconsistencies, and the collaborative efforts involved.
+- How adequate is the traditional view of science? (Hypothetical, experiment, conclusion)
+  logseq.order-list-type:: number
+	- The traditional view of science, which often involves a hypothesis, an experiment, and a conclusion, is not entirely adequate. Real research is much more complex and iterative, and it often involves going back and forth between different stages, adjusting hypotheses, and considering various factors that my influence the results. Trial and error always keeps going back and forth
