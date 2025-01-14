@@ -85,11 +85,10 @@
 	- Sextus Empiricus, a philosopher who proposed a trilemma that challenges our ability to justify knowledge claims. This trilemma, as outlined in the sources, presents three possible ways to base what we know:
 		- Based on previous knowledge: **Infinite regress** is the never-ending chain of “why” questions.
 		- Based on something that already belongs to our knowledge: **Circular reasoning** loops back on itself - “A is true because B is true, and B is true because A says so.
-		- **Dogmatism**: They’re
-		   the beliefs we take for granted, things we accept without proof because
-		   they’re seen as “common sense” or “just the way things are.”
+		- **Dogmatism**: They’re the beliefs we take for granted, things we accept without proof because they’re seen as “common sense” or “just the way things are.”
 	- The trilemma highlights the difficulty of finding a secure foundation for knowledge. Each of the three options presents a logical flaw, suggesting that absolute certainty in knowledge might be unattainable.
 - Why is induction only provable by induction?
   logseq.order-list-type:: number
 	- Induction reasoning involves drawing general conclusions from specific observations. The problem arises because the very act of justifying induction relies on inductive reasoning itself, creating a circular argument.
 	- The nature of induction: We trust induction because it has worked in the past. We observe that repeated instances of a phenomenon lead to a consistent outcome, and we infer that this outcome will continue to occur in the future. This reliance on past experience to predict future event is the essence of induction.
+	- Circular justificatoin: When we attempt to prove the reliability of induction, we inevitable fall back on inductive reasoning. We might argue: "Induction has worked successfully in many scientific disciplines" (multiple observations). Therefore, "induction is a reliable method" (general conclusion). This argument uses induction
