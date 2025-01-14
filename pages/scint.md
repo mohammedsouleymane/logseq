@@ -59,4 +59,8 @@
   logseq.order-list-type:: number
   There is no single scientific method but rather a collection of disciplinary methods. There is also a universal academic method:
 	- Academic method(universal): Referencing providing a foundation for ideas using recognized reference sysetems.
-	- Juxtaposing: Confrot
+	- Juxtaposing: Confront and comparing ideas for coherence through publication and presentation.
+	- Assessment: Controlling the quality of ideas through peer review.
+	- Persuasion: Convincingly communication ideas using disciplinary argumentation and rhetorical tools.
+	- Scientific methods (disciplinary): Qualitative: Case studies, interviews and grounded theory. These methods focus on understanding the complexities and nuances of phenomena in their natural settings.
+	- Quantitative: Experiments and surveys.
