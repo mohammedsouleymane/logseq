@@ -1,6 +1,5 @@
 - What does science mean to you + refer to some philosopher of science
   logseq.order-list-type:: number
-  collapsed:: true
 	- Science is a structured way to understand the world and to prevent us from fooling ourselves, as stated by Professor Basterboer. This means there are checks and balances in place. Science can be seen as a product of humans, such as cars and ideas. Ultimately, the goals of science should be well-being, welfare, technological progress, or satisfying the cognitive need of humans to find answers to fundamental questions. Science should develop in an unconstrained manner to maximize the creativity of the researchers. The publication of scientific results should only be for the purpose of controlling and disseminating scientific knowledge.
 	- Different philosophers have different views on science: 
 	  Latour's Philosophy: Science is like Janus, looking forward and back. From a historical perspective, it looks like a series of successes, but for scientists, it's filled with failures. Science is a black box. To understand it, you have to open it up and look at the details of its development, the inconsistencies, and the collaborative efforts involved.
@@ -125,4 +124,5 @@
 	- The traditional view of science, which often involves a hypothesis, an experiment, and a conclusion, is not entirely adequate. Real research is much more complex and iterative, and it often involves going back and forth between different stages, adjusting hypotheses, and considering various factors that my influence the results. Trial and error. When you hit a roadblock  you go back make adjustments.
 - How adequate is the current way of science?
   logseq.order-list-type:: number
-	- The current way of science if facing challenges due to various factors, including the increasing pressure to publish, the influence of funding sources, and the rise of questionable research practice. There are concerns that these pressures can compromise the integrity and reliability of scientific research
+  collapsed:: true
+	- The current way of science if facing challenges due to various factors, including the increasing pressure to publish, the influence of funding sources, and the rise of questionable research practice. There are concerns that these pressures can compromise the integrity and reliability of scientific research. The focus on generating publishable results can lead to a neglect of potentially important research that might not yield immediate or sensational findings. This can hinder the progress of science and limit its ability to address crucial societal and scientific challenges.
