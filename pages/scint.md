@@ -66,6 +66,7 @@
 	- GG, published in 1610, is considered a landmark in the history of science communication. It was one of the first works to disseminate scientific findings widely and directly to the public, challenging the traditional control of knowledge by academic institutions. This helped to establish the importance of open communication and sharing of scientific discoveries.
 - What is the research cycle and what is the research process
   logseq.order-list-type:: number
+  The research cycle is a simplified, idealized representation of how scientific knowledge is generated and refined. The research process, on the other hand, delves into the complexities and realities of scientific work, acknowledging the messiness, non-linearity, and external influences that shape research.
 	- Research Cycle (seava)
 		- Start with a model that works
 		- Encounter an anomaly
