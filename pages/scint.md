@@ -85,5 +85,7 @@
 	- Sextus Empiricus, a philosopher who proposed a trilemma that challenges our ability to justify knowledge claims. This trilemma, as outlined in the sources, presents three possible ways to base what we know:
 		- Based on previous knowledge
 		- Based on something that already belongs to our knowledge
-		- Based on knowledge we do not dispute
+		- Based on knowledge we do not dispute: They’re
+		   the beliefs we take for granted, things we accept without proof because
+		   they’re seen as “common sense” or “just the way things are.”
 	- The trilemma highlights the difficulty of finding a secure foundation for knowledge. Each of the three options presents a logical flaw, suggesting that absolute certainty in knowledge might be unattainable.
