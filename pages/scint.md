@@ -140,4 +140,4 @@
 	- Most researchers do not intentionally set out to harm others. Applying Arendt's framework, the sources imply that promoting a culture of critical thinking and moral reflection within the scientific community could help to prevent sloppy science and fraud. By encouraging researchers to think deeply about the ethical implication of their work, the sources suggest that the scientific community can foster a greater sense of responsibility and intergrity.
 - What is the importance of Randy Schekman as a philosopher of science?
   logseq.order-list-type:: number
-	- Schekmans argues that the pursuit of high impact factor publications has become and end in itself, leading to a "bonus culture" in science t
+	- Schekmans argues that the pursuit of high impact factor publications has become and end in itself, leading to a "bonus culture" in science that is as detrimental as the bonus culture in banking. This emphasis on impact factors encourages researches to chase "sexy subjects" and make "challenging claims" to get published in prestigious journals, even if the research is not robust or replicable.
