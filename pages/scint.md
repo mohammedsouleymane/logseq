@@ -162,3 +162,6 @@
 	  This creates an environment where mediocrity is unacceptable, leading to significant pressure on researchers to perform on a high level across all domains.
 	- High work pressure: Academics often work long hours, with an average work week ranging from 55 to 70 hours -> can lead to burnout
 	- High publication pressure: The system heavily emphasizes publications as a measure of success -> create immense pressure to produce a high volume of publications often at the expense of quality.
+- What did Francis Bacon say?
+  logseq.order-list-type:: number
+	- Francis Bacon, in his work Novum Organum, argued that scientific knowledge should be pursued for the betterment of human life, not for personal gain or glory. He advocated for a systematic and empirical approach to scientific inquiry, emphasizing the importance of observation, experiment
