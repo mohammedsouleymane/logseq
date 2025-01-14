@@ -92,4 +92,4 @@
 - Why is induction only provable by induction?
   logseq.order-list-type:: number
 	- Induction reasoning involves drawing general conclusions from specific observations. The problem arises because the very act of justifying induction relies on inductive reasoning itself, creating a circular argument.
-	- The nature of induction: We trust induction because it has worked in the past. We observe that repeated instances of a phenomenon lead to a consistent outcome, and we infer that this outcome will continue to occur in the future. This reliance on past experience
+	- The nature of induction: We trust induction because it has worked in the past. We observe that repeated instances of a phenomenon lead to a consistent outcome, and we infer that this outcome will continue to occur in the future. This reliance on past experience to predict future event is the essence of induction.
