@@ -46,3 +46,6 @@
 		- lack of awareness,
 		- believe that data is wrong while personal beliefs are right and
 		- prioritizing career advancement
+- Predatory journals and predatory conferences? Why are they a problem?
+  logseq.order-list-type:: number
+	- They do not contribute to the advancements of science
