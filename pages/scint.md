@@ -142,4 +142,6 @@
   logseq.order-list-type:: number
 	- Schekmans argues that the pursuit of high impact factor publications has become and end in itself, leading to a "bonus culture" in science that is as detrimental as the bonus culture in banking. This emphasis on impact factors encourages researches to chase "sexy subjects" and make "challenging claims" to get published in prestigious journals, even if the research is not robust or replicable.
 	- The focus on high-impact publications can discourage important but less flashy research, such as replication studies, which are essential for ensuring the reliability of scientific findings. Schekman's concerns echo a broader discussion in the sources about the pressures faced by academics, including the pressure to publish and the pressure to excel. Schekman advocates for a shift in focus from impact factors to other metrics that better reflect the quality and rigor of research.
-	- logseq.order-list-type:: number
+	- Schekman's critique of the current publishing system contributes to a broader discussion in the sources about the need for reform in how scientific research is evaluated and disseminated. His perspective, offers valuable insights into the ethical and practical challenges facing the scientific community
+- What is the sloppy science spectrum?
+  logseq.order-list-type:: number
