@@ -112,6 +112,7 @@
 		  
 		  The "Cake pattern," which uses Scala language constructs like self types, is one way to implement dependency inversion [8]. However, it can be complex to understand and implement correctly [9]. Another approach is to use dependency injection frameworks, which automatically create and inject instances of dependencies [8]. These frameworks can simplify development but introduce an external dependency on the framework itself [10].
 	- Role of the ephemeral child in the aggregator pattern. Include a diagram
+	  collapsed:: true
 		- The Aggregator pattern is used to collect responses from multiple services and combine them into a single result. [1] The **ephemeral child** plays a vital role in this pattern by simplifying the process of aggregating results from multiple asynchronous operations. It acts as a temporary actor dedicated to receiving and processing responses from the various services involved in fulfilling the request.
 		- Here's a breakdown of the role of the ephemeral child, illustrated with a diagram
 		- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcGQMvIVX9piqi5sV3V0aL1j92zdt1JUNUUmE1N_OpixLwZXLClW8OZTxbkK6yJX0FyYV6QEzykT8dhta-C5Ami9BaWJLjqSI9N6EQ_s1N8SRr__emBqOMSIvyY1aQEYhEhqKH03Q?key=2EMOWLWo9n_tfDzOLam1Il8W)
@@ -120,4 +121,32 @@
 			- **Simplified State Management:** The aggregator child encapsulates the logic for collecting and combining results, reducing complexity in the parent actor.
 			- **Improved Responsiveness:** Parallel requests to services enhance overall response time.
 			- **Clean Code Structure:** The ephemeral nature of the child ensures automatic cleanup after task completion, leading to more readable and maintainable code.
+	- Sketch and explain the Ask pattern and its variant using an ephemeral child.
+		- The **Ask pattern** is a messaging pattern used in actor-based systems to **reliably request a response from an actor**. It addresses the challenge of handling responses to requests in asynchronous messaging environments where the requester and responder actors operate concurrently.
+		  
+		  **Challenges Addressed by the Ask Pattern:**
+		- **Correlating Responses with Requests**: In asynchronous messaging, responses might arrive out of order or with delays. The Ask pattern helps match responses to the original requests.
+		- **Handling Timeouts**: The Ask pattern provides mechanisms to handle situations where a response is not received within a specified timeframe.
+		- **Avoiding Protocol Pollution**: Directly handling responses within the requester actor can clutter its protocol and make it susceptible to errors caused by mismatched responses.
+		  
+		  **Core Idea of the Ask Pattern:**
+		  
+		  The essence of the Ask pattern is to **delegate the handling of a response to a dedicated, short-lived component**. This dedicated component, typically an ephemeral child actor, is spawned by the requester actor for each request. The child actor acts as a proxy, receiving the response from the responder actor and forwarding it to the original requester. This approach ensures that:
+		- Responses are correctly correlated with their corresponding requests.
+		- Timeouts can be managed by the child actor, keeping the requester's logic clean.
+		- The requester actor's message protocol remains uncluttered by response handling.
+		  
+		  **Implementation of the Ask Pattern Using an Ephemeral Child:**
+		- **Requester Sends Request with Reply-To**: The requester actor sends the request message to the responder actor, including the address of the ephemeral child actor as the "reply-to" address.
+		- **Ephemeral Child Handles Response**: The responder actor sends the response to the ephemeral child actor.
+		- **Child Forwards Response to Requester**: The child actor receives the response and forwards it to the original requester actor.
+		- **Child Terminates**: Once the response is forwarded, the ephemeral child actor terminates, ensuring it doesn't interfere with future requests.
+		  
+		  **Benefits of Using an Ephemeral Child:**
+		- **Isolation**: The child actor isolates the response handling logic from the requester actor.
+		- **Cleanup**: The child actor automatically terminates after fulfilling its purpose, simplifying resource management.
+		- **Error Handling**: The child actor can handle timeouts and errors specific to the request, providing a localized error handling mechanism.
+		  
+		  The Ask pattern with an ephemeral child is a common and powerful technique in Akka actor systems. It promotes clean code, improves reliability, and simplifies the management of asynchronous communication between actors.
+		- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf2fH61ORywAcpwDGla-12fhEkHd5hoqI7dptd1_3lr7t75mSN_g9RqFoS9crtIK628h7PBHMavlCFAL6yORUILPKSAbt0zm7z7C0SwxByh25fvEnuT-qQkir5OG4M8H3yHqHED7w?key=2EMOWLWo9n_tfDzOLam1Il8W)
 -
