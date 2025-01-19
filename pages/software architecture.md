@@ -10,5 +10,80 @@
 			- Akka actors are active components that can be started, stopped, and restarted, providing lifecycle management capabilities.
 		- **Enable Separation of Concerns**: Fault recovery code, which is a cross-cutting concern, should be separated from normal processing code.
 			- In Akka, actor message processing logic is separated from fault recovery logic, allowing them to be defined and evolve independently.
-	-
+	- Write code for a Counter actor that counts received messages and can return the count. Implement it with and without field assignment.
+		- ### Counter Actor with Field Assignment
+		  
+		  This implementation uses a field to store the current count.
+		  
+		  ```
+		  object CounterWithField {
+		  sealed trait Command
+		  case object Increment extends Command
+		  case object GetCount extends Command
+		  final case class Count(value: Int)
+		  
+		  def apply(): Behavior[Command] = Behaviors.setup { context =>
+		    var count = 0
+		  
+		    Behaviors.receiveMessage { message =>
+		      message match {
+		        case Increment =>
+		          count += 1
+		          Behaviors.same
+		        case GetCount =>
+		          context.replyTo ! Count(count)
+		          Behaviors.same
+		      }
+		    }
+		  }
+		  }
+		  ```
+		  
+		  This code defines:
+		- A sealed trait `Command` representing the messages the actor can receive.
+		- A case object `Increment` for incrementing the counter.
+		- A case object `GetCount` for requesting the current count.
+		- A case class `Count` to hold the count value when replying to `GetCount`.
+		- The `apply` method returns the initial behavior of the actor.
+			- It initializes a mutable variable `count` to 0.
+			- The `Behaviors.receiveMessage` block defines how the actor handles incoming messages.
+				- For `Increment`, it increments the `count` and returns `Behaviors.same`, indicating that the actor's behavior remains unchanged.
+				- For `GetCount`, it sends the current `count` wrapped in a `Count` message to the `context.replyTo` (the sender of the `GetCount` message) and returns `Behaviors.same`.
+				  
+				  This implementation demonstrates the basic structure of an Akka actor and how it can be used to maintain and update state.
+		- ### Counter Actor without Field Assignment
+		  
+		  This implementation uses a recursive function to pass the current count between invocations of the behavior function, avoiding field assignment.
+		  
+		  ```
+		  object CounterWithoutField {
+		  sealed trait Command
+		  case object Increment extends Command
+		  case object GetCount extends Command
+		  final case class Count(value: Int)
+		  
+		  def apply(count: Int = 0): Behavior[Command] = Behaviors.receiveMessage {
+		    message =>
+		      message match {
+		        case Increment =>
+		          apply(count + 1)
+		        case GetCount =>
+		          context.replyTo ! Count(count)
+		          Behaviors.same
+		      }
+		  }
+		  }
+		  ```
+		  
+		  This code is similar to the previous example but with these key differences:
+		- The `apply` method takes an optional `count` parameter, defaulting to 0, and returns a `Behavior[Command]`.
+		- It directly uses `Behaviors.receiveMessage` to handle messages.
+			- For `Increment`, it calls `apply` again with the incremented count, effectively creating a new behavior with the updated count.
+			- For `GetCount`, it behaves the same as the previous example.
+			  
+			  This implementation showcases a more functional approach to state management in Akka actors by using recursion and immutability.
+			  
+			  **Both implementations achieve the same goal of counting received messages and providing the count.** Choosing between them depends on your preference for a more object-oriented (with field assignment) or functional (without field assignment) style. The second implementation is **generally considered more idiomatic in the Akka world** due to its emphasis on immutability and functional programming principles.
+			  
+			  <!--EndFragment-->
 -
