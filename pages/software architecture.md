@@ -154,12 +154,12 @@
 		- Service-Oriented Architecture (SOA) offers several advantages for building distributed systems:
 			- **Interoperability:** SOA promotes interoperability by enabling communication between components running on different platforms, potentially using different programming languages, and possibly residing across the internet. This is achieved through the use of standardized protocols and connectors like:
 				- **SOAP connector**: Enables synchronous communication between web services, typically over HTTP, and uses WSDL (Web Service Description Language) for service descriptions.
-				- **REST connector**: Leverages the inherent request/reply operations of HTTP for communication.
+				- **REST connector**: request/reply operations of HTTP for communication.
 			- **Legacy System Integration:** SOA facilitates the integration of legacy systems by exposing their functionality as services. This allows modern applications to interact with older systems without requiring significant modifications to the legacy codebase.
 			- **Dynamic Reconfiguration:** The loose coupling inherent in SOA, where service consumers and providers interact through well-defined interfaces, enables dynamic reconfiguration. This allows for adding, removing, or updating services at runtime without impacting other parts of the system. For example, a service registry can be used to discover available services at runtime, making the system more flexible and adaptable to change.
 		- The following components and connectors contribute to realizing these advantages:
 		- **Components:**
-		- **Service Providers:** These components offer one or more services through published interfaces, often accompanied by a Service Level Agreement (SLA) that outlines performance and availability guarantees.
+		- **Service Providers:** These components offer one or more services through published interfaces.
 		- **Service Consumers:** These components use the services provided by service providers, either directly or through intermediaries.
 		- **Service Registry:** A centralized repository where service providers register their services and service consumers discover available services. This fosters location transparency by decoupling service consumers from the physical location of service providers.
 		- **Orchestration Server:** Coordinates interactions between service consumers and providers based on predefined business processes and workflows. Orchestration can be implemented using scripting languages or specialized workflow engines, providing a centralized point of control for complex interactions.
