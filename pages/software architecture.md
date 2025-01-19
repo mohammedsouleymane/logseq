@@ -1,6 +1,5 @@
 - examens questions
 	- Fault Tolerance desiderata: What are they, and how does the Akka Actor system address them?
-	  collapsed:: true
 		- The fault tolerance infrastructure desiderata are a set of requirements that a system should meet to be able to handle faults effectively. The Akka Actor system provides solutions to these requirements.
 		- **Support Component Compartmentalization**: A faulty component should be isolated from others to prevent the fault from escalating to a total system crash.
 			- Akka actors are supervised and organized hierarchically. A supervisor can decide to terminate a faulty actor, removing it from the system, and the hierarchy enables replacing actors at runtime.
@@ -121,7 +120,6 @@
 			- **Improved Responsiveness:** Parallel requests to services enhance overall response time.
 			- **Clean Code Structure:** The ephemeral nature of the child ensures automatic cleanup after task completion, leading to more readable and maintainable code.
 	- Sketch and explain the Ask pattern and its variant using an ephemeral child.
-	  collapsed:: true
 		- The **Ask pattern** is a messaging pattern used in actor-based systems to **reliably request a response from an actor**. It addresses the challenge of handling responses to requests in asynchronous messaging environments where the requester and responder actors operate concurrently.
 		  
 		  **Challenges Addressed by the Ask Pattern:**
