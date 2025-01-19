@@ -148,6 +148,7 @@
 		  The Ask pattern with an ephemeral child is a common and powerful technique in Akka actor systems. It promotes clean code, improves reliability, and simplifies the management of asynchronous communication between actors.
 		- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf2fH61ORywAcpwDGla-12fhEkHd5hoqI7dptd1_3lr7t75mSN_g9RqFoS9crtIK628h7PBHMavlCFAL6yORUILPKSAbt0zm7z7C0SwxByh25fvEnuT-qQkir5OG4M8H3yHqHED7w?key=2EMOWLWo9n_tfDzOLam1Il8W)
 	- Advantages of Service-Oriented Architecture (SOA) and the components/connectors contributing to them. (ILD)
+	  collapsed:: true
 		- Service-Oriented Architecture (SOA) offers several advantages for building distributed systems:
 			- **Interoperability:** SOA promotes interoperability by enabling communication between components running on different platforms, potentially using different programming languages, and possibly residing across the internet. This is achieved through the use of standardized protocols and connectors like:
 				- **SOAP connector**: Enables synchronous communication between web services, typically over HTTP, and uses WSDL (Web Service Description Language) for service descriptions.
@@ -167,6 +168,7 @@
 		  
 		  While SOA offers significant benefits, it's important to be aware of potential drawbacks, including the complexity of building and managing SOA systems, performance overhead introduced by the middleware layer, and the challenges of controlling the evolution of independently developed services.
 	- Implement at-least-once and exactly-once delivery on top of at-most-once systems. Highlight where extra state needs to be maintained.
+	  collapsed:: true
 		- **At-most-once delivery**:
 			- No state needs to be maintained by the sender or receiver, as the message is simply sent without
 			  considering its successful arrival.
@@ -178,6 +180,7 @@
 			- the same principle as at-least-once delivery must be followed, but additional state must be maintained by the receiver to ensure that the receiver processes the messages only once, even if the message arrives multiple times due to a lost acknowledgment message.
 			- Messages can thus be delivered multiple times but will only be processed once.
 	- Event-sourcing pattern: Why is it important to keep events and commands
+	  collapsed:: true
 	  separate?
 		- In the context of the Event-Sourcing pattern, maintaining a clear separation between events and commands is crucial for properly handling side effects, especially during recovery from failures.
 		  id:: 678d7829-2714-4cea-8f36-20d0c5a523cf
@@ -192,4 +195,13 @@
 		  During recovery, the event-sourced service will rehydrate its state by replaying the events from the event log. **If events and commands are not strictly separated, side effects might be executed again during recovery, leading to unintended consequences**. For example, if a "PaymentApproved" event triggers an email notification to the customer, replaying this event during recovery would result in the customer receiving the notification again, even though the payment was already approved [1].
 		  
 		  **By keeping commands and events distinct, developers ensure that side effects are only executed once, maintaining data consistency and avoiding unintended behavior during recovery.**
+	- Crosscutting concerns
+		- There are crosscutting concerns such as logging, exception handling, etc., which can lead to code scattering
+		  and tangling.
+			- Scattering means that the implementation for that concern is spread across many places.
+			- Tangling means that the implementation is intertwined with the implementation of other concerns.
+			- Both phenomena can lead to problems in understanding the code and its maintainability.
+			  The Aspect-Oriented pattern attempts to separate crosscutting concerns into a separate module and prevent the above phenomena by using the programming construct called ”aspect.” Such an aspect consists of an advice and a pointcut expression.
+				- Advice contains the actual code for the cross-cutting concern.
+				- Pointcut expression specifies the join points in the base code where the cross-cutting concern code should be combined with the base code. These join points are specific to each AOP language based on their join point model (e.g., method invocation, error throwing, etc.)
 -
