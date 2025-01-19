@@ -170,4 +170,19 @@
 		- **Asynchronous messaging connector:** Uses a messaging system like a message queue to facilitate point-to-point or publish-subscribe asynchronous message exchanges. This decoupling allows independence, enhances scalability and resilience. 
 		  
 		  While SOA offers significant benefits, it's important to be aware of potential drawbacks, including the complexity of building and managing SOA systems, performance overhead introduced by the middleware layer, and the challenges of controlling the evolution of independently developed services.
+	- Implement at-least-once and exactly-once delivery on top of at-most-once systems. Highlight where extra state needs to be maintained.
+		- At-most-once delivery:
+		- No state needs to be maintained by the sender or receiver, as the message is simply sent without
+		  considering its successful arrival.
+		- A message is thus delivered [0, 1] times.
+		  At-least-once delivery:
+		- State must be maintained by the sender so that it will keep resending the message until it receives
+		  an acknowledgment from the recipient that the message has arrived, ensuring that the message has
+		  been successfully delivered at least once.
+		  • A message is thus delivered [1, ] times, as the acknowledgment message itself can also be lost.
+		  Exactly-once delivery:
+		  • The same principle as at-least-once delivery must be followed, but additional state must be maintained
+		  by the receiver to ensure that the receiver processes the messages only once, even if the message arrives
+		  multiple times due to a lost acknowledgment message.
+		  • Messages can thus be delivered multiple times but will only be processed once.
 -
