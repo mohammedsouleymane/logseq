@@ -114,4 +114,10 @@
 	- Role of the ephemeral child in the aggregator pattern. Include a diagram
 		- The Aggregator pattern is used to collect responses from multiple services and combine them into a single result. [1] The **ephemeral child** plays a vital role in this pattern by simplifying the process of aggregating results from multiple asynchronous operations. It acts as a temporary actor dedicated to receiving and processing responses from the various services involved in fulfilling the request.
 		- Here's a breakdown of the role of the ephemeral child, illustrated with a diagram
+		- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcGQMvIVX9piqi5sV3V0aL1j92zdt1JUNUUmE1N_OpixLwZXLClW8OZTxbkK6yJX0FyYV6QEzykT8dhta-C5Ami9BaWJLjqSI9N6EQ_s1N8SRr__emBqOMSIvyY1aQEYhEhqKH03Q?key=2EMOWLWo9n_tfDzOLam1Il8W)
+		-
+		- **Benefits of Using an Ephemeral Child:**
+			- **Simplified State Management:** The aggregator child encapsulates the logic for collecting and combining results, reducing complexity in the parent actor.
+			- **Improved Responsiveness:** Parallel requests to services enhance overall response time.
+			- **Clean Code Structure:** The ephemeral nature of the child ensures automatic cleanup after task completion, leading to more readable and maintainable code.
 -
