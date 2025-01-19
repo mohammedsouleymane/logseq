@@ -1,6 +1,5 @@
 - examens questions
 	- Fault Tolerance desiderata: What are they, and how does the Akka Actor system address them?
-	  collapsed:: true
 		- The fault tolerance infrastructure desiderata are a set of requirements that a system should meet to be able to handle faults effectively. The Akka Actor system provides solutions to these requirements.
 		- **Support Component Compartmentalization**: A faulty component should be isolated from others to prevent the fault from escalating to a total system crash.
 			- Akka actors are supervised and organized hierarchically. A supervisor can decide to terminate a faulty actor, removing it from the system, and the hierarchy enables replacing actors at runtime.
@@ -11,7 +10,6 @@
 		- **Enable Separation of Concerns**: Fault recovery code, which is a cross-cutting concern, should be separated from normal processing code.
 			- In Akka, actor message processing logic is separated from fault recovery logic, allowing them to be defined and evolve independently.
 	- Write code for a Counter actor that counts received messages and can return the count. Implement it with and without field assignment.
-	  collapsed:: true
 		- ### Counter Actor with Field Assignment
 		  
 		  This implementation uses a field to store the current count.
@@ -88,7 +86,6 @@
 			  
 			  <!--EndFragment-->
 	- Architectural problems solved by the Layer pattern.
-	  collapsed:: true
 		- The Layer pattern is a module pattern that addresses the need to develop and evolve portions of complex software systems independently [1, 2]. This pattern divides software into units called layers, with each layer being a grouping of modules that offers a cohesive set of services [2]. Each layer has a public interface, and usage between layers must be **unidirectional**. For example, layer *n* can use the services of layer *n-1* but cannot use the services of layer *n+1* [3, 4].
 		  
 		  The Layer pattern has several strengths:
@@ -112,7 +109,6 @@
 		  
 		  The "Cake pattern," which uses Scala language constructs like self types, is one way to implement dependency inversion [8]. However, it can be complex to understand and implement correctly [9]. Another approach is to use dependency injection frameworks, which automatically create and inject instances of dependencies [8]. These frameworks can simplify development but introduce an external dependency on the framework itself [10].
 	- Role of the ephemeral child in the aggregator pattern. Include a diagram
-	  collapsed:: true
 		- The Aggregator pattern is used to collect responses from multiple services and combine them into a single result. [1] The **ephemeral child** plays a vital role in this pattern by simplifying the process of aggregating results from multiple asynchronous operations. It acts as a temporary actor dedicated to receiving and processing responses from the various services involved in fulfilling the request.
 		- Here's a breakdown of the role of the ephemeral child, illustrated with a diagram
 		- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcGQMvIVX9piqi5sV3V0aL1j92zdt1JUNUUmE1N_OpixLwZXLClW8OZTxbkK6yJX0FyYV6QEzykT8dhta-C5Ami9BaWJLjqSI9N6EQ_s1N8SRr__emBqOMSIvyY1aQEYhEhqKH03Q?key=2EMOWLWo9n_tfDzOLam1Il8W)
@@ -122,7 +118,6 @@
 			- **Improved Responsiveness:** Parallel requests to services enhance overall response time.
 			- **Clean Code Structure:** The ephemeral nature of the child ensures automatic cleanup after task completion, leading to more readable and maintainable code.
 	- Sketch and explain the Ask pattern and its variant using an ephemeral child.
-	  collapsed:: true
 		- The **Ask pattern** is a messaging pattern used in actor-based systems to **reliably request a response from an actor**. It addresses the challenge of handling responses to requests in asynchronous messaging environments where the requester and responder actors operate concurrently.
 		  
 		  **Challenges Addressed by the Ask Pattern:**
@@ -151,7 +146,6 @@
 		  The Ask pattern with an ephemeral child is a common and powerful technique in Akka actor systems. It promotes clean code, improves reliability, and simplifies the management of asynchronous communication between actors.
 		- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf2fH61ORywAcpwDGla-12fhEkHd5hoqI7dptd1_3lr7t75mSN_g9RqFoS9crtIK628h7PBHMavlCFAL6yORUILPKSAbt0zm7z7C0SwxByh25fvEnuT-qQkir5OG4M8H3yHqHED7w?key=2EMOWLWo9n_tfDzOLam1Il8W)
 	- Advantages of Service-Oriented Architecture (SOA) and the components/connectors contributing to them. (ILD)
-	  collapsed:: true
 		- Service-Oriented Architecture (SOA) offers several advantages for building distributed systems:
 			- **Interoperability:** SOA promotes interoperability by enabling communication between components running on different platforms, potentially using different programming languages, and possibly residing across the internet. This is achieved through the use of standardized protocols and connectors like:
 				- **SOAP connector**: Enables synchronous communication between web services, typically over HTTP, and uses WSDL (Web Service Description Language) for service descriptions.
@@ -171,7 +165,6 @@
 		  
 		  While SOA offers significant benefits, it's important to be aware of potential drawbacks, including the complexity of building and managing SOA systems, performance overhead introduced by the middleware layer, and the challenges of controlling the evolution of independently developed services.
 	- Implement at-least-once and exactly-once delivery on top of at-most-once systems. Highlight where extra state needs to be maintained.
-	  collapsed:: true
 		- **At-most-once delivery**:
 			- No state needs to be maintained by the sender or receiver, as the message is simply sent without
 			  considering its successful arrival.
