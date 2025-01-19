@@ -151,6 +151,7 @@
 		  The Ask pattern with an ephemeral child is a common and powerful technique in Akka actor systems. It promotes clean code, improves reliability, and simplifies the management of asynchronous communication between actors.
 		- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf2fH61ORywAcpwDGla-12fhEkHd5hoqI7dptd1_3lr7t75mSN_g9RqFoS9crtIK628h7PBHMavlCFAL6yORUILPKSAbt0zm7z7C0SwxByh25fvEnuT-qQkir5OG4M8H3yHqHED7w?key=2EMOWLWo9n_tfDzOLam1Il8W)
 	- Advantages of Service-Oriented Architecture (SOA) and the components/connectors contributing to them. (ILD)
+	  collapsed:: true
 		- Service-Oriented Architecture (SOA) offers several advantages for building distributed systems:
 			- **Interoperability:** SOA promotes interoperability by enabling communication between components running on different platforms, potentially using different programming languages, and possibly residing across the internet. This is achieved through the use of standardized protocols and connectors like:
 				- **SOAP connector**: Enables synchronous communication between web services, typically over HTTP, and uses WSDL (Web Service Description Language) for service descriptions.
@@ -166,7 +167,7 @@
 		  
 		  **Connectors:**
 		- **SOAP/REST connectors**, as described above, enable synchronous communication between services.
-		- **Asynchronous messaging connector:** Uses a messaging system like a message queue to facilitate point-to-point or publish-subscribe asynchronous message exchanges. This decoupling allows service providers and consumers to operate independently, enhancing scalability and resilience. [1, 2]
+		- **Asynchronous messaging connector:** Uses a messaging system like a message queue to facilitate point-to-point or publish-subscribe asynchronous message exchanges. This decoupling allows independence, enhances scalability and resilience. 
 		  
-		  While SOA offers significant benefits, it's important to be aware of potential drawbacks, including the complexity of building and managing SOA systems, performance overhead introduced by the middleware layer, and the challenges of controlling the evolution of independently developed services. [3]
+		  While SOA offers significant benefits, it's important to be aware of potential drawbacks, including the complexity of building and managing SOA systems, performance overhead introduced by the middleware layer, and the challenges of controlling the evolution of independently developed services.
 -
