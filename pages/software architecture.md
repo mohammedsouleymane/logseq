@@ -14,7 +14,8 @@
 		  
 		  This implementation uses a field to store the current count.
 		  
-		  ```
+		  ```scala
+		  
 		  object CounterWithField {
 		  sealed trait Command
 		  case object Increment extends Command
@@ -54,7 +55,8 @@
 		  
 		  This implementation uses a recursive function to pass the current count between invocations of the behavior function, avoiding field assignment.
 		  
-		  ```
+		  ```scala
+		  
 		  object CounterWithoutField {
 		  sealed trait Command
 		  case object Increment extends Command
