@@ -157,8 +157,7 @@
 				- **REST connector**: Leverages the inherent request/reply operations of HTTP for communication.
 			- **Legacy System Integration:** SOA facilitates the integration of legacy systems by exposing their functionality as services. This allows modern applications to interact with older systems without requiring significant modifications to the legacy codebase.
 			- **Dynamic Reconfiguration:** The loose coupling inherent in SOA, where service consumers and providers interact through well-defined interfaces, enables dynamic reconfiguration. This allows for adding, removing, or updating services at runtime without impacting other parts of the system. For example, a service registry can be used to discover available services at runtime, making the system more flexible and adaptable to change.
-			  
-			  The following components and connectors contribute to realizing these advantages:
+		- The following components and connectors contribute to realizing these advantages:
 		- **Components:**
 		- **Service Providers:** These components offer one or more services through published interfaces, often accompanied by a Service Level Agreement (SLA) that outlines performance and availability guarantees.
 		- **Service Consumers:** These components use the services provided by service providers, either directly or through intermediaries.
