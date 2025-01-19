@@ -171,16 +171,30 @@
 		  
 		  While SOA offers significant benefits, it's important to be aware of potential drawbacks, including the complexity of building and managing SOA systems, performance overhead introduced by the middleware layer, and the challenges of controlling the evolution of independently developed services.
 	- Implement at-least-once and exactly-once delivery on top of at-most-once systems. Highlight where extra state needs to be maintained.
+	  collapsed:: true
 		- **At-most-once delivery**:
 			- No state needs to be maintained by the sender or receiver, as the message is simply sent without
 			  considering its successful arrival.
-				- A message is thus delivered [0, 1] times.
+			- A message is thus delivered [0, 1] times.
 		- **At-least-once delivery**:
-		  collapsed:: true
 			- State must be maintained by the sender so that it will keep resending the message until it receives an acknowledgment from the recipient that the message has arrived, ensuring that the message has been successfully delivered at least once.
 			- A message is thus delivered [1, ] times, as the acknowledgment message itself can also be lost.
 		- **Exactly-once delivery**:
-		  collapsed:: true
 			- the same principle as at-least-once delivery must be followed, but additional state must be maintained by the receiver to ensure that the receiver processes the messages only once, even if the message arrives multiple times due to a lost acknowledgment message.
 			- Messages can thus be delivered multiple times but will only be processed once.
+	- Event-sourcing pattern: Why is it important to keep events and commands
+	  separate?
+		- In the context of the Event-Sourcing pattern, maintaining a clear separation between events and commands is crucial for properly handling side effects, especially during recovery from failures.
+		  id:: 678d7829-2714-4cea-8f36-20d0c5a523cf
+		  
+		  **Events represent immutable facts about the past, while commands express the intent to make changes to the system.** When an event-sourced service receives a command, it should follow these steps:
+		- Receive and verify the command.
+		- Create a new event representing the state change resulting from the command.
+		- Append the event to the event log, making it durable.
+		- Update the internal component state based on the event.
+		- Run side effects related to the event.
+		  
+		  During recovery, the event-sourced service will rehydrate its state by replaying the events from the event log. **If events and commands are not strictly separated, side effects might be executed again during recovery, leading to unintended consequences**. For example, if a "PaymentApproved" event triggers an email notification to the customer, replaying this event during recovery would result in the customer receiving the notification again, even though the payment was already approved [1].
+		  
+		  **By keeping commands and events distinct, developers ensure that side effects are only executed once, maintaining data consistency and avoiding unintended behavior during recovery.**
 -
