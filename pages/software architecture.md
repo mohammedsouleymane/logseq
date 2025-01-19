@@ -8,9 +8,5 @@
 		- **Provide Component Lifecycle Management**: Isolate faulty components and terminate and remove or re-initialize components that cannot recover.
 			- Akka actors are active components that can be started, stopped, and restarted, providing lifecycle management capabilities.
 		- **Enable Separation of Concerns**: Fault recovery code, which is a cross-cutting concern, should be separated from normal processing code.
-		- In Akka, actor message processing logic is separated from fault recovery logic, allowing them to be defined and evolve independently.
-		  
-		  Akka implements the **Let-it-crash** pattern through parental supervision, where supervisors handle failures of their child actors and decide on appropriate recovery actions. The available fault recovery options for supervisors include restarting the actor, resuming the actor, stopping the actor, or escalating the failure to a higher-level supervisor.
-		  
-		  The example of a log processing application illustrates how Akka supports fault tolerance. In this application, the `LogProcessingGuardian` actor supervises `FileWatcher` actors that monitor log files in specific directories. Each `FileWatcher` actor spawns a `LogProcessor` actor to parse the log files and a `DbWriter` actor to write the parsed data to a database. The system is designed with risky operations delegated to lower-level actors, allowing higher-level supervisors to handle potential failures effectively. For instance, if the `DbWriter` actor encounters a database connection error, its supervisor (`LogProcessor`) can attempt to create a new `DbWriter` actor using an alternative database URL. This hierarchical supervision structure helps contain failures and prevent them from cascading throughout the system.
+			- In Akka, actor message processing logic is separated from fault recovery logic, allowing them to be defined and evolve independently.
 -
