@@ -122,6 +122,7 @@
 			- **Improved Responsiveness:** Parallel requests to services enhance overall response time.
 			- **Clean Code Structure:** The ephemeral nature of the child ensures automatic cleanup after task completion, leading to more readable and maintainable code.
 	- Sketch and explain the Ask pattern and its variant using an ephemeral child.
+	  collapsed:: true
 		- The **Ask pattern** is a messaging pattern used in actor-based systems to **reliably request a response from an actor**. It addresses the challenge of handling responses to requests in asynchronous messaging environments where the requester and responder actors operate concurrently.
 		  
 		  **Challenges Addressed by the Ask Pattern:**
