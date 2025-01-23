@@ -51,4 +51,64 @@
 - **Flexible Computation**: Understand the problems with fixed clause ordering and how to use `when/2` to delay execution.
 - **Meta-Predicates**: Be able to use and understand the purpose of key meta-predicates in Prolog.
   
-  By focusing on these key areas, you should be well-prepared to tackle exam questions on declarative programming, difference lists, DCGs, and meta-programming in Prolog.
+  ---
+- ### **1. Understand the Key Concepts**
+	- **Difference Lists**:
+		- Know how they work and why they are more efficient than regular lists.
+		- Be able to write and explain the `append/3` operation for difference lists.
+		- Understand why unification can be problematic with difference lists.
+	- **Definite Clause Grammars (DCGs)**:
+		- Be able to write simple DCG rules for parsing or generating sentences.
+		- Understand how DCGs are expanded into Prolog predicates using difference lists.
+		- Know how to add arguments to DCGs for more complex tasks (e.g., translation or syntax trees).
+	- **Meta-Programming**:
+		- Understand the difference between **non-ground** and **ground representations**.
+		- Be able to explain how meta-programming allows programs to manipulate other programs.
+		- Know how to write a simple meta-interpreter (e.g., `solve/1`) and modify it (e.g., for breadth-first execution).
+	- **Flexible Computation**:
+		- Understand the problem of **floundering** and how to use `when/2` to delay execution.
+		- Be able to explain how delayed goals can improve efficiency (e.g., in sorting algorithms).
+	- **Meta-Predicates**:
+		- Know the purpose of key meta-predicates like `var/1`, `nonvar/1`, `ground/1`, `functor/3`, `arg/3`, `=../2`, `clause/2`, `assert/1`, and `retract/1`.
+		- Understand how to use `==/2` and `\==/2` for meta-level identity testing.
+		  
+		  ---
+- ### **2. Practice Applying the Concepts**
+	- **Difference Lists**:
+		- Write a Prolog program that uses difference lists to concatenate two lists in constant time.
+		- Explain why `[a,b,c|X]-X` represents a difference list and how it can be used.
+	- **DCGs**:
+		- Write a DCG to parse a simple language (e.g., commands like `start 2 players` or `save game`).
+		- Add arguments to a DCG to build a syntax tree or translate between languages.
+	- **Meta-Programming**:
+		- Write a meta-interpreter (`solve/1`) and modify it to handle breadth-first execution or multiple databases.
+		- Explain how meta-programming can be used to reason about agents' knowledge (e.g., the "Three Wise Men" problem).
+	- **Flexible Computation**:
+		- Write a Prolog program that uses `when/2` to delay execution until a variable is ground.
+		- Explain how delayed goals can prevent floundering in negation-as-failure.
+	- **Meta-Predicates**:
+		- Use `functor/3` and `arg/3` to deconstruct and reconstruct terms.
+		- Write a program that dynamically adds or removes clauses from the Prolog database using `assert/1` and `retract/1`.
+		  
+		  ---
+- ### **3. Be Prepared for Different Types of Exam Questions**
+	- **Theoretical Questions**:
+		- Explain the difference between difference lists and ordinary lists.
+		- Describe how DCGs are expanded into Prolog predicates.
+		- Discuss the advantages and disadvantages of non-ground vs. ground representations in meta-programming.
+	- **Practical Questions**:
+		- Write a Prolog program using difference lists or DCGs.
+		- Modify a given meta-interpreter to change its execution strategy.
+		- Use meta-predicates to manipulate terms or the Prolog database.
+	- **Problem-Solving Questions**:
+		- Solve a problem using flexible computation (e.g., improve a sorting algorithm by delaying goals).
+		- Reason about a meta-programming scenario (e.g., how to handle common knowledge in multi-agent systems).
+		  
+		  ---
+- ### **4. Review the Document for Details**
+	- While the summary covers the main points, make sure to review the document for **specific examples** and **details** that might be tested. For example:
+		- The exact syntax for writing DCG rules and adding arguments.
+		- The trace of how `append/3` works with difference lists.
+		- The specific behavior of meta-predicates like `=../2` or `clause/2`.
+		  
+		  -
