@@ -1,5 +1,6 @@
 - examens questions
 	- Fault Tolerance desiderata: What are they, and how does the Akka Actor system address them?
+	  collapsed:: true
 		- The fault tolerance infrastructure desiderata are a set of requirements that a system should meet to be able to handle faults effectively. The Akka Actor system provides solutions to these requirements.
 		- **Support Component Compartmentalization**: A faulty component should be isolated from others to prevent the fault from escalating to a total system crash.
 			- Akka actors are supervised and organized hierarchically. A supervisor can decide to terminate a faulty actor, removing it from the system, and the hierarchy enables replacing actors at runtime.
@@ -10,6 +11,7 @@
 		- **Enable Separation of Concerns**: Fault recovery code, which is a cross-cutting concern, should be separated from normal processing code.
 			- In Akka, actor message processing logic is separated from fault recovery logic, allowing them to be defined and evolve independently.
 	- Write code for a Counter actor that counts received messages and can return the count. Implement it with and without field assignment.
+	  collapsed:: true
 		- ### Counter Actor with Field Assignment
 		  
 		  This implementation uses a field to store the current count.
@@ -88,6 +90,7 @@
 			  
 			  <!--EndFragment-->
 	- Architectural problems solved by the Layer pattern.
+	  collapsed:: true
 		- The Layer pattern is a module pattern that addresses the need to develop and evolve portions of complex software systems independently [1, 2]. This pattern divides software into units called layers, with each layer being a grouping of modules that offers a cohesive set of services [2]. Each layer has a public interface, and usage between layers must be **unidirectional**. For example, layer *n* can use the services of layer *n-1* but cannot use the services of layer *n+1* [3, 4].
 		  
 		  The Layer pattern has several strengths:
@@ -111,6 +114,7 @@
 		  
 		  The "Cake pattern," which uses Scala language constructs like self types, is one way to implement dependency inversion [8]. However, it can be complex to understand and implement correctly [9]. Another approach is to use dependency injection frameworks, which automatically create and inject instances of dependencies [8]. These frameworks can simplify development but introduce an external dependency on the framework itself [10].
 	- Role of the ephemeral child in the aggregator pattern. Include a diagram
+	  collapsed:: true
 		- The Aggregator pattern is used to collect responses from multiple services and combine them into a single result. [1] The **ephemeral child** plays a vital role in this pattern by simplifying the process of aggregating results from multiple asynchronous operations. It acts as a temporary actor dedicated to receiving and processing responses from the various services involved in fulfilling the request.
 		- Here's a breakdown of the role of the ephemeral child, illustrated with a diagram
 		- ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcGQMvIVX9piqi5sV3V0aL1j92zdt1JUNUUmE1N_OpixLwZXLClW8OZTxbkK6yJX0FyYV6QEzykT8dhta-C5Ami9BaWJLjqSI9N6EQ_s1N8SRr__emBqOMSIvyY1aQEYhEhqKH03Q?key=2EMOWLWo9n_tfDzOLam1Il8W)
@@ -120,6 +124,7 @@
 			- **Improved Responsiveness:** Parallel requests to services enhance overall response time.
 			- **Clean Code Structure:** The ephemeral nature of the child ensures automatic cleanup after task completion, leading to more readable and maintainable code.
 	- Sketch and explain the Ask pattern and its variant using an ephemeral child.
+	  collapsed:: true
 		- The **Ask pattern** is a messaging pattern used in actor-based systems to **reliably request a response from an actor**. It addresses the challenge of handling responses to requests in asynchronous messaging environments where the requester and responder actors operate concurrently.
 		  
 		  **Challenges Addressed by the Ask Pattern:**
@@ -196,6 +201,7 @@
 		  
 		  **By keeping commands and events distinct, developers ensure that side effects are only executed once, maintaining data consistency and avoiding unintended behavior during recovery.**
 	- Crosscutting concerns
+	  collapsed:: true
 		- There are crosscutting concerns such as logging, exception handling, etc., which can lead to code scattering
 		  and tangling.
 			- Scattering means that the implementation for that concern is spread across many places.
