@@ -121,14 +121,12 @@
 		- The specific behavior of meta-predicates like `=../2` or `clause/2`.
 - ---
 - ### **1. Constraint Logic Programming (CLP)**
-  collapsed:: true
 	- **Problem with Traditional Prolog**: Traditional Prolog programs can waste time searching through impossible solutions because constraints are checked after generating a solution (e.g., British Museum Sort).
 	- **Solution**: Use **constraints** to reduce the search space by reasoning about the data logically. Constraints are integrated into the unification process, allowing early failure when constraints are violated.
 	- **Benefits**: Constraints can drastically reduce the search space and even change the algorithm's behavior (e.g., improving sorting algorithms).
 	  
 	  ---
 - ### **2. Finite Domains (FD) in Prolog**
-  collapsed:: true
 	- **Concept**: Finite domains allow you to associate a set of allowed values with a variable. Any attempt to unify the variable with a value outside its domain will fail immediately.
 	- **Syntax**:
 		- `X in 1..10`: Defines a domain for `X` (integers from 1 to 10).
@@ -140,7 +138,6 @@
 	  
 	  ---
 - ### **3. Domain Specification**
-  collapsed:: true
 	- **Domain Terms**: Domains can be specified using integers, ranges (e.g., `1..10`), sets (e.g., `{1,2,3}`), or unions/intersections of ranges.
 	- **Predefined Constraints**:
 		- `in/2`: Associates a range with a variable.
@@ -149,7 +146,6 @@
 		  
 		  ---
 - ### **4. Labeling and Search Control**
-  collapsed:: true
 	- **Labeling**: The `labeling/2` predicate is used to enumerate solutions for constrained variables.
 		- **Control Options**: You can specify the order in which variables are instantiated (e.g., `ffc` for "first fail, smallest domain first") and whether to maximize or minimize certain variables.
 		- **Example**:
