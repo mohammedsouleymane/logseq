@@ -10,3 +10,4 @@
 	- **var** is a meta-predicate which tests whether or not its
 	  argument is a variable
 	- **ground/1**, which succeeds if its argument is fully instantiated
+	- **findall/3** is exactly analogous to running a query and asking for all the solutions by hitting ; at the prompt
