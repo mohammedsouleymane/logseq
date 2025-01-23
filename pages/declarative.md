@@ -157,7 +157,6 @@
 	  
 	  ---
 - ### **5. Example: SEND + MORE = MONEY**
-  collapsed:: true
 	- **Problem**: Solve the cryptarithmetic puzzle where each letter represents a unique digit.
 	- **Solution**:
 		- Use `add/3` to define the addition constraint.
@@ -167,7 +166,6 @@
 	  
 	  ---
 - ### **6. Reasoning About Domains**
-  collapsed:: true
 	- **Meta-Predicates**:
 		- `fd_inf/2`: Finds the minimum value in a domain.
 		- `fd_size/2`: Returns the size of a domain.
@@ -176,7 +174,6 @@
 	  
 	  ---
 - ### **7. Propositional and Reified Constraints**
-  collapsed:: true
 	- **Propositional Constraints**: Allow logical combinations of constraints (e.g., `#\/` for OR, `#/\` for AND, `#==>` for implication).
 		- Example: `X #= 1 #==> Y in 1..10` means "if `X = 1`, then `Y` must be between 1 and 10."
 	- **Reified Constraints**: Associate a truth value (0 or 1) with a constraint.
@@ -185,14 +182,12 @@
 		  
 		  ---
 - ### **8. Combinatorial Constraints**
-  collapsed:: true
 	- **all_different/1**: Ensures all variables in a list have different values.
 	- **element/3**: Constrains `Y` to be the `X`th element of a list.
 	- **relation/3**: Constrains `Y` based on a list of integer/range pairs associated with `X`.
 	  
 	  ---
 - ### **9. Constraints Over Other Domains**
-  collapsed:: true
 	- **Booleans**: Simple Boolean algebra constraints.
 	- **Reals**: Constraints over real numbers (floating-point approximations).
 	- **Rationals**: Constraints over rational numbers (fractions).
@@ -204,7 +199,6 @@
 	  
 	  ---
 - ### **10. Resource Allocation Example**
-  collapsed:: true
 	- **Problem**: Stack boxes of varying heights in a limited space, ensuring the largest boxes are at the bottom.
 	- **Solution**:
 		- Use `constrain_boxes/3` to define physical constraints.
@@ -213,7 +207,6 @@
 		  
 		  ---
 - ### **Key Points to Remember**
-  collapsed:: true
 	- **Constraints**: Understand how to define and use constraints to reduce search space.
 	- **Finite Domains**: Know how to specify domains and use predicates like `in/2`, `#=/2`, and `all_different/1`.
 	- **Labeling**: Be able to use `labeling/2` to enumerate solutions and control search strategies.
