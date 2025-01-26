@@ -158,7 +158,6 @@
 			  
 			  \Leftarrow Zij $u$ en $v$ de twee toppen met oneven graad. Voeg aan $\mathcal{G}$  de boog $\{u,v\}$ toe. Dan heeft elke top even graad en is vorige stelling van toepassing. We krijgen dus een gesloten Eulerpad. Als we hierin de boog $\{u,v\}$ weglaten, hebben we Eulerpad in $\mathcal{G}$.
 	- Hamilton:
-	  collapsed:: true
 		- Definitie:
 		  Een simpel pad dat alle toppen van een multigraaf $\mathcal{G}$ bevat heet een Hamiltonpad. Een Hamiltoncyclus is een gesloten Hamiltonpad. Een multigraaf die een Hamiltoncylcus bevat heeft een Hamiltongraaf.
 		  ---
