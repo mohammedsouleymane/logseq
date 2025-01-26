@@ -165,3 +165,109 @@
 		- Bewijs: Als je k toppen uit een Hamiltongraaf $\mathcal{G}$  weglaat, samen me de aangrenzende bogen, dan valt $\mathcal{G}$ uiteen in hoogsteens k samenhangscomponenten.
 		  
 		  Zij $\mathcal{H}$ een Hamiltoncylcus in $\mathcal{G}$. Noem de grafen die uit $\mathcal{G}$ en $\mathcal{H}$ respectievelijk ontstaat door weglaten van k toppen resp. $\mathcal{G}'$ en $\mathcal{H}'$. Voor $\mathcal{H}$ is de bewering zeker waar omdat $\mathcal{H}$ een cyclus is (en die valt uiteen in hoogstens k componenten). Maar $\mathcal{G}'$ bevat meer boven dan $\mathcal{H}'$. Dus kan het aantal samenhangscomponenten van $\mathcal{G}'$ niet groter zijn dan dat van $\mathcal{H}'$.
+	- ## Bewijs: Het aantal keuzes met volgorde en zonder herhaling
+	  
+	  **Stelling**
+	  Het aantal geordende keuzes van $m$ objecten uit $n$ zonder herhaling is
+	  
+	  $$n (n - 1) (n - 2) \cdots (n - m + 1).$$
+	  
+	  **Bewijs**
+	  Om zo een woord te vormen moeten we achtereenvolgend $m$ verschillende elementen van $Y$ kiezen. Voor de eerste letter zijn er $n$ keuzes, voor de tweede $n - 1$ (want we mogen om het even welke letter nemen behalve die die we als eerste kozen). Voor de derde letter $n - 2$ keuzes enz. tot we de laatste letter kiezen uit de $n - m + 1$ die overblijven.
+	  
+	  **Notatie**
+	  De **faculteit** van een natuurlijk getal $n \in \mathbb{N}$ is het getal
+	  
+	  $$n! = n \cdot (n - 1) \cdot \ldots \cdot 3 \cdot 2 \cdot 1$$
+	  
+	  Per definitie stellen we $0! = 1$. Het aantal keuzes in de stelling is bijgevolg kort te noteren als
+	  $$\frac{n!}{(n - m)!}$$
+	- ## Bewijs: Het aantal keuzes zonder volgorde en zonder herhaling
+	  
+	  **Stelling**
+	  Het aantal keuzes van $k$ elementen uit een verzameling van $n$ elementen, zonder volgorde en zonder herhaling, bedraagt
+	  
+	  $$
+	  
+	  \binom{n}{k}.
+	  
+	  $$
+	  
+	  We merken ook nog op dat
+	  
+	  $$
+	  
+	  \binom{n}{n - k} = \binom{n}{k}.
+	  
+	  $$
+	  
+	  **Bewijs**
+	  Zij $A$ een verzameling en $k \in \mathbb{N}$. Een $k$**-deelverzameling** van $A$ is een deelverzameling met $k$ elementen.
+	  
+	  Gegeven is $|A| = n$. Hoeveel $k$-deelverzamelingen heeft $A$?
+	  Kiezen we $k$ elementen uit $A$ met ordening, dan zullen we eenzelfde deelverzameling meerdere keren kiezen. Beschouw de verzameling
+	  
+	  $$
+	  
+	  S = \{(B, f) \mid B \subset A, |B| = k \text{ en } f \text{ een ordening van } B\}.
+	  
+	  $$
+	  
+	  Dan kunnen we $|S|$ op twee manieren tellen: enerzijds
+	  
+	  $$
+	  
+	  |S| = x \times k!
+	  
+	  $$
+	  
+	  met $x$ het aantal $k$-deelverzamelingen van $A$ en $k!$ het aantal ordeningen van een gegeven $k$-deelverzameling. Anderzijds is
+	  
+	  $$
+	  
+	  |S| = 1 \times \frac{n!}{(n - k)!}
+	  
+	  $$
+	  
+	  want we kunnen op $\frac{n!}{(n - k)!}$ manieren $k$ elementen kiezen uit $A$ met volgorde. Natuurlijk bepaalt elk van die keuzes juist één $k$-deelverzameling.
+	  We hebben dus
+	  
+	  $$
+	  
+	  x = \frac{n!}{(n - k)! k!}
+	  
+	  $$
+	  
+	  Voor $n \geq k$ noteren we
+	  
+	  $$
+	  
+	  \frac{n!}{(n - k)! k!}
+	  
+	  $$
+	  
+	  als
+	  
+	  $$
+	  
+	  \binom{n}{k}.
+	  
+	  $$
+	  
+	  **Notatie**
+	  De verzameling van alle $k$-deelverzamelingen van $A$ noteren we als $\binom{A}{k}$
+	  zodat
+	  $\left| \binom{A}{k} \right| = \binom{|A|}{k}.$
+	- ## Bewijs: Het aantal keuzes zonder volgorde en met herhaling
+	  
+	  **Bewijs**
+	  Stel $A = \{a, b, c, d\}$. De keuze $bcadabd$ is equivalent met de keuze $aabbcdd$ wanneer de volgorde geen rol speelt. Hoeveel mogelijkheden zijn er zo?
+	  
+	  We moeten hier dus de woorden tellen die bestaan uit een aantal $a$'s, gevolgd door een aantal $b$'s, dan een aantal $c$'s enz. zodat er in totaal 7 letters zijn. Let wel, het aantal in kwestie kan soms nul zijn: $bbbbbbb$ is ook een woord van zeven letters met herhaling!
+	  
+	  Een voorstelling van $aabbcdd$ is $\bullet\bullet|\bullet\bullet|\bullet|\bullet\bullet$ . In totaal hebben we dus 10 tekens waarvan elk een $\bullet$ of een $|$ is. We zetten een $\bullet$ voor elke letter en een $|$ als de letter verandert.
+	  
+	  Dus $|\bullet\bullet \ | \ |\bullet\bullet\bullet\bullet\ \bullet$ stelt het woord $bbddddd$ voor: er zijn geen $a$'s omdat er voor de eerste $|$ geen $\bullet$ staat, en geen $c$'s omdat er tussen de tweede en derde $|$ geen $\bullet$ staan.
+	  
+	  In het algemeen hebben we $n$ objecten waarin we $k$ keer kiezen met terugleggen en geen rekening houden met de volgorde. Het aantal manieren om dat te doen is het aantal manieren om $n - 1$ streepjes te plaatsen als er $n + k - 1$ plaatsen beschikbaar zijn. Dit is dus $\binom{n + k - 1}{n - 1}$. We weten $\binom{n + k - 1}{n - 1} = \binom{n + k - 1}{k}$ zodat het aantal **herhalingscombinaties** van $k$ objecten uit $n$ gelijk is aan
+	  $$\binom{n + k - 1}{k}.$$
