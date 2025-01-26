@@ -50,7 +50,6 @@
 		  $\frac{n!}{(n-r)!r!}$
 		  $\binom{n}{r}$
 	- Duiventil
-	  collapsed:: true
 		- Stelling
 		  Als we n identieken object verdelen over k dozen met $n > k$, dan is er minstens 1 doos met minstens 2 objecten
 		- Bewijs(uit het ongerijmde)
