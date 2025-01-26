@@ -119,7 +119,6 @@
 			  We kunnen elke ongerichte boom wortelen door een willekeurige top als wortel te kiezen waardoor alle bogen een natuurlijke orientatie krijgen weg van die wortel.
 		-
 	- Bewijs: Binomium van Newton
-	  collapsed:: true
 		- Stelling
 		  
 		  #+BEGIN_EXPORT latex
