@@ -286,3 +286,9 @@
 	  Zij V een verzameling met S⊂V﻿. x∈V﻿ heet een **ondergrens** van S﻿ indien ∀s∈S:x≤s﻿. Het **infimum** van S﻿ is de grootste ondergrens van S﻿.
 	- ### Definitie:**Minimum**
 	  Indien het infinum van een verzameling S﻿ zelf tot S﻿ behoort, dan noemen we het een **minimum**.
+	- ### Hamiltoncyclus
+	  Een simpel pad dat alle toppen van een multigraaf G﻿ bevat heet een **Hamiltonpad**. Een **Hamiltoncyclus** is een gesloten Hamiltonpad. Een multigraaf die een Hamiltoncyclus bevat heet een **Hamiltongraaf**.
+	- ### Welgeordendheid
+	  Elke niet-lege deelverzameling van Z die een ondergrens heeft, heeft ook een minimum.
+	-
+-
