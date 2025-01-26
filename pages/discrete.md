@@ -290,5 +290,7 @@
 	  Een simpel pad dat alle toppen van een multigraaf G﻿ bevat heet een **Hamiltonpad**. Een **Hamiltoncyclus** is een gesloten Hamiltonpad. Een multigraaf die een Hamiltoncyclus bevat heet een **Hamiltongraaf**.
 	- ### Welgeordendheid
 	  Elke niet-lege deelverzameling van Z die een ondergrens heeft, heeft ook een minimum.
-	-
+	- ### Grootste gemene deler
+	  
+	  Stel $a, b \in \mathbb{Z}$﻿. Een geheel getal dd﻿ heet een **grootste gemene deler (ggd)** van a﻿ en b﻿ indien $d∣a$﻿ en $d∣b﻿$ (gemene deler) èn $∀c∈\mathbb{Z}:c∣a∧c∣b⟹c∣d﻿$ (grootste).
 -
