@@ -271,3 +271,22 @@
 	  
 	  In het algemeen hebben we $n$ objecten waarin we $k$ keer kiezen met terugleggen en geen rekening houden met de volgorde. Het aantal manieren om dat te doen is het aantal manieren om $n - 1$ streepjes te plaatsen als er $n + k - 1$ plaatsen beschikbaar zijn. Dit is dus $\binom{n + k - 1}{n - 1}$. We weten $\binom{n + k - 1}{n - 1} = \binom{n + k - 1}{k}$ zodat het aantal **herhalingscombinaties** van $k$ objecten uit $n$ gelijk is aan
 	  $$\binom{n + k - 1}{k}.$$
+- # Definities
+	- **Facultiet:**product van een reeks factoren die telkens met één toenemen met de eerste factor gelijk aan één
+	  dus: de faculteit van een natuurlijk getal n, genoteerd als n! (n faculteit), is gedefinieerd als het product van de getallen 1 tot en met n.
+	- **toernooi** is een gericht simpele graf die ontstaat door een complete graf te orienteren.
+	- Een multipgraf heet **planair** indien hij in een valk kan getekend worden zonder dat twee bogen snijden.
+	- De verzameling van alle gehele getallen uitgerust met $+ \; en  \; \cdot$ is een **ring** met $0$ als neutraal element voor de optelling en $1$ als neutraal element voor de vermenigvuldiging die we noteren als $(\mathbb{Z}, +, \cdot)$.
+	- Een **multigraf** is een graf $G \; = \; (V, \rightarrow) uitgebreid door middel van een functie $\mu \; : \; V x  V \rightarrow \mathbb{N}$ die een multipliciteit toekent aan elke pijl.
+	  Een samenhangende gerichte (multi)graf G is een gericht Eulergraf $\Leftrightarrow$ G sterk samenhangend end gebalanceerd is.
+	  We zeggen dat G sterk **samenhangend** is indien er tussen elke boog bv. u en v een gericht pad bestaat.
+	- Definieer de **adjacentiematrix** A_{G} van G als de (n x n)-matrix met a_{ij} gelijk aan het aantal pijlen van de i-de naar de j-de top. Een lus wordt tweemaal geteld in een ongericht graf en éénmaal in een gerichte. De adjacentiematrix bevat veel informatie over de graf F.
+	- Een **ongericht graf** is een verzameling topen en bogen waarbij de volgorde van de toppen in een bogen niet uitmaakt. A -> B = B -> A
+	- ### Definitie: **Ondergrens**  + I **nfimum**  
+	  
+	  **Definitie
+	  **Zij VVeen verzameling met S⊂V﻿. x∈Vx∈V﻿ heet een **ondergrens** van SS﻿ indien ∀s∈S:x≤s∀s∈S:x≤s﻿. Het **infimum** van SS﻿ is de grootste ondergrens van SS﻿.
+	- ### Definitie: M **inimum**
+	  
+	  **Definitie
+	  **Indien het infimum van een verzameling SS﻿ zelf tot SS﻿ behoort, dan noemen we het een **minimum**.
