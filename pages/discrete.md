@@ -283,10 +283,6 @@
 	- Definieer de **adjacentiematrix** A_{G} van G als de (n x n)-matrix met a_{ij} gelijk aan het aantal pijlen van de i-de naar de j-de top. Een lus wordt tweemaal geteld in een ongericht graf en éénmaal in een gerichte. De adjacentiematrix bevat veel informatie over de graf F.
 	- Een **ongericht graf** is een verzameling topen en bogen waarbij de volgorde van de toppen in een bogen niet uitmaakt. A -> B = B -> A
 	- ### Definitie: **Ondergrens**  + I **nfimum**  
-	  
-	  **Definitie
-	  **Zij VVeen verzameling met S⊂V﻿. x∈Vx∈V﻿ heet een **ondergrens** van SS﻿ indien ∀s∈S:x≤s∀s∈S:x≤s﻿. Het **infimum** van SS﻿ is de grootste ondergrens van SS﻿.
-	- ### Definitie: M **inimum**
-	  
-	  **Definitie
-	  **Indien het infimum van een verzameling SS﻿ zelf tot SS﻿ behoort, dan noemen we het een **minimum**.
+	  Zij V een verzameling met S⊂V﻿. x∈V﻿ heet een **ondergrens** van S﻿ indien ∀s∈S:x≤s﻿. Het **infimum** van S﻿ is de grootste ondergrens van S﻿.
+	- ### Definitie:**Minimum**
+	  Indien het infinum van een verzameling S﻿ zelf tot S﻿ behoort, dan noemen we het een **minimum**.
