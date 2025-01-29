@@ -1,7 +1,5 @@
 # TQBF and FQBF: PSPACE-Complete Problems
-collapsed:: true
 	- ## 1. Definition of the TQBF Problem
-	  collapsed:: true
 		- **TQBF (True Quantified Boolean Formula)** is the problem of determining whether a given quantified Boolean formula (QBF) is true.
 		- A **quantified Boolean formula (QBF)** is a Boolean formula with leading **existential (∃)** and **universal (∀)** quantifiers. Each variable in the formula must be within the scope of a quantifier.
 		- A QBF is either **TRUE** or **FALSE**. For example:
@@ -13,7 +11,6 @@ collapsed:: true
 		  
 		  ---
 	- ## 2. Complexity of TQBF
-	  collapsed:: true
 		- **TQBF is PSPACE-complete.**
 		- **PSPACE** is the class of decision problems solvable by a deterministic Turing machine using polynomial space.
 		- PSPACE-completeness means a problem is among the "hardest" problems in PSPACE.
@@ -35,7 +32,6 @@ collapsed:: true
 			  
 			  ---
 	- ## 3. Complexity of the FQBF Problem
-	  collapsed:: true
 		- **FQBF (False Quantified Boolean Formula)** is the problem of determining whether a given QBF is **false**.
 		- **FQBF is PSPACE-complete**, as it is the complement of TQBF.
 		- Since PSPACE = coPSPACE, if a problem is in PSPACE, its complement is also in PSPACE.
