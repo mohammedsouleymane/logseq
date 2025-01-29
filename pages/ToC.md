@@ -186,6 +186,7 @@ collapsed:: true
 - # Turing Machines, the Recursion Theorem, and Undecidability
   collapsed:: true
 	- ### 1. Constructing a Turing Machine that Outputs Its Own Description
+	  collapsed:: true
 		- The notation for encoding objects into strings is defined as follows:
 			- If **O** is an object, then **⟨O⟩** represents its encoding as a string.
 			- If **O₁, O₂, ..., Oₖ** are objects, then **⟨O₁, O₂, ..., Oₖ⟩** encodes these objects into a single string.
@@ -198,6 +199,7 @@ collapsed:: true
 				- Halt."
 		- This ensures that **M** outputs its own description without using the recursion theorem.
 	- ### 2. The Recursion Theorem
+	  collapsed:: true
 		- **Recursion Theorem Statement**:
 			- For any Turing Machine **T** that computes a function **t(⟨M⟩, w)**, there exists a Turing Machine **R** that computes a function **r(w)** such that for all **w**, **r(w) = t(⟨R⟩, w)**.
 			- Intuitively, this means that a Turing machine can obtain and use its own description during computation.
@@ -230,11 +232,12 @@ collapsed:: true
 					- But **R** accepts **w** if and only if **R** does not accept **w**, leading to a contradiction.
 			- Conclusion: The assumption that **ETM** is decidable is false, meaning **ETM** is undecidable.
 	- ### Summary
-	- A Turing machine can be constructed to output its own description.
-	- The recursion theorem guarantees the existence of a TM that uses its own description in computations.
-	- The recursion theorem is instrumental in proving undecidability results, such as the undecidability of **ETM**, by creating contradictions in decision procedures.
-	  
-	  <!--EndFragment-->
+	  collapsed:: true
+		- A Turing machine can be constructed to output its own description.
+		- The recursion theorem guarantees the existence of a TM that uses its own description in computations.
+		- The recursion theorem is instrumental in proving undecidability results, such as the undecidability of **ETM**, by creating contradictions in decision procedures.
+		  
+		  <!--EndFragment-->
 - # NL and coNL Complexity Classes
   collapsed:: true
 	- ### 1. Defining NL and coNL
