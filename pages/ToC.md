@@ -223,5 +223,58 @@ collapsed:: true
 	- The recursion theorem is instrumental in proving undecidability results, such as the undecidability of **ETM**, by creating contradictions in decision procedures.
 	  
 	  <!--EndFragment-->
+- # NL and coNL Complexity Classes
+  collapsed:: true
+	- ### 1. Defining NL and coNL
+	- **NL (Nondeterministic Logarithmic Space)**:
+		- NL is the class of decision problems solvable by a nondeterministic Turing machine using logarithmic space.
+		- The amount of memory used is proportional to **log(n)**, where **n** is the input size.
+		- The input tape is read-only and does not count toward the space bound.
+	- **coNL (Complement of NL)**:
+		- coNL consists of problems whose complements are in NL.
+		- If a language **A** is in NL, then its complement **A̅** (all strings not in **A**) is in coNL.
+	- ### 2. Relationship Between NL and coNL
+	- **NL = coNL**:
+		- A fundamental result states that **NL = coNL**, meaning that any problem solvable in nondeterministic log-space also has its complement solvable in nondeterministic log-space.
+		- This result follows from the **Immerman–Szelepcsényi theorem**, which proves that for any function **f(n) ≥ log(n)**, **NSPACE(f(n)) = coNSPACE(f(n))**.
+	- **Proof Sketch of NL = coNL**:
+		- A nondeterministic Turing machine using logarithmic space has a limited number of configurations.
+		- It is possible to enumerate all configurations within log-space constraints.
+		- A deterministic log-space Turing machine can verify whether a nondeterministic machine has a valid accepting path.
+		- This leads to the conclusion that NL is closed under complement, proving **NL = coNL**.
+	- ### 3. Relationship to Other Complexity Classes
+	- **L ⊆ NL**:
+		- Deterministic log-space problems (L) are a subset of NL since a deterministic machine is a special case of a nondeterministic one.
+	- **NL ⊆ P**:
+		- NL is contained within **P (polynomial time)** because a machine using log-space can have at most **O(n^k)** configurations.
+		- This means an NL problem can be solved in polynomial time by simulating all possible configurations.
+	- **NL ⊆ PSPACE**:
+		- Since **NL ⊆ P** and **P ⊆ PSPACE**, it follows that **NL ⊆ PSPACE** (polynomial space).
+	- **NP and coNP Relationship to NL**:
+		- **NP is not necessarily contained in NL**, as NP problems may require more than logarithmic space.
+		- **coNP is not necessarily in NL**, since we do not have a known inclusion of NP in NL.
+	- ### 4. NL-Completeness and Examples
+	- **Definition of NL-Completeness**:
+		- A language **B** is **NL-complete** if:
+			- **B** is in NL.
+			- Every language in NL is log-space reducible to **B**.
+		- Log-space reducibility means that an instance of problem **A** can be transformed into an instance of **B** using only logarithmic space.
+	- **Examples of NL-Complete Problems**:
+		- **PATH Problem**:
+			- Given a directed graph **G** and two nodes **s** and **t**, does there exist a path from **s** to **t**?
+			- PATH is **NL-complete**, as all problems in NL can be reduced to PATH via log-space reductions.
+		- **2SAT Problem**:
+			- Determines whether a Boolean formula in **2-CNF** (at most two literals per clause) is satisfiable.
+			- **2SAT is NL-complete**, and PATH can be reduced to 2SAT using log-space reductions.
+	- **coNL-Complete Problems**:
+		- Since **NL = coNL**, any NL-complete problem also has its complement as a coNL-complete problem.
+		- **Complement of PATH** (checking if there is *no* path between two nodes) is an example of a coNL-complete problem.
+	- ### **Summary**
+	- **NL and coNL** are complexity classes related to logarithmic space.
+	- **NL = coNL**, proven by the Immerman–Szelepcsényi theorem.
+	- **NL is contained in P and PSPACE** but is not necessarily related to NP.
+	- **PATH and 2SAT are examples of NL-complete problems**.
+	  
+	  <!--EndFragment-->
 -
 -
