@@ -44,58 +44,61 @@ collapsed:: true
 		  
 		  ---
 	- ## Summary
-	- **TQBF is a PSPACE-complete problem**, meaning it is one of the hardest problems in PSPACE. The problem is to determine if a quantified Boolean formula is **true**.
-	- **FQBF is the complement of TQBF**. Since PSPACE = coPSPACE, **FQBF is also PSPACE-complete**.
-	- Both problems remain fundamental in computational complexity, with important implications for theoretical computer science.
+		- **TQBF is a PSPACE-complete problem**, meaning it is one of the hardest problems in PSPACE. The problem is to determine if a quantified Boolean formula is **true**.
+		- **FQBF is the complement of TQBF**. Since PSPACE = coPSPACE, **FQBF is also PSPACE-complete**.
+		- Both problems remain fundamental in computational complexity, with important implications for theoretical computer science.
 - # Undecidability, the Recursion Theorem, and the Halting Problem
   collapsed:: true
 	- ## 1. Decidability of the Given Problem
-	- **Problem Statement:** Given a Turing machine (TM) **M**, does **M** halt on input **⟨M⟩** (its own encoding)?
-	- **This problem is undecidable.**
-	- This is a variation of the **Halting Problem**, where instead of testing if a TM halts on a given input, we test if it halts on its own encoding.
-	- The **Halting Problem** (HALT_TM = {⟨M, w⟩ | M halts on input w}) is **undecidable**.
-	- ### Proof by Reduction
-	  1. Assume there exists a TM, **R**, that decides the given problem. That is, **R** accepts **⟨M⟩** if **M** halts on input **⟨M⟩** and rejects otherwise.
-	  2. Construct a TM **S** to decide HALT_TM, which is known to be undecidable:
-		- **S =** "On input ⟨M, w⟩:
-		  1. Modify **M** to create a new TM **M'** that ignores its input and runs **M** on input **w**.
-		  2. Run **R** on ⟨M'⟩.
-		  3. Accept if **R** accepts, and reject if **R** rejects."
-		  3. If **R** decides the given problem, then **S** decides HALT_TM:
-		- If **M** halts on **w**, then **M'** halts on any input, so **M'** halts on **⟨M'⟩**, so **R** accepts ⟨M'⟩, so **S** accepts.
-		- If **M** does not halt on **w**, then **M'** does not halt on any input, so **M'** does not halt on **⟨M'⟩**, so **R** rejects ⟨M'⟩, so **S** rejects.
-		  4. Since no decider exists for the Halting Problem, we have a contradiction. Therefore, the given problem is **undecidable**.
+	  collapsed:: true
+		- **Problem Statement:** Given a Turing machine (TM) **M**, does **M** halt on input **⟨M⟩** (its own encoding)?
+		- **This problem is undecidable.**
+		- This is a variation of the **Halting Problem**, where instead of testing if a TM halts on a given input, we test if it halts on its own encoding.
+		- The **Halting Problem** (HALT_TM = {⟨M, w⟩ | M halts on input w}) is **undecidable**.
+		- ### Proof by Reduction
+		  1. Assume there exists a TM, **R**, that decides the given problem. That is, **R** accepts **⟨M⟩** if **M** halts on input **⟨M⟩** and rejects otherwise.
+		  2. Construct a TM **S** to decide HALT_TM, which is known to be undecidable:
+			- **S =** "On input ⟨M, w⟩:
+			  1. Modify **M** to create a new TM **M'** that ignores its input and runs **M** on input **w**.
+			  2. Run **R** on ⟨M'⟩.
+			  3. Accept if **R** accepts, and reject if **R** rejects."
+			  3. If **R** decides the given problem, then **S** decides HALT_TM:
+			- If **M** halts on **w**, then **M'** halts on any input, so **M'** halts on **⟨M'⟩**, so **R** accepts ⟨M'⟩, so **S** accepts.
+			- If **M** does not halt on **w**, then **M'** does not halt on any input, so **M'** does not halt on **⟨M'⟩**, so **R** rejects ⟨M'⟩, so **S** rejects.
+			  4. Since no decider exists for the Halting Problem, we have a contradiction. Therefore, the given problem is **undecidable**.
+			  
+			  ---
+	- ## 2. Formal Statement of the Recursion Theorem
+	  collapsed:: true
+		- **The Recursion Theorem:** "Let **T** be a Turing machine that computes a function **t : Σ* × Σ* → Σ***. Then, there exists a Turing machine **R** that computes a function **r : Σ* → Σ*** such that for every input **w**, **r(w) = t(⟨R⟩, w)**."
+		- **Intuition:** There exists a TM **R** that can access its own description, **⟨R⟩**, and use it in its computation.
+		- This theorem enables self-referential behavior in TMs.
 		  
 		  ---
-	- ## 2. Formal Statement of the Recursion Theorem
-	- **The Recursion Theorem:** "Let **T** be a Turing machine that computes a function **t : Σ* × Σ* → Σ***. Then, there exists a Turing machine **R** that computes a function **r : Σ* → Σ*** such that for every input **w**, **r(w) = t(⟨R⟩, w)**."
-	- **Intuition:** There exists a TM **R** that can access its own description, **⟨R⟩**, and use it in its computation.
-	- This theorem enables self-referential behavior in TMs.
-	  
-	  ---
 	- ## 3. Using the Recursion Theorem to Prove Undecidability
-	- **We prove that ATM = {⟨M, w⟩ | M accepts w} is undecidable.**
-	- **Assumption:** Suppose ATM is decidable. Let **H** be a decider for ATM:
-		- **H(⟨M, w⟩) accepts** if **M** accepts **w**.
-		- **H(⟨M, w⟩) rejects** if **M** does not accept **w**.
-	- ### Construction of TM **T**
-	  1. **T(⟨M⟩, w):**
-	   1. Run **H** on input **⟨M, w⟩**.
-	   2. If **H** accepts, reject.
-	   3. If **H** rejects, accept.
-	  2. By the **Recursion Theorem**, there exists a TM **R** such that **R(w) = T(⟨R⟩, w)**.
-	  3. Analyzing **R(w):**
-		- **R(w) = T(⟨R⟩, w) =** If **H(⟨R, w⟩) accepts, reject**; if **H(⟨R, w⟩) rejects, accept**.
-		- Since **H(⟨R, w⟩) accepts if R accepts w and rejects if R does not accept w**, we reach a **contradiction**.
-	- ### Conclusion
-	- The assumption that **H** exists is incorrect.
-	- Therefore, **ATM is undecidable**.
-	  
-	  ---
+	  collapsed:: true
+		- **We prove that ATM = {⟨M, w⟩ | M accepts w} is undecidable.**
+		- **Assumption:** Suppose ATM is decidable. Let **H** be a decider for ATM:
+			- **H(⟨M, w⟩) accepts** if **M** accepts **w**.
+			- **H(⟨M, w⟩) rejects** if **M** does not accept **w**.
+		- ### Construction of TM **T**
+		  1. **T(⟨M⟩, w):**
+		   1. Run **H** on input **⟨M, w⟩**.
+		   2. If **H** accepts, reject.
+		   3. If **H** rejects, accept.
+		  2. By the **Recursion Theorem**, there exists a TM **R** such that **R(w) = T(⟨R⟩, w)**.
+		  3. Analyzing **R(w):**
+			- **R(w) = T(⟨R⟩, w) =** If **H(⟨R, w⟩) accepts, reject**; if **H(⟨R, w⟩) rejects, accept**.
+			- Since **H(⟨R, w⟩) accepts if R accepts w and rejects if R does not accept w**, we reach a **contradiction**.
+		- ### Conclusion
+		- The assumption that **H** exists is incorrect.
+		- Therefore, **ATM is undecidable**.
+		  
+		  ---
 	- ## Summary
-	- The problem of determining if a TM halts on its own encoding is **undecidable**, shown via reduction from the Halting Problem.
-	- The **Recursion Theorem** allows a TM to access its own description, enabling self-reference.
-	- The theorem is crucial for proving the undecidability of problems like **ATM**.
+		- The problem of determining if a TM halts on its own encoding is **undecidable**, shown via reduction from the Halting Problem.
+		- The **Recursion Theorem** allows a TM to access its own description, enabling self-reference.
+		- The theorem is crucial for proving the undecidability of problems like **ATM**.
 - # Logarithmic Space Complexity Classes: L and NL
   collapsed:: true
 	- Definitions of L and NL:
@@ -124,39 +127,44 @@ collapsed:: true
 - # NP, coNP, and Certificates
   collapsed:: true
 	- ### 1. Definitions of the Class NP:
-	- **Direct Definition**: NP is the class of decision problems that can be solved by a nondeterministic Turing machine (NTM) in polynomial time. This means there exists an NTM that, for any input of size *n*, halts in at most *n^k* steps for some constant *k*. If at least one of the computation branches of the NTM accepts the input, then the input is considered to be in the language.
-	- **Certificate-Based Definition**: A language *A* is in NP if there exists a polynomial-time verifier *V* such that:
-		- *A = {w | V accepts ⟨w, c⟩ for some c}*
-		- This means that for any string *w* in *A*, there exists a string *c* (the "certificate") such that *V* can verify that *w* is in *A* in polynomial time, based on *c*.
-		- The size of the certificate must also be polynomial in the length of *w*.
+	  collapsed:: true
+		- **Direct Definition**: NP is the class of decision problems that can be solved by a nondeterministic Turing machine (NTM) in polynomial time. This means there exists an NTM that, for any input of size *n*, halts in at most *n^k* steps for some constant *k*. If at least one of the computation branches of the NTM accepts the input, then the input is considered to be in the language.
+		- **Certificate-Based Definition**: A language *A* is in NP if there exists a polynomial-time verifier *V* such that:
+			- *A = {w | V accepts ⟨w, c⟩ for some c}*
+			- This means that for any string *w* in *A*, there exists a string *c* (the "certificate") such that *V* can verify that *w* is in *A* in polynomial time, based on *c*.
+			- The size of the certificate must also be polynomial in the length of *w*.
 	- ### 2. Intuitive Explanation of Equivalence:
-	- The two definitions of NP are equivalent because the "certificate" definition effectively captures the power of nondeterminism.
-	- **Nondeterministic TM Perspective**: An NTM can "guess" a potential solution (e.g., a path in HAMPATH or a factor in COMPOSITES) and then verify that the guess is correct in polynomial time.
-	- **Polynomial-Time Verifier with a Certificate**: The certificate is the "guess" that the NTM makes. The verifier then checks if the guess is a valid solution in polynomial time.
-	- Essentially, the NTM's ability to explore all possible computation paths simultaneously is mirrored by the verifier's ability to check any potential certificate in polynomial time. The certificate provides the specific "path" or "choice" that would have led the NTM to accept.
+	  collapsed:: true
+		- The two definitions of NP are equivalent because the "certificate" definition effectively captures the power of nondeterminism.
+		- **Nondeterministic TM Perspective**: An NTM can "guess" a potential solution (e.g., a path in HAMPATH or a factor in COMPOSITES) and then verify that the guess is correct in polynomial time.
+		- **Polynomial-Time Verifier with a Certificate**: The certificate is the "guess" that the NTM makes. The verifier then checks if the guess is a valid solution in polynomial time.
+		- Essentially, the NTM's ability to explore all possible computation paths simultaneously is mirrored by the verifier's ability to check any potential certificate in polynomial time. The certificate provides the specific "path" or "choice" that would have led the NTM to accept.
 	- ### 3. Certificates for the Class coNP:
-	- **coNP Definition**: The class coNP is the set of languages whose complements are in NP. If *A* is in coNP, then the complement of *A*, denoted as *Ā*, is in NP.
-	- **Certificates for coNP**:
-		- A language *A* is in coNP if there exists a polynomial-time verifier *V* such that *w* ∈ *A* if and only if for all certificates *c*, *V(⟨w, c⟩)* rejects.
-		- In other words, for an input *w* in *A* (a coNP language), no certificate can convince *V* that *w* is not in *A*.
-		- Conversely, *w* is not in *A* if and only if there exists a certificate *c* for which *V(⟨w, c⟩)* accepts.
-	- **Example**:
-		- *TAUTOLOGY* = {⟨ϕ⟩ | all assignments satisfy ϕ} is a coNP problem.
-		- To show that *ϕ* is a tautology, we must show that no assignment falsifies *ϕ*, meaning that a certificate proving *ϕ* is not a tautology cannot exist.
+	  collapsed:: true
+		- **coNP Definition**: The class coNP is the set of languages whose complements are in NP. If *A* is in coNP, then the complement of *A*, denoted as *Ā*, is in NP.
+		- **Certificates for coNP**:
+			- A language *A* is in coNP if there exists a polynomial-time verifier *V* such that *w* ∈ *A* if and only if for all certificates *c*, *V(⟨w, c⟩)* rejects.
+			- In other words, for an input *w* in *A* (a coNP language), no certificate can convince *V* that *w* is not in *A*.
+			- Conversely, *w* is not in *A* if and only if there exists a certificate *c* for which *V(⟨w, c⟩)* accepts.
+		- **Example**:
+			- *TAUTOLOGY* = {⟨ϕ⟩ | all assignments satisfy ϕ} is a coNP problem.
+			- To show that *ϕ* is a tautology, we must show that no assignment falsifies *ϕ*, meaning that a certificate proving *ϕ* is not a tautology cannot exist.
 	- ### 4. Certificates for Problems in NP ∪ coNP:
-	- For problems in **NP**, there exist polynomial-size certificates that can be used to efficiently verify that a given input is in the language.
-	- For problems in **coNP**, there is no such certificate that directly shows an input is in the language, but if an input *w* is **not** in the language, then there exists a certificate proving that *w* is in the complement language (which is an NP language).
-	- **Key Difference**:
-		- NP problems have certificates for membership.
-		- coNP problems have certificates for non-membership (i.e., certificates for membership in their complement).
-	- It is not known if all problems in **NP ∪ coNP** have certificates for both membership and non-membership, since it is not known whether **NP = coNP**.
-	- It is known that **P ⊆ NP ∩ coNP**. If NP = coNP, then all problems in NP ∪ coNP would have certificates for both membership and non-membership.
+	  collapsed:: true
+		- For problems in **NP**, there exist polynomial-size certificates that can be used to efficiently verify that a given input is in the language.
+		- For problems in **coNP**, there is no such certificate that directly shows an input is in the language, but if an input *w* is **not** in the language, then there exists a certificate proving that *w* is in the complement language (which is an NP language).
+		- **Key Difference**:
+			- NP problems have certificates for membership.
+			- coNP problems have certificates for non-membership (i.e., certificates for membership in their complement).
+		- It is not known if all problems in **NP ∪ coNP** have certificates for both membership and non-membership, since it is not known whether **NP = coNP**.
+		- It is known that **P ⊆ NP ∩ coNP**. If NP = coNP, then all problems in NP ∪ coNP would have certificates for both membership and non-membership.
 	- ### **Summary:**
-	- NP problems can be defined using nondeterministic Turing machines or with polynomial-time verifiers that take certificates, capturing the notion of efficiently verifiable solutions.
-	- coNP is the complementary class, characterized by the existence of certificates that demonstrate an input is **not** in the language.
-	- The relationship between NP and coNP is an open question, and whether every problem in NP ∪ coNP has both types of certificates is unknown.
-	  
-	  <!--EndFragment-->
+	  collapsed:: true
+		- NP problems can be defined using nondeterministic Turing machines or with polynomial-time verifiers that take certificates, capturing the notion of efficiently verifiable solutions.
+		- coNP is the complementary class, characterized by the existence of certificates that demonstrate an input is **not** in the language.
+		- The relationship between NP and coNP is an open question, and whether every problem in NP ∪ coNP has both types of certificates is unknown.
+		  
+		  <!--EndFragment-->
 - # PSPACE, NPSPACE, and their Relationship to Time Complexity
   collapsed:: true
 	- **Defining PSPACE and NPSPACE:**
@@ -178,48 +186,49 @@ collapsed:: true
 - # Turing Machines, the Recursion Theorem, and Undecidability
   collapsed:: true
 	- ### 1. Constructing a Turing Machine that Outputs Its Own Description
-	- The notation for encoding objects into strings is defined as follows:
-		- If **O** is an object, then **⟨O⟩** represents its encoding as a string.
-		- If **O₁, O₂, ..., Oₖ** are objects, then **⟨O₁, O₂, ..., Oₖ⟩** encodes these objects into a single string.
-	- A Turing Machine **M** is defined as:
-		- **M** = "On input **w**, [English description of the algorithm]."
-	- To construct a TM **M** that outputs **⟨M⟩** on any input:
-		- **M** = "On input **w**:
-			- Erase the input tape.
-			- Write the string **⟨M⟩** on the tape.
-			- Halt."
-	- This ensures that **M** outputs its own description without using the recursion theorem.
+		- The notation for encoding objects into strings is defined as follows:
+			- If **O** is an object, then **⟨O⟩** represents its encoding as a string.
+			- If **O₁, O₂, ..., Oₖ** are objects, then **⟨O₁, O₂, ..., Oₖ⟩** encodes these objects into a single string.
+		- A Turing Machine **M** is defined as:
+			- **M** = "On input **w**, [English description of the algorithm]."
+		- To construct a TM **M** that outputs **⟨M⟩** on any input:
+			- **M** = "On input **w**:
+				- Erase the input tape.
+				- Write the string **⟨M⟩** on the tape.
+				- Halt."
+		- This ensures that **M** outputs its own description without using the recursion theorem.
 	- ### 2. The Recursion Theorem
-	- **Recursion Theorem Statement**:
-		- For any Turing Machine **T** that computes a function **t(⟨M⟩, w)**, there exists a Turing Machine **R** that computes a function **r(w)** such that for all **w**, **r(w) = t(⟨R⟩, w)**.
-		- Intuitively, this means that a Turing machine can obtain and use its own description during computation.
-	- The recursion theorem ensures that a TM **R** exists such that its behavior on input **w** depends on its own description **⟨R⟩**.
+		- **Recursion Theorem Statement**:
+			- For any Turing Machine **T** that computes a function **t(⟨M⟩, w)**, there exists a Turing Machine **R** that computes a function **r(w)** such that for all **w**, **r(w) = t(⟨R⟩, w)**.
+			- Intuitively, this means that a Turing machine can obtain and use its own description during computation.
+		- The recursion theorem ensures that a TM **R** exists such that its behavior on input **w** depends on its own description **⟨R⟩**.
 	- ### 3. Using the Recursion Theorem for Undecidability Proofs
-	- **Reducibility and Undecidability**:
-		- If problem **A** is undecidable and reducible to problem **B**, then **B** is also undecidable.
-	- **Example: Proving ETM is Undecidable**:
-		- **ETM** = {**⟨M⟩** | M is a TM and L(M) = **∅**}.
-		- Assume **ETM** is decidable, meaning there exists a TM **H** that decides **ETM**, where **H(⟨M⟩)** accepts if **L(M) = ∅** and rejects otherwise.
-		- Construct a TM **R** using the recursion theorem:
-			- Let **T** be a TM that does the following:
-				- Construct a TM **M'** that behaves as follows:
-					- On input **x**, if **x ≠ w**, reject.
-					- Else, run **M** on **w** and accept if **M** accepts.
-				- Run **H** on **⟨M'⟩**.
-				- If **H** accepts, reject; otherwise, accept.
-			- By the recursion theorem, there exists a TM **R** such that **R(w)** computes **t(⟨R⟩, w)**.
-			- Thus, **R** is defined as:
-				- "On input **w**:
-					- Construct a TM **R'**:
-						- If **x ≠ w**, reject.
-						- Else, run **R** on **w** and accept if **R** accepts.
-					- Run **H** on **⟨R'⟩**.
-					- If **H** accepts, reject; otherwise, accept."
-			- **Contradiction Analysis**:
-				- If **L(R') = ∅**, **H** accepts **⟨R'⟩**, causing **R** to reject **w**.
-				- If **L(R') ≠ ∅**, **H** rejects **⟨R'⟩**, causing **R** to accept **w**.
-				- But **R** accepts **w** if and only if **R** does not accept **w**, leading to a contradiction.
-		- Conclusion: The assumption that **ETM** is decidable is false, meaning **ETM** is undecidable.
+	  collapsed:: true
+		- **Reducibility and Undecidability**:
+			- If problem **A** is undecidable and reducible to problem **B**, then **B** is also undecidable.
+		- **Example: Proving ETM is Undecidable**:
+			- **ETM** = {**⟨M⟩** | M is a TM and L(M) = **∅**}.
+			- Assume **ETM** is decidable, meaning there exists a TM **H** that decides **ETM**, where **H(⟨M⟩)** accepts if **L(M) = ∅** and rejects otherwise.
+			- Construct a TM **R** using the recursion theorem:
+				- Let **T** be a TM that does the following:
+					- Construct a TM **M'** that behaves as follows:
+						- On input **x**, if **x ≠ w**, reject.
+						- Else, run **M** on **w** and accept if **M** accepts.
+					- Run **H** on **⟨M'⟩**.
+					- If **H** accepts, reject; otherwise, accept.
+				- By the recursion theorem, there exists a TM **R** such that **R(w)** computes **t(⟨R⟩, w)**.
+				- Thus, **R** is defined as:
+					- "On input **w**:
+						- Construct a TM **R'**:
+							- If **x ≠ w**, reject.
+							- Else, run **R** on **w** and accept if **R** accepts.
+						- Run **H** on **⟨R'⟩**.
+						- If **H** accepts, reject; otherwise, accept."
+				- **Contradiction Analysis**:
+					- If **L(R') = ∅**, **H** accepts **⟨R'⟩**, causing **R** to reject **w**.
+					- If **L(R') ≠ ∅**, **H** rejects **⟨R'⟩**, causing **R** to accept **w**.
+					- But **R** accepts **w** if and only if **R** does not accept **w**, leading to a contradiction.
+			- Conclusion: The assumption that **ETM** is decidable is false, meaning **ETM** is undecidable.
 	- ### Summary
 	- A Turing machine can be constructed to output its own description.
 	- The recursion theorem guarantees the existence of a TM that uses its own description in computations.
