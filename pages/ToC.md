@@ -23,7 +23,7 @@
 			- The recursion depth is at most n (the input length), implying TQBF is in SPACE(n) and therefore in PSPACE.
 		- 2. **All problems in PSPACE are polynomial-time reducible to TQBF:**
 			- Given a language **A** in PSPACE, construct a polynomial-time reduction from **A** to TQBF.
-			- Let **M** be a Turing machine deciding **A** in space **n^k**.
+			- Let **M** be a Turing machine deciding **A** in space $n^k$.
 			- Construct a QBF **ϕ** that simulates **M** on input **w** such that **ϕ** is TRUE if and only if **M** accepts **w**.
 			- The QBF **ϕ** represents the computation history of **M** on **w**, with a tableau of at most **n** columns (max configuration size) and **d(n^k)** rows (max steps taken by **M**), where **d** is a constant.
 			- Define configurations recursively using **ϕ(c₁, c₂, b)**, which asserts that **M** transitions from configuration **c₁** to **c₂** in **b** steps.
