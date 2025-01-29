@@ -1,4 +1,5 @@
 # TQBF and FQBF: PSPACE-Complete Problems
+collapsed:: true
 	- ## 1. Definition of the TQBF Problem
 		- **TQBF (True Quantified Boolean Formula)** is the problem of determining whether a given quantified Boolean formula (QBF) is true.
 		- A **quantified Boolean formula (QBF)** is a Boolean formula with leading **existential (∃)** and **universal (∀)** quantifiers. Each variable in the formula must be within the scope of a quantifier.
@@ -45,7 +46,6 @@
 - # Undecidability, the Recursion Theorem, and the Halting Problem
   collapsed:: true
 	- ## 1. Decidability of the Given Problem
-	  collapsed:: true
 		- **Problem Statement:** Given a Turing machine (TM) **M**, does **M** halt on input **⟨M⟩** (its own encoding)?
 		- **This problem is undecidable.**
 		- This is a variation of the **Halting Problem**, where instead of testing if a TM halts on a given input, we test if it halts on its own encoding.
@@ -64,14 +64,12 @@
 			  
 			  ---
 	- ## 2. Formal Statement of the Recursion Theorem
-	  collapsed:: true
 		- **The Recursion Theorem:** "Let **T** be a Turing machine that computes a function **t : Σ* × Σ* → Σ***. Then, there exists a Turing machine **R** that computes a function **r : Σ* → Σ*** such that for every input **w**, **r(w) = t(⟨R⟩, w)**."
 		- **Intuition:** There exists a TM **R** that can access its own description, **⟨R⟩**, and use it in its computation.
 		- This theorem enables self-referential behavior in TMs.
 		  
 		  ---
 	- ## 3. Using the Recursion Theorem to Prove Undecidability
-	  collapsed:: true
 		- **We prove that ATM = {⟨M, w⟩ | M accepts w} is undecidable.**
 		- **Assumption:** Suppose ATM is decidable. Let **H** be a decider for ATM:
 			- **H(⟨M, w⟩) accepts** if **M** accepts **w**.
