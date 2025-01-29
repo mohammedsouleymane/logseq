@@ -187,21 +187,21 @@ collapsed:: true
 	- This ensures that **M** outputs its own description without using the recursion theorem.
 	- ### 2. The Recursion Theorem
 	- **Recursion Theorem Statement**:
-		- For any Turing Machine **T** that computes a function **t(\u27e8M\u27e9, w)**, there exists a Turing Machine **R** that computes a function **r(w)** such that for all **w**, **r(w) = t(\langle R\u27e9, w)**.
+		- For any Turing Machine **T** that computes a function $t(\langle M\rangle , w)$, there exists a Turing Machine **R** that computes a function **r(w)** such that for all **w**, $r(w) = t(\langle R\rangle , w)$.
 		- Intuitively, this means that a Turing machine can obtain and use its own description during computation.
 	- The recursion theorem ensures that a TM **R** exists such that its behavior on input **w** depends on its own description **\u27e8R\u27e9**.
 	- ### 3. Using the Recursion Theorem for Undecidability Proofs
 	- **Reducibility and Undecidability**:
 		- If problem **A** is undecidable and reducible to problem **B**, then **B** is also undecidable.
 	- **Example: Proving ETM is Undecidable**:
-		- **ETM** = {**\u27e8M\u27e9** | M is a TM and L(M) = **\u2205**}.
+		- **ETM** = {$\langle M\rangle$ | M is a TM and L(M) = **\u2205**}.
 		- Assume **ETM** is decidable, meaning there exists a TM **H** that decides **ETM**, where **H(\u27e8M\u27e9)** accepts if **L(M) = \u2205** and rejects otherwise.
 		- Construct a TM **R** using the recursion theorem:
 			- Let **T** be a TM that does the following:
 				- Construct a TM **M'** that behaves as follows:
 					- On input **x**, if **x \u2260 w**, reject.
 					- Else, run **M** on **w** and accept if **M** accepts.
-				- Run **H** on **\u27e8M'\u27e9**.
+				- Run **H** on $\langle M\rangle$.
 				- If **H** accepts, reject; otherwise, accept.
 			- By the recursion theorem, there exists a TM **R** such that **R(w)** computes **t(\u27e8R\u27e9, w)**.
 			- Thus, **R** is defined as:
