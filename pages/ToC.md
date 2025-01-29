@@ -1,45 +1,48 @@
 # TQBF and FQBF: PSPACE-Complete Problems
 collapsed:: true
 	- ## 1. Definition of the TQBF Problem
-	- **TQBF (True Quantified Boolean Formula)** is the problem of determining whether a given quantified Boolean formula (QBF) is true.
-	- A **quantified Boolean formula (QBF)** is a Boolean formula with leading **existential (∃)** and **universal (∀)** quantifiers. Each variable in the formula must be within the scope of a quantifier.
-	- A QBF is either **TRUE** or **FALSE**. For example:
-		- **Example QBF**: ∀x∃y (x ∨ y) ∧ (¬x ∨ ¬y) is a QBF.
-		- **Non-QBF Example**: (x ∨ y) ∧ (¬x ∨ ¬y) is a Boolean formula but not a QBF because it is not quantified.
-	- The **TQBF problem** is formally defined as:
-	  
-	  \[ TQBF = \{ \langle \phi \rangle \ | \ \phi \text{ is a QBF that is TRUE} \} \]
-	  
-	  ---
-	- ## 2. Complexity of TQBF
-	- **TQBF is PSPACE-complete.**
-	- **PSPACE** is the class of decision problems solvable by a deterministic Turing machine using polynomial space.
-	- PSPACE-completeness means a problem is among the "hardest" problems in PSPACE.
-	- ### PSPACE-Completeness Criteria
-	  1. **TQBF is in PSPACE:**
-		- A recursive algorithm can determine if a QBF is true using polynomial space.
-		- If the QBF has no quantifiers, it evaluates to either TRUE or FALSE.
-		- If the QBF is of the form ∃x ψ, evaluate ψ with x = TRUE and x = FALSE recursively, and accept if either evaluates to TRUE.
-		- If the QBF is of the form ∀x ψ, evaluate ψ with x = TRUE and x = FALSE recursively, and accept if both evaluate to TRUE.
-		- The recursion depth is at most n (the input length), implying TQBF is in SPACE(n) and therefore in PSPACE.
+	  collapsed:: true
+		- **TQBF (True Quantified Boolean Formula)** is the problem of determining whether a given quantified Boolean formula (QBF) is true.
+		- A **quantified Boolean formula (QBF)** is a Boolean formula with leading **existential (∃)** and **universal (∀)** quantifiers. Each variable in the formula must be within the scope of a quantifier.
+		- A QBF is either **TRUE** or **FALSE**. For example:
+			- **Example QBF**: ∀x∃y (x ∨ y) ∧ (¬x ∨ ¬y) is a QBF.
+			- **Non-QBF Example**: (x ∨ y) ∧ (¬x ∨ ¬y) is a Boolean formula but not a QBF because it is not quantified.
+		- The **TQBF problem** is formally defined as:
 		  
-		  2. **All problems in PSPACE are polynomial-time reducible to TQBF:**
-		- Given a language **A** in PSPACE, construct a polynomial-time reduction from **A** to TQBF.
-		- Let **M** be a Turing machine deciding **A** in space **n^k**.
-		- Construct a QBF **ϕ** that simulates **M** on input **w** such that **ϕ** is TRUE if and only if **M** accepts **w**.
-		- The QBF **ϕ** represents the computation history of **M** on **w**, with a tableau of at most **n** columns (max configuration size) and **d(n^k)** rows (max steps taken by **M**), where **d** is a constant.
-		- Define configurations recursively using **ϕ(c₁, c₂, b)**, which asserts that **M** transitions from configuration **c₁** to **c₂** in **b** steps.
-		- The reduction is computable in **O(n^{2k})** time.
+		  \[ TQBF = \{ \langle \phi \rangle \ | \ \phi \text{ is a QBF that is TRUE} \} \]
 		  
 		  ---
+	- ## 2. Complexity of TQBF
+	  collapsed:: true
+		- **TQBF is PSPACE-complete.**
+		- **PSPACE** is the class of decision problems solvable by a deterministic Turing machine using polynomial space.
+		- PSPACE-completeness means a problem is among the "hardest" problems in PSPACE.
+		- ### PSPACE-Completeness Criteria
+		  1. **TQBF is in PSPACE:**
+			- A recursive algorithm can determine if a QBF is true using polynomial space.
+			- If the QBF has no quantifiers, it evaluates to either TRUE or FALSE.
+			- If the QBF is of the form ∃x ψ, evaluate ψ with x = TRUE and x = FALSE recursively, and accept if either evaluates to TRUE.
+			- If the QBF is of the form ∀x ψ, evaluate ψ with x = TRUE and x = FALSE recursively, and accept if both evaluate to TRUE.
+			- The recursion depth is at most n (the input length), implying TQBF is in SPACE(n) and therefore in PSPACE.
+			  
+			  2. **All problems in PSPACE are polynomial-time reducible to TQBF:**
+			- Given a language **A** in PSPACE, construct a polynomial-time reduction from **A** to TQBF.
+			- Let **M** be a Turing machine deciding **A** in space **n^k**.
+			- Construct a QBF **ϕ** that simulates **M** on input **w** such that **ϕ** is TRUE if and only if **M** accepts **w**.
+			- The QBF **ϕ** represents the computation history of **M** on **w**, with a tableau of at most **n** columns (max configuration size) and **d(n^k)** rows (max steps taken by **M**), where **d** is a constant.
+			- Define configurations recursively using **ϕ(c₁, c₂, b)**, which asserts that **M** transitions from configuration **c₁** to **c₂** in **b** steps.
+			- The reduction is computable in **O(n^{2k})** time.
+			  
+			  ---
 	- ## 3. Complexity of the FQBF Problem
-	- **FQBF (False Quantified Boolean Formula)** is the problem of determining whether a given QBF is **false**.
-	- **FQBF is PSPACE-complete**, as it is the complement of TQBF.
-	- Since PSPACE = coPSPACE, if a problem is in PSPACE, its complement is also in PSPACE.
-	- Because TQBF is PSPACE-complete and FQBF is its complement, **FQBF is also PSPACE-complete**.
-	- If a polynomial-time algorithm were found for FQBF, it would imply **P = PSPACE**, a major open problem in complexity theory.
-	  
-	  ---
+	  collapsed:: true
+		- **FQBF (False Quantified Boolean Formula)** is the problem of determining whether a given QBF is **false**.
+		- **FQBF is PSPACE-complete**, as it is the complement of TQBF.
+		- Since PSPACE = coPSPACE, if a problem is in PSPACE, its complement is also in PSPACE.
+		- Because TQBF is PSPACE-complete and FQBF is its complement, **FQBF is also PSPACE-complete**.
+		- If a polynomial-time algorithm were found for FQBF, it would imply **P = PSPACE**, a major open problem in complexity theory.
+		  
+		  ---
 	- ## Summary
 	- **TQBF is a PSPACE-complete problem**, meaning it is one of the hardest problems in PSPACE. The problem is to determine if a quantified Boolean formula is **true**.
 	- **FQBF is the complement of TQBF**. Since PSPACE = coPSPACE, **FQBF is also PSPACE-complete**.
@@ -226,95 +229,103 @@ collapsed:: true
 - # NL and coNL Complexity Classes
   collapsed:: true
 	- ### 1. Defining NL and coNL
-	- **NL (Nondeterministic Logarithmic Space)**:
-		- NL is the class of decision problems solvable by a nondeterministic Turing machine using logarithmic space.
-		- The amount of memory used is proportional to **log(n)**, where **n** is the input size.
-		- The input tape is read-only and does not count toward the space bound.
-	- **coNL (Complement of NL)**:
-		- coNL consists of problems whose complements are in NL.
-		- If a language **A** is in NL, then its complement **A̅** (all strings not in **A**) is in coNL.
+	  collapsed:: true
+		- **NL (Nondeterministic Logarithmic Space)**:
+			- NL is the class of decision problems solvable by a nondeterministic Turing machine using logarithmic space.
+			- The amount of memory used is proportional to **log(n)**, where **n** is the input size.
+			- The input tape is read-only and does not count toward the space bound.
+		- **coNL (Complement of NL)**:
+			- coNL consists of problems whose complements are in NL.
+			- If a language **A** is in NL, then its complement **A̅** (all strings not in **A**) is in coNL.
 	- ### 2. Relationship Between NL and coNL
-	- **NL = coNL**:
-		- A fundamental result states that **NL = coNL**, meaning that any problem solvable in nondeterministic log-space also has its complement solvable in nondeterministic log-space.
-		- This result follows from the **Immerman–Szelepcsényi theorem**, which proves that for any function **f(n) ≥ log(n)**, **NSPACE(f(n)) = coNSPACE(f(n))**.
-	- **Proof Sketch of NL = coNL**:
-		- A nondeterministic Turing machine using logarithmic space has a limited number of configurations.
-		- It is possible to enumerate all configurations within log-space constraints.
-		- A deterministic log-space Turing machine can verify whether a nondeterministic machine has a valid accepting path.
-		- This leads to the conclusion that NL is closed under complement, proving **NL = coNL**.
+	  collapsed:: true
+		- **NL = coNL**:
+			- A fundamental result states that **NL = coNL**, meaning that any problem solvable in nondeterministic log-space also has its complement solvable in nondeterministic log-space.
+			- This result follows from the **Immerman–Szelepcsényi theorem**, which proves that for any function **f(n) ≥ log(n)**, **NSPACE(f(n)) = coNSPACE(f(n))**.
+		- **Proof Sketch of NL = coNL**:
+			- A nondeterministic Turing machine using logarithmic space has a limited number of configurations.
+			- It is possible to enumerate all configurations within log-space constraints.
+			- A deterministic log-space Turing machine can verify whether a nondeterministic machine has a valid accepting path.
+			- This leads to the conclusion that NL is closed under complement, proving **NL = coNL**.
 	- ### 3. Relationship to Other Complexity Classes
-	- **L ⊆ NL**:
-		- Deterministic log-space problems (L) are a subset of NL since a deterministic machine is a special case of a nondeterministic one.
-	- **NL ⊆ P**:
-		- NL is contained within **P (polynomial time)** because a machine using log-space can have at most **O(n^k)** configurations.
-		- This means an NL problem can be solved in polynomial time by simulating all possible configurations.
-	- **NL ⊆ PSPACE**:
-		- Since **NL ⊆ P** and **P ⊆ PSPACE**, it follows that **NL ⊆ PSPACE** (polynomial space).
-	- **NP and coNP Relationship to NL**:
-		- **NP is not necessarily contained in NL**, as NP problems may require more than logarithmic space.
-		- **coNP is not necessarily in NL**, since we do not have a known inclusion of NP in NL.
+	  collapsed:: true
+		- **L ⊆ NL**:
+			- Deterministic log-space problems (L) are a subset of NL since a deterministic machine is a special case of a nondeterministic one.
+		- **NL ⊆ P**:
+			- NL is contained within **P (polynomial time)** because a machine using log-space can have at most **O(n^k)** configurations.
+			- This means an NL problem can be solved in polynomial time by simulating all possible configurations.
+		- **NL ⊆ PSPACE**:
+			- Since **NL ⊆ P** and **P ⊆ PSPACE**, it follows that **NL ⊆ PSPACE** (polynomial space).
+		- **NP and coNP Relationship to NL**:
+			- **NP is not necessarily contained in NL**, as NP problems may require more than logarithmic space.
+			- **coNP is not necessarily in NL**, since we do not have a known inclusion of NP in NL.
 	- ### 4. NL-Completeness and Examples
-	- **Definition of NL-Completeness**:
-		- A language **B** is **NL-complete** if:
-			- **B** is in NL.
-			- Every language in NL is log-space reducible to **B**.
-		- Log-space reducibility means that an instance of problem **A** can be transformed into an instance of **B** using only logarithmic space.
-	- **Examples of NL-Complete Problems**:
-		- **PATH Problem**:
-			- Given a directed graph **G** and two nodes **s** and **t**, does there exist a path from **s** to **t**?
-			- PATH is **NL-complete**, as all problems in NL can be reduced to PATH via log-space reductions.
-		- **2SAT Problem**:
-			- Determines whether a Boolean formula in **2-CNF** (at most two literals per clause) is satisfiable.
-			- **2SAT is NL-complete**, and PATH can be reduced to 2SAT using log-space reductions.
-	- **coNL-Complete Problems**:
-		- Since **NL = coNL**, any NL-complete problem also has its complement as a coNL-complete problem.
-		- **Complement of PATH** (checking if there is *no* path between two nodes) is an example of a coNL-complete problem.
+	  collapsed:: true
+		- **Definition of NL-Completeness**:
+			- A language **B** is **NL-complete** if:
+				- **B** is in NL.
+				- Every language in NL is log-space reducible to **B**.
+			- Log-space reducibility means that an instance of problem **A** can be transformed into an instance of **B** using only logarithmic space.
+		- **Examples of NL-Complete Problems**:
+			- **PATH Problem**:
+				- Given a directed graph **G** and two nodes **s** and **t**, does there exist a path from **s** to **t**?
+				- PATH is **NL-complete**, as all problems in NL can be reduced to PATH via log-space reductions.
+			- **2SAT Problem**:
+				- Determines whether a Boolean formula in **2-CNF** (at most two literals per clause) is satisfiable.
+				- **2SAT is NL-complete**, and PATH can be reduced to 2SAT using log-space reductions.
+		- **coNL-Complete Problems**:
+			- Since **NL = coNL**, any NL-complete problem also has its complement as a coNL-complete problem.
+			- **Complement of PATH** (checking if there is *no* path between two nodes) is an example of a coNL-complete problem.
 	- ### **Summary**
-	- **NL and coNL** are complexity classes related to logarithmic space.
-	- **NL = coNL**, proven by the Immerman–Szelepcsényi theorem.
-	- **NL is contained in P and PSPACE** but is not necessarily related to NP.
-	- **PATH and 2SAT are examples of NL-complete problems**.
-	  
-	  <!--EndFragment-->
+		- **NL and coNL** are complexity classes related to logarithmic space.
+		- **NL = coNL**, proven by the Immerman–Szelepcsényi theorem.
+		- **NL is contained in P and PSPACE** but is not necessarily related to NP.
+		- **PATH and 2SAT are examples of NL-complete problems**.
+		  
+		  <!--EndFragment-->
 - # P vs NP: A Complexity Theory Overview
-	- #### Defining the Classes P and NP:
-	  logseq.order-list-type:: number
-	-
-	- **P (Polynomial Time)**:
-	  
-	  P is the class of decision problems that can be solved by a deterministic Turing machine in polynomial time. This means that an algorithm exists that can solve the problem in a time bounded by a polynomial function of the input size. Problems in this class are considered realistically solvable by computers.
-	- **NP (Nondeterministic Polynomial Time)**:
-	  
-	  NP is the class of decision problems that can be verified in polynomial time by a deterministic Turing machine. In other words, if a solution (or "certificate") to a problem is proposed, a deterministic Turing machine can check whether the solution is correct in polynomial time. An equivalent definition is that NP is the class of problems that can be solved in polynomial time by a nondeterministic Turing machine.
+  collapsed:: true
+	- #### 1. Defining the Classes P and NP:
+	  collapsed:: true
+		- **P (Polynomial Time)**:
+		  
+		  P is the class of decision problems that can be solved by a deterministic Turing machine in polynomial time. This means that an algorithm exists that can solve the problem in a time bounded by a polynomial function of the input size. Problems in this class are considered realistically solvable by computers.
+		- **NP (Nondeterministic Polynomial Time)**:
+		  
+		  NP is the class of decision problems that can be verified in polynomial time by a deterministic Turing machine. In other words, if a solution (or "certificate") to a problem is proposed, a deterministic Turing machine can check whether the solution is correct in polynomial time. An equivalent definition is that NP is the class of problems that can be solved in polynomial time by a nondeterministic Turing machine.
 	- #### 2. The P vs NP Problem:
-	- **What is it?**
-	  
-	  The P vs NP problem is a major unsolved question in computer science that asks whether the class P is equal to the class NP. More simply, it asks whether every problem whose solution can be verified quickly (in polynomial time) can also be solved quickly (in polynomial time).
-	- **Why should we care?**
-	  
-	  If P = NP, it would mean that many currently intractable problems (problems for which solutions can be verified quickly, but for which no efficient solution is known) would have efficient algorithms. This would revolutionize fields such as cryptography, optimization, logistics, and artificial intelligence, as many problems in these fields are in NP.
-	  
-	  If P ≠ NP, it would mean that there are inherent limits to what can be solved efficiently by computers, and certain problems cannot be solved in polynomial time.
+	  collapsed:: true
+		- **What is it?**
+		  
+		  The P vs NP problem is a major unsolved question in computer science that asks whether the class P is equal to the class NP. More simply, it asks whether every problem whose solution can be verified quickly (in polynomial time) can also be solved quickly (in polynomial time).
+		- **Why should we care?**
+		  
+		  If P = NP, it would mean that many currently intractable problems (problems for which solutions can be verified quickly, but for which no efficient solution is known) would have efficient algorithms. This would revolutionize fields such as cryptography, optimization, logistics, and artificial intelligence, as many problems in these fields are in NP.
+		  
+		  If P ≠ NP, it would mean that there are inherent limits to what can be solved efficiently by computers, and certain problems cannot be solved in polynomial time.
 	- #### 3. Conditions for Concluding P = NP or P ≠ NP:
-	- **P = NP**:
-	  
-	  If a polynomial-time algorithm is found for any NP-complete problem, it would imply that P = NP. This is because all problems in NP can be polynomial-time reduced to NP-complete problems. Thus, if an NP-complete problem can be solved in polynomial time, all NP problems can also be solved in polynomial time.
-	- **P ≠ NP**:
-	  
-	  If it could be proven that even one NP problem has no polynomial-time algorithm, then it would show that P ≠ NP. Current conjecture leans toward P ≠ NP, although no formal proof exists yet.
+	  collapsed:: true
+		- **P = NP**:
+		  
+		  If a polynomial-time algorithm is found for any NP-complete problem, it would imply that P = NP. This is because all problems in NP can be polynomial-time reduced to NP-complete problems. Thus, if an NP-complete problem can be solved in polynomial time, all NP problems can also be solved in polynomial time.
+		- **P ≠ NP**:
+		  
+		  If it could be proven that even one NP problem has no polynomial-time algorithm, then it would show that P ≠ NP. Current conjecture leans toward P ≠ NP, although no formal proof exists yet.
 	- #### 4. Analyzing the Turing Machine Statement and its Decidability Implications:
-	- **The Statement**:
-	  
-	  The statement involves a Turing machine (TM) M that runs in at most 100 steps. Based on whether P = NP, M outputs a string: "P equals NP" if P = NP, or "H" otherwise.
-	- **Decidability of the P vs NP Problem**:
-	  
-	  The existence of such a Turing machine M (which halts in 100 steps) does not imply that the P vs NP problem is decidable. While the TM would produce an output depending on whether P = NP or P ≠ NP, the question of whether P = NP is an open problem in computability theory. A Turing machine cannot decide this question in a finite number of steps.
-	- **Reasoning**:
-	  
-	  Even though a TM could be constructed to behave as described, the fundamental issue is that the P vs NP problem concerns whether polynomial-time algorithms exist for NP problems, which is unrelated to the creation of such a simple TM. The question of whether P = NP is undecidable, as it requires proving the existence (or lack thereof) of efficient algorithms, which no TM can conclusively resolve in a finite amount of time.
+	  collapsed:: true
+		- **The Statement**:
+		  
+		  The statement involves a Turing machine (TM) M that runs in at most 100 steps. Based on whether P = NP, M outputs a string: "P equals NP" if P = NP, or "H" otherwise.
+		- **Decidability of the P vs NP Problem**:
+		  
+		  The existence of such a Turing machine M (which halts in 100 steps) does not imply that the P vs NP problem is decidable. While the TM would produce an output depending on whether P = NP or P ≠ NP, the question of whether P = NP is an open problem in computability theory. A Turing machine cannot decide this question in a finite number of steps.
+		- **Reasoning**:
+		  
+		  Even though a TM could be constructed to behave as described, the fundamental issue is that the P vs NP problem concerns whether polynomial-time algorithms exist for NP problems, which is unrelated to the creation of such a simple TM. The question of whether P = NP is undecidable, as it requires proving the existence (or lack thereof) of efficient algorithms, which no TM can conclusively resolve in a finite amount of time.
 	- #### Summary:
 	  
 	  P and NP are core classes in computational complexity theory. The P vs NP problem remains one of the most important unsolved questions in computer science. While hypothetical Turing machines may simulate behavior regarding P and NP, they do not provide a method to definitively decide whether P equals NP, since this question involves deep computational and algorithmic issues that go beyond simple machine behavior.
 	  
 	  <!--EndFragment-->
+-
 -
