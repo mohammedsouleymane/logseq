@@ -176,18 +176,18 @@ collapsed:: true
 	- ### 1. Constructing a Turing Machine that Outputs Its Own Description
 	- The notation for encoding objects into strings is defined as follows:
 		- If **O** is an object, then $\langle O\rangle$ represents its encoding as a string.
-		- If **O1, O2, ..., Ok** are objects, then **\langle O1, O2, ..., Ok\u27e9** encodes these objects into a single string.
+		- If **O1, O2, ..., Ok** are objects, then $\langle O1, O2, ..., Ok\rangle$ encodes these objects into a single string.
 	- A Turing Machine **M** is defined as:
 		- **M** = "On input **w**, [English description of the algorithm]."
-	- To construct a TM **M** that outputs **\u27e8M\u27e9** on any input:
+	- To construct a TM **M** that outputs $\langle M\rangle$ on any input:
 		- **M** = "On input **w**:
 			- Erase the input tape.
-			- Write the string **\u27e8M\u27e9** on the tape.
+			- Write the string $\langle M\rangle$ on the tape.
 			- Halt."
 	- This ensures that **M** outputs its own description without using the recursion theorem.
 	- ### 2. The Recursion Theorem
 	- **Recursion Theorem Statement**:
-		- For any Turing Machine **T** that computes a function **t(\u27e8M\u27e9, w)**, there exists a Turing Machine **R** that computes a function **r(w)** such that for all **w**, **r(w) = t(\u27e8R\u27e9, w)**.
+		- For any Turing Machine **T** that computes a function **t(\u27e8M\u27e9, w)**, there exists a Turing Machine **R** that computes a function **r(w)** such that for all **w**, **r(w) = t(\langle R\u27e9, w)**.
 		- Intuitively, this means that a Turing machine can obtain and use its own description during computation.
 	- The recursion theorem ensures that a TM **R** exists such that its behavior on input **w** depends on its own description **\u27e8R\u27e9**.
 	- ### 3. Using the Recursion Theorem for Undecidability Proofs
