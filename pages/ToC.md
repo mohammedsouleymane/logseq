@@ -172,3 +172,55 @@ collapsed:: true
 		  In summary, PSPACE and NPSPACE are complexity classes that relate to the amount of memory a Turing Machine uses. They are equivalent, as stated by Savitch's Theorem. They encompass polynomial time classes like P and NP and are contained within exponential time classes like EXPTIME.
 		  
 		  <!--EndFragment-->
+- # Turing Machines, the Recursion Theorem, and Undecidability
+	- ### 1. Constructing a Turing Machine that Outputs Its Own Description
+	- The notation for encoding objects into strings is defined as follows:
+		- If **O** is an object, then $\langle O\rangle$ represents its encoding as a string.
+		- If **O1, O2, ..., Ok** are objects, then **\langle O1, O2, ..., Ok\u27e9** encodes these objects into a single string.
+	- A Turing Machine **M** is defined as:
+		- **M** = "On input **w**, [English description of the algorithm]."
+	- To construct a TM **M** that outputs **\u27e8M\u27e9** on any input:
+		- **M** = "On input **w**:
+			- Erase the input tape.
+			- Write the string **\u27e8M\u27e9** on the tape.
+			- Halt."
+	- This ensures that **M** outputs its own description without using the recursion theorem.
+	- ### 2. The Recursion Theorem
+	- **Recursion Theorem Statement**:
+		- For any Turing Machine **T** that computes a function **t(\u27e8M\u27e9, w)**, there exists a Turing Machine **R** that computes a function **r(w)** such that for all **w**, **r(w) = t(\u27e8R\u27e9, w)**.
+		- Intuitively, this means that a Turing machine can obtain and use its own description during computation.
+	- The recursion theorem ensures that a TM **R** exists such that its behavior on input **w** depends on its own description **\u27e8R\u27e9**.
+	- ### 3. Using the Recursion Theorem for Undecidability Proofs
+	- **Reducibility and Undecidability**:
+		- If problem **A** is undecidable and reducible to problem **B**, then **B** is also undecidable.
+	- **Example: Proving ETM is Undecidable**:
+		- **ETM** = {**\u27e8M\u27e9** | M is a TM and L(M) = **\u2205**}.
+		- Assume **ETM** is decidable, meaning there exists a TM **H** that decides **ETM**, where **H(\u27e8M\u27e9)** accepts if **L(M) = \u2205** and rejects otherwise.
+		- Construct a TM **R** using the recursion theorem:
+			- Let **T** be a TM that does the following:
+				- Construct a TM **M'** that behaves as follows:
+					- On input **x**, if **x \u2260 w**, reject.
+					- Else, run **M** on **w** and accept if **M** accepts.
+				- Run **H** on **\u27e8M'\u27e9**.
+				- If **H** accepts, reject; otherwise, accept.
+			- By the recursion theorem, there exists a TM **R** such that **R(w)** computes **t(\u27e8R\u27e9, w)**.
+			- Thus, **R** is defined as:
+				- "On input **w**:
+					- Construct a TM **R'**:
+						- If **x \u2260 w**, reject.
+						- Else, run **R** on **w** and accept if **R** accepts.
+					- Run **H** on **\u27e8R'\u27e9**.
+					- If **H** accepts, reject; otherwise, accept."
+			- **Contradiction Analysis**:
+				- If **L(R') = \u2205**, **H** accepts **\u27e8R'\u27e9**, causing **R** to reject **w**.
+				- If **L(R') \u2260 \u2205**, **H** rejects **\u27e8R'\u27e9**, causing **R** to accept **w**.
+				- But **R** accepts **w** if and only if **R** does not accept **w**, leading to a contradiction.
+		- Conclusion: The assumption that **ETM** is decidable is false, meaning **ETM** is undecidable.
+	- ### Summary
+	- A Turing machine can be constructed to output its own description.
+	- The recursion theorem guarantees the existence of a TM that uses its own description in computations.
+	- The recursion theorem is instrumental in proving undecidability results, such as the undecidability of **ETM**, by creating contradictions in decision procedures.
+	  
+	  <!--EndFragment-->
+-
+-
