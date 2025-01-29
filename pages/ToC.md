@@ -154,4 +154,21 @@ collapsed:: true
 	- The relationship between NP and coNP is an open question, and whether every problem in NP ∪ coNP has both types of certificates is unknown.
 	  
 	  <!--EndFragment-->
--
+- # PSPACE, NPSPACE, and their Relationship to Time Complexity
+  collapsed:: true
+	- **Defining PSPACE and NPSPACE:**
+		- **PSPACE (Polynomial Space):** PSPACE is the class of decision problems that can be solved by a deterministic Turing machine using a polynomial amount of space. This means that the amount of memory (tape cells) the Turing machine uses is bounded by a polynomial function of the input size *n*.
+		- **NPSPACE (Nondeterministic Polynomial Space):** NPSPACE is the class of decision problems that can be solved by a nondeterministic Turing machine using a polynomial amount of space. Similar to PSPACE, the space used is bounded by a polynomial function of the input size, but the machine is nondeterministic, meaning it can explore multiple computation paths simultaneously.
+	- **Relationship between PSPACE and NPSPACE:**
+		- The sources state that PSPACE = NPSPACE. This is a significant result, and it is a consequence of Savitch's theorem.
+		- **Sketch of Proof (Savitch's Theorem):** Savitch’s theorem demonstrates that any problem solvable by a nondeterministic TM using *f(n)* space can be solved by a deterministic TM using *f(n)^2* space. The conversion of an NTM *N* to a deterministic TM *M* involves using a recursive algorithm to test if a configuration of *N* can reach another configuration within a given number of steps. The deterministic algorithm needs to keep track of configurations in the recursion, requiring *O(f(n))* space per level of recursion and a recursion depth of *O(f(n))*, thus the total space is *O(f(n)^2)*. When *f(n)* is a polynomial function, then *f(n)^2* is also a polynomial function, so this shows NPSPACE is a subset of PSPACE. Because a deterministic TM is also a nondeterministic TM, we also have that PSPACE is a subset of NPSPACE, so we can conclude that PSPACE = NPSPACE.
+	- **Relationship to Time Complexity Classes:**
+		- **PSPACE contains P:** The class P (polynomial time) is a subset of PSPACE because a Turing machine that runs in polynomial time can use, at most, a polynomial amount of space. A TM that uses *t(n)* time can use, at most, *t(n)* space.
+		- **PSPACE contains NP:** As shown above, P is a subset of PSPACE, and it is known that NP contains P. We also know that NP is a subset of PSPACE because any problem in NP can be verified using a polynomial amount of space. So it is true that PSPACE also contains NP.
+		- **PSPACE is a subset of EXPTIME:** A TM that uses *t(n)* space cannot use more than *2^{O(t(n))}* time without repeating a configuration and looping. Therefore, PSPACE is a subset of EXPTIME (exponential time) because a Turing machine that runs in polynomial space is limited to an exponential number of possible configurations and thus will halt in exponential time.
+		- **TIME(t(n)) ⊆ SPACE(t(n))**: Any Turing Machine that uses *t(n)* steps can use at most *t(n)* space. This means a TM that runs in polynomial time must also run in polynomial space.
+		- **SPACE(t(n)) ⊆ TIME(2^{O(t(n))})**: A Turing machine that runs in *t(n)* space can be simulated in *2^{O(t(n))}* time.
+		  
+		  In summary, PSPACE and NPSPACE are complexity classes that relate to the amount of memory a Turing Machine uses. They are equivalent, as stated by Savitch's Theorem. They encompass polynomial time classes like P and NP and are contained within exponential time classes like EXPTIME.
+		  
+		  <!--EndFragment-->
