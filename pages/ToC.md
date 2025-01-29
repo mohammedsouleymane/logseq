@@ -173,47 +173,48 @@ collapsed:: true
 		  
 		  <!--EndFragment-->
 - # Turing Machines, the Recursion Theorem, and Undecidability
+  collapsed:: true
 	- ### 1. Constructing a Turing Machine that Outputs Its Own Description
 	- The notation for encoding objects into strings is defined as follows:
-		- If **O** is an object, then $\langle O\rangle$ represents its encoding as a string.
-		- If **O1, O2, ..., Ok** are objects, then $\langle O1, O2, ..., Ok\rangle$ encodes these objects into a single string.
+		- If **O** is an object, then **⟨O⟩** represents its encoding as a string.
+		- If **O₁, O₂, ..., Oₖ** are objects, then **⟨O₁, O₂, ..., Oₖ⟩** encodes these objects into a single string.
 	- A Turing Machine **M** is defined as:
 		- **M** = "On input **w**, [English description of the algorithm]."
-	- To construct a TM **M** that outputs $\langle M\rangle$ on any input:
+	- To construct a TM **M** that outputs **⟨M⟩** on any input:
 		- **M** = "On input **w**:
 			- Erase the input tape.
-			- Write the string $\langle M\rangle$ on the tape.
+			- Write the string **⟨M⟩** on the tape.
 			- Halt."
 	- This ensures that **M** outputs its own description without using the recursion theorem.
 	- ### 2. The Recursion Theorem
 	- **Recursion Theorem Statement**:
-		- For any Turing Machine **T** that computes a function $t(\langle M\rangle , w)$, there exists a Turing Machine **R** that computes a function **r(w)** such that for all **w**, $r(w) = t(\langle R\rangle , w)$.
+		- For any Turing Machine **T** that computes a function **t(⟨M⟩, w)**, there exists a Turing Machine **R** that computes a function **r(w)** such that for all **w**, **r(w) = t(⟨R⟩, w)**.
 		- Intuitively, this means that a Turing machine can obtain and use its own description during computation.
-	- The recursion theorem ensures that a TM **R** exists such that its behavior on input **w** depends on its own description **\u27e8R\u27e9**.
+	- The recursion theorem ensures that a TM **R** exists such that its behavior on input **w** depends on its own description **⟨R⟩**.
 	- ### 3. Using the Recursion Theorem for Undecidability Proofs
 	- **Reducibility and Undecidability**:
 		- If problem **A** is undecidable and reducible to problem **B**, then **B** is also undecidable.
 	- **Example: Proving ETM is Undecidable**:
-		- **ETM** = {$\langle M\rangle$ | M is a TM and L(M) = **\u2205**}.
-		- Assume **ETM** is decidable, meaning there exists a TM **H** that decides **ETM**, where **H(\u27e8M\u27e9)** accepts if **L(M) = \u2205** and rejects otherwise.
+		- **ETM** = {**⟨M⟩** | M is a TM and L(M) = **∅**}.
+		- Assume **ETM** is decidable, meaning there exists a TM **H** that decides **ETM**, where **H(⟨M⟩)** accepts if **L(M) = ∅** and rejects otherwise.
 		- Construct a TM **R** using the recursion theorem:
 			- Let **T** be a TM that does the following:
 				- Construct a TM **M'** that behaves as follows:
-					- On input **x**, if **x \u2260 w**, reject.
+					- On input **x**, if **x ≠ w**, reject.
 					- Else, run **M** on **w** and accept if **M** accepts.
-				- Run **H** on $\langle M\rangle$.
+				- Run **H** on **⟨M'⟩**.
 				- If **H** accepts, reject; otherwise, accept.
-			- By the recursion theorem, there exists a TM **R** such that **R(w)** computes **t(\u27e8R\u27e9, w)**.
+			- By the recursion theorem, there exists a TM **R** such that **R(w)** computes **t(⟨R⟩, w)**.
 			- Thus, **R** is defined as:
 				- "On input **w**:
 					- Construct a TM **R'**:
-						- If **x \u2260 w**, reject.
+						- If **x ≠ w**, reject.
 						- Else, run **R** on **w** and accept if **R** accepts.
-					- Run **H** on **\u27e8R'\u27e9**.
+					- Run **H** on **⟨R'⟩**.
 					- If **H** accepts, reject; otherwise, accept."
 			- **Contradiction Analysis**:
-				- If **L(R') = \u2205**, **H** accepts **\u27e8R'\u27e9**, causing **R** to reject **w**.
-				- If **L(R') \u2260 \u2205**, **H** rejects **\u27e8R'\u27e9**, causing **R** to accept **w**.
+				- If **L(R') = ∅**, **H** accepts **⟨R'⟩**, causing **R** to reject **w**.
+				- If **L(R') ≠ ∅**, **H** rejects **⟨R'⟩**, causing **R** to accept **w**.
 				- But **R** accepts **w** if and only if **R** does not accept **w**, leading to a contradiction.
 		- Conclusion: The assumption that **ETM** is decidable is false, meaning **ETM** is undecidable.
 	- ### Summary
