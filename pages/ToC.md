@@ -276,5 +276,45 @@ collapsed:: true
 	- **PATH and 2SAT are examples of NL-complete problems**.
 	  
 	  <!--EndFragment-->
--
+- # P vs NP: A Complexity Theory Overview
+	- #### Defining the Classes P and NP:
+	  logseq.order-list-type:: number
+	-
+	- **P (Polynomial Time)**:
+	  
+	  P is the class of decision problems that can be solved by a deterministic Turing machine in polynomial time. This means that an algorithm exists that can solve the problem in a time bounded by a polynomial function of the input size. Problems in this class are considered realistically solvable by computers.
+	- **NP (Nondeterministic Polynomial Time)**:
+	  
+	  NP is the class of decision problems that can be verified in polynomial time by a deterministic Turing machine. In other words, if a solution (or "certificate") to a problem is proposed, a deterministic Turing machine can check whether the solution is correct in polynomial time. An equivalent definition is that NP is the class of problems that can be solved in polynomial time by a nondeterministic Turing machine.
+	- #### 2. The P vs NP Problem:
+	- **What is it?**
+	  
+	  The P vs NP problem is a major unsolved question in computer science that asks whether the class P is equal to the class NP. More simply, it asks whether every problem whose solution can be verified quickly (in polynomial time) can also be solved quickly (in polynomial time).
+	- **Why should we care?**
+	  
+	  If P = NP, it would mean that many currently intractable problems (problems for which solutions can be verified quickly, but for which no efficient solution is known) would have efficient algorithms. This would revolutionize fields such as cryptography, optimization, logistics, and artificial intelligence, as many problems in these fields are in NP.
+	  
+	  If P ≠ NP, it would mean that there are inherent limits to what can be solved efficiently by computers, and certain problems cannot be solved in polynomial time.
+	- #### 3. Conditions for Concluding P = NP or P ≠ NP:
+	- **P = NP**:
+	  
+	  If a polynomial-time algorithm is found for any NP-complete problem, it would imply that P = NP. This is because all problems in NP can be polynomial-time reduced to NP-complete problems. Thus, if an NP-complete problem can be solved in polynomial time, all NP problems can also be solved in polynomial time.
+	- **P ≠ NP**:
+	  
+	  If it could be proven that even one NP problem has no polynomial-time algorithm, then it would show that P ≠ NP. Current conjecture leans toward P ≠ NP, although no formal proof exists yet.
+	- #### 4. Analyzing the Turing Machine Statement and its Decidability Implications:
+	- **The Statement**:
+	  
+	  The statement involves a Turing machine (TM) M that runs in at most 100 steps. Based on whether P = NP, M outputs a string: "P equals NP" if P = NP, or "H" otherwise.
+	- **Decidability of the P vs NP Problem**:
+	  
+	  The existence of such a Turing machine M (which halts in 100 steps) does not imply that the P vs NP problem is decidable. While the TM would produce an output depending on whether P = NP or P ≠ NP, the question of whether P = NP is an open problem in computability theory. A Turing machine cannot decide this question in a finite number of steps.
+	- **Reasoning**:
+	  
+	  Even though a TM could be constructed to behave as described, the fundamental issue is that the P vs NP problem concerns whether polynomial-time algorithms exist for NP problems, which is unrelated to the creation of such a simple TM. The question of whether P = NP is undecidable, as it requires proving the existence (or lack thereof) of efficient algorithms, which no TM can conclusively resolve in a finite amount of time.
+	- #### Summary:
+	  
+	  P and NP are core classes in computational complexity theory. The P vs NP problem remains one of the most important unsolved questions in computer science. While hypothetical Turing machines may simulate behavior regarding P and NP, they do not provide a method to definitively decide whether P equals NP, since this question involves deep computational and algorithmic issues that go beyond simple machine behavior.
+	  
+	  <!--EndFragment-->
 -
