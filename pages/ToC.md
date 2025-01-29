@@ -94,6 +94,7 @@ collapsed:: true
 	- The **Recursion Theorem** allows a TM to access its own description, enabling self-reference.
 	- The theorem is crucial for proving the undecidability of problems like **ATM**.
 - # Logarithmic Space Complexity Classes: L and NL
+  collapsed:: true
 	- Definitions of L and NL:
 		- **L (Logarithmic Space):** L is the class of decision problems that can be solved by a deterministic Turing machine using a logarithmic amount of space. This means that the amount of memory (tape cells) the Turing machine uses is bounded by O(log n), where n is the size of the input. The input itself is read-only and doesn't count toward the space used [1].
 		- **NL (Nondeterministic Logarithmic Space):** NL is the class of decision problems that can be solved by a nondeterministic Turing machine using a logarithmic amount of space [1]. Similar to L, the space used is bounded by O(log n), but the machine is nondeterministic, meaning it can explore multiple computation paths simultaneously, and again the input is read-only and does not count toward the space used [1].
@@ -117,5 +118,40 @@ collapsed:: true
 		  In summary, L and NL are complexity classes defined by the amount of space a Turing machine uses. NL is the nondeterministic counterpart of L, and it is contained in $P, SPACE(log^2(n))$, and PSPACE. NL-complete problems are the "hardest" problems in NL, as any other problem in NL can be reduced to them using a log-space reduction.
 		  
 		  <!--EndFragment-->
--
+- # NP, coNP, and Certificates
+  collapsed:: true
+	- ### 1. Definitions of the Class NP:
+	- **Direct Definition**: NP is the class of decision problems that can be solved by a nondeterministic Turing machine (NTM) in polynomial time. This means there exists an NTM that, for any input of size *n*, halts in at most *n^k* steps for some constant *k*. If at least one of the computation branches of the NTM accepts the input, then the input is considered to be in the language.
+	- **Certificate-Based Definition**: A language *A* is in NP if there exists a polynomial-time verifier *V* such that:
+		- *A = {w | V accepts ⟨w, c⟩ for some c}*
+		- This means that for any string *w* in *A*, there exists a string *c* (the "certificate") such that *V* can verify that *w* is in *A* in polynomial time, based on *c*.
+		- The size of the certificate must also be polynomial in the length of *w*.
+	- ### 2. Intuitive Explanation of Equivalence:
+	- The two definitions of NP are equivalent because the "certificate" definition effectively captures the power of nondeterminism.
+	- **Nondeterministic TM Perspective**: An NTM can "guess" a potential solution (e.g., a path in HAMPATH or a factor in COMPOSITES) and then verify that the guess is correct in polynomial time.
+	- **Polynomial-Time Verifier with a Certificate**: The certificate is the "guess" that the NTM makes. The verifier then checks if the guess is a valid solution in polynomial time.
+	- Essentially, the NTM's ability to explore all possible computation paths simultaneously is mirrored by the verifier's ability to check any potential certificate in polynomial time. The certificate provides the specific "path" or "choice" that would have led the NTM to accept.
+	- ### 3. Certificates for the Class coNP:
+	- **coNP Definition**: The class coNP is the set of languages whose complements are in NP. If *A* is in coNP, then the complement of *A*, denoted as *Ā*, is in NP.
+	- **Certificates for coNP**:
+		- A language *A* is in coNP if there exists a polynomial-time verifier *V* such that *w* ∈ *A* if and only if for all certificates *c*, *V(⟨w, c⟩)* rejects.
+		- In other words, for an input *w* in *A* (a coNP language), no certificate can convince *V* that *w* is not in *A*.
+		- Conversely, *w* is not in *A* if and only if there exists a certificate *c* for which *V(⟨w, c⟩)* accepts.
+	- **Example**:
+		- *TAUTOLOGY* = {⟨ϕ⟩ | all assignments satisfy ϕ} is a coNP problem.
+		- To show that *ϕ* is a tautology, we must show that no assignment falsifies *ϕ*, meaning that a certificate proving *ϕ* is not a tautology cannot exist.
+	- ### 4. Certificates for Problems in NP ∪ coNP:
+	- For problems in **NP**, there exist polynomial-size certificates that can be used to efficiently verify that a given input is in the language.
+	- For problems in **coNP**, there is no such certificate that directly shows an input is in the language, but if an input *w* is **not** in the language, then there exists a certificate proving that *w* is in the complement language (which is an NP language).
+	- **Key Difference**:
+		- NP problems have certificates for membership.
+		- coNP problems have certificates for non-membership (i.e., certificates for membership in their complement).
+	- It is not known if all problems in **NP ∪ coNP** have certificates for both membership and non-membership, since it is not known whether **NP = coNP**.
+	- It is known that **P ⊆ NP ∩ coNP**. If NP = coNP, then all problems in NP ∪ coNP would have certificates for both membership and non-membership.
+	- ### **Summary:**
+	- NP problems can be defined using nondeterministic Turing machines or with polynomial-time verifiers that take certificates, capturing the notion of efficiently verifiable solutions.
+	- coNP is the complementary class, characterized by the existence of certificates that demonstrate an input is **not** in the language.
+	- The relationship between NP and coNP is an open question, and whether every problem in NP ∪ coNP has both types of certificates is unknown.
+	  
+	  <!--EndFragment-->
 -
