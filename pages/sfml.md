@@ -410,16 +410,122 @@
 	  
 	  Each of these topics invites many deeper questions—about how to best balance bias and variance, how to choose an optimal kernel function for SVMs, or how to design effective exploration–exploitation strategies in reinforcement learning. Would you like to dive even deeper into any one of these areas, perhaps exploring specific algorithmic challenges or real-world case studies?
 - # Proofs
-	- To show that dvc ≥ d + 1, find d + 1 points in X that the perceptron
-	  can shatter. [Hint: Construct a nonsingular (d + 1) × (d + 1) matrix whose
-	  rows represent the d + 1 points, then use the nonsingularity to argue that the
-	  perceptron can shatter these points.]
-	  (b) To show that dvc ≤ d + 1, show that no set of d + 2 points in X can
-	  be shattered by the perceptron. [Hint: Represent each point as a vector of
-	  length d + 1, then use the fact that any d + 2 vectors of length d + 1 have to be
-	  linearl dependent. This means that some vector is a linear combination of all
-	  the other vectors. Now, if you choose the class of these other vectors carefully
-	  then the classification of the dependent vector will be dictated. Conclude that
-	  there is some dichotomy that cannot be implemented, and therefore that for
-	  N ≥ d + 2, mH(N ) < 2N ]
+	- d+1
+		- We want to show that:
+		  
+		  $$
+		  \text{VCdim}(\mathcal{H}_{\text{perceptron}}) = d + 1
+		  $$
+		  
+		  That is, the set of all linear classifiers in $\mathbb{R}^d$ has a VC dimension of exactly $d + 1$.
+		  
+		  ---
+		- ## 🔹 Part (a): Show that $\text{VCdim} \geq d + 1$
+		- ### 🔸 Step 1: Constructing $d + 1$ Points
+		  
+		  We define $d+1$ points in $\mathbb{R}^d$ such that, when we include a bias term, the augmented vectors form the rows of a $(d+1) \times (d+1)$ matrix:
+		  
+		  $$
+		  X = 
+		  \begin{bmatrix}
+		  1 & 0 & 0 & \cdots & 0 \\
+		  1 & 1 & 0 & \cdots & 0 \\
+		  1 & 0 & 1 & \cdots & 0 \\
+		  \vdots & \vdots & \vdots & \ddots & \vdots \\
+		  1 & 0 & 0 & \cdots & 1
+		  \end{bmatrix}
+		  \in \mathbb{R}^{(d+1) \times (d+1)}
+		  $$
+		  
+		  * Each row $x_i^T \in \mathbb{R}^{d+1}$ corresponds to a point $x_i \in \mathbb{R}^d$ with a prepended constant 1 (bias).
+		  * This matrix $X$ is **nonsingular** (i.e., $\det(X) \ne 0$) — no row is a linear combination of the others.
+		- ### 🔸 Step 2: Arbitrary Labelings
+		  
+		  Let $y \in \{+1, -1\}^{d+1}$ be any labeling (i.e., any dichotomy of these $d+1$ points).
+		  
+		  Since $X$ is invertible, we can solve:
+		  
+		  $$
+		  Xw = y \quad \Rightarrow \quad w = X^{-1}y
+		  $$
+		- ### 🔸 Step 3: Perceptron Correctly Classifies
+		  
+		  Because $Xw = y$, we have:
+		  
+		  $$
+		  \text{sign}(Xw) = \text{sign}(y) = y
+		  $$
+		  
+		  Thus, the perceptron with weight vector $w$ perfectly classifies all $d+1$ points according to any labeling.
+		  
+		  ✅ **Conclusion:** These $d+1$ points can be **shattered**, so:
+		  
+		  $$
+		  \text{VCdim} \geq d + 1
+		  $$
+		  
+		  ---
+		- ## 🔹 Part (b): Show that $\text{VCdim} \leq d + 1$
+		  
+		  Now we prove that **no set of $d+2$ points in $\mathbb{R}^d$** can be shattered by a perceptron.
+		- ### 🔸 Step 1: Linear Dependence
+		  
+		  Let $x_1, x_2, \ldots, x_{d+2} \in \mathbb{R}^d$, and let $\tilde{x}_i \in \mathbb{R}^{d+1}$ be the augmented vectors with bias (i.e., $\tilde{x}_i = [1, x_i^T]^T$).
+		  
+		  Then, since we have $d+2$ vectors in $\mathbb{R}^{d+1}$, they must be **linearly dependent**. So:
+		  
+		  $$
+		  \tilde{x}_{d+2} = \sum_{i=1}^{d+1} \alpha_i \tilde{x}_i \quad \text{for some } \alpha_i \in \mathbb{R}
+		  $$
+		  
+		  Not all $\alpha_i$ are zero (since the first coordinate is 1 in each vector), and this linear dependence is unavoidable.
+		- ### 🔸 Step 2: Define a Specific Labeling (Dichotomy)
+		  
+		  We define a labeling that the perceptron **cannot** realize:
+		  
+		  * For each $i = 1, \dots, d+1$:
+		  
+		  $$
+		  y_i = \text{sign}(\alpha_i)
+		  $$
+		  * For $i = d+2$:
+		  
+		  $$
+		  y_{d+2} = -1
+		  $$
+		  
+		  This means that if a perceptron correctly classifies $x_1, \dots, x_{d+1}$ using weights $w$, then:
+		  
+		  $$
+		  \text{sign}(w^T \tilde{x}_i) = \text{sign}(\alpha_i) \quad \Rightarrow \quad \alpha_i w^T \tilde{x}_i > 0
+		  $$
+		- ### 🔸 Step 3: Show a Contradiction
+		  
+		  Using the linear combination:
+		  
+		  $$
+		  w^T \tilde{x}_{d+2} = \sum_{i=1}^{d+1} \alpha_i w^T \tilde{x}_i
+		  $$
+		  
+		  Since each term $\alpha_i w^T \tilde{x}_i > 0$, their sum must be **positive**:
+		  
+		  $$
+		  w^T \tilde{x}_{d+2} > 0 \quad \Rightarrow \quad \text{sign}(w^T \tilde{x}_{d+2}) = +1
+		  $$
+		  
+		  But this contradicts the assigned label $y_{d+2} = -1$. Hence, **this dichotomy is not realizable** by any perceptron.
+		  
+		  ✅ **Conclusion:** The perceptron cannot shatter any set of $d+2$ points:
+		  
+		  $$
+		  \text{VCdim} \leq d + 1
+		  $$
+		  
+		  ---
+		- ## ✅ Final Result:
+		  
+		  Combining both parts:
+		  
+		  * $\text{VCdim} \geq d + 1$
+		  * $\text{VCdim} \leq d + 1$
 -
