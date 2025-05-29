@@ -242,6 +242,7 @@
 	- What model complexity is appropriate for a given learning problem.
 	- How to interpret the learning curves obtained from experiments.
 - # Concepts
+  collapsed:: true
 	-
 	- ### 1. Learning from Data
 	  
@@ -408,4 +409,17 @@
 	  Beyond these topics, you may later encounter extensions such as deep learning architectures that, while built on these principles, add layers of complexity and new types of nonlinearity. You might also explore advanced Bayesian methods (e.g., hierarchical Bayesian models) or ensemble methods that combine multiple models for improved performance.
 	  
 	  Each of these topics invites many deeper questions—about how to best balance bias and variance, how to choose an optimal kernel function for SVMs, or how to design effective exploration–exploitation strategies in reinforcement learning. Would you like to dive even deeper into any one of these areas, perhaps exploring specific algorithmic challenges or real-world case studies?
+- # Proofs
+	- To show that dvc ≥ d + 1, find d + 1 points in X that the perceptron
+	  can shatter. [Hint: Construct a nonsingular (d + 1) × (d + 1) matrix whose
+	  rows represent the d + 1 points, then use the nonsingularity to argue that the
+	  perceptron can shatter these points.]
+	  (b) To show that dvc ≤ d + 1, show that no set of d + 2 points in X can
+	  be shattered by the perceptron. [Hint: Represent each point as a vector of
+	  length d + 1, then use the fact that any d + 2 vectors of length d + 1 have to be
+	  linearl dependent. This means that some vector is a linear combination of all
+	  the other vectors. Now, if you choose the class of these other vectors carefully
+	  then the classification of the dependent vector will be dictated. Conclude that
+	  there is some dichotomy that cannot be implemented, and therefore that for
+	  N ≥ d + 2, mH(N ) < 2N ]
 -
