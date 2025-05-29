@@ -30,8 +30,6 @@
 	  \]
 	- **Convergence:** If the data are linearly separable, the PLA is guaranteed to converge.
 	  
-	  The PDF outlines the use of vector notation for efficiency and clarity and introduces the concept of an artificial coordinate (often by adding a constant “1” to include a bias term). This simple yet powerful idea forms the basis of linear discriminative methods.
-	  
 	  ---
 	- ### 4. Linear Models and Gradient Descent
 	  
