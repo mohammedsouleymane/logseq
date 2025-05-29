@@ -241,4 +241,5 @@
 	- How many data points are needed.
 	- What model complexity is appropriate for a given learning problem.
 	- How to interpret the learning curves obtained from experiments.
+- # Concepts
 -
