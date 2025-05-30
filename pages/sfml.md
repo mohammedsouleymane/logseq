@@ -482,6 +482,7 @@
 		  
 		  This lecture masterfully combines theoretical insights with practical strategies, demonstrating how advanced concepts in kernel methods make SVMs both versatile and efficient in solving real-world problems.
 	- ## Lecture 9
+	  collapsed:: true
 		- Below is a detailed, structured summary of the lecture transcript contained in **sfml-09_default.pdf**:
 		  
 		  ---
@@ -563,6 +564,104 @@
 		- **Policy Gradient Methods:** Approaches where policies are directly optimized without explicitly learning value functions.
 		- **Applications in Games and Robotics:** Real-world examples where RL has led to breakthroughs—ranging from mastering video games like Super Mario to enabling autonomous control in vehicles and robotics.
 	- ## Lecture 10
+		- Below is a detailed, structured summary of the transcript for **sfml-10_default.pdf**:
+		  
+		  ---
+		- ### 1. Introduction and Overview
+		  
+		  The lecture begins with a brief housekeeping note—students are encouraged to use their microphones instead of posting in the chat—and then quickly shifts into the main topic: **Bayesian learning**. The instructor outlines the session’s plan: first, an introduction to Bayesian inference; second, a discussion of Bayesian linear regression (recalling what is already known about linear regression); and finally, an exploration of reinforcement learning via Thompson sampling, which is characterized as a “Bayesian sort of” algorithm applied to the multi-armed bandit problem.
+		  
+		  ---
+		- ### 2. Bayesian Inference: The Core Idea
+		  
+		  At its heart, Bayesian inference is explained as a framework in which **probability distributions are placed on various aspects of the problem**. Rather than settling for a single point estimate as in many maximum likelihood methods, Bayesian approaches learn entire distributions, thereby quantifying uncertainty explicitly. Key points include:
+		- **Predictive Distributions and Uncertainty:**  
+		  Rather than simply predicting a label or a numeric value, Bayesian methods yield a distribution that reflects our confidence. This enables estimating not only the “best guess” (e.g., the mean) but also the uncertainty (variance) around that guess.
+		- **Updating Beliefs:**  
+		  The instructor emphasizes that Bayesian inference permits the update of one’s beliefs in light of new data. A prior distribution—which represents initial belief—is modified by the likelihood of the observed data, resulting in a posterior distribution that continues to capture uncertainty.
+		  
+		  ---
+		- ### 3. A Motivating Example: Measuring a Football Field
+		  
+		  To ground these ideas, the lecture presents a story involving two characters at an athletics department:
+		- **The Scenario:**  
+		  A statistician named Tom is tasked with estimating the length of a European football field (assumed to be about 100 meters) using a yardstick. Because of measurement error, multiple measurements (e.g., 100.5 m, 101 m, 101.5 m) are obtained.
+		- **Incorporating Uncertainty:**  
+		  While the maximum likelihood estimate (e.g., the average, here 101 m) might be informative, it ignores crucial prior knowledge—that football fields are typically designed to be around 100 meters long. Bayesian inference addresses this by modeling both the measurement noise (using a Gaussian distribution) and the prior belief about the true field length. This leads naturally to the concept of the posterior distribution, which quantifies the probability of different true lengths given both the observed data and the prior expectation.
+		- **Interpreting the Posterior:**  
+		  With a posterior distribution in hand, one can, for instance, compute the probability that the true field length is less than 100 m—a calculation that directly informs decision-making (or even betting, as the example humorously suggests).
+		  
+		  ---
+		- ### 4. The Bayesian Framework: Priors, Likelihoods, and Posteriors
+		  
+		  The lecture then moves into the mechanics of Bayesian inference:
+		- **Likelihood Function:**  
+		  The likelihood \( P(D \mid \theta) \) represents the probability of observing the data given a parameter \( \theta \) (in the football field example, the true length). For independent measurements, the joint likelihood is expressed as the product of individual likelihoods.
+		- **The Prior and Modeling Beliefs:**  
+		  A prior distribution \( P(\theta) \) is introduced to reflect pre-existing beliefs about the parameter. For instance, one might assume \( \theta \) is normally distributed around 100 m with a given variance. This prior formally introduces domain knowledge (e.g., that football fields are usually around 100 m long).
+		- **Posterior Distribution:**  
+		  Combining the likelihood and the prior via Bayes’ theorem,
+		  \[
+		  P(\theta \mid D) = \frac{P(D \mid \theta) \, P(\theta)}{P(D)},
+		  \]
+		  produces the posterior distribution. Here, \( P(D) \) serves as a normalization constant given by integrating (or summing, in the discrete case) the product of the prior and likelihood over all possible values of \( \theta \). In many instances—such as when both the prior and the likelihood are Gaussian—this integration yields a closed-form posterior that is also Gaussian.
+		- **Predictive Distribution:**  
+		  Lastly, the instructor touches on the predictive distribution for making future predictions. This involves integrating over all possible values of \( \theta \) weighted by the posterior, so that predictions for new data points account for both our best estimate and its uncertainty.
+		  
+		  ---
+		- ### 5. A Concrete Example: The Bernoulli Experiment and Beta Prior
+		  
+		  Transitioning from continuous measurement to a simpler, discrete setup, the lecture turns to the classic coin-flip (Bernoulli) experiment:
+		- **Defining the Likelihood:**  
+		  For a coin toss, the likelihood for one data point is defined based on whether the outcome is heads (with probability \( \theta \)) or tails (with probability \( 1 - \theta \)). For multiple independent coin tosses, the overall likelihood becomes
+		  \[
+		  P(\mathbf{X} \mid \theta) = \theta^{H} (1-\theta)^{T},
+		  \]
+		  where \( H \) is the number of heads and \( T \) is the number of tails observed.
+		- **Choosing a Conjugate Prior:**  
+		  The lecturer recommends using a conjugate prior for the Bernoulli case—the Beta distribution. Expressed as
+		  \[
+		  P(\theta) = \frac{1}{B(\alpha_0,\beta_0)} \theta^{\alpha_0-1} (1-\theta)^{\beta_0-1},
+		  \]
+		  this choice allows the posterior distribution to remain within the Beta family, ensuring that updates (through multiplication with the likelihood) yield an expression that can be calculated in closed form.
+		- **Interpreting the Updated Posterior:**  
+		  By incorporating observed data (i.e., the counts of heads and tails) into the Beta prior, the posterior is updated to reflect the new “evidence.” Adjusting the hyperparameters (\( \alpha_0 \) and \( \beta_0 \)) of the Beta distribution allows the statistician to reflect any initial bias as well as to control the influence of prior belief on the final estimation.
+		- **Discussion on Domain:**  
+		  The instructor also makes a point of noting that for the Bernoulli experiment the parameter \( \theta \) is confined to the interval [0, 1]—an observation that simplifies the integral in Bayes’ theorem by restricting the domain of integration.
+		  
+		  ---
+		- ### 6. Advantages, Limitations, and Practical Considerations
+		  
+		  The lecture does not shy away from exploring both the strengths and the practical challenges of Bayesian methods:
+		- **Advantages:**
+			- **Direct Quantification of Uncertainty:** With the posterior distribution, one can answer questions about confidence (e.g., what is the probability a football field is less than 100 m?) directly and rigorously.
+			- **Automatic Regularization:** By incorporating prior knowledge (sometimes referred to as an “automatic Occam’s razor”), Bayesian methods often guard against overfitting—a known drawback of maximum likelihood methods.
+			- **Flexibility Across Domains:** Examples range from astrophysics (estimating star masses) to medical diagnosis (interpreting rare diseases with false positives).
+		- **Limitations and Challenges:**
+			- **Dependence on the Prior:** A poorly chosen prior can adversely influence outcomes—especially when little is known a priori.
+			- **Computational Intractability:** In many practical scenarios, the normalization constant (the integral over the entire parameter space) does not yield a neat closed-form solution. When this happens, numerical approximations (such as Markov chain Monte Carlo, MCMC) are required.
+			- **Analytical versus Numerical Approaches:** Although closed-form solutions are available for conjugate priors (like the Gaussian or Beta distributions), more complex situations often necessitate approximation techniques.
+		- **Comparisons with Frequentist Methods:**  
+		  The instructor also briefly contrasts Bayesian inference with frequentist approaches. Whereas frequentists might offer a point estimate accompanied by a confidence interval, Bayesian techniques provide a full posterior distribution, directly characterizing uncertainty.
+		  
+		  ---
+		- ### 7. Additional Remarks and Future Directions
+		  
+		  Toward the end of the lecture, the instructor hints at several important future topics and administrative notes:
+		- **Practical Applications:**  
+		  The discussion lays the groundwork for later lectures that will further explore reinforcement learning—specifically, techniques like Thompson sampling where Bayesian ideas play a key role in sequential decision making.
+		- **Exam Preparation:**  
+		  A brief note is made about the upcoming exam, which will include proofs (with one type comprising 25% of the exam) and other questions based on these concepts. This emphasizes the necessity of understanding the derivation of the posterior, likelihood functions, and the role of conjugate priors.
+		- **Encouragement for Self-Study:**  
+		  The instructor even suggests additional resources (e.g., videos on Markov chain Monte Carlo methods) for those interested in a deeper dive into the numerical methods used alongside Bayesian inference.
+		  
+		  ---
+		- ### Concluding Thoughts
+		  
+		  This lecture provides a comprehensive introduction to Bayesian learning by weaving together theoretical foundations, illustrative examples, and practical considerations. By contrasting Bayesian inference with maximum likelihood and frequentist methods, it sets the stage for a deeper appreciation of how probability distributions can be used not only to predict outcomes but also to measure uncertainty. The focus on a simple yet powerful example—the Bernoulli experiment with a Beta conjugate prior—demonstrates how these ideas are implemented in practice, while the broader discussion points to ongoing challenges and alternative computational strategies.
+		  
+		  **Additional Insights:**  
+		  For further enrichment, one might explore how Bayesian linear regression extends these ideas to continuous inputs and outputs, or dive into the details of MCMC algorithms when closed-form solutions are not available. Concepts such as model averaging and uncertainty quantification via credible intervals also provide rich avenues for understanding both the power and the limitations of Bayesian methods.
 	- ## Lecture 11
 - sv notebook
 	- Here’s your lecture summary formatted clearly and professionally, while preserving the original text structure and flow (not bulletized), and improving overall readability and coherence:
