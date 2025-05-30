@@ -287,7 +287,6 @@
 		  * $\text{VCdim} \leq d + 1$
 - # Lectures
 	- ## Lecture 1
-	  collapsed:: true
 		- Below is a detailed, structured summary of the content in **SFML-Lecture01.pdf**:
 		  
 		  ---
@@ -370,7 +369,6 @@
 		  
 		  This lecture lays a robust foundation for understanding the statistical principles that enable machine learning models to predict, classify, and make decisions in uncertain environments.
 	- ## Lecture 2
-	  collapsed:: true
 		- Below is a detailed summary of the lecture transcript contained in **sfml-02_default.pdf**, which is the second lecture of the course "Statistical Foundations of Machine Learning." This lecture delves into linear models from both classification and regression perspectives while using concrete examples, practical algorithms, and insights about feature engineering and nonlinear transformations.
 		  
 		  ---
@@ -461,7 +459,6 @@
 		  
 		  Would you like to delve deeper into aspects of feature transformation, or perhaps explore examples of how these approaches play out in today’s advanced machine learning practices?
 	- ## Lecture 3
-	  collapsed:: true
 		- Below is a detailed summary of the lecture transcript from **sfml-03_default.pdf**, which discusses the theory of generalization in machine learning. The lecture weaves together intuitive analogies, combinatorial reasoning, and formal arguments to explain how one can guarantee that a model learned on a finite training set will generalize to unseen data.
 		  
 		  ---
@@ -536,7 +533,6 @@
 		  
 		  There’s much more to explore in how these concepts extend to other measures of complexity, such as the VC dimension and Rademacher complexities, and how they influence modern algorithms like support vector machines and deep neural networks. Would you be interested in diving deeper into any of these related topics or specific applications in model regularization and selection?
 	- ## Lecture 4
-	  collapsed:: true
 		- Below is a detailed summary of the lecture transcript from the PDF, which is the fourth lecture of the “Statistical Foundations of Machine Learning” course.
 		  
 		  ---
@@ -615,7 +611,6 @@
 		  
 		  If you have more interest in how these theoretical tools have been applied in modern machine learning practices or in deriving more precise quantitative relationships, we can further explore examples where these bounds inform regularization techniques or model selection strategies.
 	- ## Lecture 5
-	  collapsed:: true
 		- Below is a detailed, structured summary of the content found in **sfml-05_default.pdf**:
 		  
 		  ---
@@ -708,7 +703,6 @@
 		  
 		  This lecture not only reinforces theoretical insights into logistic regression and gradient descent but also builds a solid foundation for the transition to more complex learning models in future classes.
 	- ## Lecture 6
-	  collapsed:: true
 		- ### 1. **Introduction to Overfitting**
 		  
 		  The lecture begins by introducing the notion of overfitting, which is described as the scenario where a model fits the training data “too well.” In other words, the model goes beyond capturing the true underlying patterns and instead starts fitting random noise in the data. This excessive tailoring to the training data leads to a situation where the in-sample error (the error measured on the training set) becomes very low—even zero in some cases—while the out-of-sample error (the error on unseen data) becomes very high. This contrast is the hallmark of overfitting.
@@ -775,7 +769,6 @@
 		  
 		  The lecture concludes by reinforcing that both forms of noise—stochastic and deterministic—are “bad” from a learning perspective because they prevent the model from truly generalizing. The proper selection of the hypothesis set (and the use of automated methods to restrain model flexibility like regularization) is essential. In future lectures, as hinted in this transcript, further attention will be given to these methods, including a more rigorous discussion of validation techniques and even a Bayesian perspective on noise handling.
 	- ## Lecture 7
-	  collapsed:: true
 		- Below is a detailed summary of the PDF transcript:
 		  
 		  ---
@@ -819,7 +812,6 @@
 		  
 		  The transcript offers a comprehensive exploration of how validation, cross-validation, and model selection work in machine learning. It emphasizes the importance of splitting data appropriately, understanding the variance in error estimation, and being cautious of the optimistic bias that can occur when the best model is selected from a set of candidates. These principles not only guide practical decision-making in model training but also build a bridge to more advanced topics like support vector machines and complexity measures.
 	- ## Lecture 8
-	  collapsed:: true
 		- ### 1. Introduction and Motivation
 		  
 		  The lecture opens with a friendly greeting and an invitation to interact via audio questions. The instructor sets the stage by stating that today's focus is extending SVMs to handle nonlinear data through kernel methods. Traditionally, SVMs assume data are linearly separable in the input space (X), but many real-world problems require mapping the data to a different, more expressive space where linear separation becomes possible. This is achieved by transforming the input space into a new space (Z) using nonlinear functions.
@@ -903,7 +895,6 @@
 		  
 		  This lecture masterfully combines theoretical insights with practical strategies, demonstrating how advanced concepts in kernel methods make SVMs both versatile and efficient in solving real-world problems.
 	- ## Lecture 9
-	  collapsed:: true
 		- Below is a detailed, structured summary of the lecture transcript contained in **sfml-09_default.pdf**:
 		  
 		  ---
@@ -985,7 +976,6 @@
 		- **Policy Gradient Methods:** Approaches where policies are directly optimized without explicitly learning value functions.
 		- **Applications in Games and Robotics:** Real-world examples where RL has led to breakthroughs—ranging from mastering video games like Super Mario to enabling autonomous control in vehicles and robotics.
 	- ## Lecture 10
-	  collapsed:: true
 		- Below is a detailed, structured summary of the transcript for **sfml-10_default.pdf**:
 		  
 		  ---
@@ -1157,6 +1147,7 @@
 		  This lecture brings together theoretical reflections with practical examples, emphasizing that simplicity, proper sampling, and rigorous validation are key for successful learning. It also demonstrates that while many pitfalls exist (like the temptation to overfit via data snooping), adhering to these principles helps safeguard against misguided conclusions.
 		  
 		  Would you like to explore further how these ideas have influenced modern approaches to regularization, model selection, or even recent advances in deep learning?
+	-
 - sv notebook
 	- Here’s your lecture summary formatted clearly and professionally, while preserving the original text structure and flow (not bulletized), and improving overall readability and coherence:
 	- ---
