@@ -353,7 +353,7 @@
 		- ### 7. **Concluding Insights and Future Directions**
 		  
 		  The lecture concludes by reinforcing that both forms of noise—stochastic and deterministic—are “bad” from a learning perspective because they prevent the model from truly generalizing. The proper selection of the hypothesis set (and the use of automated methods to restrain model flexibility like regularization) is essential. In future lectures, as hinted in this transcript, further attention will be given to these methods, including a more rigorous discussion of validation techniques and even a Bayesian perspective on noise handling.
-	-
+	- ## Lecture 7
 	- ## Lecture 8
 	- ## Lecture 9
 	- ## Lecture 10
