@@ -63,7 +63,8 @@
 		- ### 7. Concluding Thoughts and References
 		  
 		  The lecture wraps up by bringing together the dual perspectives of statistical estimation and learning theory:
-		- **Key Takeaways:**
+		- **Key Takeaways:**  
+		  collapsed:: true
 			- Learning is framed as an exercise in using data to infer an underlying process that cannot be completely specified by mathematics alone.
 			- Even simple models like the perceptron and simple experiments (such as drawing marbles from a bin) can illuminate core principles of how sample data relate to overall performance and generalization.
 			- Statistical guarantees like those provided by Hoeffding’s inequality—and extensions using the union bound for multiple hypotheses—are central to understanding when learning is feasible and reliable.
@@ -83,6 +84,7 @@
 		  
 		  This lecture lays a robust foundation for understanding the statistical principles that enable machine learning models to predict, classify, and make decisions in uncertain environments.
 	- ## Lecture 2
+	  collapsed:: true
 		- Below is a detailed summary of the lecture transcript contained in **sfml-02_default.pdf**, which is the second lecture of the course "Statistical Foundations of Machine Learning." This lecture delves into linear models from both classification and regression perspectives while using concrete examples, practical algorithms, and insights about feature engineering and nonlinear transformations.
 		  
 		  ---
@@ -99,6 +101,7 @@
 		- **Challenges of High Dimensionality:**  
 		  A model with 257 parameters may struggle with generalization if confronted directly with the raw data. The lecture emphasizes that a large number of parameters can be “bad news” when it comes to reliably predicting unseen data.
 		- **Feature Engineering – Intensity and Symmetry:**  
+		  collapsed:: true
 		  To address this, the lecture discusses the idea of lowering the dimensionality by extracting meaningful features. Two such features are introduced:
 			- **Intensity:** Quantifies the total darkness (or the sum of pixel values), which helps to delineate images that are sparse (like a simple line) versus those that are dense (wrapping around shapes).
 			- **Symmetry:** Measures the similarity between a digit and its mirror image. This is especially useful for distinguishing digits that are symmetric (such as 8) from those that are not (like 5).  
@@ -173,6 +176,7 @@
 		  
 		  Would you like to delve deeper into aspects of feature transformation, or perhaps explore examples of how these approaches play out in today’s advanced machine learning practices?
 	- ## Lecture 3
+	  collapsed:: true
 		- Below is a detailed summary of the lecture transcript from **sfml-03_default.pdf**, which discusses the theory of generalization in machine learning. The lecture weaves together intuitive analogies, combinatorial reasoning, and formal arguments to explain how one can guarantee that a model learned on a finite training set will generalize to unseen data.
 		  
 		  ---
@@ -204,19 +208,23 @@
 		- ### 4. Illustrative Examples and Combinatorial Arguments
 		  
 		  The lecture then explores several concrete examples to illustrate how the growth function behaves for different hypothesis sets:
-		- **Perceptron in 2D:**
+		- **Perceptron in 2D:**  
+		  collapsed:: true
 			- For three non-collinear data points, a perceptron can produce up to 8 distinct dichotomies.
 			- For four points, although the worst-case upper bound is \(2^4 = 16\), a perceptron can only achieve 14 dichotomies.  
 			  This demonstrates that even for simple models, the number of effective dichotomies is less than the theoretical maximum.
 		- **Positive Rays (Threshold Functions):**  
+		  collapsed:: true
 		  Consider a hypothesis on the real line that classifies a point as +1 if it is to the right of a threshold \(a\) and –1 if to the left.
 			- The count of dichotomies on N points in order is exactly \(N + 1\).
 			- Here, the argument rests on the idea that the only “interesting” changes occur when the threshold moves past a new data point.
 		- **Positive Intervals:**  
+		  collapsed:: true
 		  In this model, two parameters (a start and an end) define an interval such that points within the interval receive a +1 label (and −1 otherwise).
 			- The number of dichotomies is determined by a combinatorial count—essentially choosing two “cut points” among the \(N+1\) gaps between sorted data points.
 			- This results in a growth function that is quadratic in N, indicating a richer hypothesis set compared to the simple threshold function.
 		- **Convex Sets in the Plane:**  
+		  collapsed:: true
 		  For classification in 2D using convex sets, if the data points are arranged on the perimeter of a circle, any dichotomy can be realized.
 			- In this case, the growth function reaches the upper bound of \(2^N\), implying there is no finite limit (or break point) on the number of points that can be shattered.
 			- This enormous expressiveness means that trying to bound generalization purely by counting dichotomies would be ineffective without additional constraints.
@@ -225,7 +233,8 @@
 		- ### 5. The Concept of Break Points
 		- **Definition:**  
 		  A break point is the smallest integer \(K\) such that no set of \(K\) data points can be shattered by the hypothesis set. In other words, once the number of points reaches the break point, the hypothesis set’s growth function falls short of \(2^K\).
-		- **Examples Revisited:**
+		- **Examples Revisited:**  
+		  collapsed:: true
 			- For the positive-ray model, even though the growth function meets the upper bound for one point (\(2^1\)), it “breaks” at \(K = 2\) because two points cannot be shattered fully.
 			- For positive intervals, it can be shown that the break point is \(K = 3\).
 			- In contrast, for convex sets in the plane (when points are arranged ideally), no break point exists—the growth function remains at its maximum, meaning the break point is infinite.
@@ -247,11 +256,13 @@
 		  
 		  There’s much more to explore in how these concepts extend to other measures of complexity, such as the VC dimension and Rademacher complexities, and how they influence modern algorithms like support vector machines and deep neural networks. Would you be interested in diving deeper into any of these related topics or specific applications in model regularization and selection?
 	- ## Lecture 4
+	  collapsed:: true
 		- Below is a detailed summary of the lecture transcript from the PDF, which is the fourth lecture of the “Statistical Foundations of Machine Learning” course.
 		  
 		  ---
 		- ### 1. **Introduction and Objectives**
 		- **Main Topics:**  
+		  collapsed:: true
 		  The lecture focuses on two central concepts:
 			- **VC (Vapnik–Chervonenkis) Dimension:** A theoretical measure of the capacity—or expressiveness—of a hypothesis set.
 			- **Bias-Variance Tradeoff:** An analysis that decomposes a model’s error into the error due to approximating the true function (bias) and that due to variability from the particular dataset used (variance).
@@ -261,13 +272,16 @@
 		  ---
 		- ### 2. **VC Dimension: Definition and Interpretation**
 		- **Core Definition:**  
+		  collapsed:: true
 		  The VC dimension is defined as the largest number of points (denoted by _N_) that can be “shattered” by a hypothesis set. In other words, it is the maximum _N_ for which the growth function equals \(2^N\).
 			- **Growth Function:** This function counts the number of dichotomies (or labelings) the hypothesis set can achieve on any set of points. When the growth function hits \(2^N\), it means every possible labeling is achievable.
 			- **Break Point:** There is an inverse relationship between the VC dimension and the break point (the smallest number of points for which not all labelings can be achieved). The lecture highlights that the VC dimension is, in a sense, the “largest” number of points that the model can handle before hitting a break point.
-		- **Examples and Insights:**
+		- **Examples and Insights:**  
+		  collapsed:: true
 			- **Positive Rays:**  
 			  By considering a one-dimensional threshold (or “positive ray”) model, the lecture shows that only one point can be reliably shattered—giving a VC dimension of one.
-			- **Perceptrons in Different Dimensions:**
+			- **Perceptrons in Different Dimensions:**  
+			  collapsed:: true
 				- In a 2D perceptron, it is known that three points can be shattered (VC dimension = 3).
 				- In a 3D space, the best one can do increases to four points, suggesting generally that for a \(d\)-dimensional perceptron the VC dimension is \(d+1\).
 			- **Convex Sets and Infinite VC Dimension:**  
@@ -279,10 +293,12 @@
 		- ### 3. **Generalization Bounds via the VC Inequality**
 		- **Learning and Error Bounds:**  
 		  The lecture builds the connection between VC dimension and generalization performance. If a hypothesis set has a finite VC dimension, then—despite variations in in-sample performance—the final hypothesis is guaranteed to generalize with high probability.
-		- **Key Inequality Components:**
+		- **Key Inequality Components:**  
+		  collapsed:: true
 			- **Epsilon (\(\epsilon\)) Tolerance:** Represents the allowable error margin between in-sample (training) error and out-of-sample (true) error.
 			- **Delta (\(\delta\))-Probability Language:** The VC inequality provides a bound on the probability that the difference between in-sample and out-of-sample errors exceeds \(\epsilon\).
-			- **Exponentially Decaying Factor:** The bound includes a term that involves a polynomial part (with degree roughly equal to the VC dimension) and a negative exponential of the number of samples.
+			- **Exponentially Decaying Factor:** The bound includes a term that involves a polynomial part (with degree roughly equal to the VC dimension) and a negative exponential of the number of samples.  
+			  collapsed:: true
 				- With few samples, the bound is loose (i.e., the probability of a large error difference is high), but as the number of samples increases, the exponential decay ensures that this probability becomes very small.
 		- **Practical Implication:**  
 		  There is a commonly cited rule of thumb: one should collect at least around 10 times the VC dimension in data points to achieve acceptable generalization performance. Although this is not a strict guarantee, it serves as a helpful guide in practice.
@@ -291,22 +307,27 @@
 		- ### 4. **Bias-Variance Tradeoff**
 		- **Conceptual Overview:**  
 		  After detailing generalization bounds based on the VC dimension, the lecture transitions into the bias-variance analysis—a complementary approach to understanding model performance.
-		- **Bias Component:**
+		- **Bias Component:**  
+		  collapsed:: true
 			- Represents the inherent error when using a hypothesis set to approximate the true target function \(F\).
 			- Low bias implies that the model is capable of approximating \(F\) well once the “right” hypothesis is chosen.
-		- **Variance Component:**
+		- **Variance Component:**  
+		  collapsed:: true
 			- Reflects the variability in the learned hypothesis when different datasets are used.
 			- Even if a model has low bias, if the outcome (the learned hypothesis) fluctuates considerably with different samples, the variance is high, which can hurt generalization.
-		- **The Decomposition Process:**
+		- **The Decomposition Process:**  
+		  collapsed:: true
 			- **Introducing the Average Hypothesis (\(\bar{G}\)):**  
 			  The instructor considers an average hypothesis computed by taking the expected learned hypothesis over many samples. This statistical construct is not directly observable in practice, but it is extremely useful for analysis.
 			- **Algebraic Decomposition:**  
+			  collapsed:: true
 			  By adding and subtracting the average hypothesis within the squared error term, the overall out-of-sample error (using squared loss) can be decomposed into two parts:
 				- **Squared Bias:** The error due to the average hypothesis’s deviation from the true function \(F\).
 				- **Variance:** The error representing the fluctuation of individual hypotheses \(G_{D}\) (learned from a particular dataset \(D\)) around the average hypothesis.
 			- **Elimination of Cross-Terms:**  
 			  Through expectation properties (and because the average hypothesis minimizes the overall error), the cross terms cancel out, leaving a clean separation into bias and variance.
 		- **Implication for Model Selection:**  
+		  collapsed:: true
 		  This decomposition underscores a fundamental tradeoff in machine learning:
 			- A more complex hypothesis set (with higher VC dimension) tends to lower bias because it can approximate \(F\) more closely.
 			- However, such complexity often comes at the cost of higher variance, as the model may overfit the noise in a particular dataset.
@@ -325,6 +346,7 @@
 		  
 		  If you have more interest in how these theoretical tools have been applied in modern machine learning practices or in deriving more precise quantitative relationships, we can further explore examples where these bounds inform regularization techniques or model selection strategies.
 	- ## Lecture 5
+	  collapsed:: true
 		- Below is a detailed, structured summary of the content found in **sfml-05_default.pdf**:
 		  
 		  ---
@@ -337,6 +359,7 @@
 		  ---
 		- ### 2. Recap of Linear Classifiers and Regression
 		- **Review of Linear Classification:**  
+		  collapsed:: true
 		  The instructor revisits familiar algorithms like the perceptron learning algorithm (PLA) and its extensions. He explains that:
 			- A simple perceptron computes a linear combination of inputs (including a bias term) and then applies a hard threshold (sign function) to decide the class label.
 			- When data are linearly separable, the PLA converges; when they are not, modified versions like the pocket algorithm are used to keep the best solution found so far.
@@ -346,6 +369,7 @@
 		  ---
 		- ### 3. Transition to Logistic Regression
 		- **Motivation for Logistic Formulation:**  
+		  collapsed:: true
 		  Building on the concept of linear models, the instructor introduces logistic regression as a natural extension:
 			- Unlike hard-threshold classifiers that output merely +1 or –1, logistic regression “softens” the decision boundary by mapping the linear signal through a smooth nonlinearity.
 			- The logistic (or sigmoid) function is applied to the linear combination of the inputs, transforming the output into a number between 0 and 1. This makes the output interpretable as a probability.
@@ -356,7 +380,8 @@
 		- ### 4. Likelihood, Error Function, and the Role of Logarithms
 		- **Maximum Likelihood Framework:**  
 		  To assign probabilities to outcomes, the lecture shows how one can write the likelihood for each data point based on whether the actual label (e.g., heart attack occurrence) matches the predicted probability from the logistic function.
-		- **Cross-Entropy (Log-Loss):**
+		- **Cross-Entropy (Log-Loss):**  
+		  collapsed:: true
 			- Since the data points are assumed independent, the overall likelihood is the product of individual probabilities.
 			- To simplify optimization—and to address issues of numerical underflow when multiplying small probabilities—the instructor explains the use of the natural logarithm to convert the product into a sum. This transformation leads to what is known as the cross-entropy or negative log‑likelihood error function.
 			- Minimizing this error function constitutes the main objective for training a logistic regression model.
@@ -365,7 +390,8 @@
 		- ### 5. Optimization with Gradient Descent
 		- **Why Gradient Descent?**  
 		  Logistic regression does not admit a closed-form solution (unlike linear regression via the pseudo‑inverse). Therefore, the instructor introduces gradient descent, an iterative optimization method well suited for minimizing the error function when derivatives are available.
-		- **Conceptual Description:**
+		- **Conceptual Description:**  
+		  collapsed:: true
 			- The instructor compares gradient descent to navigating a mountainous landscape with your eyes closed—one can only “feel” the direction in which the slope is steepest.
 			- Starting from an initial guess for the weight vector, the algorithm moves a small step in the direction of the negative gradient (the steepest descent) in order to reduce the error.
 		- **Step Size (ETA):**  
@@ -374,10 +400,12 @@
 		  ---
 		- ### 6. Derivation via Taylor Series Expansion
 		- **Taylor Series Insight:**  
+		  collapsed:: true
 		  The lecture delves into the mathematical underpinning of gradient descent by using a first-order Taylor series expansion:
 			- The error function at a new point (after the weight update) is approximated by its value at the current point plus the inner product of its gradient and the change in the weight vector.
 			- By neglecting higher-order (second-order) terms—which is justified when the step size is sufficiently small—the instructor shows that the weight update rule can be expressed in terms of the gradient.
 		- **Normalization and Direction:**  
+		  collapsed:: true
 		  To ensure that the update follows the true direction of steepest descent, the change in weights is represented as a product of the step size η and a unit vector in the direction of the negative gradient.
 			- This normalization ensures that only the direction matters, while the step size controls the magnitude of the update.
 		- **Numerical Stability:**  
@@ -386,6 +414,7 @@
 		  ---
 		- ### 7. Interactive Clarifications
 		- **Student Questions and Responses:**  
+		  collapsed:: true
 		  Throughout the lecture, the instructor pauses to answer student questions about:
 			- The validity of taking the logarithm of products of probabilities.
 			- The justification for using a Taylor series expansion and neglecting higher-order terms.
@@ -395,11 +424,13 @@
 			  
 			  ---
 		- ### 8. Summary and Concluding Remarks
-		- **Core Learnings:**
+		- **Core Learnings:**  
+		  collapsed:: true
 			- The lecture starts by revisiting linear models and moves fluidly into logistic regression, emphasizing the transformation of a linear signal into a probability using a smooth sigmoid function.
 			- It establishes the need for a maximum likelihood framework using cross-entropy as the error function for logistic regression.
 			- With no closed-form solution available, the discussion shifts to gradient descent as an iterative optimization technique, whose derivation is supported by a Taylor series expansion and normalization arguments.
 		- **Foundations for Further Study:**  
+		  collapsed:: true
 		  These concepts are presented not only as standalone techniques but also as foundational elements for understanding more sophisticated topics:
 			- The same logistic function and gradient descent principles are essential for the derivation and implementation of backpropagation in neural networks.
 			- Future lectures are hinted to cover more complex scenarios, including deep neural networks and reinforcement learning, where these principles will be extended and adapted.
@@ -417,6 +448,7 @@
 		  
 		  This lecture not only reinforces theoretical insights into logistic regression and gradient descent but also builds a solid foundation for the transition to more complex learning models in future classes.
 	- ## Lecture 6
+	  collapsed:: true
 		- ### 1. **Introduction to Overfitting**
 		  
 		  The lecture begins by introducing the notion of overfitting, which is described as the scenario where a model fits the training data “too well.” In other words, the model goes beyond capturing the true underlying patterns and instead starts fitting random noise in the data. This excessive tailoring to the training data leads to a situation where the in-sample error (the error measured on the training set) becomes very low—even zero in some cases—while the out-of-sample error (the error on unseen data) becomes very high. This contrast is the hallmark of overfitting.
@@ -483,6 +515,7 @@
 		  
 		  The lecture concludes by reinforcing that both forms of noise—stochastic and deterministic—are “bad” from a learning perspective because they prevent the model from truly generalizing. The proper selection of the hypothesis set (and the use of automated methods to restrain model flexibility like regularization) is essential. In future lectures, as hinted in this transcript, further attention will be given to these methods, including a more rigorous discussion of validation techniques and even a Bayesian perspective on noise handling.
 	- ## Lecture 7
+	  collapsed:: true
 		- Below is a detailed summary of the PDF transcript:
 		  
 		  ---
@@ -495,6 +528,7 @@
 		  
 		  A central part of the lecture is devoted to understanding **validation sets**. The instructor explains that:
 		- **Trade-off in Data Splitting:** When you have a dataset of \(N\) examples, you need to reserve \(K\) examples for validation and use the remaining \(N-K\) for training. The size \(K\) is crucial:
+		  collapsed:: true
 			- A larger \(K\) gives a more reliable (low-variance) estimate of the out-of-sample error.
 			- However, a larger \(K\) also means fewer examples for training, which may worsen the learned model.
 		- **Unbiased Estimation but High Variance:** If you use a single sample to evaluate error, the resulting estimate is unbiased (its expected value equals the true error) but exhibits high variance. By averaging the error over \(K\) points, the variance is reduced approximately by a factor of \(K\) (i.e., from \(\sigma^2\) to \(\sigma^2/K\)). This trick makes the error estimate more stable without sacrificing the unbiased property.
@@ -526,6 +560,7 @@
 		  
 		  The transcript offers a comprehensive exploration of how validation, cross-validation, and model selection work in machine learning. It emphasizes the importance of splitting data appropriately, understanding the variance in error estimation, and being cautious of the optimistic bias that can occur when the best model is selected from a set of candidates. These principles not only guide practical decision-making in model training but also build a bridge to more advanced topics like support vector machines and complexity measures.
 	- ## Lecture 8
+	  collapsed:: true
 		- ### 1. Introduction and Motivation
 		  
 		  The lecture opens with a friendly greeting and an invitation to interact via audio questions. The instructor sets the stage by stating that today's focus is extending SVMs to handle nonlinear data through kernel methods. Traditionally, SVMs assume data are linearly separable in the input space (X), but many real-world problems require mapping the data to a different, more expressive space where linear separation becomes possible. This is achieved by transforming the input space into a new space (Z) using nonlinear functions.
@@ -609,6 +644,7 @@
 		  
 		  This lecture masterfully combines theoretical insights with practical strategies, demonstrating how advanced concepts in kernel methods make SVMs both versatile and efficient in solving real-world problems.
 	- ## Lecture 9
+	  collapsed:: true
 		- Below is a detailed, structured summary of the lecture transcript contained in **sfml-09_default.pdf**:
 		  
 		  ---
@@ -690,6 +726,7 @@
 		- **Policy Gradient Methods:** Approaches where policies are directly optimized without explicitly learning value functions.
 		- **Applications in Games and Robotics:** Real-world examples where RL has led to breakthroughs—ranging from mastering video games like Super Mario to enabling autonomous control in vehicles and robotics.
 	- ## Lecture 10
+	  collapsed:: true
 		- Below is a detailed, structured summary of the transcript for **sfml-10_default.pdf**:
 		  
 		  ---
@@ -759,11 +796,13 @@
 		- ### 6. Advantages, Limitations, and Practical Considerations
 		  
 		  The lecture does not shy away from exploring both the strengths and the practical challenges of Bayesian methods:
-		- **Advantages:**
+		- **Advantages:**  
+		  collapsed:: true
 			- **Direct Quantification of Uncertainty:** With the posterior distribution, one can answer questions about confidence (e.g., what is the probability a football field is less than 100 m?) directly and rigorously.
 			- **Automatic Regularization:** By incorporating prior knowledge (sometimes referred to as an “automatic Occam’s razor”), Bayesian methods often guard against overfitting—a known drawback of maximum likelihood methods.
 			- **Flexibility Across Domains:** Examples range from astrophysics (estimating star masses) to medical diagnosis (interpreting rare diseases with false positives).
-		- **Limitations and Challenges:**
+		- **Limitations and Challenges:**  
+		  collapsed:: true
 			- **Dependence on the Prior:** A poorly chosen prior can adversely influence outcomes—especially when little is known a priori.
 			- **Computational Intractability:** In many practical scenarios, the normalization constant (the integral over the entire parameter space) does not yield a neat closed-form solution. When this happens, numerical approximations (such as Markov chain Monte Carlo, MCMC) are required.
 			- **Analytical versus Numerical Approaches:** Although closed-form solutions are available for conjugate priors (like the Gaussian or Beta distributions), more complex situations often necessitate approximation techniques.
@@ -789,6 +828,7 @@
 		  **Additional Insights:**  
 		  For further enrichment, one might explore how Bayesian linear regression extends these ideas to continuous inputs and outputs, or dive into the details of MCMC algorithms when closed-form solutions are not available. Concepts such as model averaging and uncertainty quantification via credible intervals also provide rich avenues for understanding both the power and the limitations of Bayesian methods.
 	- ## Lecture 11
+	  collapsed:: true
 		- Below is a detailed summary of **SFML-11_default.pdf**, the closing lecture of the “Statistical Foundations of Machine Learning” course. In this lecture, the instructor ties together key theoretical and practical principles while also offering insights into potential pitfalls in model development and evaluation.
 		  
 		  ---
@@ -805,7 +845,8 @@
 		- ## 2. Occam’s Razor and Model Simplicity
 		- **The Principle of Simplicity:**  
 		  Occam’s razor is introduced as the idea that the simplest model that still fits the data is the most plausible one. The instructor references the oft-cited (though not definitively attributed) Einstein quote: “An explanation of the data should be made as simple as possible, but no simpler.”
-		- **Simplicity in Two Contexts:**
+		- **Simplicity in Two Contexts:**  
+		  collapsed:: true
 			- **Individual Hypothesis Complexity:**  
 			  The discussion includes how a single hypothesis can be described compactly using the concept of _Minimum Description Length (MDL)_. For example, a long string of repeated digits (e.g., one million 9’s) can be concisely expressed using an exponential expression.
 			- **Hypothesis Set Complexity:**  
@@ -820,6 +861,7 @@
 		- **Understanding Sampling Bias:**  
 		  Sampling bias occurs when the method of data collection systematically favors a subset of the overall population. The instructor emphasizes that, regardless of how careful one might be in designing a study, subtle biases can creep in during the sampling phase.
 		- **Historical and Practical Examples:**
+		  collapsed:: true
 			- **1948 Presidential Election:**  
 			  A classic example is given from a telephone poll during the Truman election. Telephones were costly at the time and predominantly owned by wealthier individuals—who tended to vote for one party over the other. This skew in the data led to biased predictions.
 			- **Modern Applications:**  
@@ -831,7 +873,8 @@
 		- ## 4. Data Snooping and Its Pitfalls
 		- **What Is Data Snooping?**  
 		  Data snooping happens when steps in the model development process (for example, transformation, normalization, or the selection of features) are influenced by the data under analysis. This inadvertently “leaks” information about the test or future data into the training process.
-		- **Why It’s Problematic:**
+		- **Why It’s Problematic:**  
+		  collapsed:: true
 			- Any data-driven choices made before proper separation into training and testing sets can lead to overly optimistic performance estimates.
 			- When the model is then deployed in the real world, it may perform poorly because it was effectively “tuned” on information that should have been withheld.
 		- **Illustrative Example – Financial Forecasting:**  
@@ -849,6 +892,7 @@
 		  ---
 		- ## 6. Concluding Remarks
 		- **Recap of Key Principles:**  
+		  collapsed:: true
 		  To wrap up, the instructor reiterates the importance of:
 			- **Occam’s Razor:** Favoring models that are as simple as possible while still explaining the data.
 			- **Sampling Bias:** Recognizing and mitigating biases in how data are collected.
