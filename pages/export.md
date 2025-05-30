@@ -1,5 +1,6 @@
 # Lectures
 	- ## Lecture 1
+	  collapsed:: true
 		- Below is a detailed, structured summary of the content in **SFML-Lecture01.pdf**:
 		  
 		  ---
