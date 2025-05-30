@@ -515,7 +515,6 @@
 		  
 		  The lecture concludes by reinforcing that both forms of noise—stochastic and deterministic—are “bad” from a learning perspective because they prevent the model from truly generalizing. The proper selection of the hypothesis set (and the use of automated methods to restrain model flexibility like regularization) is essential. In future lectures, as hinted in this transcript, further attention will be given to these methods, including a more rigorous discussion of validation techniques and even a Bayesian perspective on noise handling.
 	- ## Lecture 7
-	  collapsed:: true
 		- Below is a detailed summary of the PDF transcript:
 		  
 		  ---
@@ -528,7 +527,6 @@
 		  
 		  A central part of the lecture is devoted to understanding **validation sets**. The instructor explains that:
 		- **Trade-off in Data Splitting:** When you have a dataset of \(N\) examples, you need to reserve \(K\) examples for validation and use the remaining \(N-K\) for training. The size \(K\) is crucial:
-		  collapsed:: true
 			- A larger \(K\) gives a more reliable (low-variance) estimate of the out-of-sample error.
 			- However, a larger \(K\) also means fewer examples for training, which may worsen the learned model.
 		- **Unbiased Estimation but High Variance:** If you use a single sample to evaluate error, the resulting estimate is unbiased (its expected value equals the true error) but exhibits high variance. By averaging the error over \(K\) points, the variance is reduced approximately by a factor of \(K\) (i.e., from \(\sigma^2\) to \(\sigma^2/K\)). This trick makes the error estimate more stable without sacrificing the unbiased property.
