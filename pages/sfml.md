@@ -398,7 +398,170 @@
 		  
 		  The transcript offers a comprehensive exploration of how validation, cross-validation, and model selection work in machine learning. It emphasizes the importance of splitting data appropriately, understanding the variance in error estimation, and being cautious of the optimistic bias that can occur when the best model is selected from a set of candidates. These principles not only guide practical decision-making in model training but also build a bridge to more advanced topics like support vector machines and complexity measures.
 	- ## Lecture 8
+	  collapsed:: true
+		- ### 1. Introduction and Motivation
+		  
+		  The lecture opens with a friendly greeting and an invitation to interact via audio questions. The instructor sets the stage by stating that today's focus is extending SVMs to handle nonlinear data through kernel methods. Traditionally, SVMs assume data are linearly separable in the input space (X), but many real-world problems require mapping the data to a different, more expressive space where linear separation becomes possible. This is achieved by transforming the input space into a new space (Z) using nonlinear functions.
+		  
+		  ---
+		- ### 2. Nonlinear Transformations and Their Role in SVMs
+		  
+		  The fundamental idea presented is simple: instead of operating in the original X space, one applies a transformation to obtain a feature space Z, where the data become linearly separable. For instance, data that follow a circular pattern in X may become separable when transformed using a second‐order polynomial mapping. This transformation generates additional features (such as squared terms and cross products) that “pull apart” the data. 
+		  
+		  A key point raised is the computational challenge that seems inevitable with high-dimensional spaces. If one were to explicitly transform a 2D space into a 1,000,000-dimensional space, the dot products (or inner products) could be very expensive to compute. However, the elegance of SVMs here is that although the feature space is high (or even infinite) dimensional, the optimization problem still depends only on a limited number of parameters (specifically, the nonzero Lagrange multipliers or “alphas”), which correspond to the support vectors.
+		  
+		  ---
+		- ### 3. The Kernel Trick: Avoiding Explicit Transformation
+		  
+		  The instructor emphasizes that in the dual formulation of SVMs, every term (from the loss function to the constraints) depends solely on the dot product between transformed vectors, namely, \(Z(x)\) and \(Z(x')\). This observation leads to the kernel trick.
+		- **Defining the Kernel:**  
+		  A kernel function \(K(x, x')\) is defined so that  
+		  \[
+		  K(x, x') = Z(x) \cdot Z(x')
+		  \]  
+		  In effect, the kernel computes the inner product in the Z space directly from the original inputs without the need to construct \(Z(x)\) explicitly.
+		- **Example with Polynomial Kernels:**  
+		  The lecture shows how a simple polynomial transformation—such as a second-order mapping where new features include the square of each component and their cross-products—can be recast as a kernel. For example, using  
+		  \[
+		  K(x, x') = (1 + x^T x')^2
+		  \]  
+		  produces the same result as would be obtained by explicitly transforming \(x\) into \(Z(x)\) and then computing the dot product. This is especially beneficial when dealing with very high (or even arbitrarily high) order polynomials where an explicit transformation would be computationally prohibitive.
+		  
+		  ---
+		- ### 4. Extending to Infinite Dimensions: The Radial Basis Function (RBF) Kernel
+		  
+		  Building on the idea of polynomial kernels, the lecture further introduces kernels that effectively map data into infinite-dimensional spaces. The radial basis function (or RBF) kernel is presented as an especially powerful case.
+		- The RBF kernel typically takes the form  
+		  \[
+		  K(x, x') = \exp\Big(-\gamma \|x - x'\|^2\Big)
+		  \]  
+		  and can be expanded as an infinite series (via the Taylor series of the exponential function).
+		- **Key Insight:** Although the theoretical feature space is infinite-dimensional, the SVM’s solution depends on only a few nonzero coefficients (support vectors). This ensures that, despite the vast dimensionality, the model remains computationally efficient and resists overfitting.
+		  
+		  ---
+		- ### 5. Soft Margin SVMs and the Role of Support Vectors
+		  
+		  Recognizing that real-world data are rarely perfectly separable, the lecture also incorporates the concept of a soft margin SVM. This approach allows some misclassifications (or errors) in exchange for a more robust and generalizable decision boundary.
+		- **Support Vectors as Complexity Controls:**  
+		  In both hard- and soft-margin formulations, only the support vectors (the data points with nonzero Lagrange multipliers) actively determine the decision boundary.
+		- **Generalization Bound:**  
+		  The number of support vectors relative to the total number of training examples can provide a practical bound on the generalization error. For example, if only a few support vectors are used (say 9 out of 100 points), the model is likely to generalize well. Conversely, a high proportion of support vectors may signal an overly complex decision boundary, which might necessitate regularization or model selection adjustments.
+		  
+		  ---
+		- ### 6. Computational Considerations and Practical Insights
+		  
+		  The instructor carefully compares the pros and cons of explicit transformations versus computing kernel functions directly:
+		- **Efficiency:**  
+		  While explicit high-dimensional transformations involve heavy computation (e.g., dealing with a 100th-order polynomial in a 100-dimensional space), a kernel function reduces this cost to a simple calculation in the original space.
+		- **Constants and Adjustments:**  
+		  Some care is necessary to manage constant factors when designing a kernel function so that it truly mirrors the inner product in the envisioned high-dimensional space.
+		- **Scalability:**  
+		  This efficiency makes kernel methods particularly appealing in practical applications, permitting the use of very complex feature transformations (even up to infinite-dimensions, as with the RBF kernel) without a corresponding explosion in computational demand.
+		  
+		  ---
+		- ### 7. Concluding Remarks
+		  
+		  The lecture concludes by reiterating the powerful synergy between SVMs and kernel methods:
+		- **Balancing Flexibility and Efficiency:**  
+		  The ability to implicitly work in very high-dimensional spaces equips SVMs with great flexibility in fitting complex, nonlinear decision boundaries, yet the kernel trick ensures that the computational burden remains manageable.
+		- **Interpretable Complexity:**  
+		  Despite the underlying high-dimensional mappings, the model’s complexity—measured by the number of support vectors—remains directly tied to the training data, offering both interpretability and a pathway to understand generalization performance.
+		- **Practical Implications:**  
+		  In practice, the combination of soft margin SVMs with carefully chosen kernels (like polynomial and RBF) has become a staple method in machine learning, underpinning many applications where the data do not admit a simple linear separation.
+		  
+		  ---
+		- ### Additional Insights
+		  
+		  For those looking to deepen their understanding, consider exploring the following related topics:
+		- **Alternative Kernels:**  
+		  Investigate other kernel functions (e.g., sigmoid or string kernels) to see how they compare in handling different types of data.
+		- **Regularization and Hyperparameter Tuning:**  
+		  Reflect on how choices of parameters such as the penalty term in soft-margin SVMs or the \(\gamma\) parameter in RBF kernels impact the trade-off between bias and variance.
+		- **Dual Optimization:**  
+		  Delve into the dual formulation of SVMs for a more mathematical perspective on why the kernel trick is both valid and computationally advantageous.
+		  
+		  This lecture masterfully combines theoretical insights with practical strategies, demonstrating how advanced concepts in kernel methods make SVMs both versatile and efficient in solving real-world problems.
 	- ## Lecture 9
+		- Below is a detailed, structured summary of the lecture transcript contained in **sfml-09_default.pdf**:
+		  
+		  ---
+		- ### 1. Introduction and Administrative Announcements
+		  
+		  The session opens with the lecturer acknowledging previous student emails and encouraging questions. He then explains that the focus of today’s lecture is on **reinforcement learning** (RL)—a realm distinct from supervised and unsupervised techniques that the class has grown familiar with. The lecturer sets the tone by promising to develop intuition about RL, introduce convergence ideas, and discuss guarantees in its simplest forms, including the study of bandits. Alongside technical content, the session includes organizational notes such as the remaining number of lectures, exam format details (including both written and oral parts), scheduling changes, and even hints at potential topics for thesis projects in RL.
+		  
+		  ---
+		- ### 2. Transition from Other Learning Paradigms to Reinforcement Learning
+		  
+		  The lecturer contrasts RL with supervised and unsupervised learning:
+		- **Supervised Learning:** Operates on datasets with labeled information. The aim is to train a model that generalizes from past data (for example, classifying images).
+		- **Unsupervised Learning:** Deals with unlabeled data where techniques like clustering are used to discover inherent structure.
+		- **Reinforcement Learning:** Unlike these methods, RL does not start with an available dataset. Instead, an agent learns by interacting with an environment—making decisions sequentially in order to maximize long-term reward. An analogy is provided: learning to ride a bike, where success isn’t just about immediate balance but about achieving an overall goal (such as reaching a destination safely).
+		  
+		  These comparisons set the stage for understanding why RL is both challenging and powerful, as it centers around sequential decision making and learning through trial and feedback rather than static data observations.
+		  
+		  ---
+		- ### 3. The Reinforcement Learning Framework and Markov Decision Processes (MDPs)
+		  
+		  The lecture formally introduces the reinforcement learning setting through the lens of a **Markov Decision Process (MDP)**, defined by five key components:
+		- **States (S):** All possible configurations of the environment. In the lecture’s illustrative example (a grid world), states represent different positions or layouts in the world.
+		- **Actions (A):** The possible moves or decisions the agent can make (e.g., moving up, down, left, or right).
+		- **Transition Probabilities:** A function that determines the probability of moving from one state to another given an action. Even though the grid world may appear deterministic, the lecturer stresses that many real-world environments are stochastic—where outcomes can vary.
+		- **Reward Function:** A function that assigns an immediate reward for taking an action in a certain state and transitioning to a new state. In the mouse grid world example, different squares yield different rewards (for instance, a small penalty on ordinary tiles, a positive reward for reaching a food item like cheese, and a large negative reward for encountering a cat).
+		- **Discount Factor (γ):** A scalar value that weights the importance of future rewards relative to immediate rewards. This parameter helps in emphasizing long-term cumulative rewards rather than just the next immediate outcome.
+		  
+		  The lecturer also introduces the notion of a horizon (T), which defines the length of the decision-making trajectory, noting that in some settings it may be finite (like in a game) while in others, such as certain industrial control applications, it might be considered infinite.
+		  
+		  ---
+		- ### 4. Key Concepts: Policies, Value Functions, and the Q Function
+		  
+		  Central to reinforcement learning are the ideas of **policy** and **value estimation**:
+		- **Policy (π):** A strategy or rule that determines the probability distribution of taking a given action in a particular state. The ultimate goal is to learn an *optimal policy* that maximizes the long-term reward.
+		- **Cumulative Reward (Return):** Defined as the discounted sum of rewards received over a trajectory starting at a given time step. It captures the idea that decisions should be evaluated not only by immediate consequences but by their long-term impact.
+		- **Value Function (V(s)):** Represents the expected cumulative reward (return) when starting in state s and following a particular policy. This function intuitively tells us "how good" it is to be in a given state.
+		- **Q Function (Q(s, a)):** An extension of the value function that evaluates the quality of performing a specific action a in state s. Learning the Q function for every state-action pair helps the agent decide which action will likely yield the best long-term result.
+		  
+		  Through interactive questioning and examples (like the mouse deciding between several paths in the grid world), the lecture demonstrates how these concepts help in constructing an optimal strategy. In practice, if an agent can estimate the value for every possible action in a given state, it can then choose the action that maximizes the expected cumulative reward.
+		  
+		  ---
+		- ### 5. Practical Examples and Applications of Reinforcement Learning
+		  
+		  To ground theory in practice, the lecturer outlines several real-world domains where reinforcement learning has been applied effectively:
+		- **Clinical and Pharmaceutical Testing:** Optimizing the testing of new drugs by determining the most efficient way to allocate doses, balancing patient outcomes against the need for rigorous, ethical experimentation.
+		- **Robotic Control:** Programming robots (for example, in car assembly) to adapt to uncertainties and errors that may occur in dynamic environments.
+		- **Telecommunications:** Adjusting the radiated power of mobile phone towers (such as the Swisscom example) to meet regulatory constraints without degrading user experience.
+		- **Wind Farm Optimization:** Maximizing power output while minimizing the risk of turbine failures by adaptively managing operational parameters.
+		- **Chip Design:** Aiding in the optimal layout of integrated circuits, where the arrangement of components significantly impacts both performance and electrical timing considerations.
+		- **Electric Vehicle Charging:** Scheduling and prioritizing charging for fleets of vehicles to avoid system overloads at peak times.
+		- **Epidemic Control:** Designing and implementing strategies for managing public health crises by optimally allocating testing resources and vaccines.
+		  
+		  These examples emphasize that RL’s strength lies in its ability to continuously learn and adapt through interaction with complex, uncertain environments.
+		  
+		  ---
+		- ### 6. Additional Technical and Conceptual Discussion
+		  
+		  The lecture further delves into technical details:
+		- **Stochasticity in the Environment:** Emphasizes that transitions can be probabilistic (e.g., the location of obstacles like a cat in the grid may change), which adds layers of complexity to learning the optimal policy.
+		- **Long-Term vs. Immediate Rewards:** Reinforces that the agent must look beyond short-term outcomes—even when a particular action yields a moderate immediate reward, its true value is determined by the overall return over time.
+		- **Comparative Discussion:** The instructor briefly compares RL to search-based algorithms like A*—noting that while A* is suited for well-defined path planning, RL is far more general and capable of handling the nuanced demands of sequential decision making under uncertainty.
+		- **Interactive Engagement:** Throughout the lecture, students are invited to consider what constitutes a good policy, how the discount factor affects returns, and the importance of evaluating the Q function across different actions. The class also hints at upcoming demonstrations (for example, using a Super Mario environment) to further concretize these ideas.
+		  
+		  ---
+		- ### 7. Concluding Themes and Looking Ahead
+		  
+		  Toward the end of the session, the lecturer summarizes the RL framework with the grid-world example as a microcosm of more complex decision-making problems. The takeaway message is that:
+		- Reinforcement learning allows an agent to learn an optimal policy by continuously interacting with a dynamic environment and by evaluating the long-term effects of actions.
+		- The balance between exploration (trying new actions) and exploitation (using known good strategies) is central to mastering RL.
+		- The formalism provided by MDPs, value functions, and the Q function lays a solid foundation for approaching even more complex applications in various fields.
+		  
+		  The lecture ends with a note that future sessions will build on this foundation—increasing the depth of theoretical understanding and covering convergence proofs and guarantees, as well as more applied settings.
+		  
+		  ---
+		- ### Additional Insights
+		  
+		  For those eager to dive deeper, consider exploring topics such as:
+		- **Temporal-Difference Learning Algorithms:** Techniques like Q-learning and SARSA that allow agents to iteratively approximate optimal policies.
+		- **Policy Gradient Methods:** Approaches where policies are directly optimized without explicitly learning value functions.
+		- **Applications in Games and Robotics:** Real-world examples where RL has led to breakthroughs—ranging from mastering video games like Super Mario to enabling autonomous control in vehicles and robotics.
 	- ## Lecture 10
 	- ## Lecture 11
 - sv notebook
