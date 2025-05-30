@@ -370,7 +370,98 @@
 		  
 		  This lecture lays a robust foundation for understanding the statistical principles that enable machine learning models to predict, classify, and make decisions in uncertain environments.
 	- ## Lecture 2
+	  collapsed:: true
+		- Below is a detailed summary of the lecture transcript contained in **sfml-02_default.pdf**, which is the second lecture of the course "Statistical Foundations of Machine Learning." This lecture delves into linear models from both classification and regression perspectives while using concrete examples, practical algorithms, and insights about feature engineering and nonlinear transformations.
+		  
+		  ---
+		- ### 1. Introduction and Motivation
+		- **Purpose of the Lecture:**  
+		  The lecture extends the discussion of linear models from the previous lecture. It is a very practical session aimed at applying and expanding linear modeling techniques. The focus is on both classifying real data and forecasting real-valued outcomes through regression. The discussion sets up a transition—starting with concrete exploration and later moving back to more theoretical aspects in subsequent lectures.
+		- **Real-World Relevance:**  
+		  The instructor introduces real datasets to illustrate the challenges of learning from imperfect or nonseparable data. In this session, one of the main examples is a handwritten ZIP-code digit recognition problem, where the images are 16×16 grayscale pixels. This example highlights how raw data can present difficulties for linear models and motivates the need for techniques such as feature extraction.
+		  
+		  ---
+		- ### 2. Data Representation and Feature Extraction
+		- **Raw Input Representation:**  
+		  Each image is originally represented as an input vector with 256 pixel values, augmented with an extra constant term (usually set to 1) to absorb the bias. This leads to a high-dimensional representation (257 components).
+		- **Challenges of High Dimensionality:**  
+		  A model with 257 parameters may struggle with generalization if confronted directly with the raw data. The lecture emphasizes that a large number of parameters can be “bad news” when it comes to reliably predicting unseen data.
+		- **Feature Engineering – Intensity and Symmetry:**  
+		  To address this, the lecture discusses the idea of lowering the dimensionality by extracting meaningful features. Two such features are introduced:
+			- **Intensity:** Quantifies the total darkness (or the sum of pixel values), which helps to delineate images that are sparse (like a simple line) versus those that are dense (wrapping around shapes).
+			- **Symmetry:** Measures the similarity between a digit and its mirror image. This is especially useful for distinguishing digits that are symmetric (such as 8) from those that are not (like 5).  
+			  
+			  By extracting these features, the raw 257-dimensional vector is reduced to a much smaller set (for example, two features plus the bias), thereby simplifying the model and potentially improving its generalization performance.
+			  
+			  ---
+		- ### 3. Linear Classification and the Perceptron Learning Algorithm (PLA)
+		- **Classification with Linear Models:**  
+		  Initially, the instructor applies a linear classifier (which could be visualized as drawing a straight line in the feature space) on the new, lower-dimensional representation. He demonstrates that even with only intensity and symmetry, many of the digits can be approximately separated by a line. Nonetheless, the data is “almost” linearly separable but not perfectly so.
+		- **PLA on Nonseparable Data:**  
+		  The Perceptron Learning Algorithm (PLA) is run on the dataset. In situations where the data is not strictly separable by a linear boundary, PLA does not converge. Instead, the in-sample error fluctuates because no single linear separator can perfectly classify all instances.
+		- **Introduction of the Pocket Algorithm:**  
+		  To address the nonseparability issue, the instructor introduces the pocket algorithm. This variant of PLA does not simply settle for the last hypothesis found; it “keeps in its pocket” the best performing hypothesis encountered during the iterations. In practice, after a fixed number of iterations (for instance, 1,000), the algorithm returns the hypothesis that achieved the lowest error so far. This method is particularly useful when the data are nearly separable or when oscillations in error prevent convergence under the standard PLA.
+		  
+		  ---
+		- ### 4. Transition from Classification to Regression
+		- **Regression Perspective with a Credit Line Example:**  
+		  The lecture then shifts focus from classification to regression. A credit line example is discussed, where instead of making a binary approval decision, the goal is to assign a specific amount of credit.
+		- **Error Measurement – Squared Error:**  
+		  Unlike binary classification which counts right-or-wrong decisions, in regression the error is measured using the squared difference between the predicted credit amount and the actual value. This formulation naturally penalizes larger deviations more than smaller ones and is averaged across all data points to obtain the in-sample error.
+		- **Dual Use of Linear Regression:**  
+		  An interesting side note is made: linear regression, although designed for continuous outputs, can be adapted for classification tasks (by using the sign of the regression output). This may even serve as a useful initialization step for PLA or the pocket algorithm.
+		  
+		  ---
+		- ### 5. Matrix Formulation and the Pseudo-Inverse
+		- **From Equation to Vector Form:**  
+		  The lecturer rewrites the linear regression problem using matrix notation. Here, the data are assembled into an input matrix \( X \) (where each row corresponds to an input vector, with the bias embedded) and a target vector \( Y \).
+		- **Deriving the Normal Equations:**  
+		  The in-sample error is expressed as the average of the squared differences, and by taking the gradient with respect to the weight vector \( W \), one arrives at the normal equations:  
+		  \[
+		  X^\top X\, W = X^\top Y
+		  \]
+		  Solving for \( W \) involves computing the inverse of \( X^\top X \).
+		- **Pseudo-Inverse for Non-Invertible Cases:**  
+		  In many real-world scenarios, \( X^\top X \) is invertible because the dataset is large relative to the number of features. However, if it is not, the concept of the pseudo-inverse (denoted as \( X^\dagger \)) is introduced. The solution is then given by:  
+		  \[
+		  W = X^\dagger Y
+		  \]
+		  The discussion also touches on the computational complexity of this step and notes that in practice, library functions handle these calculations efficiently.
+		  
+		  ---
+		- ### 6. Nonlinear Transformations for Improved Separation
+		- **Why Linear Might Not Be Enough:**  
+		  A critical limitation noted is that many real-world datasets are not linearly separable in their original feature spaces. Linear models, as formulated above, may fail to capture the inherent patterns in such cases.
+		- **Mapping to a New Space \( Z \):**  
+		  A nonlinear transformation function, denoted as \( \phi \), is introduced which maps the original input vector \( X \) into a new space \( Z \). For example, the transformation may involve taking square or other nonlinear functions of features aside from keeping the bias term unchanged.
+		- **Linear Model in a Nonlinear World:**  
+		  Although the transformation \( \phi \) is nonlinear, the model remains linear in the parameters. In the \( Z \) space, data that may have been inseparable in the original space becomes more amenable to separation by a linear boundary. This is illustrated by showing how a classifier designed in the \( Z \) space can be “projected back” into the original space to yield a nonlinear decision boundary.
+		  
+		  ---
+		- ### 7. Error Metrics and the Learning Framework
+		- **Pointwise and Aggregate Error:**  
+		  The lecture revisits the method for measuring error. A pointwise error is defined as the difference (or discrepancy) between the hypothesis \( H(x) \) and the target \( F(x) \) for each data point. Depending on the task, this may be the squared error (for regression) or the binary error (for classification).
+		- **In-Sample vs. Out-of-Sample Error:**  
+		  The in-sample error \( E_{\text{in}} \) is computed as the average error over the training dataset, and it serves as an observable metric. In contrast, the out-of-sample error \( E_{\text{out}} \) is defined as the expected error on unseen data. This distinction lays the groundwork for later theoretical analyses on generalization.
+		- **Learning Diagram Recap:**  
+		  The instructor concludes by summarizing the typical learning process: an unknown target function \( F \) is approximated by a hypothesis \( G \) selected from a hypothesis set. Training samples drawn from a specified probability distribution are used to find \( G \), and ultimately, error measures (both observable and theoretical) are used to assess how well \( G \) approximates \( F \).
+		  
+		  ---
+		- ### 8. Concluding Insights
+		- **Bridging Practicalities and Theory:**  
+		  This lecture bridges hands-on algorithmic techniques—such as PLA, pocket algorithm, and linear regression—with the fundamental ideas of error measurement and data transformation. It emphasizes the constant interplay between model complexity and generalization ability.
+		- **Preparing for Further Theory:**  
+		  By highlighting the challenges of non-separable data and by introducing both feature extraction and nonlinear transformation, the lecture lays a robust foundation. The techniques explored here are not only practical for immediate application (like in image recognition or credit prediction) but also serve as a precursor to more advanced theoretical discussions in subsequent lectures.
+		- **Key Takeaway:**  
+		  Whether dealing with classification or regression, the lecture stresses the importance of matching the model to the data complexity. It shows that smart transformations and algorithm adaptations (like using the pocket algorithm) can significantly improve outcomes when raw linear models fall short.
+		  
+		  ---
+		  
+		  This lecture is rich in practical insights and methodical extensions of linear modeling techniques. It also provides a smooth transition from basic linear concepts to more sophisticated strategies that handle nonlinearity and noisy data—topics that will be explored in even greater detail as the course continues. 
+		  
+		  Would you like to delve deeper into aspects of feature transformation, or perhaps explore examples of how these approaches play out in today’s advanced machine learning practices?
 	- ## Lecture 3
+	  collapsed:: true
 		- Below is a detailed summary of the lecture transcript from **sfml-03_default.pdf**, which discusses the theory of generalization in machine learning. The lecture weaves together intuitive analogies, combinatorial reasoning, and formal arguments to explain how one can guarantee that a model learned on a finite training set will generalize to unseen data.
 		  
 		  ---
@@ -445,6 +536,7 @@
 		  
 		  There’s much more to explore in how these concepts extend to other measures of complexity, such as the VC dimension and Rademacher complexities, and how they influence modern algorithms like support vector machines and deep neural networks. Would you be interested in diving deeper into any of these related topics or specific applications in model regularization and selection?
 	- ## Lecture 4
+	  collapsed:: true
 		- Below is a detailed summary of the lecture transcript from the PDF, which is the fourth lecture of the “Statistical Foundations of Machine Learning” course.
 		  
 		  ---
@@ -616,6 +708,7 @@
 		  
 		  This lecture not only reinforces theoretical insights into logistic regression and gradient descent but also builds a solid foundation for the transition to more complex learning models in future classes.
 	- ## Lecture 6
+	  collapsed:: true
 		- ### 1. **Introduction to Overfitting**
 		  
 		  The lecture begins by introducing the notion of overfitting, which is described as the scenario where a model fits the training data “too well.” In other words, the model goes beyond capturing the true underlying patterns and instead starts fitting random noise in the data. This excessive tailoring to the training data leads to a situation where the in-sample error (the error measured on the training set) becomes very low—even zero in some cases—while the out-of-sample error (the error on unseen data) becomes very high. This contrast is the hallmark of overfitting.
@@ -682,6 +775,7 @@
 		  
 		  The lecture concludes by reinforcing that both forms of noise—stochastic and deterministic—are “bad” from a learning perspective because they prevent the model from truly generalizing. The proper selection of the hypothesis set (and the use of automated methods to restrain model flexibility like regularization) is essential. In future lectures, as hinted in this transcript, further attention will be given to these methods, including a more rigorous discussion of validation techniques and even a Bayesian perspective on noise handling.
 	- ## Lecture 7
+	  collapsed:: true
 		- Below is a detailed summary of the PDF transcript:
 		  
 		  ---
@@ -725,6 +819,7 @@
 		  
 		  The transcript offers a comprehensive exploration of how validation, cross-validation, and model selection work in machine learning. It emphasizes the importance of splitting data appropriately, understanding the variance in error estimation, and being cautious of the optimistic bias that can occur when the best model is selected from a set of candidates. These principles not only guide practical decision-making in model training but also build a bridge to more advanced topics like support vector machines and complexity measures.
 	- ## Lecture 8
+	  collapsed:: true
 		- ### 1. Introduction and Motivation
 		  
 		  The lecture opens with a friendly greeting and an invitation to interact via audio questions. The instructor sets the stage by stating that today's focus is extending SVMs to handle nonlinear data through kernel methods. Traditionally, SVMs assume data are linearly separable in the input space (X), but many real-world problems require mapping the data to a different, more expressive space where linear separation becomes possible. This is achieved by transforming the input space into a new space (Z) using nonlinear functions.
@@ -808,6 +903,7 @@
 		  
 		  This lecture masterfully combines theoretical insights with practical strategies, demonstrating how advanced concepts in kernel methods make SVMs both versatile and efficient in solving real-world problems.
 	- ## Lecture 9
+	  collapsed:: true
 		- Below is a detailed, structured summary of the lecture transcript contained in **sfml-09_default.pdf**:
 		  
 		  ---
@@ -889,6 +985,7 @@
 		- **Policy Gradient Methods:** Approaches where policies are directly optimized without explicitly learning value functions.
 		- **Applications in Games and Robotics:** Real-world examples where RL has led to breakthroughs—ranging from mastering video games like Super Mario to enabling autonomous control in vehicles and robotics.
 	- ## Lecture 10
+	  collapsed:: true
 		- Below is a detailed, structured summary of the transcript for **sfml-10_default.pdf**:
 		  
 		  ---
