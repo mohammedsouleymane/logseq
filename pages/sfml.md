@@ -396,11 +396,6 @@
 		- ### Conclusion
 		  
 		  The transcript offers a comprehensive exploration of how validation, cross-validation, and model selection work in machine learning. It emphasizes the importance of splitting data appropriately, understanding the variance in error estimation, and being cautious of the optimistic bias that can occur when the best model is selected from a set of candidates. These principles not only guide practical decision-making in model training but also build a bridge to more advanced topics like support vector machines and complexity measures.
-		  
-		  ---
-		  
-		  **Additional Insights:**  
-		  For those interested in deepening their understanding, you might explore how these concepts extend to real-world applications. For instance, consider how cross-validation is implemented in contemporary deep learning frameworks, or delve into advanced bias-correction techniques when dealing with very large hypothesis spaces. These topics bridge the gap between theoretical machine learning and its practical, impactful applications.
 	- ## Lecture 8
 	- ## Lecture 9
 	- ## Lecture 10
