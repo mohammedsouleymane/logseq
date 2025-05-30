@@ -286,6 +286,9 @@
 		  * $\text{VCdim} \geq d + 1$
 		  * $\text{VCdim} \leq d + 1$
 - # Lectures
+	- ## Lecture 1
+	- ## Lecture 2
+	-
 	- ## Lecture 6
 	  collapsed:: true
 		- ### 1. **Introduction to Overfitting**
