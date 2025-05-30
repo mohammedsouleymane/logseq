@@ -372,7 +372,183 @@
 	- ## Lecture 2
 	- ## Lecture 3
 	- ## Lecture 4
+		- Below is a detailed, structured summary of the content found in **sfml-05_default.pdf**:
+		  
+		  ---
+		- ### 1. Introduction and Overview
+		- **Welcome and Logistics:**  
+		  The lecture opens with a brief greeting and administrative reminders. The instructor confirms that the slides are visible and encourages students to speak up rather than rely solely on the chat. There is also a note that the lecture is being recorded for later access.
+		- **Lecture Scope:**  
+		  The session is positioned as a bridge between traditional linear models and the foundations of neural networks. While advanced deep architectures will be covered later, today’s focus is on reviewing linear classifiers, regression methods, and introducing logistic regression as a precursor to more complex models.
+		  
+		  ---
+		- ### 2. Review of Linear Classification and Regression
+		- **Revisiting Linear Models:**  
+		  The instructor reviews core linear classification methods such as the perceptron. Key highlights include:
+			- The standard perceptron computes a weighted sum of input features (with an added bias) and then applies a threshold (via the sign function) to yield a binary decision.
+			- When the data are linearly separable, the Perceptron Learning Algorithm (PLA) converges after a finite number of updates.
+			- For cases where data are not perfectly separable, variants such as the pocket algorithm are recommended. This method keeps track of the best solution encountered during iterations even if PLA fails to converge.
+		- **Linear Regression Basics:**  
+		  In addition to classification, the lecture revisits linear regression:
+			- The approach is based on minimizing the squared error between predictions and target values.
+			- When the design matrix does not have full rank or when a closed-form solution is required, the pseudo‑inverse is used to solve for the weight vector.
+			- Although linear regression naturally returns real-valued outputs, it can sometimes be adapted for classification tasks via thresholding.
+			  
+			  ---
+		- ### 3. Transition to Logistic Regression
+		- **Motivation for a Probabilistic Model:**  
+		  Building on the strengths—and limitations—of hard-threshold classifiers like the perceptron, the instructor introduces logistic regression as a more refined approach. Unlike the rigid binary classifier, logistic regression employs a smooth, continuous output:
+			- The linear combination of inputs is passed through a sigmoid (logistic) function, transforming raw scores into probabilities between 0 and 1.
+			- This probabilistic interpretation is particularly useful in scenarios (for example, medical diagnosis or risk assessment) where uncertainty about outcomes must be quantified rather than reduced to a simple yes/no answer.
+		- **Practical Advantages:**  
+		  The use of probabilities enables more nuanced decision-making and paves the way for integrating this foundation into more complex neural network architectures later on.
+		  
+		  ---
+		- ### 4. Maximum Likelihood and Error Function Formulation
+		- **Setting Up the Likelihood:**  
+		  Once probabilities are produced using the sigmoid function, the lecture explains that the model parameters can be estimated by maximizing the likelihood of the observed data.
+			- For independent examples, the overall likelihood is the product of individual point probabilities.
+			- However, the product of many small numbers can lead to numerical issues.
+		- **Log-Likelihood and Cross-Entropy Error:**  
+		  To simplify computations and improve numerical stability, the natural logarithm is applied to the likelihood. This serves two functions:
+			- Converting the product into a sum, which is easier to handle both analytically and computationally.
+			- Leading to the commonly used cross-entropy (or negative log‑likelihood) error function. Minimizing this error is the key objective for training the logistic regression model.
+			  
+			  ---
+		- ### 5. Optimization via Gradient Descent
+		- **Need for an Iterative Approach:**  
+		  Unlike linear regression (which can often be solved in closed form), logistic regression does not yield a simple analytical solution. Instead, an iterative method—gradient descent—is employed:
+			- Starting from an initial guess, the weight vector is updated iteratively by moving in the direction opposite to the gradient (i.e., the steepest descent) of the error function.
+			- A fixed step size (learning rate, η) is chosen, ensuring that each update is small enough to allow for an accurate linear approximation of the error surface.
+		- **Understanding the Update Rule:**  
+		  The instructor offers an intuitive analogy by comparing gradient descent to navigating a darkened room by following the steepest slope. In this context, the Taylor series expansion is invoked:
+			- A first-order Taylor series approximates the change in the error function based solely on the gradient, neglecting higher-order terms.
+			- This derivation supports the update rule and underscores why normalization of the gradient (via the step size) is crucial for convergence.
+			  
+			  ---
+		- ### 6. Interactive Discussions and Clarifications
+		- **Addressing Student Questions:**  
+		  Throughout the lecture, the instructor intersperses moments for clarification, addressing concerns such as:
+			- The rationale behind taking the logarithm of probabilities.
+			- How and why the Taylor series expansion justifies the gradient descent update.
+			- The importance of choosing an appropriate step size (η) to ensure stable convergence.
+		- **Reinforcing Concepts:**  
+		  These interactions help demystify the mathematical derivations and reinforce the practical application of these optimization techniques.
+		  
+		  ---
+		- ### 7. Concluding Remarks and Foundations for Future Learning
+		- **Key Takeaways:**  
+		  The lecture successfully integrates several foundational concepts:
+			- A review of traditional linear methods establishes common ground.
+			- The intro to logistic regression demonstrates a clear evolution from hard binary decisions to probabilistic outputs.
+			- The discussion on gradient descent and its derivation using a Taylor series provides insight into both mathematical underpinnings and practical implementation.
+		- **Looking Ahead:**  
+		  These ideas form the basis for more advanced topics. The same principles—probabilistic modeling and iterative optimization—are central to neural network training (e.g., via backpropagation) and further studies in deep learning. This lecture lays the groundwork for those future explorations by solidifying one’s understanding of linear classifiers and their optimization challenges.
+		  
+		  ---
+		- ### Additional Insights
+		  
+		  For those interested in deepening their knowledge, consider exploring:
+		- **Advanced Optimization Techniques:**  
+		  Variants of gradient descent (such as stochastic gradient descent, momentum methods, and adaptive learning rate algorithms like Adam) are extensively used in deep learning.
+		- **Extensions to Neural Networks:**  
+		  How logistic regression serves as the basic computational unit (or neuron) in multilayered networks, and how backpropagation extends these ideas to train deep models.
+		- **Numerical Stability in Practice:**  
+		  Techniques for managing numerical issues (such as proper initialization, normalization strategies, and regularization techniques) that become increasingly important in complex, high-dimensional settings.
+		  
+		  This lecture not only reviews core techniques in linear models and logistic regression but also establishes a solid platform from which more sophisticated models can be understood and further explored.
 	- ## Lecture 5
+		- Below is a detailed, structured summary of the content found in **sfml-05_default.pdf**:
+		  
+		  ---
+		- ### 1. Introduction and Administrative Announcements
+		- **Greeting and Logistics:**  
+		  The lecture begins with a warm greeting as the instructor confirms that everyone can see the slides properly. Students are encouraged to use their microphones for questions rather than typing in the chat, ensuring an interactive, real-time discussion. Administrative details—such as plans to record the lecture for later online access—are also addressed.
+		- **Lecture Scope:**  
+		  The session sets out to discuss linear models as a foundation for understanding neural networks. Although deep architectures and advanced deep learning topics will be covered in future lectures, today’s focus is on the building blocks that underpin these methods.
+		  
+		  ---
+		- ### 2. Recap of Linear Classifiers and Regression
+		- **Review of Linear Classification:**  
+		  The instructor revisits familiar algorithms like the perceptron learning algorithm (PLA) and its extensions. He explains that:
+			- A simple perceptron computes a linear combination of inputs (including a bias term) and then applies a hard threshold (sign function) to decide the class label.
+			- When data are linearly separable, the PLA converges; when they are not, modified versions like the pocket algorithm are used to keep the best solution found so far.
+		- **Linear Regression Overview:**  
+		  The lecture also reviews linear regression—where the numerical prediction is achieved by using the pseudo‑inverse technique—and discusses how the same linear model framework is used in both classification and regression, with differences coming from the function applied to the computed signal.
+		  
+		  ---
+		- ### 3. Transition to Logistic Regression
+		- **Motivation for Logistic Formulation:**  
+		  Building on the concept of linear models, the instructor introduces logistic regression as a natural extension:
+			- Unlike hard-threshold classifiers that output merely +1 or –1, logistic regression “softens” the decision boundary by mapping the linear signal through a smooth nonlinearity.
+			- The logistic (or sigmoid) function is applied to the linear combination of the inputs, transforming the output into a number between 0 and 1. This makes the output interpretable as a probability.
+		- **Probability Interpretation:**  
+		  The use of a smooth sigmoid function enables the assignment of a genuine probability—for example, the likelihood that a person may have a heart attack based on their age, cholesterol level, and other factors. This probabilistic interpretation is advantageous in applications where a binary decision (good or bad) is insufficient and knowing the degree of risk is essential.
+		  
+		  ---
+		- ### 4. Likelihood, Error Function, and the Role of Logarithms
+		- **Maximum Likelihood Framework:**  
+		  To assign probabilities to outcomes, the lecture shows how one can write the likelihood for each data point based on whether the actual label (e.g., heart attack occurrence) matches the predicted probability from the logistic function.
+		- **Cross-Entropy (Log-Loss):**
+			- Since the data points are assumed independent, the overall likelihood is the product of individual probabilities.
+			- To simplify optimization—and to address issues of numerical underflow when multiplying small probabilities—the instructor explains the use of the natural logarithm to convert the product into a sum. This transformation leads to what is known as the cross-entropy or negative log‑likelihood error function.
+			- Minimizing this error function constitutes the main objective for training a logistic regression model.
+			  
+			  ---
+		- ### 5. Optimization with Gradient Descent
+		- **Why Gradient Descent?**  
+		  Logistic regression does not admit a closed-form solution (unlike linear regression via the pseudo‑inverse). Therefore, the instructor introduces gradient descent, an iterative optimization method well suited for minimizing the error function when derivatives are available.
+		- **Conceptual Description:**
+			- The instructor compares gradient descent to navigating a mountainous landscape with your eyes closed—one can only “feel” the direction in which the slope is steepest.
+			- Starting from an initial guess for the weight vector, the algorithm moves a small step in the direction of the negative gradient (the steepest descent) in order to reduce the error.
+		- **Step Size (ETA):**  
+		  A fixed step size (η) is chosen to ensure that each update stays within a region where the function can be accurately approximated as linear. Choosing an appropriate step size is crucial for the stability and convergence of the algorithm.
+		  
+		  ---
+		- ### 6. Derivation via Taylor Series Expansion
+		- **Taylor Series Insight:**  
+		  The lecture delves into the mathematical underpinning of gradient descent by using a first-order Taylor series expansion:
+			- The error function at a new point (after the weight update) is approximated by its value at the current point plus the inner product of its gradient and the change in the weight vector.
+			- By neglecting higher-order (second-order) terms—which is justified when the step size is sufficiently small—the instructor shows that the weight update rule can be expressed in terms of the gradient.
+		- **Normalization and Direction:**  
+		  To ensure that the update follows the true direction of steepest descent, the change in weights is represented as a product of the step size η and a unit vector in the direction of the negative gradient.
+			- This normalization ensures that only the direction matters, while the step size controls the magnitude of the update.
+		- **Numerical Stability:**  
+		  The use of logarithms in earlier derivations and normalization of the gradient both contribute to the numerical stability of the optimization process, ensuring that even when dealing with very small probability values or steep error surfaces, the algorithm proceeds in a controlled manner.
+		  
+		  ---
+		- ### 7. Interactive Clarifications
+		- **Student Questions and Responses:**  
+		  Throughout the lecture, the instructor pauses to answer student questions about:
+			- The validity of taking the logarithm of products of probabilities.
+			- The justification for using a Taylor series expansion and neglecting higher-order terms.
+			- The process of normalizing the gradient vector and the importance of the unit vector.
+			  
+			  These interactions help reinforce the mathematical concepts and ensure that everyone understands how the derivations translate into practical algorithm steps.
+			  
+			  ---
+		- ### 8. Summary and Concluding Remarks
+		- **Core Learnings:**
+			- The lecture starts by revisiting linear models and moves fluidly into logistic regression, emphasizing the transformation of a linear signal into a probability using a smooth sigmoid function.
+			- It establishes the need for a maximum likelihood framework using cross-entropy as the error function for logistic regression.
+			- With no closed-form solution available, the discussion shifts to gradient descent as an iterative optimization technique, whose derivation is supported by a Taylor series expansion and normalization arguments.
+		- **Foundations for Further Study:**  
+		  These concepts are presented not only as standalone techniques but also as foundational elements for understanding more sophisticated topics:
+			- The same logistic function and gradient descent principles are essential for the derivation and implementation of backpropagation in neural networks.
+			- Future lectures are hinted to cover more complex scenarios, including deep neural networks and reinforcement learning, where these principles will be extended and adapted.
+			  
+			  ---
+		- ### Additional Insights
+		  
+		  For further study, one might consider:
+		- **Advanced Optimization Techniques:**  
+		  Exploring variants of gradient descent such as stochastic gradient descent (SGD), momentum methods, or adaptive learning rate approaches (e.g., Adam) that are widely used in deep learning.
+		- **Neural Network Foundations:**  
+		  Investigating how logistic regression serves as the basic building block of neural networks and how multi-layer architectures integrate these ideas with non-convex error surfaces.
+		- **Numerical Considerations:**  
+		  Delving deeper into ways to ensure numerical stability during optimization, including careful initialization of weights and the role of normalization in large-scale machine learning models.
+		  
+		  This lecture not only reinforces theoretical insights into logistic regression and gradient descent but also builds a solid foundation for the transition to more complex learning models in future classes.
 	- ## Lecture 6
 	  collapsed:: true
 		- ### 1. **Introduction to Overfitting**
