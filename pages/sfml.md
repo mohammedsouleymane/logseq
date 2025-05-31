@@ -584,7 +584,7 @@
 			- Reflects the variability in the learned hypothesis when different datasets are used.
 			- Even if a model has low bias, if the outcome (the learned hypothesis) fluctuates considerably with different samples, the variance is high, which can hurt generalization.
 		- **The Decomposition Process:**
-			- **Introducing the Average Hypothesis (\(\bar{G}\)):**  
+			- **Introducing the Average Hypothesis $\bar{G}\:$**  
 			  The instructor considers an average hypothesis computed by taking the expected learned hypothesis over many samples. This statistical construct is not directly observable in practice, but it is extremely useful for analysis.
 			- **Algebraic Decomposition:**  
 			  By adding and subtracting the average hypothesis within the squared error term, the overall out-of-sample error (using squared loss) can be decomposed into two parts:
