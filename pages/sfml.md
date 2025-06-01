@@ -287,6 +287,7 @@
 		  * $\text{VCdim} \leq d + 1$
 - # Lectures
 	- ## Lecture 1
+	  collapsed:: true
 		- Below is a detailed, structured summary of the content in **SFML-Lecture01.pdf**:
 		  
 		  ---
@@ -369,6 +370,7 @@
 		  
 		  This lecture lays a robust foundation for understanding the statistical principles that enable machine learning models to predict, classify, and make decisions in uncertain environments.
 	- ## Lecture 2
+	  collapsed:: true
 		- Below is a detailed summary of the lecture transcript contained in **sfml-02_default.pdf**, which is the second lecture of the course "Statistical Foundations of Machine Learning." This lecture delves into linear models from both classification and regression perspectives while using concrete examples, practical algorithms, and insights about feature engineering and nonlinear transformations.
 		  
 		  ---
