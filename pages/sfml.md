@@ -461,6 +461,7 @@
 		  
 		  Would you like to delve deeper into aspects of feature transformation, or perhaps explore examples of how these approaches play out in today’s advanced machine learning practices?
 	- ## Lecture 3
+	  collapsed:: true
 		- Below is a detailed summary of the lecture transcript from **sfml-03_default.pdf**, which discusses the theory of generalization in machine learning. The lecture weaves together intuitive analogies, combinatorial reasoning, and formal arguments to explain how one can guarantee that a model learned on a finite training set will generalize to unseen data.
 		  
 		  ---
