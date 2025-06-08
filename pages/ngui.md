@@ -76,16 +76,16 @@
 			- **Infrared lighting behind the surface** enables tracking of fingers and objects.
 			- **Identifies physical objects by shape or fiducial markers.**
 		- 9. **Important Interactive Systems**
-		- **DigitalDesk:** Makes physical desks function as digital workstations.
-		- **DiamondTouch Table:** Detects **who is touching** based on **capacitive coupling.**
-		- **Jeff Han’s Multi-Touch Table:** Early implementation of **FTIR-based multi-touch.**
-		- **Microsoft PixelSense:** **LED backlit LCD with multi-touch tracking.**
-		- **ReacTIVision:** **Open-source multi-touch framework** for fiducial markers.
-			- 10. **Pen and Touch Interaction on Tabletops**
+			- **DigitalDesk:** Makes physical desks function as digital workstations.
+			- **DiamondTouch Table:** Detects **who is touching** based on **capacitive coupling.**
+			- **Jeff Han’s Multi-Touch Table:** Early implementation of **FTIR-based multi-touch.**
+			- **Microsoft PixelSense:** **LED backlit LCD with multi-touch tracking.**
+			- **ReacTIVision:** **Open-source multi-touch framework** for fiducial markers.
+		- 10. **Pen and Touch Interaction on Tabletops**
 			- **Allows simultaneous pen and touch input.**
 			- **Non-dominant hand gestures** define pen modes.
 			- Alternative to **on-screen widgets** for advanced users.
-			- 11. **OLED Technology**
+		- 11. **OLED Technology**
 			- **Flexible, thinner displays** with **faster response times.**
 			- **No backlight needed**, making them energy-efficient.
 			- **Can be combined with multi-touch interfaces** for next-gen tabletop systems.
