@@ -38,3 +38,56 @@
 		- Challenges include **user expectations, multimodal interactions**, and **design feedback for non-screen interactions**.
 		  
 		  This version strictly includes only the highlighted blue sections while providing a detailed explanation. Let me know if you need any refinements!
+- lecture 5
+	- Here’s a detailed summary of the important sections highlighted in blue from your PDF on *Interactive Tabletops and Surfaces*:
+	- ### **Key Sections (Highlighted in Blue)**
+	  1. **Multi-User Tabletop Interfaces**
+		- Studies show users adopt **territories on a tabletop** to coordinate tasks:
+			- **Personal territories:** Reserved for individual use.
+			- **Group territories:** Shared workspace for main activities.
+			- **Storage territories:** Used for keeping task-related and non-task items.
+		- Guidelines for tabletop interfaces:
+			- **Provide visibility and transparency of actions**—users should be able to see ongoing interactions.
+			- **Ensure sufficient table space**—users should not feel restricted.
+			- **Provide functionality in the appropriate locality**—personal territory should support reading and writing.
+			- **Support casual grouping**—users can organize resources in piles as reminders.
+		- 2. **Enabling Technologies**
+			- **Touch sensor technology:** Tracks real-time multi-touch input, adaptable to different surfaces.
+			- **Display types:** Projectors, LCDs, OLEDs.
+			- **Software:** Goes beyond traditional WIMP interfaces, tracking multiple user actions.
+		- 3. **Resistive Touch Panels**
+			- **Low-cost manufacturing** and **low power consumption.**
+			- **Supports stylus and gloved input** but has reduced display quality.
+		- 4. **Surface Capacitive Touch Panels**
+			- **Better display quality** than resistive panels.
+			- **High positional accuracy** but **limited multi-touch detection.**
+		- 5. **Projected Capacitive Touch Panels**
+			- **Supports multi-touch** with **high positional accuracy.**
+			- Typically used in **modern smartphones** but **not suited for large surfaces.**
+		- 6. **Surface Acoustic Wave (SAW) Technology**
+			- **Ultrasonic waves detect soft touches** (e.g., fingers).
+			- **Excellent display quality** since there are **no additional layers.**
+			- **Limited to dual-touch detection** due to hardware constraints.
+		- 7. **Frustrated Total Internal Reflection (FTIR)**
+			- Uses **infrared light reflection** to detect touches.
+			- **Computer vision algorithms** compute touch locations.
+			- **Back projection** can be combined for interactive surfaces.
+		- 8. **Diffused Illumination (DI)**
+			- **Infrared lighting behind the surface** enables tracking of fingers and objects.
+			- **Identifies physical objects by shape or fiducial markers.**
+		- 9. **Important Interactive Systems**
+		- **DigitalDesk:** Makes physical desks function as digital workstations.
+		- **DiamondTouch Table:** Detects **who is touching** based on **capacitive coupling.**
+		- **Jeff Han’s Multi-Touch Table:** Early implementation of **FTIR-based multi-touch.**
+		- **Microsoft PixelSense:** **LED backlit LCD with multi-touch tracking.**
+		- **ReacTIVision:** **Open-source multi-touch framework** for fiducial markers.
+			- 10. **Pen and Touch Interaction on Tabletops**
+			- **Allows simultaneous pen and touch input.**
+			- **Non-dominant hand gestures** define pen modes.
+			- Alternative to **on-screen widgets** for advanced users.
+			- 11. **OLED Technology**
+			- **Flexible, thinner displays** with **faster response times.**
+			- **No backlight needed**, making them energy-efficient.
+			- **Can be combined with multi-touch interfaces** for next-gen tabletop systems.
+			  
+			  This version strictly includes only the highlighted blue sections while providing a detailed explanation. Let me know if you need any refinements!
