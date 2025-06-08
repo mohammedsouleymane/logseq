@@ -1,32 +1,27 @@
 - lecture 4
-	- Here’s a detailed summary focusing exclusively on the important content highlighted in blue from your PDF on *Pen-based Interaction*:
-	- ### **Detailed Summary of Key Topics**
-	  1. **40000 Years of Evolution in Writing Tools**
+  collapsed:: true
+	- 1. **40000 Years of Evolution in Writing Tools**
 		- Pens have evolved for over 40,000 years.
 		- New writing tools often take a long time to be widely adopted.
 		- Paper and work practices have coevolved over a long period.
 		- People have ingrained expectations when using pen and paper.
-		  
-		  2. **The Myth of the Paperless Office**
+	- 2. **The Myth of the Paperless Office**
 		- The concept of a paperless office has been predicted for decades.
 		- Instead of complete digital adoption, paper remains widely used.
 		- The expected digital revolution hasn't replaced paper-based workflows.
-		  
-		  3. **Affordances of Pen and Paper**
+	- 3. **Affordances of Pen and Paper**
 		- Paper is **light, flexible, mobile, and cheap**.
 		- It is **robust, porous, opaque or transparent, high-resolution**, and **easy to navigate** (e.g., flipping pages).
 		- Paper allows **easy annotation** but is hard to replicate and must be accessed locally.
 		- Human interactions with paper include **grasping, folding, tearing, carrying, writing on**, and **arranging documents spatially**.
 		- Paper supports collaboration and interactions that are difficult to replicate digitally.
-		  
-		  4. **Affordances of Pens**
+	- 4. **Affordances of Pens**
 		- Pens are **robust, light, mobile, durable, erasable**, and **cheap**.
 		- They support **color options** and work on various surfaces.
-		- 5. **Replacing Pen and Paper?**
-			- Handwriting enhances learning—**generative note-taking** is more effective than laptop transcription.
-			- A 2024 study by **Van der Weel et al.** shows handwriting (but not typing) leads to **widespread brain connectivity**.
-			- Sweden prioritizes handwriting in education over digital tools.
-		-
+	- 5. **Replacing Pen and Paper?**
+		- Handwriting enhances learning—**generative note-taking** is more effective than laptop transcription.
+		- A 2024 study by **Van der Weel et al.** shows handwriting (but not typing) leads to **widespread brain connectivity**.
+		- Sweden prioritizes handwriting in education over digital tools.
 	- 6. **Digital Pen and Paper Applications**
 		- **Enhanced Reading**: Interactive paper maps, festival brochures, auction catalogs, educational materials.
 		- **Enhanced Writing**: Mammography annotation, researcher’s notebooks, querying by sketching.
