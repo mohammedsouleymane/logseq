@@ -1,3 +1,90 @@
+- lecture 1
+- lecture 2
+- lecture 3
+	- ### 1. The Foundations of Multimodal Interaction
+	  
+	  The lecture begins by framing human–machine communication as inherently multimodal. In contrast to traditional graphical user interfaces (GUIs), which rely on a single event stream (usually mouse and keyboard), multimodal systems blend multiple input and output channels. This stems from the observation that humans naturally communicate and perceive through various senses. The slide underscores that modalities include:
+	- **Visual (sight)**
+	- **Auditory (hearing)**
+	- **Olfactory (smell)**
+	- **Gustatory (taste)**
+	- **Tactile (touch)**
+	- **Vestibular (balance)**
+	  
+	  This diversity of perceptual channels sets the stage for designing interfaces that tap into our innate abilities for spatial reasoning, gesture, speech, and so on.
+	  
+	  ---
+	- ### 2. Historical Milestones and the “Put-that-there” Paradigm
+	  
+	  One of the earliest influential examples in multimodal research is R.A. Bolt’s seminal “Put-that-there” demonstration from 1980. In this system:
+	- **Speech** is used to express the semantic content of a command.
+	- **Gesture** (such as pointing) supplies spatial or locational information.
+	  
+	  By combining these modalities, the system achieves a level of richness that neither speech nor gesture could provide alone. Although this interaction model was originally built on a mouse-oriented metaphor, it laid the groundwork for understanding how complementary modalities can enhance command accuracy and user experience.
+	  
+	  ---
+	- ### 3. Core Advantages and Interaction Characteristics
+	  
+	  Multimodal interfaces offer several distinct benefits that enhance user experience:
+	- **Improved Accessibility:** By leveraging multiple input channels, these systems accommodate users with different sensory and motor capabilities.
+	- **Natural Interaction:** Users interact with systems more intuitively, mirroring real-world communication (e.g., speaking while gesturing).
+	- **Enhanced Robustness:** The fusion of information from different modalities can help disambiguate commands and reduce errors.
+	- **Flexible Personalization:** Systems can adapt to users’ unique integration patterns—whether sequential or parallel—allowing for a more fluid interaction compared to traditional interfaces.
+	  
+	  A concrete instance of these benefits is demonstrated by the SpeeG2 system. In SpeeG2:
+	- The user speaks naturally and sees probable words displayed on the screen.
+	- Hand gestures are then used to correct or confirm the recognized words, resulting in an improved recognition rate (up to 21 words per minute).
+	  
+	  ---
+	- ### 4. Fusion and Fission in Multimodal Systems
+	  
+	  A significant portion of the lecture is devoted to how different input streams are merged or “fused” within a multimodal system. Fusion can occur at several levels:
+	- **Data-Level Fusion:** Combining raw data streams (e.g., video signals from different angles). This level is highly detailed but sensitive to noise.
+	- **Feature-Level Fusion:** Merging extracted features, such as pairing lip movements with speech signals.
+	- **Decision-Level Fusion:** Combining high-level interpretations (e.g., using both speech and gesture to infer user intent). This level tends to be more robust against errors.
+	  
+	  On the flip side, **multimodal fission** involves coordinating multiple output channels (such as auditory and visual feedback) to construct a coherent response for the user. The process includes selecting content, choosing modalities, and ensuring that outputs across channels deliver a unified message.
+	  
+	  ---
+	- ### 5. Debunking Misconceptions: Ten Myths of Multimodal Interaction
+	  
+	  The lecture also addresses common myths and misconceptions about multimodal systems:
+	  1. That users will always engage using multiple modalities.
+	  2. That speech and pointing dominate every multimodal interaction.
+	  3. That input signals must overlap in time.
+	  4. That speech is always the primary mode.
+	  5. And several others regarding redundancy, integration patterns, and content equivalence.
+	  
+	  Understanding these myths is key to designing systems that accommodate the real, mixed nature of human interaction—where both unimodal and multimodal commands may be interleaved based on task and context.
+	  
+	  ---
+	- ### 6. Formal Models and the CARE Properties
+	  
+	  To provide a structured approach to evaluating multimodal interaction, the lecture introduces formal models—especially the CARE properties (Complementarity, Assignment, Redundancy, and Equivalence) proposed by Coutaz and colleagues. These properties help:
+	- **Complementarity:** Recognize when multiple modalities are necessary to achieve a complete command.
+	- **Assignment:** Determine when a single modality suffices.
+	- **Redundancy:** Understand when multiple modalities provide the same information without extra expressive power.
+	- **Equivalence:** Offer users a choice between modalities to achieve the same outcome.
+	  
+	  An example of equivalence is seen in interfaces where the user may either speak a command or click on an icon to achieve the same function.
+	  
+	  ---
+	- ### 7. Multimodal Interaction Frameworks
+	  
+	  Several software frameworks support the development of multimodal interfaces by providing the necessary tools for fusion and interpretation:
+	- **Squidy:** A stream-based framework that uses a graphical pipeline of components and filters.
+	- **OpenInterface:** A component-based European project offering an online library of devices and modalities.
+	- **HephaisTK:** Focuses on event-based recognition and employs decision-level fusion.
+	- **Mudra:** A hybrid framework that combines multiple fusion strategies using a declarative, rule-based approach.
+	  
+	  These frameworks enable rapid prototyping and integration of new modalities, making them vital for advancing the field of multimodal interaction.
+	  
+	  ---
+	- ### 8. Final Thoughts
+	  
+	  The “blue‐incorporated” elements of the lecture highlight how multimodal interaction pushes beyond traditional interfaces to more naturally engage users through a blend of modalities. By understanding both the technical frameworks (fusion/fission, CARE properties) and the practical applications (like SpeeG2 and Bolt’s “Put-that-there”), we gain insight into designing systems that are robust, accessible, and aligned with natural human communication.
+	  
+	  This comprehensive overview not only maps out the current landscape but also paves the way for future research in dynamic and rich multimodal environments. Would you like to delve into any of these areas in more depth—perhaps exploring one of the fusion techniques or examining a particular framework further?
 - lecture 4
   collapsed:: true
 	- ## 1. Historical Evolution of Writing Tools
