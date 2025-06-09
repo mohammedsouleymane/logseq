@@ -279,7 +279,7 @@
 	  
 	  **Navigation and Interaction:**  
 	  Interacting with virtual environments involves both navigation (moving within a three-dimensional scene) and interaction (manipulating elements within that scene). Techniques include:
-	- **Navigation Methods:**
+	- **Navigation Methods:** (GL)
 		- **Grabbing in the Air:** User selects and drags elements within the virtual world.
 		- **Lean-Based Velocity:** The direction and speed of movement are controlled by leaning forward or backward.
 		- **Path Drawing or Walking in Place:** Methods that utilize input (sometimes even treadmills like the Virtuix Omni) to translate physical movement into virtual motion.
