@@ -129,6 +129,7 @@
 	  
 	  This comprehensive summary incorporates both the “blue” (important highlighted) content as well as the broader context and details provided throughout the lecture. Feel free to ask if you’d like to explore any of these aspects further or dive into specific sections in more depth.
 - lecture 6
+  collapsed:: true
 	- ## **1. Overview and Context**
 	  
 	  The lecture introduces gesture‐based interaction as a core component of next-generation user interfaces. It explains that gestures—which are non-verbal, bodily movements used to convey messages—are not only fundamental to human communication but also serve as a natural and intuitive modality for interfacing with computers. The presentation outlines how different devices and algorithms have been developed to capture, interpret, and leverage these gestures in order to create more immersive and natural user experiences.
@@ -227,3 +228,5 @@
 	  ---
 	  
 	  This detailed summary integrates the key (blue‐highlighted) points from the lecture—ranging from definitions and device technologies to recognition algorithms and usability challenges—into a coherent overview of gesture-based interaction as outlined by Professor Beat Signer. If you’d like to delve deeper into any specific section or explore emerging trends in gesture recognition technology, feel free to ask!
+- lecture 7
+-
