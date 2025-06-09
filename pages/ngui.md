@@ -459,6 +459,7 @@
 	- **Balance Automation and Control:** Determine whether a fully automated approach or one that maintains some degree of user control will deliver the best experience.
 	- **Enhance Intelligibility:** Provide on-demand explanations based on sensory inputs and contextual reasoning, which is especially vital when using complex, machine learning–based approaches.
 - lecture 11
+  collapsed:: true
 	- ### 1. **Overview & Motivation**
 	  
 	  The lecture opens by situating Human-AI Interaction within the realm of next-generation user interfaces. Professor Signer emphasizes that modern AI is not simply about automating tasks—it is about augmenting human capabilities.
