@@ -1,4 +1,5 @@
 - lecture 1
+  collapsed:: true
 	- ### **Overview of Next-Generation User Interfaces**
 	  
 	  The lecture presents a vision of user interfaces that move well beyond traditional command-based interactions and classic graphical user interfaces (GUIs). It explains that advances in technology—ranging from gesture and speech recognition to wearable computing and mixed reality—have dramatically broadened the range of possible interface types. This evolution has sparked a rethinking of what it means for an interface to be “natural.”
@@ -25,21 +26,17 @@
 	  ---
 	- ### **Principles of Interaction Design**
 	  
-	  The lecture advocates a user-centered, iterative approach to interface design that is grounded in clarity, creativity, and comprehensive evaluation. Key design principles include:
+	  The lecture advocates a user-centered, iterative approach to interface design that is grounded in clarity, creativity, and comprehensive evaluation. Key design principles include: (EDPE)
 	- **User-Centered Design:** Starting with a deep understanding of who the users are, what tasks they need to perform, and in what context they operate.
-	- **Establishing Requirements:** Identifying not only the functional needs of an interface but also considering environmental factors, data requirements, and the user’s characteristics.
-	- **Designing Alternatives:** Encouraging the exploration of multiple design alternatives rather than settling for “good enough.” Creative brainstorming and iterative refinement are stressed as critical.
-	- **Prototyping:** From low-fidelity sketches and paper prototypes to more advanced simulations or wizard-of-oz experiments, early prototyping is vital for uncovering design flaws and gaining user feedback.
-	- **Evaluation:** A strong emphasis is placed on continuous and thorough evaluation processes. This involves both usability testing in controlled environments and observing real-world interactions to ensure that the interface meets its usability and user experience goals.
+	- **1. Establishing Requirements:** Identifying not only the functional needs of an interface but also considering environmental factors, data requirements, and the user’s characteristics.
+	- **2. Designing Alternatives:** Encouraging the exploration of multiple design alternatives rather than settling for “good enough.” Creative brainstorming and iterative refinement are stressed as critical.
+	- **3. Prototyping:** From low-fidelity sketches and paper prototypes to more advanced simulations or wizard-of-oz experiments, early prototyping is vital for uncovering design flaws and gaining user feedback.
+	- **4. Evaluation:** A strong emphasis is placed on continuous and thorough evaluation processes. This involves both usability testing in controlled environments and observing real-world interactions to ensure that the interface meets its usability and user experience goals.
 	  
 	  ---
 	- ### **Future Outlook**
 	  
 	  In conclusion, the lecture points toward a future where user interfaces are not merely tools for completing digital tasks but become extensions of human cognition and experience. By seamlessly blending physical and digital realms and leveraging multimodal input (from voice to touch to gesture), next-generation interfaces promise richer, more intuitive, and context-aware interactions. Designers are encouraged to think broadly and creatively, continually iterating on their designs to align ever more closely with the dynamic nature of human behavior.
-	  
-	  ---
-	  
-	  This summary captures the essence of the lecture’s "blue-incorporated" insights, focusing on the conceptual evolution of interfaces, the design process, and the drive toward more natural user experiences, while deliberately setting aside course administration details. Would you like to explore any specific section further, such as practical examples of these design principles in action or deeper dives into multimodal evaluation techniques?
 - lecture 2
 	- ### 1. Foundations of Information Architectures
 	  
@@ -98,8 +95,6 @@
 	- ### Conclusion
 	  
 	  In essence, the lecture redefines how we conceptualize and interact with information. By incorporating the “blue‐incorporated” key points, Professor Signer advocates for a move away from static, paper-like digital documents toward dynamic, multilayered, and context-aware interfaces. This vision supports more natural, flexible, and engaging interactions—ultimately bridging the gap between human information practices and modern digital architectures.
-	  
-	  Would you like to explore any of these concepts further—perhaps delving into the OC2 framework or examining the MindXpres system in greater detail?
 - lecture 3
 	- ### 1. The Foundations of Multimodal Interaction
 	  
