@@ -303,5 +303,163 @@
 	- **Improved Tracking Technologies:** As seen with advances in HMDs and sensor-based solutions.
 	- **Ongoing Social and Ethical Challenges:** As AR systems become more pervasive, issues such as privacy, safety, and social acceptance (as illustrated by the experience with Google Glass) will be at the forefront.
 - lecture 9
+  collapsed:: true
+	- ### **1. Mixed Reality and the Reality–Virtuality Continuum**
+	  
+	  The lecture begins by defining Mixed Reality (MR) within the framework of the Reality–Virtuality continuum, an idea introduced by Paul Milgram and Fumio Kishino in 1994. This continuum ranges from completely real environments to fully virtual ones, with MR occupying the space in between. In this zone, physical and digital objects coexist and interact in real time. Augmented Reality (AR) and Augmented Virtuality (AV, such as digital twins) are two complementary approaches within this spectrum, each blending real and virtual aspects in distinctive ways.
+	  
+	  ---
+	- ### **2. Virtual Reality (VR): Concepts, Challenges, and Applications**
+	  
+	  **Concept and Immersion:**  
+	  VR is presented as an artificial environment experienced through multisensory input—sight, sound, even touch, taste, and smell—delivered by computer systems. The goal is to create an experience that replicates or substitutes real-world conditions. Immersion, or perceptual immersion, is emphasized as the user’s sensation of physically being present in a synthetic world, achieved via panoramic 3D visuals, surround sound, haptic feedback, and other stimuli.
+	  
+	  **Historical Foundation – The Sword of Damocles:**  
+	  The lecture revisits one of the pioneering systems of VR—the Sword of Damocles. Developed by Ivan Sutherland and his student Bob Sproull in 1968, this early head-mounted display provided a simple stereoscopic view of wireframe rooms and incorporated head tracking, demonstrating the foundational principles of VR despite its mechanical constraints.
+	  
+	  **Applications Across Domains:**  
+	  VR technology is not limited to a single field; instead, it finds applications in:
+	- **Architecture:** Allowing users to navigate and experience virtual reconstructions of buildings.
+	- **Education:** Visualizing and interacting with complex datasets.
+	- **Medicine:** Providing training environments for surgeries, including virtual robotic surgery.
+	- **Engineering, Military, Entertainment, Sport, Simulations, and Gaming:** Each of these areas leverages VR for both training and immersive experiences that may be too dangerous, expensive, or impractical in the real world.
+	  
+	  ---
+	- ### **3. VR Technologies and Interaction Techniques**
+	  
+	  **Technologies:**  
+	  The lecture details several core hardware approaches:
+	- **Large Screens:** Panoramic, cylindrical, or spherical displays that may or may not use stereoscopy.
+	- **Binocular Omni-Orientation Monitors (BOOM):** Devices where screens mounted in a box (linked to a multi-link arm) track the user’s head movements.
+	- **CAVE (Cave Automatic Virtual Environment):** Room-sized, multi-wall systems that project stereo images for a shared immersive experience.
+	- **Head-Mounted Displays (HMDs):** Lightweight devices (such as the Meta Quest 3) that present digital images directly before the eyes, often with embedded displays and lenses to adjust focus.
+	  
+	  **Navigation and Interaction:**  
+	  Interacting with virtual environments involves both navigation (moving within a three-dimensional scene) and interaction (manipulating elements within that scene). Techniques include:
+	- **Navigation Methods:**
+		- **Grabbing in the Air:** User selects and drags elements within the virtual world.
+		- **Lean-Based Velocity:** The direction and speed of movement are controlled by leaning forward or backward.
+		- **Path Drawing or Walking in Place:** Methods that utilize input (sometimes even treadmills like the Virtuix Omni) to translate physical movement into virtual motion.
+	- **Interaction Techniques:**
+		- **Non-immersive approaches:** Utilizing traditional input devices such as a mouse or joystick.
+		- **Immersive methods:** Involving wearable solutions that capture limb motion (e.g., through datagloves or optical tracking) or using hand-mapping and ray casting—for instance, projecting a virtual beam from the hand to select objects.
+		  
+		  ---
+	- ### **4. Augmented Reality (AR): Extending Reality Rather Than Replacing It**
+	  
+	  **Fundamental Concepts:**  
+	  In contrast to VR, AR allows users to maintain contact with the real world while overlaying virtual information onto it. The goal is not to replace the physical environment, but rather to supplement it—merging digital imagery seamlessly with reality.
+	  
+	  **Applications:**  
+	  AR finds practical use in:
+	- **Maintenance and Architecture:** Where overlaying information on existing structures can aid in repair or design.
+	- **Education and Medicine:** Offering interactive, real-time guidance.
+	- **Entertainment, Navigation, Gaming, and Advertising:** Enhancing experiences with real-time, context-sensitive digital overlays.
+	  
+	  **AR Techniques:**  
+	  Multiple methods are employed to bring these augmented experiences to life:
+	- **Video Compositing:** Overlaying virtual elements on live video feeds in real time (or during post-processing).
+	- **Head-Up Displays (HUDs):** Common in both aviation and automotive settings, these displays project data within the user’s direct line of sight.
+	- **Direct Projections:** Such as the SixthSense technology that uses miniature projectors and cameras to blend digital and physical realms.
+	- **Magic Lens and Magic Mirror Metaphors:** These approaches use mobile devices or reflective interfaces to reveal digital information about real-world objects.
+	- **Magic Eyeglass Techniques:** This category includes see-through head-mounted displays that allow a superimposed virtual image over an unobstructed view of reality.
+	  
+	  ---
+	- ### **5. AR Hardware: See-Through Technologies and Beyond**
+	  
+	  **Optical See-Through HMDs:**  
+	  These devices (e.g., Microsoft HoloLens 2 and Magic Leap 2) generate virtual images that are overlaid on semi-transparent surfaces. Head tracking ensures that the virtual graphics remain aligned with the user’s view, merging the digital with the physical seamlessly.
+	  
+	  **Video See-Through HMDs:**  
+	  Devices like the Meta Quest 3, Apple Vision Pro, HTC Vive XR, Varjo XR-4, and PICO 4 Ultra capture real-time video of the external world, then layer virtual content upon it, often enhancing the natural view.
+	  
+	  **Virtual Retinal Displays (VRDs):**  
+	  An innovative approach is exemplified by Google Glass, where light beams are directly projected onto the retina. This method gives the illusion of a floating display in front of the eye while raising interesting questions about privacy and social acceptance—key topics the lecture briefly touches upon.
+	  
+	  ---
+	- ### **6. The WebXR Standard and Future Directions**
+	  
+	  **WebXR:**  
+	  The lecture introduces WebXR as a modern, web-based specification aimed at developing XR applications that function seamlessly across diverse platforms and devices. Its standardized Device API supports not only basic viewing but also integrated features such as hand tracking, spatial audio, haptic feedback, and sophisticated room tracking. This ensures that developers can write an application once and have it run in varied immersive setups.
+	  
+	  **Future Trends in AR:**  
+	  Looking forward, the lecture highlights the possibilities of:
+	- **Smarter and Less Distracting Augmentations:** For example, augmented contact lenses could provide a subtler interface.
+	- **Improved Tracking Technologies:** As seen with advances in HMDs and sensor-based solutions.
+	- **Ongoing Social and Ethical Challenges:** As AR systems become more pervasive, issues such as privacy, safety, and social acceptance (as illustrated by the experience with Google Glass) will be at the forefront.
 - lecture 10
+	- ### 1. **Introduction to Next Generation User Interfaces**
+	  
+	  The lecture sets the stage by outlining a shift toward smarter environments and interactive systems. Inspired by Mark Weiser’s vision of ubiquitous computing, the discussion centers on embedding sensors and information processing into everyday objects. This evolution aims to simplify technology use by developing interfaces that operate implicitly—that is, they leverage contextual and behavioral cues without explicit user commands.
+	  
+	  ---
+	- ### 2. **Implicit Human-Computer Interaction (iHCI)**
+	  
+	  At its core, implicit HCI distinguishes itself from traditional explicit interaction by relying on naturally occurring behaviors and sensor data. Instead of requiring users to issue direct commands, systems are designed to observe and anticipate needs, incorporating environmental and personal context into their responses. However, this approach comes with challenges. For example, when the system’s anticipatory actions do not match the user’s expectations (an “awareness mismatch”), trust and user satisfaction can suffer. Addressing this requires designing mechanisms that keep users informed about what factors the system is using and why certain actions are taken.
+	  
+	  ---
+	- ### 3. **Context Awareness and Modelling**
+	  
+	  A key aspect of the lecture is defining and leveraging **context**—any information that characterizes the situation of an entity (whether a person, place, or object). While many systems focus solely on location (e.g., GPS in car navigation), a robust context-aware system also considers:
+	- **Human factors:** who the user is, their current activity, and their social environment.
+	- **Physical factors:** location, infrastructure, lighting, weather, and other environmental conditions.
+	  
+	  For instance, a car navigation system might adjust screen brightness based on daylight, disable certain inputs while driving, or adapt its interface based on current traffic conditions. The lecture also discusses techniques—ranging from rule-based logic to machine learning—that can transform raw sensor data into meaningful contextual information.
+	  
+	  ---
+	- ### 4. **Handling Ambiguity in Implicit Interaction**
+	  
+	  The lecture raises important questions about error handling in implicit HCI. What happens when the system’s anticipatory actions are “wrong”? Is it truly a system error or rather a failure in communicating the factors involved? To compensate for potential misalignments between system behavior and user expectations, designers are encouraged to:
+	- Increase system intelligibility by clearly explaining what the system did and why.
+	- Evaluate whether a fully automated solution is appropriate or if a semi-automated, user-involved approach might prevent negative experiences.
+	  
+	  Providing on-demand explanations (covering “What?”, “Why?”, “Why not?”, “What if?” and “How to?”) is deemed crucial to build trust and ease any confusion.
+	  
+	  ---
+	- ### 5. **The Context Modelling Toolkit (CMT)**
+	  
+	  An instrumental part of the lecture is the introduction of the **Context Modelling Toolkit (CMT)**. This toolkit offers a multi-layered approach that:
+	- Bridges the gap between end-users and expert programmers,
+	- Moves beyond simple “if-this-then-that” rules by enabling the creation of reusable “situations” and context models,
+	- Uses a client-server architecture in which sensor inputs and application logic are seamlessly integrated through a rule engine (like Drools).
+	  
+	  CMT thus provides a structured way to reason about context and triggers for implicit actions in smart environments.
+	  
+	  ---
+	- ### 6. **Affective Computing and Emotion Recognition**
+	  
+	  Recognizing that human emotions profoundly influence interactions, the lecture delves into affective computing as another dimension of implicit HCI. It presents several foundational models for understanding and classifying emotions:
+	- **Ekman’s Model:** Identifies six basic emotions (anger, fear, disgust, surprise, happiness, and sadness) that can also serve as labels for recognition algorithms.
+	- **Russell’s Circumplex Model of Affect:** Maps emotions along the axes of valence (attractiveness) and arousal (reactivity).
+	- **Plutchik’s Wheel of Emotions:** Expands the discussion to include advanced or combined emotions (such as love, optimism, or aggressiveness) by understanding how basic emotions interact.
+	- **PAD Model:** Characterizes emotions along three dimensions: pleasure-displeasure, arousal-nonarousal, and dominance-submissiveness.
+	  
+	  Emotion recognition isn’t limited to facial analysis; it spans multiple modalities that include:
+	- **Acoustic features:** such as pitch, intonation, and duration in speech.
+	- **Visual features:** like facial expressions analyzed via tools such as the Facial Action Coding System (FACS).
+	- **Body gestures and posture:** which convey subtle emotional cues.
+	- **Biosignals:** for example, heart rate fluctuations and skin temperature changes.
+	  
+	  Devices like the Emotiv EPOC Neuroheadset illustrate how non-invasive EEG and other biosensors can capture these signals. Machine learning methods (SVMs, neural networks, etc.) are applied either to individual modalities or to fused data from multiple sources, thereby enhancing the system’s ability to accurately recognize and respond to the user’s emotional state.
+	  
+	  ---
+	- ### 7. **Cross-Device and IoT Interaction**
+	  
+	  The lecture then expands the discussion to include cross-device interaction and Internet of Things (IoT) applications. In today’s diverse digital ecosystem, it is increasingly important to design systems that seamlessly operate across multiple devices. The **eSPACE** platform is highlighted as a rapid prototyping environment that:
+	- Enables end-user authoring of applications,
+	- Supports a mash-up of digital and physical components,
+	- Facilitates the customized distribution of user interface elements,
+	- Translates proprietary IoT rules into high-level models (via NLP-based solutions) for execution across different platforms.
+	  
+	  This approach aims to ensure that user experiences remain consistent and context-aware regardless of which device or sensor is engaged.
+	  
+	  ---
+	- ### 8. **Best Practices and Guidelines for Implicit HCI**
+	  
+	  To round out the lecture, several key guidelines for implementing effective implicit interactions are offered:
+	- **Start with the User:** Thoroughly investigate what users need or want to do before automating any interactions.
+	- **Feature Space Definition:** Clearly outline the parameters and measurable factors that define the context for each application.
+	- **Minimize Awareness Mismatch:** Strive to design interactions that keep users informed and reduce surprises in system behavior.
+	- **Balance Automation and Control:** Determine whether a fully automated approach or one that maintains some degree of user control will deliver the best experience.
+	- **Enhance Intelligibility:** Provide on-demand explanations based on sensory inputs and contextual reasoning, which is especially vital when using complex, machine learning–based approaches.
 - lecture 11
