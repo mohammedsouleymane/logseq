@@ -167,7 +167,7 @@
 	  ---
 	- ## **4. Gesture Recognition Algorithms**
 	  
-	  A significant portion of the lecture is dedicated to the algorithms that drive gesture recognition. Three broad families are outlined:
+	  A significant portion of the lecture is dedicated to the algorithms that drive gesture recognition. Three broad families are outlined: (**TMR**)
 	- **Template-Based Algorithms:**  
 	  Methods such as the Rubine algorithm, Dynamic Time Warping (DTW), and the $1/$N recogniser use predefined gesture templates. The Rubine algorithm, in particular, is examined in detail. It represents a gesture as a vector of sample points and extracts 13 features (e.g., cosine and sine of the initial angle, bounding box diagonals, total gesture length, total angle traversed, maximum speed, and duration) to statistically classify gestures.
 	- **Machine Learning-Based Algorithms:**  
