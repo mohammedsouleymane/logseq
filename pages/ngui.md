@@ -211,7 +211,7 @@
 	  The lecture defines tangible interaction as an inclusive term covering graspable user interfaces, tangible user interfaces (TUIs), and embodied interaction. In all these cases, digital information isn’t abstracted on a monitor; it is manifested in physical matter—whether through direct manipulation of objects, whole-body gestures, or embedded environmental cues.
 	  
 	  ---
-	- ### 3. Exemplary Systems and Prototypes
+	- ### 3. Exemplary Systems and Prototypes (MGTMUS)
 	  
 	  **Marble Answering Machine:**  
 	  One of the early examples presented is the Marble Answering Machine. This system uses familiar physical marbles to represent incoming messages. Its design is elegant and simple: a one-step action reveals audio messages, relying on aesthetic appeal and intuitive physicality rather than complex controls. However, the system also highlights practical design considerations such as robustness and context sensitivity (e.g., public versus private usage).
