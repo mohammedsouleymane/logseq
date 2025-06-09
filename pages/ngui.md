@@ -388,6 +388,7 @@
 	- **Improved Tracking Technologies:** As seen with advances in HMDs and sensor-based solutions.
 	- **Ongoing Social and Ethical Challenges:** As AR systems become more pervasive, issues such as privacy, safety, and social acceptance (as illustrated by the experience with Google Glass) will be at the forefront.
 - lecture 10
+  collapsed:: true
 	- ### 1. **Introduction to Next Generation User Interfaces**
 	  
 	  The lecture sets the stage by outlining a shift toward smarter environments and interactive systems. Inspired by Mark Weiser’s vision of ubiquitous computing, the discussion centers on embedding sensors and information processing into everyday objects. This evolution aims to simplify technology use by developing interfaces that operate implicitly—that is, they leverage contextual and behavioral cues without explicit user commands.
@@ -463,3 +464,81 @@
 	- **Balance Automation and Control:** Determine whether a fully automated approach or one that maintains some degree of user control will deliver the best experience.
 	- **Enhance Intelligibility:** Provide on-demand explanations based on sensory inputs and contextual reasoning, which is especially vital when using complex, machine learning–based approaches.
 - lecture 11
+	- ### 1. **Overview & Motivation**
+	  
+	  The lecture opens by situating Human-AI Interaction within the realm of next-generation user interfaces. Professor Signer emphasizes that modern AI is not simply about automating tasks—it is about augmenting human capabilities.
+	- **Applications Highlighted:** Conversational agents, recommender systems, augmented/virtual reality, and social robots.
+	- **Key Insight:** While AI systems can save time and reduce errors through consistency, their probabilistic nature means they can also change behavior over time, which poses unique challenges for design and user trust.
+	  
+	  ---
+	- ### 2. **Challenges in Human-AI Interaction**
+	  
+	  A central theme is the set of challenges that arise when integrating AI into user interfaces. These include:
+	- **Transparency and Explainability:** Users must understand what an AI system can do and why it behaves in a particular way.
+	- **Responsiveness and Adaptivity:** AI should act at appropriate times and adapt to the user’s current context without being intrusive.
+	- **Privacy, Data Quality, and Ethics:** Systems must avoid unintended biases and ensure fairness, preventing harm, deception, or discrimination.
+	  
+	  ---
+	- ### 3. **Guidelines for Effective Human-AI Interaction**
+	  
+	  The lecture lays out 18 detailed guidelines (G1–G18) that aim to bridge the gap between AI capabilities and user expectations. These recommendations are designed to ensure that the interaction remains both intuitive and trustworthy:
+	- **G1: Make Clear What the System Can Do**  
+	  Clearly communicate system capabilities to manage user expectations. For instance, avoiding inflated perceptions—as seen in the misleading expectations from labels like “Autopilot.”
+	- **G2: Make Clear How Well the System Can Do What It Can Do**  
+	  Offer performance metrics or descriptions so that users understand the reliability and limitations of the service.
+	- **G3: Time Services Based on Context**  
+	  The system should determine the optimal moments for action based on a user’s current task and surrounding environment.
+	- **G4: Show Contextually Relevant Information**  
+	  Present information tailored to the user’s current context (e.g., location-based recommendations) while balancing privacy concerns.
+	- **G5: Match Relevant Social Norms**  
+	  Align the system’s tone and behaviors with the user’s cultural or social expectations. For example, varying levels of formality can affect perceptions of friendliness or appropriateness.
+	- **G6: Mitigate Social Biases**  
+	  Employ responsible AI toolkits (e.g., Fairlearn, error analysis techniques) to ensure that the language and behavior of the AI do not reinforce harmful stereotypes or biases.
+	- **G7: Support Efficient Invocation**  
+	  Make it straightforward for users to activate the AI’s services when needed—much like enabling an AI-powered writing assistant with a simple command.
+	- **G8: Support Efficient Dismissal**  
+	  Likewise, users should find it easy to dismiss or ignore AI interventions that are not relevant to their current needs.
+	- **G9: Support Efficient Correction**  
+	  When the AI makes an error, users should be able to correct or refine the output effortlessly, such as manually adjusting a route on a navigation app.
+	- **G10: Scope Services When in Doubt**  
+	  In cases of uncertainty about user intent, the system should either disambiguate by asking for clarification or temporarily limit its response to avoid erroneous actions.
+	- **G11: Make Clear Why the System Did What It Did**  
+	  Offer both global and local explanations for decisions to boost intelligibility and build user trust—sometimes even including “what if” analyses.
+	- **G12: Remember Recent Interactions**  
+	  Incorporate a short-term memory to allow for natural, context-rich interactions (like referencing earlier parts of a conversation with a voice assistant).
+	- **G13: Learn from User Behavior**  
+	  Personalize experiences over time by adapting to individual usage patterns—similar to how a writing assistant learns your style.
+	- **G14: Update and Adapt Cautiously**  
+	  Introduce changes in a controlled way to prevent disrupting the user’s experience, especially when an AI system has been performing well.
+	- **G15: Encourage Granular Feedback**  
+	  Enable users to provide detailed, actionable feedback so that the system can continuously refine its behavior.
+	- **G16: Convey Consequences of User Actions**  
+	  Transparently communicate how specific user actions will influence future interactions or system responses.
+	- **G17: Provide Global Controls**  
+	  Allow users to set overarching preferences (e.g., privacy settings, monitoring options) that govern the AI’s behavior across applications.
+	- **G18: Notify Users About Changes**  
+	  Keep users informed about significant updates or modifications to the system’s capabilities, ensuring they can adjust their expectations accordingly.
+	  
+	  ---
+	- ### 4. **A Human-Centred Framework for AI**
+	  
+	  Beyond the guidelines, the lecturer introduces the Human-Centered Artificial Intelligence (HCAI) framework, which is visualized as a two-dimensional space balancing:
+	- **Human Control:** The degree to which users can govern or influence the system.
+	- **Computer Automation:** The level of autonomous, algorithmic decision-making.  
+	  
+	  The ideal region is one where both are high—a scenario that promises reliable, safe, and trustworthy applications. Examples such as thermostats, elevator controls, and smartphone cameras illustrate how this balance enhances usability by offering rapid feedback, reversible actions, and error prevention while still leveraging sophisticated automation.
+	  
+	  Additionally, the **Prometheus Principles** are mentioned as best practices, focusing on:
+	- Consistent interfaces that reflect a clear mapping between user intent and system action.
+	- Continuous and informative feedback that keeps the user aware of system status.
+	- Rapid, incremental, and reversible actions to prevent errors and facilitate recovery.
+	  
+	  ---
+	- ### 5. **Practical Applications and References**
+	  
+	  Throughout the lecture, real-world examples bring these concepts to life:
+	- A **thermostat** that shows both the current and target temperature while allowing users to adjust settings manually, with the system learning from patterns over time.
+	- **Elevators** that blend automation with human oversight to ensure safe and efficient operation.
+	- A **smartphone camera** that automatically corrects for shaking hands while also permitting manual adjustments when desired.
+	  
+	  The lecture concludes by citing influential work and toolkits—from Microsoft’s HAX Toolkit to IBM and Google’s design principles for AI—all of which underscore the need for human-centered design in an era where AI is deeply interwoven into our everyday interfaces.
