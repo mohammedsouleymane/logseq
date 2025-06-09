@@ -1,8 +1,5 @@
 - lecture 4
   collapsed:: true
-	- Below is a comprehensive summary that weaves together the most important ("blue‐highlighted") points from the current PDF on **Pen‐Based Interaction** by Professor Beat Signer, along with additional context for clarity and depth.
-	  
-	  ---
 	- ## 1. Historical Evolution of Writing Tools
 	  
 	  The lecture begins by tracing the evolution of writing instruments over roughly 40,000 years. It explains that—from the earliest cave paintings made with stones to sophisticated styluses—the development of pens has paralleled that of the surfaces on which we write. Throughout history, every change in writing technology (from reed and quill pens to fountain, ballpoint, and marker pens) was met with an equally lengthy period of adjustment. For example, even when paper first emerged, there was a long period before it was fully adopted. This coevolution means that users today carry deep-seated expectations and habits when interacting with pen and paper.
@@ -43,20 +40,8 @@
 	- ## 7. Conclusions and Future Directions
 	  
 	  In closing, the lecture acknowledges that while pen-based input is not universally optimal—for many tasks, traditional keyboards or other input methods may still be faster—it remains indispensable for its unique utility and the way it aligns with human habits. The challenges highlighted include reconciling multimodal interactions (combining pen, digital, and tactile feedback) and meeting users’ entrenched expectations for what pen and paper should do. The discussion provokes further inquiry into designing more adaptive interfaces that respect the inherent advantages of traditional tools while embracing the innovations of the digital age.
-	  
-	  ---
-	  
-	  This summary integrates only those points that were highlighted as especially important (the “blue” segments) in the original document, focusing on historical context, inherent affordances, continual relevance despite digital trends, and the evolving integration of paper with interactive technologies. If you’d like to explore any section further or have questions about specific innovations mentioned, let me know!
 - lecture 5
   collapsed:: true
-	- Below is a detailed, integrated summary of the lecture presentation on *Interactive Tabletops and Surfaces* by Professor Beat Signer. This summary weaves together the key “blue‐highlighted” points with additional context and detail from the complete document.
-	  
-	  ---
-	- ### **Overview & Context**
-	  
-	  The lecture introduces interactive tabletops and surfaces as a new generation of user interfaces designed specifically for multi-user, collaborative environments. The idea is to move beyond the traditional desktop metaphor toward systems that support direct, hands‐on interaction with digital content in shared, horizontal workspaces. The presentation is grounded in both historical context and emerging technological trends, with a strong emphasis on how these interfaces reshape our mental models of everyday objects like tables.
-	  
-	  ---
 	- ### **Defining the Tabletop Interface**
 	- **Concept and Design Philosophy:**  
 	  Originally coined around 2001, a “tabletop” interface builds on the everyday notion of a physical table. The design relies on users’ existing mental models of tables as shared, horizontal surfaces. This familiarity encourages natural interaction forms—such as placing objects, grouping items, or splitting work into individual versus shared zones—while simultaneously introducing novel interaction modalities like multi-touch, hand gestures, and tangible manipulations.
@@ -119,22 +104,8 @@
 	  The presentation also touches on revolutionary display concepts, such as OLED technology. OLEDs are noted for their flexibility, rapid response times (up to 1000 times faster than traditional LEDs), and the potential for cost-effective production. These qualities make them ideal candidates for integration with next-generation multi-touch systems, paving the way for even more dynamic and adaptable interactive surfaces.
 	- **Speculative and Experimental Designs:**  
 	  Concepts like the “Windowless Plane”—a futuristic design that hints at using camera streams and dynamic windows without physical edges—illustrate the visionary side of interactive tabletop research. Other experimental projects, such as the AquaTop Display, explore entirely new materials (like water surfaces) as interactive canvases, opening the door to fresh approaches and applications.
-	  
-	  ---
-	- ### **Conclusion**
-	  
-	  Professor Signer’s lecture seamlessly integrates theory, technology, and practical demonstrations to map out the landscape of interactive tabletops and surfaces. The presentation highlights how these systems, built on a combination of advanced touch sensors, innovative display technologies, and integrative software solutions, can redefine collaborative and individual workspaces. While many challenges remain—from ensuring ergonomic comfort to integrating legacy input methods—the ongoing evolution of both hardware and software points to a future where the physical and digital worlds are more tightly interwoven than ever.
-	  
-	  ---
-	  
-	  This comprehensive summary incorporates both the “blue” (important highlighted) content as well as the broader context and details provided throughout the lecture. Feel free to ask if you’d like to explore any of these aspects further or dive into specific sections in more depth.
 - lecture 6
   collapsed:: true
-	- ## **1. Overview and Context**
-	  
-	  The lecture introduces gesture‐based interaction as a core component of next-generation user interfaces. It explains that gestures—which are non-verbal, bodily movements used to convey messages—are not only fundamental to human communication but also serve as a natural and intuitive modality for interfacing with computers. The presentation outlines how different devices and algorithms have been developed to capture, interpret, and leverage these gestures in order to create more immersive and natural user experiences.
-	  
-	  ---
 	- ## **2. Defining Gestures and Their Types**
 	  
 	  At the heart of the lecture is a clear definition: a gesture is a form of non‐verbal or non‐vocal communication where visible bodily actions (such as movements of the hands, face, or other parts) convey specific messages. Drawing from A. Kendon’s work, the presentation explains that gestures can be separated into three functional groups: semiotic, ergotic, epistemic
@@ -224,10 +195,6 @@
 	- ## **9. Conclusion and Forward Look**
 	  
 	  In closing, Professor Signer emphasizes that while gesture-based interaction offers a pathway toward more natural and intuitive computer interfaces, its successful implementation relies on careful consideration of hardware limitations, algorithm selection, effective gesture vocabularies, and—most critically—a commitment to usability. Challenges such as gesture segmentation, reliable recognition, and user fatigue still need to be addressed. The lecture also sets the stage for further inquiry by assigning related readings (such as critical papers on gestural interfaces), urging designers and researchers alike to refine these technologies to better serve natural human communication.
-	  
-	  ---
-	  
-	  This detailed summary integrates the key (blue‐highlighted) points from the lecture—ranging from definitions and device technologies to recognition algorithms and usability challenges—into a coherent overview of gesture-based interaction as outlined by Professor Beat Signer. If you’d like to delve deeper into any specific section or explore emerging trends in gesture recognition technology, feel free to ask!
 - lecture 7
   collapsed:: true
 	- Below is a detailed summary of the lecture on tangible interaction—with a special nod to the calm, clear, and integrated “blue” essence that many designers associate with intuitive, trustworthy interfaces:
