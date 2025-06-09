@@ -38,6 +38,7 @@
 	  
 	  In conclusion, the lecture points toward a future where user interfaces are not merely tools for completing digital tasks but become extensions of human cognition and experience. By seamlessly blending physical and digital realms and leveraging multimodal input (from voice to touch to gesture), next-generation interfaces promise richer, more intuitive, and context-aware interactions. Designers are encouraged to think broadly and creatively, continually iterating on their designs to align ever more closely with the dynamic nature of human behavior.
 - lecture 2
+  collapsed:: true
 	- ### 1. Foundations of Information Architectures
 	  
 	  The lecture begins by defining the scope of Information Architectures (IAs) as the study and practice of organizing, structuring, and labeling content. Professor Signer emphasizes that a robust IA is not just about storage; it involves modeling entire information spaces with attention to linking, navigation, search, and presentation. This approach focuses on the interplay between *content*, *users*, and *context*—a triad that underpins effective digital as well as physical information systems.
@@ -96,6 +97,7 @@
 	  
 	  In essence, the lecture redefines how we conceptualize and interact with information. By incorporating the “blue‐incorporated” key points, Professor Signer advocates for a move away from static, paper-like digital documents toward dynamic, multilayered, and context-aware interfaces. This vision supports more natural, flexible, and engaging interactions—ultimately bridging the gap between human information practices and modern digital architectures.
 - lecture 3
+  collapsed:: true
 	- ### 1. The Foundations of Multimodal Interaction
 	  
 	  The lecture begins by framing human–machine communication as inherently multimodal. In contrast to traditional graphical user interfaces (GUIs), which rely on a single event stream (usually mouse and keyboard), multimodal systems blend multiple input and output channels. This stems from the observation that humans naturally communicate and perceive through various senses. The slide underscores that modalities include:
