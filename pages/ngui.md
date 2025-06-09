@@ -148,7 +148,7 @@
 		  ---
 	- ## **3. Gesture Recognition Devices and Techniques**
 	  
-	  The lecture thoroughly surveys a wide range of devices used for capturing gestures. These include:
+	  The lecture thoroughly surveys a wide range of devices used for capturing gestures. These include: (WAVSER)
 	- **Wired Gloves (Data Glove/Cyberglove):**  
 	  Sensors embedded in gloves (using magnetic or inertial tracking) capture both hand and finger positions. Although sometimes offering haptic feedback, these devices are increasingly replaced by camera-based methods due to their physical constraints.
 	- **Accelerometers:**  
