@@ -229,6 +229,7 @@
 	  
 	  This detailed summary integrates the key (blue‐highlighted) points from the lecture—ranging from definitions and device technologies to recognition algorithms and usability challenges—into a coherent overview of gesture-based interaction as outlined by Professor Beat Signer. If you’d like to delve deeper into any specific section or explore emerging trends in gesture recognition technology, feel free to ask!
 - lecture 7
+  collapsed:: true
 	- Below is a detailed summary of the lecture on tangible interaction—with a special nod to the calm, clear, and integrated “blue” essence that many designers associate with intuitive, trustworthy interfaces:
 	- ---
 	- **Tangible Interaction: Bridging the Digital and Physical**
@@ -249,4 +250,91 @@
 	- ---
 	- This comprehensive summary illustrates how tangible interaction strives to dissolve the barriers between our physical intuitions and digital representations while infusing each project with a “blue” calmness—a metaphor for clarity, reliability, and forward-thinking design.
 	- There’s much more to explore: How might advances in materials science affect the design of reconfigurable interfaces? What design challenges arise when integrating ambient media into daily environments? And in what ways can the aesthetic principles symbolized by hues like blue further enhance user trust and engagement?
--
+- lecture 8
+  collapsed:: true
+	- ### **1. Mixed Reality and the Reality–Virtuality Continuum**
+	  
+	  The lecture begins by defining Mixed Reality (MR) within the framework of the Reality–Virtuality continuum, an idea introduced by Paul Milgram and Fumio Kishino in 1994. This continuum ranges from completely real environments to fully virtual ones, with MR occupying the space in between. In this zone, physical and digital objects coexist and interact in real time. Augmented Reality (AR) and Augmented Virtuality (AV, such as digital twins) are two complementary approaches within this spectrum, each blending real and virtual aspects in distinctive ways.
+	  
+	  ---
+	- ### **2. Virtual Reality (VR): Concepts, Challenges, and Applications**
+	  
+	  **Concept and Immersion:**  
+	  VR is presented as an artificial environment experienced through multisensory input—sight, sound, even touch, taste, and smell—delivered by computer systems. The goal is to create an experience that replicates or substitutes real-world conditions. Immersion, or perceptual immersion, is emphasized as the user’s sensation of physically being present in a synthetic world, achieved via panoramic 3D visuals, surround sound, haptic feedback, and other stimuli.
+	  
+	  **Historical Foundation – The Sword of Damocles:**  
+	  The lecture revisits one of the pioneering systems of VR—the Sword of Damocles. Developed by Ivan Sutherland and his student Bob Sproull in 1968, this early head-mounted display provided a simple stereoscopic view of wireframe rooms and incorporated head tracking, demonstrating the foundational principles of VR despite its mechanical constraints.
+	  
+	  **Applications Across Domains:**  
+	  VR technology is not limited to a single field; instead, it finds applications in:
+	- **Architecture:** Allowing users to navigate and experience virtual reconstructions of buildings.
+	- **Education:** Visualizing and interacting with complex datasets.
+	- **Medicine:** Providing training environments for surgeries, including virtual robotic surgery.
+	- **Engineering, Military, Entertainment, Sport, Simulations, and Gaming:** Each of these areas leverages VR for both training and immersive experiences that may be too dangerous, expensive, or impractical in the real world.
+	  
+	  ---
+	- ### **3. VR Technologies and Interaction Techniques**
+	  
+	  **Technologies:**  
+	  The lecture details several core hardware approaches:
+	- **Large Screens:** Panoramic, cylindrical, or spherical displays that may or may not use stereoscopy.
+	- **Binocular Omni-Orientation Monitors (BOOM):** Devices where screens mounted in a box (linked to a multi-link arm) track the user’s head movements.
+	- **CAVE (Cave Automatic Virtual Environment):** Room-sized, multi-wall systems that project stereo images for a shared immersive experience.
+	- **Head-Mounted Displays (HMDs):** Lightweight devices (such as the Meta Quest 3) that present digital images directly before the eyes, often with embedded displays and lenses to adjust focus.
+	  
+	  **Navigation and Interaction:**  
+	  Interacting with virtual environments involves both navigation (moving within a three-dimensional scene) and interaction (manipulating elements within that scene). Techniques include:
+	- **Navigation Methods:**
+		- **Grabbing in the Air:** User selects and drags elements within the virtual world.
+		- **Lean-Based Velocity:** The direction and speed of movement are controlled by leaning forward or backward.
+		- **Path Drawing or Walking in Place:** Methods that utilize input (sometimes even treadmills like the Virtuix Omni) to translate physical movement into virtual motion.
+	- **Interaction Techniques:**
+		- **Non-immersive approaches:** Utilizing traditional input devices such as a mouse or joystick.
+		- **Immersive methods:** Involving wearable solutions that capture limb motion (e.g., through datagloves or optical tracking) or using hand-mapping and ray casting—for instance, projecting a virtual beam from the hand to select objects.
+		  
+		  ---
+	- ### **4. Augmented Reality (AR): Extending Reality Rather Than Replacing It**
+	  
+	  **Fundamental Concepts:**  
+	  In contrast to VR, AR allows users to maintain contact with the real world while overlaying virtual information onto it. The goal is not to replace the physical environment, but rather to supplement it—merging digital imagery seamlessly with reality.
+	  
+	  **Applications:**  
+	  AR finds practical use in:
+	- **Maintenance and Architecture:** Where overlaying information on existing structures can aid in repair or design.
+	- **Education and Medicine:** Offering interactive, real-time guidance.
+	- **Entertainment, Navigation, Gaming, and Advertising:** Enhancing experiences with real-time, context-sensitive digital overlays.
+	  
+	  **AR Techniques:**  
+	  Multiple methods are employed to bring these augmented experiences to life:
+	- **Video Compositing:** Overlaying virtual elements on live video feeds in real time (or during post-processing).
+	- **Head-Up Displays (HUDs):** Common in both aviation and automotive settings, these displays project data within the user’s direct line of sight.
+	- **Direct Projections:** Such as the SixthSense technology that uses miniature projectors and cameras to blend digital and physical realms.
+	- **Magic Lens and Magic Mirror Metaphors:** These approaches use mobile devices or reflective interfaces to reveal digital information about real-world objects.
+	- **Magic Eyeglass Techniques:** This category includes see-through head-mounted displays that allow a superimposed virtual image over an unobstructed view of reality.
+	  
+	  ---
+	- ### **5. AR Hardware: See-Through Technologies and Beyond**
+	  
+	  **Optical See-Through HMDs:**  
+	  These devices (e.g., Microsoft HoloLens 2 and Magic Leap 2) generate virtual images that are overlaid on semi-transparent surfaces. Head tracking ensures that the virtual graphics remain aligned with the user’s view, merging the digital with the physical seamlessly.
+	  
+	  **Video See-Through HMDs:**  
+	  Devices like the Meta Quest 3, Apple Vision Pro, HTC Vive XR, Varjo XR-4, and PICO 4 Ultra capture real-time video of the external world, then layer virtual content upon it, often enhancing the natural view.
+	  
+	  **Virtual Retinal Displays (VRDs):**  
+	  An innovative approach is exemplified by Google Glass, where light beams are directly projected onto the retina. This method gives the illusion of a floating display in front of the eye while raising interesting questions about privacy and social acceptance—key topics the lecture briefly touches upon.
+	  
+	  ---
+	- ### **6. The WebXR Standard and Future Directions**
+	  
+	  **WebXR:**  
+	  The lecture introduces WebXR as a modern, web-based specification aimed at developing XR applications that function seamlessly across diverse platforms and devices. Its standardized Device API supports not only basic viewing but also integrated features such as hand tracking, spatial audio, haptic feedback, and sophisticated room tracking. This ensures that developers can write an application once and have it run in varied immersive setups.
+	  
+	  **Future Trends in AR:**  
+	  Looking forward, the lecture highlights the possibilities of:
+	- **Smarter and Less Distracting Augmentations:** For example, augmented contact lenses could provide a subtler interface.
+	- **Improved Tracking Technologies:** As seen with advances in HMDs and sensor-based solutions.
+	- **Ongoing Social and Ethical Challenges:** As AR systems become more pervasive, issues such as privacy, safety, and social acceptance (as illustrated by the experience with Google Glass) will be at the forefront.
+- lecture 9
+- lecture 10
+- lecture 11
