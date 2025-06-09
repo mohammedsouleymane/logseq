@@ -218,7 +218,7 @@
 	  The absence of standardized guidelines across platforms makes it difficult for users to learn and predict gesture functions. This inconsistency can lead to frustration and a disconnect between user intent and system response.
 	  
 	  The lecture criticizes the tendency among some companies to disregard long-established HCI principles, urging designers to incorporate clear, intuitive, and ergonomically sound gestures that build on decades of interaction research.
-	-
+	- **Visibility, feedback, consistency and standards, discoverability, scalability, reliability, lack of undo**
 	- ---
 	- ## **9. Conclusion and Forward Look**
 	  
