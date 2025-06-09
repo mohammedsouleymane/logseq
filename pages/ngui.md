@@ -129,9 +129,6 @@
 	  
 	  This comprehensive summary incorporates both the “blue” (important highlighted) content as well as the broader context and details provided throughout the lecture. Feel free to ask if you’d like to explore any of these aspects further or dive into specific sections in more depth.
 - lecture 6
-	- Below is a detailed integrated summary of the lecture on **Gesture‐based Interaction** (Lecture 06) by Professor Beat Signer. This summary weaves together the most important (“blue‐highlighted”) insights with the broader context of the presentation.
-	  
-	  ---
 	- ## **1. Overview and Context**
 	  
 	  The lecture introduces gesture‐based interaction as a core component of next-generation user interfaces. It explains that gestures—which are non-verbal, bodily movements used to convey messages—are not only fundamental to human communication but also serve as a natural and intuitive modality for interfacing with computers. The presentation outlines how different devices and algorithms have been developed to capture, interpret, and leverage these gestures in order to create more immersive and natural user experiences.
@@ -139,7 +136,7 @@
 	  ---
 	- ## **2. Defining Gestures and Their Types**
 	  
-	  At the heart of the lecture is a clear definition: a gesture is a form of non‐verbal or non‐vocal communication where visible bodily actions (such as movements of the hands, face, or other parts) convey specific messages. Drawing from A. Kendon’s work, the presentation explains that gestures can be separated into three functional groups:
+	  At the heart of the lecture is a clear definition: a gesture is a form of non‐verbal or non‐vocal communication where visible bodily actions (such as movements of the hands, face, or other parts) convey specific messages. Drawing from A. Kendon’s work, the presentation explains that gestures can be separated into three functional groups: semiotic, ergotic, epistemic
 	- **Semiotic Gestures:** These are used explicitly to communicate meaning. Within this group, further classifications are given:
 		- **Symbolic Gestures (Emblems):** Culture-specific signs like the “OK” sign that hold a single, clear meaning.
 		- **Deictic Gestures:** Pointing actions that direct attention to a location or object.
