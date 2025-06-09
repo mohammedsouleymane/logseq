@@ -197,26 +197,54 @@
 	  In closing, Professor Signer emphasizes that while gesture-based interaction offers a pathway toward more natural and intuitive computer interfaces, its successful implementation relies on careful consideration of hardware limitations, algorithm selection, effective gesture vocabularies, and—most critically—a commitment to usability. Challenges such as gesture segmentation, reliable recognition, and user fatigue still need to be addressed. The lecture also sets the stage for further inquiry by assigning related readings (such as critical papers on gestural interfaces), urging designers and researchers alike to refine these technologies to better serve natural human communication.
 - lecture 7
   collapsed:: true
-	- Below is a detailed summary of the lecture on tangible interaction—with a special nod to the calm, clear, and integrated “blue” essence that many designers associate with intuitive, trustworthy interfaces:
-	- ---
-	- **Tangible Interaction: Bridging the Digital and Physical**
-	- The lecture frames tangible interaction as an innovative umbrella term for interface designs where digital data is physically embodied. Instead of abstract screen interactions, these systems use everyday physical objects to represent and control digital information. This approach not only makes interactions more intuitive but also appeals to our innate spatial, tactile, and two-handed manipulation skills.
-	- **Early Examples and Affordances**
-	- One of the first projects discussed is the *Marble Answering Machine*. Here, incoming messages are represented by physical marbles—simple objects that offer immediate, aesthetic feedback. Despite its playful and accessible design, its limited robustness in public settings reminds us that usability must always be balanced with the context of use. Underpinning such designs is the concept of affordances—a term originally coined by psychologist James Gibson and later refined by Don Norman. In tangible interaction, affordances are the clues drawn from an object’s properties that immediately signal how it should or could be used. In other words, good design “tells” users what to do without relying solely on instructions.
-	- **The Rise of Graspable Interfaces and Tangible Bits**
-	- Building on those early experiments, the lecture explores *Graspable User Interfaces*. These systems use physical “bricks” or handles that are tightly coupled to digital objects. For example, on the ActiveDesk, users manipulate digital content with two hands and even perform simultaneous operations, enabling parallel and context-sensitive interactions. This tangible approach was later extended by the concept of *Tangible Bits*, where digital information is given physical form in everyday objects. Such work challenges the conventional “painted bits” of graphical user interfaces by making digital data something you can actually feel and move.
-	- **Immersive Installations and Ambient Media**
-	- The lecture then moves to more elaborate installations that combine tangible objects with ambient media. Projects like *Life Wire* demonstrate how network data can be transformed into tactile, observable movements; while setups such as *metaDESK* and *ambientROOM* explore how physical surfaces and environmental cues (light, sound, airflow) can convey background information. These systems support a seamless transition between our focused tasks and peripheral cues, engaging users without overwhelming them.
-	- **Creative and Visionary Interfaces**
-	- Moving further, the lecture showcases playful and interactive systems like the *Reactable* and the *Sand Noise Music Device*. These devices invite users into creative, multi-sensory experiences where physical manipulation directly drives digital content—for instance, by altering sound or visual topography. Similarly, platforms such as *Sifteo Cubes* encourage spatial reasoning and collaborative play through blocks that sense their neighbors and movement.
-	- Looking ahead, visionary projects like *Radical Atoms* and *Tangible Holograms* are introduced. These concepts imagine a future where materials themselves are transformable and dynamically reconfigurable. Think of a device that not only displays three-dimensional digital content but can also physically reshape itself based on user input—merging the traditional boundaries between the digital and the material world. This futuristic perspective is not merely about adding extra interactivity; it’s about creating an entirely new material user interface (MUI) that “informs” users by changing its shape and feel while also “conforming” to real-world physical laws.
-	- **The “Blue” Touch in Design**
-	- While not always explicitly stated, there is an undercurrent throughout the lecture that resonates with qualities often symbolized by the color blue—calm, clarity, and trustworthy integration. Just as blue is associated with serene, deliberate, and universally appealing design (think of many modern operating systems and communicative interfaces), tangible interaction is about creating systems that are both robust and intuitively understandable. It’s as if the “blue” is woven into the fabric of each project: a silent promise that digital data, once made physical, can evoke emotions, ease usability, and ultimately lead to a more natural interaction between humans and machines.
-	- **Vision-Driven Research**
-	- Fundamentally, the lecture asserts that quantum leaps in human-computer interaction don’t only result from addressing current user needs but from a bold research vision. Inspired by pioneers like Douglas Engelbart, tangible interaction projects are driven by ambitious ideas that might only fully materialize when enabling technologies catch up with visionary design. As such, the field is continuously pushed forward by experimental prototypes and speculative research, laying the groundwork for a future where physical and digital worlds meld seamlessly.
-	- ---
-	- This comprehensive summary illustrates how tangible interaction strives to dissolve the barriers between our physical intuitions and digital representations while infusing each project with a “blue” calmness—a metaphor for clarity, reliability, and forward-thinking design.
-	- There’s much more to explore: How might advances in materials science affect the design of reconfigurable interfaces? What design challenges arise when integrating ambient media into daily environments? And in what ways can the aesthetic principles symbolized by hues like blue further enhance user trust and engagement?
+	- ### 1. Introduction to Tangible Interaction
+	  
+	  The lecture reimagines the way humans interact with digital information by embedding computational processes into physical objects and environments. Rather than confining data and control to flat, on-screen elements, tangible interaction advocates for interfaces where the physicality of everyday objects becomes the medium for digital communication. This approach seeks to leverage our innate skills in handling objects, spatial reasoning, and direct physical manipulation.
+	  
+	  ---
+	- ### 2. Core Concepts and Theoretical Foundations
+	  
+	  **Affordances and Discoverability:**  
+	  Drawing on foundational work by Gibson and Norman, the lecture emphasizes that every physical object carries inherent “affordances”—clues about its usage. These affordances enable seamless interactions because users can intuitively understand how to manipulate an object purely by its shape or design. Good tangible interaction design, therefore, externalizes internal computer representations onto forms that are directly recognizable and usable.
+	  
+	  **Tangible Interaction as an Umbrella Term:**  
+	  The lecture defines tangible interaction as an inclusive term covering graspable user interfaces, tangible user interfaces (TUIs), and embodied interaction. In all these cases, digital information isn’t abstracted on a monitor; it is manifested in physical matter—whether through direct manipulation of objects, whole-body gestures, or embedded environmental cues.
+	  
+	  ---
+	- ### 3. Exemplary Systems and Prototypes
+	  
+	  **Marble Answering Machine:**  
+	  One of the early examples presented is the Marble Answering Machine. This system uses familiar physical marbles to represent incoming messages. Its design is elegant and simple: a one-step action reveals audio messages, relying on aesthetic appeal and intuitive physicality rather than complex controls. However, the system also highlights practical design considerations such as robustness and context sensitivity (e.g., public versus private usage).
+	  
+	  **Graspable User Interfaces:**  
+	  Moving forward, the lecture revisits work from 1995 on graspable user interfaces. These systems let users manipulate “bricks” that are directly coupled with virtual objects (often on large interactive surfaces like the ActiveDesk). By facilitating two-handed and multi-point interactions, such systems tap into our natural dexterity and spatial skills, simultaneously externalizing digital data for richer collaboration and interaction.
+	  
+	  **Tangible Bits and Life Wire:**  
+	  Hiroshi Ishii’s concept of Tangible Bits is explored as a way to bridge the digital and physical realms. Projects like Life Wire—where bits from network traffic are made tangible through physical movement, sound, and touch—demonstrate how abstract digital phenomena can be rendered in ways that captivate the senses and reveal hidden dynamics of data flow.
+	  
+	  **MetaDESK and AmbientROOM:**  
+	  Other prototypes such as metaDESK illustrate the integration of tangible tools (phicons, ActiveLENS, instruments) with digital interfaces, creating a blended workspace. AmbientROOM extends this idea by using ambient media—light, shadows, sound, and airflow—to communicate peripheral information, facilitating smooth transitions between focused tasks and background processing.
+	  
+	  **Urban Planning and Interactive Media:**  
+	  The lecture also covers applications like the Urp system, which merges physical models of buildings with interactive simulations for urban planning. Similarly, interactive art installations such as the Sand Noise Music Device show how tangible surfaces (in this case, shifting sand landscapes) can be harnessed to control generative music and artistic expression.
+	  
+	  **Sifteo Cubes and ZeroN:**  
+	  Small, sensor-embedded devices like Sifteo Cubes underscore the potential of tangible gaming and collaborative puzzle-solving, while concepts such as ZeroN illustrate a radical departure from conventional physics by enabling anti-gravity interactions in three-dimensional space, pushing the boundaries of how we perceive and manipulate digital information.
+	  
+	  ---
+	- ### 4. Pushing the Boundaries: Radical Atoms and Dynamic Physicalisation
+	  
+	  The lecture culminates with forward-looking concepts such as TRANSFORM and Radical Atoms. This vision imagines materials that are computationally reconfigurable—capable of dynamically changing their shape, texture, and even tactile properties in response to digital cues. Such “Radical Atoms” embody a future where every bit of digital data has a corresponding physical manifestation, blurring the line between the virtual and the physical. The Tangible Hologram (TangHo) Platform is presented as a prototype in this direction, using a Lego Mindstorms–based 6DOF arm to explore bidirectional interaction and shape modulation, even as challenges like inverse kinematics and robust hand tracking remain to be solved.
+	  
+	  ---
+	- ### 5. Vision-Driven Design Research
+	  
+	  A recurring theme in the lecture is the idea that groundbreaking interaction design often arises not from incremental user studies but from bold visions and creative dreams—echoing the spirit of visionaries like Douglas Engelbart. The research into tangible interaction calls for a willingness to experiment with new materials, digital fabrication technologies, and hybrid interfaces despite current limitations, with the expectation that enabling technologies will eventually catch up to these ambitious ideas.
+	  
+	  ---
+	- ### Conclusion
+	  
+	  Professor Signer’s lecture weaves together historical insights, modern prototypes, and futuristic visions to argue that tangible interaction holds the key to more natural, intuitive, and engaging user interfaces. By moving digital data into the physical realm and harnessing the rich repertoire of human physical skills, we can create systems that are not just tools but extensions of our own bodily and cognitive abilities. In essence, the “blue-incorporated” elements of the lecture highlight how design rooted in physicality and materiality can transform the way we interact with information—making it richer, more immediate, and profoundly human.
 - lecture 8
   collapsed:: true
 	- ### **1. Mixed Reality and the Reality–Virtuality Continuum**
@@ -316,41 +344,41 @@
 	- ### 2. **Domains, Applications, and the Role of Multisensory Engagement**
 	  
 	  Data physicalisation spans a wide array of fields and applications:
-	- **Domains of Application:**  
-	  It bridges areas such as information and scientific visualisation, tangible user interfaces (TUIs), shape-changing displays, and even electrical engineering. These cross-disciplinary uses help integrate digital data into everyday physical experiences.
-	- **Primary Uses:**  
-	  Similar to traditional visualisation methods, data physicalisation is used to **discover** insights, **present** complex datasets in an intuitive way, and even **enjoy** data through interactive installations. This multisensory approach—engaging not just sight but also touch, hearing, and possibly even smell—enhances cognition and communication by allowing us to physically manipulate and explore data.
-	- **Advantages:**
-		- **Tactile Exploration and Embodied Cognition:** Physically interacting with data can lead to deeper understanding through direct manipulation.
-		- **Accessibility:** Alternative sensory modalities (e.g., tactile or Braille-based displays) enhance data comprehension for users with visual impairments.
-		- **Efficiency:** Studies have shown hands-on physical representations (like dynamic 3D bar charts) can outperform their on-screen counterparts by offloading some cognitive tasks onto perceptual and motor systems.
-		  
-		  ---
+		- **Domains of Application:**  
+		  It bridges areas such as information and scientific visualisation, tangible user interfaces (TUIs), shape-changing displays, and even electrical engineering. These cross-disciplinary uses help integrate digital data into everyday physical experiences.
+		- **Primary Uses:**  
+		  Similar to traditional visualisation methods, data physicalisation is used to **discover** insights, **present** complex datasets in an intuitive way, and even **enjoy** data through interactive installations. This multisensory approach—engaging not just sight but also touch, hearing, and possibly even smell—enhances cognition and communication by allowing us to physically manipulate and explore data.
+		- **Advantages:**
+			- **Tactile Exploration and Embodied Cognition:** Physically interacting with data can lead to deeper understanding through direct manipulation.
+			- **Accessibility:** Alternative sensory modalities (e.g., tactile or Braille-based displays) enhance data comprehension for users with visual impairments.
+			- **Efficiency:** Studies have shown hands-on physical representations (like dynamic 3D bar charts) can outperform their on-screen counterparts by offloading some cognitive tasks onto perceptual and motor systems.
+			  
+			  ---
 	- ### 3. **Enabling Technologies and Dynamic Physicalisation**
 	  
 	  The lecture outlines a range of **enabling technologies** that have brought data physicalisation to life:
-	- **Digital Fabrication Tools:**  
-	  The use of **3D printers, laser cutters, and CNC machines** allows designers to rapidly prototype custom data artifacts that are both functional and aesthetically engaging.
-	- **Actuated Tangible Interfaces:**  
-	  Beyond static models, modern systems incorporate kinetic elements—such as **shape-changing displays** or objects that modify their texture, temperature, or vibration—to communicate real-time or dynamic data. These technologies include olfactory output devices and haptic feedback systems, which together create a truly multisensory experience.
-	- **Dynamic Data Physicalisation:**  
-	  A significant challenge is transforming static representations into dynamic ones. Research now focuses on:
-		- **Designing Dynamic Affordances:** How physical variables (e.g., temperature, friction, smoothness) can be continuously modulated to reflect data changes.
-		- **Formal Frameworks:** Development of conceptual and software frameworks (like the dynamic data physicalisation framework discussed) that facilitate rapid prototyping and evaluation of new designs.
-		  
-		  ---
+		- **Digital Fabrication Tools:**  
+		  The use of **3D printers, laser cutters, and CNC machines** allows designers to rapidly prototype custom data artifacts that are both functional and aesthetically engaging.
+		- **Actuated Tangible Interfaces:**  
+		  Beyond static models, modern systems incorporate kinetic elements—such as **shape-changing displays** or objects that modify their texture, temperature, or vibration—to communicate real-time or dynamic data. These technologies include olfactory output devices and haptic feedback systems, which together create a truly multisensory experience.
+		- **Dynamic Data Physicalisation:**  
+		  A significant challenge is transforming static representations into dynamic ones. Research now focuses on:
+			- **Designing Dynamic Affordances:** How physical variables (e.g., temperature, friction, smoothness) can be continuously modulated to reflect data changes.
+			- **Formal Frameworks:** Development of conceptual and software frameworks (like the dynamic data physicalisation framework discussed) that facilitate rapid prototyping and evaluation of new designs.
+			  
+			  ---
 	- ### 4. **Prototype Implementations and Emerging Concepts**
-	- **TangHo Prototype:**  
-	  An exemplar implementation mentioned is the **TangHo**, a Lego Mindstorms–based 6DOF arm. This prototype serves as both an output and input device, capable of providing bidirectional I/O and replacing its feedback sphere to accommodate different non-visual modalities. It is emblematic of how physical interaction systems can merge robotics with data communication.
-	- **Radical Atoms:**  
-	  Looking toward the future, the lecture revisits Hiroshi Ishii’s vision of **Radical Atoms**—materials that are not only digitally transformable but also physically reconfigurable. This concept anticipates a Material User Interface (MUI) in which digital data can “morph” into physical form, offering a new realm of direct manipulation and seamless human-material interaction.
-	- **Research Challenges:**  
-	  The field is still evolving, and key challenges remain:
-		- Developing robust dynamic frameworks that allow for real-time, data-driven physicalisation.
-		- Determining the **perceptual effectiveness** of different physical variables, such as what constitutes the just-noticeable difference in a temperature or a tactile modulation.
-		- Creating scalable software frameworks that integrate these dynamic affordances into everyday applications.
-		  
-		  ---
+		- **TangHo Prototype:**  
+		  An exemplar implementation mentioned is the **TangHo**, a Lego Mindstorms–based 6DOF arm. This prototype serves as both an output and input device, capable of providing bidirectional I/O and replacing its feedback sphere to accommodate different non-visual modalities. It is emblematic of how physical interaction systems can merge robotics with data communication.
+		- **Radical Atoms:**  
+		  Looking toward the future, the lecture revisits Hiroshi Ishii’s vision of **Radical Atoms**—materials that are not only digitally transformable but also physically reconfigurable. This concept anticipates a Material User Interface (MUI) in which digital data can “morph” into physical form, offering a new realm of direct manipulation and seamless human-material interaction.
+		- **Research Challenges:**  
+		  The field is still evolving, and key challenges remain:
+			- Developing robust dynamic frameworks that allow for real-time, data-driven physicalisation.
+			- Determining the **perceptual effectiveness** of different physical variables, such as what constitutes the just-noticeable difference in a temperature or a tactile modulation.
+			- Creating scalable software frameworks that integrate these dynamic affordances into everyday applications.
+			  
+			  ---
 	- ### 5. **Conclusion: The Future of Tangible Data**
 	  
 	  Data physicalisation represents a shift from purely digital screens toward immersive, tactile, and multisensory environments. By converting digital data into physical form, we not only make it more tangible but also engage our cognitive processes in novel ways. This approach promises to enrich how we understand, interact with, and derive meaning from complex datasets—ushering in a future where data is as much a physical experience as it is an informational one.
