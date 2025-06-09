@@ -348,7 +348,7 @@
 		  It bridges areas such as information and scientific visualisation, tangible user interfaces (TUIs), shape-changing displays, and even electrical engineering. These cross-disciplinary uses help integrate digital data into everyday physical experiences.
 		- **Primary Uses:**  
 		  Similar to traditional visualisation methods, data physicalisation is used to **discover** insights, **present** complex datasets in an intuitive way, and even **enjoy** data through interactive installations. This multisensory approach—engaging not just sight but also touch, hearing, and possibly even smell—enhances cognition and communication by allowing us to physically manipulate and explore data.
-		- **Advantages:**
+		- **Advantages:**(TAE)
 			- **Tactile Exploration and Embodied Cognition:** Physically interacting with data can lead to deeper understanding through direct manipulation.
 			- **Accessibility:** Alternative sensory modalities (e.g., tactile or Braille-based displays) enhance data comprehension for users with visual impairments.
 			- **Efficiency:** Studies have shown hands-on physical representations (like dynamic 3D bar charts) can outperform their on-screen counterparts by offloading some cognitive tasks onto perceptual and motor systems.
