@@ -137,7 +137,7 @@
 	- ## **2. Defining Gestures and Their Types**
 	  
 	  At the heart of the lecture is a clear definition: a gesture is a form of non‐verbal or non‐vocal communication where visible bodily actions (such as movements of the hands, face, or other parts) convey specific messages. Drawing from A. Kendon’s work, the presentation explains that gestures can be separated into three functional groups: semiotic, ergotic, epistemic
-	- **Semiotic Gestures:** These are used explicitly to communicate meaning. Within this group, further classifications are given:
+	- **Semiotic Gestures:** These are used explicitly to communicate meaning. Within this group, further classifications are given: (sdip)
 		- **Symbolic Gestures (Emblems):** Culture-specific signs like the “OK” sign that hold a single, clear meaning.
 		- **Deictic Gestures:** Pointing actions that direct attention to a location or object.
 		- **Iconic Gestures:** Movements that illustrate properties (such as size, shape, or orientation) of the object being described.
