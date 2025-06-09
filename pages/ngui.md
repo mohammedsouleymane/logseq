@@ -218,8 +218,8 @@
 	  The absence of standardized guidelines across platforms makes it difficult for users to learn and predict gesture functions. This inconsistency can lead to frustration and a disconnect between user intent and system response.
 	  
 	  The lecture criticizes the tendency among some companies to disregard long-established HCI principles, urging designers to incorporate clear, intuitive, and ergonomically sound gestures that build on decades of interaction research.
-	  
-	  ---
+	-
+	- ---
 	- ## **9. Conclusion and Forward Look**
 	  
 	  In closing, Professor Signer emphasizes that while gesture-based interaction offers a pathway toward more natural and intuitive computer interfaces, its successful implementation relies on careful consideration of hardware limitations, algorithm selection, effective gesture vocabularies, and—most critically—a commitment to usability. Challenges such as gesture segmentation, reliable recognition, and user fatigue still need to be addressed. The lecture also sets the stage for further inquiry by assigning related readings (such as critical papers on gestural interfaces), urging designers and researchers alike to refine these technologies to better serve natural human communication.
