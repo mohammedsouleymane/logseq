@@ -304,89 +304,56 @@
 	- **Ongoing Social and Ethical Challenges:** As AR systems become more pervasive, issues such as privacy, safety, and social acceptance (as illustrated by the experience with Google Glass) will be at the forefront.
 - lecture 9
   collapsed:: true
-	- ### **1. Mixed Reality and the Reality–Virtuality Continuum**
+	- ### 1. **Foundations and Definitions**
 	  
-	  The lecture begins by defining Mixed Reality (MR) within the framework of the Reality–Virtuality continuum, an idea introduced by Paul Milgram and Fumio Kishino in 1994. This continuum ranges from completely real environments to fully virtual ones, with MR occupying the space in between. In this zone, physical and digital objects coexist and interact in real time. Augmented Reality (AR) and Augmented Virtuality (AV, such as digital twins) are two complementary approaches within this spectrum, each blending real and virtual aspects in distinctive ways.
-	  
-	  ---
-	- ### **2. Virtual Reality (VR): Concepts, Challenges, and Applications**
-	  
-	  **Concept and Immersion:**  
-	  VR is presented as an artificial environment experienced through multisensory input—sight, sound, even touch, taste, and smell—delivered by computer systems. The goal is to create an experience that replicates or substitutes real-world conditions. Immersion, or perceptual immersion, is emphasized as the user’s sensation of physically being present in a synthetic world, achieved via panoramic 3D visuals, surround sound, haptic feedback, and other stimuli.
-	  
-	  **Historical Foundation – The Sword of Damocles:**  
-	  The lecture revisits one of the pioneering systems of VR—the Sword of Damocles. Developed by Ivan Sutherland and his student Bob Sproull in 1968, this early head-mounted display provided a simple stereoscopic view of wireframe rooms and incorporated head tracking, demonstrating the foundational principles of VR despite its mechanical constraints.
-	  
-	  **Applications Across Domains:**  
-	  VR technology is not limited to a single field; instead, it finds applications in:
-	- **Architecture:** Allowing users to navigate and experience virtual reconstructions of buildings.
-	- **Education:** Visualizing and interacting with complex datasets.
-	- **Medicine:** Providing training environments for surgeries, including virtual robotic surgery.
-	- **Engineering, Military, Entertainment, Sport, Simulations, and Gaming:** Each of these areas leverages VR for both training and immersive experiences that may be too dangerous, expensive, or impractical in the real world.
-	  
-	  ---
-	- ### **3. VR Technologies and Interaction Techniques**
-	  
-	  **Technologies:**  
-	  The lecture details several core hardware approaches:
-	- **Large Screens:** Panoramic, cylindrical, or spherical displays that may or may not use stereoscopy.
-	- **Binocular Omni-Orientation Monitors (BOOM):** Devices where screens mounted in a box (linked to a multi-link arm) track the user’s head movements.
-	- **CAVE (Cave Automatic Virtual Environment):** Room-sized, multi-wall systems that project stereo images for a shared immersive experience.
-	- **Head-Mounted Displays (HMDs):** Lightweight devices (such as the Meta Quest 3) that present digital images directly before the eyes, often with embedded displays and lenses to adjust focus.
-	  
-	  **Navigation and Interaction:**  
-	  Interacting with virtual environments involves both navigation (moving within a three-dimensional scene) and interaction (manipulating elements within that scene). Techniques include:
-	- **Navigation Methods:**
-		- **Grabbing in the Air:** User selects and drags elements within the virtual world.
-		- **Lean-Based Velocity:** The direction and speed of movement are controlled by leaning forward or backward.
-		- **Path Drawing or Walking in Place:** Methods that utilize input (sometimes even treadmills like the Virtuix Omni) to translate physical movement into virtual motion.
-	- **Interaction Techniques:**
-		- **Non-immersive approaches:** Utilizing traditional input devices such as a mouse or joystick.
-		- **Immersive methods:** Involving wearable solutions that capture limb motion (e.g., through datagloves or optical tracking) or using hand-mapping and ray casting—for instance, projecting a virtual beam from the hand to select objects.
+	  **Data physicalisation** is defined as the transformation of abstract data into tangible artifacts whose geometry or material properties encode information. This idea—originally framed by Jansen et al.—highlights that physical objects can serve as information carriers much like a digital display, yet they engage our senses in ways that purely visual systems cannot.
+		- **Historical Roots:**  
+		  Early data representations include the use of **Mesopotamian clay tokens (8000 BCE)** and the **Quipu (2500 BCE)** from Andean cultures. These artifacts demonstrate that society has long used physical forms to encode, communicate, and reason with quantitative information.
+		- **Artistic Meets Functional:**  
+		  The lecture distinguishes between standard data physicalisation and **data sculptures**—the latter being artistic artifacts designed not only to display data but to evoke insight and spark discussion about socially relevant issues.
 		  
 		  ---
-	- ### **4. Augmented Reality (AR): Extending Reality Rather Than Replacing It**
+	- ### 2. **Domains, Applications, and the Role of Multisensory Engagement**
 	  
-	  **Fundamental Concepts:**  
-	  In contrast to VR, AR allows users to maintain contact with the real world while overlaying virtual information onto it. The goal is not to replace the physical environment, but rather to supplement it—merging digital imagery seamlessly with reality.
+	  Data physicalisation spans a wide array of fields and applications:
+	- **Domains of Application:**  
+	  It bridges areas such as information and scientific visualisation, tangible user interfaces (TUIs), shape-changing displays, and even electrical engineering. These cross-disciplinary uses help integrate digital data into everyday physical experiences.
+	- **Primary Uses:**  
+	  Similar to traditional visualisation methods, data physicalisation is used to **discover** insights, **present** complex datasets in an intuitive way, and even **enjoy** data through interactive installations. This multisensory approach—engaging not just sight but also touch, hearing, and possibly even smell—enhances cognition and communication by allowing us to physically manipulate and explore data.
+	- **Advantages:**
+		- **Tactile Exploration and Embodied Cognition:** Physically interacting with data can lead to deeper understanding through direct manipulation.
+		- **Accessibility:** Alternative sensory modalities (e.g., tactile or Braille-based displays) enhance data comprehension for users with visual impairments.
+		- **Efficiency:** Studies have shown hands-on physical representations (like dynamic 3D bar charts) can outperform their on-screen counterparts by offloading some cognitive tasks onto perceptual and motor systems.
+		  
+		  ---
+	- ### 3. **Enabling Technologies and Dynamic Physicalisation**
 	  
-	  **Applications:**  
-	  AR finds practical use in:
-	- **Maintenance and Architecture:** Where overlaying information on existing structures can aid in repair or design.
-	- **Education and Medicine:** Offering interactive, real-time guidance.
-	- **Entertainment, Navigation, Gaming, and Advertising:** Enhancing experiences with real-time, context-sensitive digital overlays.
+	  The lecture outlines a range of **enabling technologies** that have brought data physicalisation to life:
+	- **Digital Fabrication Tools:**  
+	  The use of **3D printers, laser cutters, and CNC machines** allows designers to rapidly prototype custom data artifacts that are both functional and aesthetically engaging.
+	- **Actuated Tangible Interfaces:**  
+	  Beyond static models, modern systems incorporate kinetic elements—such as **shape-changing displays** or objects that modify their texture, temperature, or vibration—to communicate real-time or dynamic data. These technologies include olfactory output devices and haptic feedback systems, which together create a truly multisensory experience.
+	- **Dynamic Data Physicalisation:**  
+	  A significant challenge is transforming static representations into dynamic ones. Research now focuses on:
+		- **Designing Dynamic Affordances:** How physical variables (e.g., temperature, friction, smoothness) can be continuously modulated to reflect data changes.
+		- **Formal Frameworks:** Development of conceptual and software frameworks (like the dynamic data physicalisation framework discussed) that facilitate rapid prototyping and evaluation of new designs.
+		  
+		  ---
+	- ### 4. **Prototype Implementations and Emerging Concepts**
+	- **TangHo Prototype:**  
+	  An exemplar implementation mentioned is the **TangHo**, a Lego Mindstorms–based 6DOF arm. This prototype serves as both an output and input device, capable of providing bidirectional I/O and replacing its feedback sphere to accommodate different non-visual modalities. It is emblematic of how physical interaction systems can merge robotics with data communication.
+	- **Radical Atoms:**  
+	  Looking toward the future, the lecture revisits Hiroshi Ishii’s vision of **Radical Atoms**—materials that are not only digitally transformable but also physically reconfigurable. This concept anticipates a Material User Interface (MUI) in which digital data can “morph” into physical form, offering a new realm of direct manipulation and seamless human-material interaction.
+	- **Research Challenges:**  
+	  The field is still evolving, and key challenges remain:
+		- Developing robust dynamic frameworks that allow for real-time, data-driven physicalisation.
+		- Determining the **perceptual effectiveness** of different physical variables, such as what constitutes the just-noticeable difference in a temperature or a tactile modulation.
+		- Creating scalable software frameworks that integrate these dynamic affordances into everyday applications.
+		  
+		  ---
+	- ### 5. **Conclusion: The Future of Tangible Data**
 	  
-	  **AR Techniques:**  
-	  Multiple methods are employed to bring these augmented experiences to life:
-	- **Video Compositing:** Overlaying virtual elements on live video feeds in real time (or during post-processing).
-	- **Head-Up Displays (HUDs):** Common in both aviation and automotive settings, these displays project data within the user’s direct line of sight.
-	- **Direct Projections:** Such as the SixthSense technology that uses miniature projectors and cameras to blend digital and physical realms.
-	- **Magic Lens and Magic Mirror Metaphors:** These approaches use mobile devices or reflective interfaces to reveal digital information about real-world objects.
-	- **Magic Eyeglass Techniques:** This category includes see-through head-mounted displays that allow a superimposed virtual image over an unobstructed view of reality.
-	  
-	  ---
-	- ### **5. AR Hardware: See-Through Technologies and Beyond**
-	  
-	  **Optical See-Through HMDs:**  
-	  These devices (e.g., Microsoft HoloLens 2 and Magic Leap 2) generate virtual images that are overlaid on semi-transparent surfaces. Head tracking ensures that the virtual graphics remain aligned with the user’s view, merging the digital with the physical seamlessly.
-	  
-	  **Video See-Through HMDs:**  
-	  Devices like the Meta Quest 3, Apple Vision Pro, HTC Vive XR, Varjo XR-4, and PICO 4 Ultra capture real-time video of the external world, then layer virtual content upon it, often enhancing the natural view.
-	  
-	  **Virtual Retinal Displays (VRDs):**  
-	  An innovative approach is exemplified by Google Glass, where light beams are directly projected onto the retina. This method gives the illusion of a floating display in front of the eye while raising interesting questions about privacy and social acceptance—key topics the lecture briefly touches upon.
-	  
-	  ---
-	- ### **6. The WebXR Standard and Future Directions**
-	  
-	  **WebXR:**  
-	  The lecture introduces WebXR as a modern, web-based specification aimed at developing XR applications that function seamlessly across diverse platforms and devices. Its standardized Device API supports not only basic viewing but also integrated features such as hand tracking, spatial audio, haptic feedback, and sophisticated room tracking. This ensures that developers can write an application once and have it run in varied immersive setups.
-	  
-	  **Future Trends in AR:**  
-	  Looking forward, the lecture highlights the possibilities of:
-	- **Smarter and Less Distracting Augmentations:** For example, augmented contact lenses could provide a subtler interface.
-	- **Improved Tracking Technologies:** As seen with advances in HMDs and sensor-based solutions.
-	- **Ongoing Social and Ethical Challenges:** As AR systems become more pervasive, issues such as privacy, safety, and social acceptance (as illustrated by the experience with Google Glass) will be at the forefront.
+	  Data physicalisation represents a shift from purely digital screens toward immersive, tactile, and multisensory environments. By converting digital data into physical form, we not only make it more tangible but also engage our cognitive processes in novel ways. This approach promises to enrich how we understand, interact with, and derive meaning from complex datasets—ushering in a future where data is as much a physical experience as it is an informational one.
 - lecture 10
   collapsed:: true
 	- ### 1. **Introduction to Next Generation User Interfaces**
