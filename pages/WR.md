@@ -21,5 +21,8 @@
 		- We berekenen het verschil $x-y$:
 		  $$x-y = ( j_0,j_1j_2...j_p \times 10^{d-e} - i_0,i_1i_2...i_p ) \times 10^e  $$
 		- Is $j_0,j_1j_2...j_p \times 10^{d-e} - i_0,i_1i_2...i_p$ een mantisse met precisie p
-		  $$x - 2y \leq 0 \rightarrow $$
+		  $x - 2y \leq 0$
+		  $\Rightarrow x - y \leq y $
+		  $\Rightarrow  (x-y)10ê$
+		-
 -
