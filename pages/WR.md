@@ -31,7 +31,7 @@ collapsed:: true
 		  Stelling van Sterbenz duidt aan dat het rekenen met machinegetallen minder gevoelig is dan niet rekenen met niet-machine getallen.
 - ### Hoe definieer je de conditionering en conditiegetal? Wat stelt dit getal precies voor?
   collapsed:: true
-	- De conditionering onderstelt de numerieke bewerkingen als perfect, maar **bestudeert de invloed van een invoerfout of pertubatie**. Dit is een afrondfout analyse. Hoe propageert de initiele afrondingfout zich naar het eindresultaat. Hoe rekengevoelig is het eindresultaat ten gevolgen van fouten aan de start.
+	- De conditionering onderstelt de numerieke bewerkingen als perfect, maar **bestudeert de invloed van een invoerfout of pertubatie**. Dit is een afrondfout analyse. Hoe propageert de **initiele afrondingfout zich naar het eindresultaat**. Hoe rekengevoelig is het eindresultaat ten gevolgen van fouten aan de start.
 	- Stel dat we de functie $F(x)$ willen evalueren met invoer $x \in \mathbb{R}$. Aangezien de invoer een afrondfout heeft beschouwen we dit eerste orde analyse
 	  $$F(fl(x)) = F(x+\Delta x) \approx F(x) + F'(x) \cdot \Delta x$$
 	  De relatieve fout is nu 
@@ -42,6 +42,7 @@ collapsed:: true
 	  je mag verwachten dat je 3 bijhorende cijfers nog extra zal verliezen
 	  hoe hoger hoe numberiek gevoeliger
 - ### Leg het verschil uit tussen sterke en zwakke numerieke stabiliteit.
+  collapsed:: true
 	- Een algoritme is sterk stabiel als haar **relatieve fout vergelijkbaar is met de machineprecisie**. Door stabilisatie brengt men een zwak stabiel dichter bij een sterk stabiel algoritme.
 	-
 	- Een algoritme is zwak stabiel als haar **onvermijdelijke fout vergelijkbaar is met de conditionering van het probleem. Dus relatieve fout is vergelijkbaar met de conditiegetal $\times$ machineprecisie**
