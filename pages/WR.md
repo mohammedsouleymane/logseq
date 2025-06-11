@@ -3,4 +3,5 @@
 	- We gebruiken de standaard om floating getallen voor te stellen als volgt: 
 	  $$fl(x) = +- i_0.i_1....i_p \times 2^e$$
 	  Het teken heeft ook 1 bit nodig voor zowel de mantisse als exponent.
-	- Het grootste getal is: $1.1.....1 \times 2^{1111....1}$
+	- Het grootste getal is: $1.1.....1 \times 2^{1111....1} \approx O(10^{308})$
+-
