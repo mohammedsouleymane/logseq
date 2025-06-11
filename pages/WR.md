@@ -1,4 +1,5 @@
 ### Formuleer de 64-bit IEEE standaard voor floating point getallen en bereken de computerprecisie.
+collapsed:: true
 	- De 64 bit IEEE standaard voor floating point of beter gekend als de "double" maakt gebruikt van 64 bits waarvan 53 mantisse and 11 bit exponent.
 	- We gebruiken de standaard om floating getallen voor te stellen als volgt: 
 	  $$fl(x) = \pm i_0.i_1....i_p \times 2^e$$
@@ -11,6 +12,7 @@
 	   $$0.00...1 \times 2^0 = 2^{-52} \approx O(10^{-16})$$
 	- $\Rightarrow$ Double systeem rekent men met 15 cijfers maximaal
 - ### Bewijs en formuleer de stelling van Sterbenz. Wat bedoelt deze precies?
+  collapsed:: true
 	- Zij $x = fl(x)$ en $y = fl(y)$ en $\frac{y}{2} \leq x \leq 2y$ dan geldt $x - y = fl(x-y)$
 	- De stelling laat vooral zien dat precisieverlies optreedt bij het aftrekking van 2 niet FP getallen. Eens we alleen FP getallen gebruiken dient men alleen de voorwaarde van Sterbenz te respecteren. De getallen worden opnieuw geordent zodat deze voorwaarde gerespecteerd wordt.
 	- **Bewijs**
@@ -28,8 +30,10 @@
 		- De macht van 10 is positief maar vraag niet een extra cijfer zodat p cijfers voldoende zijn. Om de verschil uit te drukken hebben we maximaal p cijfers nodig
 		  Stelling van Sterbenz duidt aan dat het rekenen met machinegetallen minder gevoelig is dan niet rekenen met niet-machine getallen.
 - ### Hoe definieer je de conditionering? Wat stelt dit getal precies voor?
+  collapsed:: true
 	- De conditionering onderstelt de numerieke bewerkingen als perfect, maar bestudeert de invloed van een invoerfout of pertubatie. Dit is een afrondfout analyse.
 	- Stel dat we de functie $F(x)$ willen evalueren met invoer $x \in \mathbb{R}$. Aangezien de invoer een afrondfout heeft beschouwen we dit eerste orde analyse
 	  $$F(fl(x)) = F(x+\Delta x) = F(x) + F'(x) \cdot \Delta x$$
 	  De relatieve fout is nu 
 	  $$\delta F(fl(x)) = \frac{F'(x)}{F(x)} \Delta x =  \frac{xF'(x)}{F(x)} \delta x$$
+-
