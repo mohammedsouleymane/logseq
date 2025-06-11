@@ -42,5 +42,7 @@ collapsed:: true
 	  je mag verwachten dat je 3 bijhorende cijfers nog extra zal verliezen
 	  hoe hoger hoe numberiek gevoeliger
 - ### Leg het verschil uit tussen sterke en zwakke numerieke stabiliteit.
-	- relatieve fout is vergelijkbaar met de machineprecisie: Sterk stabiel
-	  Relatieve fout is vergelijkbaar met de conditiegetal $\times$ machineprecisie.
+	- Een algoritme is sterk stabiel als haar relatieve fout  vergelijkbaar met de machineprecisie: Sterk
+	- :
+	-
+	- Een algoritme is zwak stabiel als haar onvermijdelijke fout vergelijkbaar is met de conditionering van het probleem. Relatieve fout is vergelijkbaar met de conditiegetal $\times$ machineprecisie
