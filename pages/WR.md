@@ -36,4 +36,5 @@ collapsed:: true
 	  $$F(fl(x)) = F(x+\Delta x) = F(x) + F'(x) \cdot \Delta x$$
 	  De relatieve fout is nu 
 	  $$\delta F(fl(x)) = \frac{F'(x)}{F(x)} \Delta x =  \frac{xF'(x)}{F(x)} \delta x$$
--
+- ### Definieer het conditiegetal. Wat stelt dit getal voor?
+	- Stel dat we een function $F(x)$ willen evalueren met invoer $x \in \mathBB{R}$. Aangezien de invoer een afrondfout heeft beschouwen we de eerste or
