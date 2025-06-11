@@ -50,7 +50,7 @@
 - ### Bereken de complexiteit van de achterwaartse substitutie in volgend algoritme:
 	- ![image.png](../assets/image_1749658335279_0.png)
 	- 1
-	- $$\sum_{k=1}^{n-1} 2(n-k) + 1 $$
+	- $$1 + \sum_{k=1}^{n-1} 2(n-k) + 1 $$
 	  $$=1+ 2n(n-1) - n(n-1) + n-1$$
 	  $$= n^2$$b
 	-
