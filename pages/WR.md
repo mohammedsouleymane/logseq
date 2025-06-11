@@ -30,7 +30,6 @@ collapsed:: true
 		- De macht van 10 is positief maar vraag niet een extra cijfer zodat p cijfers voldoende zijn. Om de verschil uit te drukken hebben we maximaal p cijfers nodig
 		  Stelling van Sterbenz duidt aan dat het rekenen met machinegetallen minder gevoelig is dan niet rekenen met niet-machine getallen.
 - ### Hoe definieer je de conditionering en conditiegetal? Wat stelt dit getal precies voor?
-  collapsed:: true
 	- De conditionering onderstelt de numerieke bewerkingen als perfect, maar **bestudeert de invloed van een invoerfout of pertubatie**. Dit is een afrondfout analyse. Hoe propageert de **initiele afrondingfout zich naar het eindresultaat**. Hoe rekengevoelig is het eindresultaat ten gevolgen van fouten aan de start.
 	- Stel dat we de functie $F(x)$ willen evalueren met invoer $x \in \mathbb{R}$. Aangezien de invoer een afrondfout heeft beschouwen we dit eerste orde analyse
 	  $$F(fl(x)) = F(x+\Delta x) \approx F(x) + F'(x) \cdot \Delta x$$
@@ -47,3 +46,54 @@ collapsed:: true
 	-
 	- Een algoritme is zwak stabiel als haar **onvermijdelijke fout vergelijkbaar is met de conditionering van het probleem. Dus relatieve fout is vergelijkbaar met de conditiegetal $\times$ machineprecisie**
 	-
+- ### Formuleer een numeriek stabiele methode voor het berekenen van de functie $f(x) = \frac{1}{1+2x} - \frac{1-x}{1+x}$ voor $x \approx 0$. Leg uit waarom in de buurt van $x \approx 0$ er een numeriek probleem optreedt. Is het probleem in de buurt van $x \approx 0$ goed geconditioneerd?
+  collapsed:: true
+	-
+- ### Bereken de complexiteit van de achterwaartse substitutie in volgend algoritme:
+	- ![image.png](../assets/image_1749658335279_0.png)
+	- 1
+	- $$\sum_{k=1}^{n-1} 2(n-k) + 1 $$
+	  $$=1+ 2n(n-1) - n(n-1) + n-1$$
+	  $$= n^2$$b
+	-
+- ### Bereken de complexiteit van de Gausseliminatie in volgendalgoritme:
+	- ![image.png](../assets/image_1749659362900_0.png)
+	-
+	-
+	- $$\sum \sum 2(n-j) + 4$$
+	  $$2 \sum \sum (n-j) + 2$$
+	  $$2 \sum (n-j)^2 + 2(n-j)$$
+	  $$\approx \frac{2}{3}n^3$$
+	-
+- ### Bereken de complexiteit van de QR-ontbinding in volgende algoritme:
+	- ![image.png](../assets/image_1749656767347_0.png)
+	- 2n-1
+	- n
+	- =3n - 1
+	- $\Sigma$
+	- (2n-1)(j-1)
+	- 2n(j-1)
+	- 2n-1
+	- n
+	- $$3n - 1 \sum_{j=2}^n (4n-1)(j-1) + 3n - 1$$
+	  $$3n - 1 \sum_{j=2}^n 4nj - n - j \approx 2n^3$$
+	-
+- ### Bewijs de uniciteit van de LU-decompositie.
+	- Stelsel van Crout heeft hoogstens 1 oplossing
+	- LU-decompositie zijn voor beide driehoekige matrices. Aantal in te vullen plaatsen is dus: $n + (n-1) ... +1 = \frac{n(n+1)}{2}$
+	- Voor één van de matrices is de diagonaal vast gekozen met overal 1. Dus is er slechts $\frac{n(n+1)}{2} - n = \frac{n(n-1)}{2}$ plaatsen te kiezen.
+	- Voor de matrices U en L samen levert dit $\frac{n(n-1)}{2} + \frac{n(n+1)}{2} = n^2$ keuzes.
+	- Er is dus ten hoogstens 1 LU decompositie. Het algoritme van crout laat zien dat een procedé bestaat zodat LU decompositie uniek is.
+	-
+- ### Bewijs de uniciteit van de QR-decompositie
+	- We weten dat $A=QR$ een niet linear stelsel is. We moeten nagaan hoeveel onbekenden en hoeveel vergelijkingen we exact hebben. Aangezien R een bovendriehoeksmatrix is hebben we dus $\frac{n(n+1)}{2}$ onbekenden
+	  logseq.order-list-type:: number
+	- Aan gezien $Q'Q = 1$ vinden we dat 
+	  logseq.order-list-type:: number
+	  $[Q'Q]_{uv} = q_u, q_v = 1$ is als $u=v$
+	  anders 0
+	  Dit levert $\frac{n(n-1)}{2}$ vergelijkingen op die nul moeten worden en N die 1 moeten worden. De matrix Q heeft 
+	  $n^2 - \frac{n(n-1)}{2} - n = \frac{n(n+1)}{2}$ onbekenden
+	  Samen zijn er dus n^2 onbekenden wat de stelling bewijs.
+	-
+	- logseq.order-list-type:: number
