@@ -40,4 +40,6 @@ collapsed:: true
 	- Stel dat we een function $F(x)$ willen evalueren met invoer $x \in \mathbb{R}$. Aangezien de invoer een afrondfout heeft beschouwen we de eerste orde analyse:
 	  $$F(fl(x)) = F(x + \Delta x)  = F(x) + F'(x) \Delta x$$
 	  Relatieve fout is nu:
-	  $$\delta(fl(x)) = \frac{F'(x)}{F(x)} $$
+	  $$\delta(fl(x)) = \frac{F'(x)}{F(x)} \Delta x =  \frac{xF'(x)}{F(x)} \delta x$$
+	  Het conditiegetal \gamma(x)
+	- He conditiegetal van een functie met een argument meet hoeveel de ouput
