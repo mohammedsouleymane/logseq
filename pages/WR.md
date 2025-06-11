@@ -29,4 +29,7 @@
 		  Stelling van Sterbenz duidt aan dat het rekenen met machinegetallen minder gevoelig is dan niet rekenen met niet-machine getallen.
 - ### Hoe definieer je de conditionering? Wat stelt dit getal precies voor?
 	- De conditionering onderstelt de numerieke bewerkingen als perfect, maar bestudeert de invloed van een invoerfout of pertubatie. Dit is een afrondfout analyse.
-	- Stel dat we de functie $F(x)$ willen evalueren met invoer $x \in \mathbb{R}$
+	- Stel dat we de functie $F(x)$ willen evalueren met invoer $x \in \mathbb{R}$. Aangezien de invoer een afrondfout heeft beschouwen we dit eerste orde analyse
+	  $$F(fl(x)) = F(x+\Delta x) = F(x) + F'(x) \cdot \Delta x$$
+	  De relatieve fout is nu 
+	  $$\d$$
