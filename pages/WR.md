@@ -28,4 +28,5 @@
 		- De macht van 10 is positief maar vraag niet een extra cijfer zodat p cijfers voldoende zijn. Om de verschil uit te drukken hebben we maximaal p cijfers nodig
 		  Stelling van Sterbenz duidt aan dat het rekenen met machinegetallen minder gevoelig is dan niet rekenen met niet-machine getallen.
 - ### Hoe definieer je de conditionering? Wat stelt dit getal precies voor?
-	- De conditionering onderstel de numerieke bewerkingen als perfect, maar bestudeert de invloed van een invo
+	- De conditionering onderstelt de numerieke bewerkingen als perfect, maar bestudeert de invloed van een invoerfout of pertubatie. Dit is een afrondfout analyse.
+	- Stel dat we de functie $F(x)$ willen evalueren met invoer $x \in \mathbb{R}$
