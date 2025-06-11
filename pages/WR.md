@@ -16,6 +16,8 @@
 	- **Bewijs**
 		- Beshouw een systeem met precisie p in basis 10 en stel
 		  $$y = i_0,i_1i_2...i_p \times 10^e$$
-		  $$x = j_0,j1j2...j_p \times 10^e$$
-		-
+		  $$x = j_0,j_1j_2...j_p \times 10^e$$
+		  Zonder verlies aan algemeenheid stellen we dat $y \leq x$.
+		- We berekenen het verschil $x-y$
+		- $x-y = (j_)
 -
