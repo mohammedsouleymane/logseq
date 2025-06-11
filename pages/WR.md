@@ -24,6 +24,7 @@
 		  $x - 2y \leq 0$
 		  $\Rightarrow x - y \leq y$
 		  $\Rightarrow  (x-y)10^{-e} \leq y 10^{-e}$
-		  $\Leftrightarrow j_0,j_1j_2...j_p \times 10^{d-e} \leq i_0,i_1i_2...i_p$
-		-
+		  $\Leftrightarrow j_0,j_1j_2...j_p \times 10^{d-e} - i_0,i_1i_2...i_p$
+		- De macht van 10 is positief maar vraag niet een extra cijfer zodat p cijfers voldoende zijn.
+		  Stelling van Sterbens duidt aan dat het rekenen met machinegetallen minder gevoelig is dan niet rekenen met niet-machine getallen.
 -
