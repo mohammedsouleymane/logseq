@@ -1,1 +1,3 @@
 - 64 bit IEEE
+	- De 64 bit IEEE standaard voor floating point of beter gekend als de "double" maakt gebruikt van 64 bits waarvan 53 mantisse and 11 bit exponent.
+	-
