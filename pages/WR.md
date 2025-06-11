@@ -31,12 +31,12 @@ collapsed:: true
 		  Stelling van Sterbenz duidt aan dat het rekenen met machinegetallen minder gevoelig is dan niet rekenen met niet-machine getallen.
 - ### Hoe definieer je de conditionering en conditiegetal? Wat stelt dit getal precies voor?
   collapsed:: true
-	- De conditionering onderstelt de numerieke bewerkingen als perfect, maar **bestudeert de invloed van een invoerfout of pertubatie**. Dit is een afrondfout analyse.
+	- De conditionering onderstelt de numerieke bewerkingen als perfect, maar **bestudeert de invloed van een invoerfout of pertubatie**. Dit is een afrondfout analyse. Hoe propageert de initiele afrondingfout zich naar het eindresultaat. Hoe rekengevoelig is het eindresultaat ten gevolgen van fouten aan de start.
 	- Stel dat we de functie $F(x)$ willen evalueren met invoer $x \in \mathbb{R}$. Aangezien de invoer een afrondfout heeft beschouwen we dit eerste orde analyse
 	  $$F(fl(x)) = F(x+\Delta x) = F(x) + F'(x) \cdot \Delta x$$
 	  De relatieve fout is nu 
 	  $$\delta F(fl(x)) = \frac{F'(x)}{F(x)} \Delta x =  \frac{xF'(x)}{F(x)} \delta x$$
 	  Het conditiegetal \gamma(x)
 	- He conditiegetal van een functie met een argument meet **hoeveel de output waarde van de functie kan veranderen voor een kleine wijzinging als input argument**.
-	-
+	- **relatieve fouten in de invoer tot 1000 keer groter kunnen worden in de oplossing**.
 - ### Leg het verschil uit tussen sterke en zwakke numerieke stabiliteit.
