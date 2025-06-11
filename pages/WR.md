@@ -38,5 +38,7 @@ collapsed:: true
 	  $$\delta F(fl(x)) = \frac{F'(x)}{F(x)} \Delta x =  \frac{xF'(x)}{F(x)} \delta x$$
 	  Het conditiegetal $\gamma(x) = \frac{xF'(x)}{F(x)}$
 	- He conditiegetal van een functie met een argument meet **hoeveel de output waarde van de functie kan veranderen voor een kleine wijzinging als input argument**.
-	- **relatieve fouten in de invoer tot 1000 keer groter kunnen worden in de oplossing**.
+	- 1000 = conditiegetal 
+	  je mag verwachten dat je 3 bijhorende cijfers nog extra zal verliezen
+	  hoe hoger hoe numberiek gevoeliger
 - ### Leg het verschil uit tussen sterke en zwakke numerieke stabiliteit.
