@@ -67,7 +67,7 @@ collapsed:: true
 	-
 - ### Bereken de complexiteit van de QR-ontbinding in volgende algoritme:
 	- ![image.png](../assets/image_1749656767347_0.png)
-	- 2n-1
+	- 2n-1 (n \times en n-1 +)
 	- n
 	- =3n - 1
 	- $\Sigma$
