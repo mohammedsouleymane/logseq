@@ -11,4 +11,7 @@
 	   $$0.00...1 \times 2^0 = 2^{-52} \approx O(10^{-16})$$
 	- $\Rightarrow$ Double systeem rekent men met 15 cijfers maximaal
 - ### Bewijs en formuleer de stelling van Sterbenz. Wat bedoelt deze precies?
+	- Zij $x = fl(x)$ en $y = fl(y)$ en $\frac{y}{2} \leq x \leq 2y$ dan geldt $x - y = fl(x-y)$
+	-
+	-
 -
