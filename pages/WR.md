@@ -42,4 +42,4 @@ collapsed:: true
 	  Relatieve fout is nu:
 	  $$\delta(fl(x)) = \frac{F'(x)}{F(x)} \Delta x =  \frac{xF'(x)}{F(x)} \delta x$$
 	  Het conditiegetal \gamma(x)
-	- He conditiegetal van een functie met een argument meet hoeveel de ouput
+	- He conditiegetal van een functie met een argument meet *hoeveel de output waarde van de functie kan veranderen voor een kleine wijzinging als input argument*.
