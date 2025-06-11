@@ -1,5 +1,4 @@
 ### Formuleer de 64-bit IEEE standaard voor floating point getallen en bereken de computerprecisie.
-collapsed:: true
 	- De 64 bit IEEE standaard voor floating point of beter gekend als de "double" maakt gebruikt van 64 bits waarvan 53 mantisse and 11 bit exponent.
 	- We gebruiken de standaard om floating getallen voor te stellen als volgt: 
 	  $$fl(x) = \pm i_0.i_1....i_p \times 2^e$$
@@ -12,7 +11,6 @@ collapsed:: true
 	   $$0.00...1 \times 2^0 = 2^{-52} \approx O(10^{-16})$$
 	- $\Rightarrow$ Double systeem rekent men met 15 cijfers maximaal
 - ### Bewijs en formuleer de stelling van Sterbenz. Wat bedoelt deze precies?
-  collapsed:: true
 	- Zij $x = fl(x)$ en $y = fl(y)$ en $\frac{y}{2} \leq x \leq 2y$ dan geldt $x - y = fl(x-y)$
 	- De stelling laat vooral zien dat precisieverlies optreedt bij het aftrekking van 2 niet FP getallen. Eens we alleen FP getallen gebruiken dient men alleen de voorwaarde van Sterbenz te respecteren. De getallen worden opnieuw geordent zodat deze voorwaarde gerespecteerd wordt.
 	- **Bewijs**
@@ -76,7 +74,9 @@ collapsed:: true
 	- 2n-1
 	- n
 	- $$3n - 1 \sum_{j=2}^n (4n-1)(j-1) + 3n - 1$$
-	  $$3n - 1 \sum_{j=2}^n 4nj - n - j \approx 2n^3$$
+	  $$3n - 1 \sum_{j=2}^n 4nj - n - j $$
+	  $$3n - 1 4n(\frac{n(n+1)}{2}) \sum_{j=2}^n- n - j \approx 2n^3$$
+	-
 	-
 - ### Bewijs de uniciteit van de LU-decompositie.
 	- Stelsel van Crout heeft hoogstens 1 oplossing
