@@ -39,3 +39,4 @@ collapsed:: true
 	  Het conditiegetal \gamma(x)
 	- He conditiegetal van een functie met een argument meet **hoeveel de output waarde van de functie kan veranderen voor een kleine wijzinging als input argument**.
 	-
+- ### Leg het verschil uit tussen sterke en zwakke numerieke stabiliteit.
