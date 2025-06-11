@@ -29,17 +29,12 @@ collapsed:: true
 		  $$\Leftrightarrow j_0,j_1j_2...j_p \times 10^{d-e} - i_0,i_1i_2...i_p \leq  i_0,i_1i_2...i_p $$
 		- De macht van 10 is positief maar vraag niet een extra cijfer zodat p cijfers voldoende zijn. Om de verschil uit te drukken hebben we maximaal p cijfers nodig
 		  Stelling van Sterbenz duidt aan dat het rekenen met machinegetallen minder gevoelig is dan niet rekenen met niet-machine getallen.
-- ### Hoe definieer je de conditionering? Wat stelt dit getal precies voor?
+- ### Hoe definieer je de conditionering en conditiegetal? Wat stelt dit getal precies voor?
   collapsed:: true
 	- De conditionering onderstelt de numerieke bewerkingen als perfect, maar bestudeert de invloed van een invoerfout of pertubatie. Dit is een afrondfout analyse.
 	- Stel dat we de functie $F(x)$ willen evalueren met invoer $x \in \mathbb{R}$. Aangezien de invoer een afrondfout heeft beschouwen we dit eerste orde analyse
 	  $$F(fl(x)) = F(x+\Delta x) = F(x) + F'(x) \cdot \Delta x$$
 	  De relatieve fout is nu 
 	  $$\delta F(fl(x)) = \frac{F'(x)}{F(x)} \Delta x =  \frac{xF'(x)}{F(x)} \delta x$$
-- ### Definieer het conditiegetal. Wat stelt dit getal voor?
-	- Stel dat we een function $F(x)$ willen evalueren met invoer $x \in \mathbb{R}$. Aangezien de invoer een afrondfout heeft beschouwen we de eerste orde analyse:
-	  $$F(fl(x)) = F(x + \Delta x)  = F(x) + F'(x) \Delta x$$
-	  Relatieve fout is nu:
-	  $$\delta(fl(x)) = \frac{F'(x)}{F(x)} \Delta x =  \frac{xF'(x)}{F(x)} \delta x$$
 	  Het conditiegetal \gamma(x)
 	- He conditiegetal van een functie met een argument meet *hoeveel de output waarde van de functie kan veranderen voor een kleine wijzinging als input argument*.
