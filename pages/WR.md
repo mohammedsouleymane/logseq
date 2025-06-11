@@ -33,7 +33,7 @@ collapsed:: true
   collapsed:: true
 	- De conditionering onderstelt de numerieke bewerkingen als perfect, maar **bestudeert de invloed van een invoerfout of pertubatie**. Dit is een afrondfout analyse. Hoe propageert de initiele afrondingfout zich naar het eindresultaat. Hoe rekengevoelig is het eindresultaat ten gevolgen van fouten aan de start.
 	- Stel dat we de functie $F(x)$ willen evalueren met invoer $x \in \mathbb{R}$. Aangezien de invoer een afrondfout heeft beschouwen we dit eerste orde analyse
-	  $$F(fl(x)) = F(x+\Delta x) = F(x) + F'(x) \cdot \Delta x$$
+	  $$F(fl(x)) = F(x+\Delta x) \approx F(x) + F'(x) \cdot \Delta x$$
 	  De relatieve fout is nu 
 	  $$\delta F(fl(x)) = \frac{F'(x)}{F(x)} \Delta x =  \frac{xF'(x)}{F(x)} \delta x$$
 	  Het conditiegetal \gamma(x)
