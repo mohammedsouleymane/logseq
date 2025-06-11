@@ -5,7 +5,8 @@
 	  Het teken heeft ook 1 bit nodig voor zowel de mantisse als exponent.
 	- Het grootste getal is: 
 	  $$1.1.....1 \times 2^{1111....1} \approx O(10^{308})$$
-	- Het kleinste g
+	- Het kleinste getal is:
+	  $$1.0 \times 2^{-111...1111} \approx O(10^{-308})$$
 	- 2e getal na nul:
 	   $$0.00...1 \times 2^0 = 2^{-52} \approx O(10^{-16})$$
 	- $\Rightarrow$ Double systeem rekent men met 15 cijfers maximaal
