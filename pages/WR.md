@@ -26,5 +26,6 @@
 		  $$\Rightarrow  (x-y)10^{-e} \leq y 10^{-e}$$
 		  $$\Leftrightarrow j_0,j_1j_2...j_p \times 10^{d-e} - i_0,i_1i_2...i_p \leq  i_0,i_1i_2...i_p $$
 		- De macht van 10 is positief maar vraag niet een extra cijfer zodat p cijfers voldoende zijn. Om de verschil uit te drukken hebben we maximaal p cijfers nodig
-		  Stelling van SterbenZ duidt aan dat het rekenen met machinegetallen minder gevoelig is dan niet rekenen met niet-machine getallen.
--
+		  Stelling van Sterbenz duidt aan dat het rekenen met machinegetallen minder gevoelig is dan niet rekenen met niet-machine getallen.
+- ### Hoe definieer je de conditionering? Wat stelt dit getal precies voor?
+	- De conditionering onderstel de numerieke bewerkingen als perfect, maar bestudeert de invloed van een invo
