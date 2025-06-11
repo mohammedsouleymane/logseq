@@ -12,6 +12,8 @@
 	- $\Rightarrow$ Double systeem rekent men met 15 cijfers maximaal
 - ### Bewijs en formuleer de stelling van Sterbenz. Wat bedoelt deze precies?
 	- Zij $x = fl(x)$ en $y = fl(y)$ en $\frac{y}{2} \leq x \leq 2y$ dan geldt $x - y = fl(x-y)$
+	- De stelling laat vooral zien dat precisieverlies optreedt bij het aftrekking van 2 niet FP getallen. Eens we alleen FP getallen gebruiken dient men alleen de voorwaarde van Sterbenz te respecteren. De getallen worden opnieuw geordent zodat deze voorwaarde gerespecteerd wordt.
+	- **Bewijs**
 	-
 	-
 -
