@@ -36,7 +36,7 @@ collapsed:: true
 	  $$F(fl(x)) = F(x+\Delta x) \approx F(x) + F'(x) \cdot \Delta x$$
 	  De relatieve fout is nu 
 	  $$\delta F(fl(x)) = \frac{F'(x)}{F(x)} \Delta x =  \frac{xF'(x)}{F(x)} \delta x$$
-	  Het conditiegetal \gamma(x)
+	  Het conditiegetal $\gamma(x) = \frac{xF'(x)}{F(x)}$
 	- He conditiegetal van een functie met een argument meet **hoeveel de output waarde van de functie kan veranderen voor een kleine wijzinging als input argument**.
 	- **relatieve fouten in de invoer tot 1000 keer groter kunnen worden in de oplossing**.
 - ### Leg het verschil uit tussen sterke en zwakke numerieke stabiliteit.
