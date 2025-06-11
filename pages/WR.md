@@ -14,6 +14,8 @@
 	- Zij $x = fl(x)$ en $y = fl(y)$ en $\frac{y}{2} \leq x \leq 2y$ dan geldt $x - y = fl(x-y)$
 	- De stelling laat vooral zien dat precisieverlies optreedt bij het aftrekking van 2 niet FP getallen. Eens we alleen FP getallen gebruiken dient men alleen de voorwaarde van Sterbenz te respecteren. De getallen worden opnieuw geordent zodat deze voorwaarde gerespecteerd wordt.
 	- **Bewijs**
-	-
-	-
+		- Beshouw een systeem met precisie p in basis 10 en stel
+		  $$y = i_0,i_1i_2...i_p \times 10^e$$
+		  $$x = j_0,j1j2...j_p \times 10^e$$
+		-
 -
