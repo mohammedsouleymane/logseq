@@ -1,6 +1,5 @@
 -
 - # Concepts
-  collapsed:: true
 	-
 	- ### 1. Learning from Data
 	  
@@ -166,7 +165,6 @@
 	  
 	  Each of these topics invites many deeper questions—about how to best balance bias and variance, how to choose an optimal kernel function for SVMs, or how to design effective exploration–exploitation strategies in reinforcement learning. Would you like to dive even deeper into any one of these areas, perhaps exploring specific algorithmic challenges or real-world case studies?
 - # Proofs
-  collapsed:: true
 	- d+1
 		- We want to show that:
 		  
@@ -286,6 +284,7 @@
 		  * $\text{VCdim} \geq d + 1$
 		  * $\text{VCdim} \leq d + 1$
 - # Lectures
+  collapsed:: true
 	- ## Lecture 1
 	  collapsed:: true
 		- Below is a detailed, structured summary of the content in **SFML-Lecture01.pdf**:
