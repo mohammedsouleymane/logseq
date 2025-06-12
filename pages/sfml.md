@@ -203,7 +203,7 @@
 		  $$
 		  Xw = y \quad \Rightarrow \quad w = X^{-1}y
 		  $$
-		- ### 🔸 Step 3: Perceptron Correctly Classifies
+		- ### Step 3: Perceptron Correctly Classifies
 		  
 		  Because $Xw = y$, we have:
 		  
