@@ -43,7 +43,6 @@
 		- **FQBF is the complement of TQBF**. Since PSPACE = coPSPACE, **FQBF is also PSPACE-complete**.
 		- Both problems remain fundamental in computational complexity, with important implications for theoretical computer science.
 - # Undecidability, the Recursion Theorem, and the Halting Problem
-  collapsed:: true
 	- ## 1. Decidability of the Given Problem
 		- **Problem Statement:** Given a Turing machine (TM) **M**, does **M** halt on input **⟨M⟩** (its own encoding)?
 		- **This problem is undecidable.**
