@@ -1,5 +1,4 @@
 # TQBF and FQBF: PSPACE-Complete Problems
-collapsed:: true
 	- ## 1. Definition of the TQBF Problem
 		- **TQBF (True Quantified Boolean Formula)** is the problem of determining whether a given quantified Boolean formula (QBF) is true.
 		- A **quantified Boolean formula (QBF)** is a Boolean formula with leading **existential (∃)** and **universal (∀)** quantifiers. Each variable in the formula must be within the scope of a quantifier.
