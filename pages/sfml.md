@@ -1,5 +1,6 @@
 -
 - # Concepts
+  collapsed:: true
 	-
 	- ### 1. Learning from Data
 	  
