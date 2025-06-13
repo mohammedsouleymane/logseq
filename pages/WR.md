@@ -60,7 +60,6 @@
 	  $$2 \sum \sum (n-j) + 2$$
 	  $$2 \sum (n-j)^2 + 2(n-j)$$
 	  $$\approx \frac{2}{3}n^3$$
-	-
 - ### Bereken de complexiteit van de QR-ontbinding in volgende algoritme:
 	- ![image.png](../assets/image_1749656767347_0.png)
 	- 2n-1 (n \times en n-1 +)
@@ -74,15 +73,12 @@
 	- $$3n - 1 \sum_{j=2}^n (4n-1)(j-1) + 3n - 1$$
 	  $$3n - 1 \sum_{j=2}^n 4nj - n - j $$
 	  $$3n - 1 4n(\frac{n(n+1)}{2}) \sum_{j=2}^n- n - j \approx 2n^3$$
-	-
-	-
 - ### Bewijs de uniciteit van de LU-decompositie.
 	- Stelsel van Crout heeft hoogstens 1 oplossing
 	- LU-decompositie zijn voor beide driehoekige matrices. Aantal in te vullen plaatsen is dus: $n + (n-1) ... +1 = \frac{n(n+1)}{2}$
 	- Voor één van de matrices is de diagonaal vast gekozen met overal 1. Dus is er slechts $\frac{n(n+1)}{2} - n = \frac{n(n-1)}{2}$ plaatsen te kiezen.
 	- Voor de matrices U en L samen levert dit $\frac{n(n-1)}{2} + \frac{n(n+1)}{2} = n^2$ keuzes.
 	- Er is dus ten hoogstens 1 LU decompositie. Het algoritme van crout laat zien dat een procedé bestaat zodat LU decompositie uniek is.
-	-
 - ### Bewijs de uniciteit van de QR-decompositie
 	- We weten dat $A=QR$ een niet linear stelsel is. We moeten nagaan hoeveel onbekenden en hoeveel vergelijkingen we exact hebben. Aangezien R een bovendriehoeksmatrix is hebben we dus $\frac{n(n+1)}{2}$ onbekenden
 	  logseq.order-list-type:: number
@@ -93,5 +89,3 @@
 	  Dit levert $\frac{n(n-1)}{2}$ vergelijkingen op die nul moeten worden en N die 1 moeten worden. De matrix Q heeft 
 	  $n^2 - \frac{n(n-1)}{2} - n = \frac{n(n+1)}{2}$ onbekenden
 	  Samen zijn er dus n^2 onbekenden wat de stelling bewijs.
-	-
-	- logseq.order-list-type:: number
