@@ -79,7 +79,8 @@ collapsed:: true
 		  logseq.order-list-type:: number
 		- interaction -> links back to 1 - 3
 		  logseq.order-list-type:: number
-- ## Lecture 2
+- ## Lecture 2 (DATA)
+  collapsed:: true
 	- General guidelines
 		- design graphic representations should take human sensory capabilities into account
 		- important data should be represented by graphical elements that are more visually distinct
@@ -200,5 +201,6 @@ collapsed:: true
 		- Use low-saturation colours to colour code large areas. Generally, light colours will be best because there is more room in colour space in the high-lightness region than in the low-lightness region.
 		- When colours coding large background areas overlaid with small coloured symbols, consider using all low-saturation, high-value (pastel) colours for the background, together with high-saturation symbols on the foreground.
 	- ColorBrewer 2.0: Colour Advice for Maps
-	- Viz Palette
+	- Viz Palette: same concept as colorbrewser
 	-
+- ## Lecture
