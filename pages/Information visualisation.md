@@ -3,4 +3,10 @@
 		- Let the dataset change you mindset
 		- animated presentation in space and time
 	- MindXpres Data visualisation
-		- code
+		- interactive data visualisation
+		- interactive source code visualisation
+		- enhanced video player
+	- Australia Bushfires
+		- 3D visualisation of one month of data
+			- data collected by Nasa
+		- Information visualisation can be misused to di
