@@ -189,5 +189,7 @@ collapsed:: true
 	- Saturation of small/large area
 		- more saturated = small symbols, thin lines, or other small areas.
 		- less saturated colours = large area
-		- If using colour saturation to encode numerical quantity, use greater saturation to represent greater numerical quantities. Avoid using a
+		- If using colour saturation to encode numerical quantity, use greater saturation to represent greater numerical quantities. Avoid using a saturation sequence to encode more than three values
+	- Luminance contrast
+		- When small symbols, text or detailed graphical representations of information are displayed using colour on a differently coloured back-ground, always ensure luminance
 	-
