@@ -110,7 +110,19 @@ collapsed:: true
 			- dynamic ambient optical array (moving objects, moving viewpoint)
 			- perception of motion patterns
 	- Anatomy of the human eye
-		- variable focus lens
-		- pupil
-		- retina
-			-
+		- variable focus **lens**
+		- **pupil**
+		- **retina**
+			- what we see != image on the retina
+			- two types of cells
+				- rods, highly sensitive at low light levels
+				- cones, three distinct colour receptors
+			- brain forms our sight
+				- focal length
+				- maximum sharpness
+	- Focus
+		- Focus = focus distance
+		- Depth of focus
+			- distance eye-object = 50 cm
+				-
+			- distance eye-object = 3m
