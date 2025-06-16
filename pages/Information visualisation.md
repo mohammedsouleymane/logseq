@@ -146,4 +146,7 @@ collapsed:: true
 		- Processing tries to enhance edges
 			- lateral inhibition from neighbouring neurons
 	- Simultaneous contrast and erros
-		- Simultaneous contrast effects result in large errors
+		- Simultaneous contrast effects result in large errors for quantitative information in grey scale
+		- avoid using grey scale as a method for representing more than a few (two to four) numerical values
+	- Contrast effects and shading
+		- computer graphics
