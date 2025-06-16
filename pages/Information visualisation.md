@@ -191,5 +191,11 @@ collapsed:: true
 		- less saturated colours = large area
 		- If using colour saturation to encode numerical quantity, use greater saturation to represent greater numerical quantities. Avoid using a saturation sequence to encode more than three values
 	- Luminance contrast
-		- When small symbols, text or detailed graphical representations of information are displayed using colour on a differently coloured back-ground, always ensure luminance
+		- When small symbols, text or detailed graphical representations of information are displayed using colour on a differently coloured background, always ensure luminance contrast with the background.
+	- Form
+		- If areas are defined using nearly equiluminous colours, consider using thin border lines with large luminance differences (from the colours of the areas) to help define the shapes.
+	- Colour Contrast illusion
+		- same colour but looks different because of the background colour
+	- Colouring Maps
+		- Use low-saturation colours to colour code large areas. Generally, light colours
 	-
