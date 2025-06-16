@@ -231,5 +231,20 @@ collapsed:: true
 			- e.g. location in two-dimensional or three-dimensional space
 		- Grids
 			- sampling continuous data in term of geometric and topological relationships between its cells
-		-
+	- Dataset types
+		- tables
+			- items, attributes
+		- network and trees
+			- items, links, attributes
+		- fields
+			- grid, position, attributes,
+		- geometry
+			- items
+			- positions
+		- cluster, set, list
+			- items
+	- Dataset
+		- collection of information to be analysed
+		- made out of the five data types
+		- complex combination of
 -
