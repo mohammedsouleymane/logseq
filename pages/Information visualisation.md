@@ -16,3 +16,11 @@
 		- Augmentation of human capabilities
 		- A vis idiom is a distinct approach to creating and manipulation visual representations
 			- find best design for a particular task
+		- Resource limitations
+			- computers: computational capacity and scalability
+			- humans: perceptual and cognitive capacity
+			- displays: number of pixels
+				- information density (data-ink ratio) = amount of information vs unused space
+	- Why use Visualisation?
+		- Human eyes have superpower (eyes beat memory)
+			- visual system pro
