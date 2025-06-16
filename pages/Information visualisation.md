@@ -261,5 +261,15 @@ collapsed:: true
 			- links can have associated attributes
 			- e.g. people and their friendships or gene interaction network
 		- trees
-			- hiera
+			- hierarchical structure without cycles
+			- each child node has one parent node
+			- e.g. company organisation chart or biological tree of life
+	- Fields
+		- Field
+			- each cell contains measurements or calculation from a continuous domain
+			- continuous data brings along the issues of sampling and interpolation
+		- spatial fields
+			- sampling at spatial positions
+			- e.g. medical scan of a human body or measurements in wind tunnel
+			- if spatial position is given with dataset, we talk abut
 -
