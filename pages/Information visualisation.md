@@ -275,5 +275,13 @@ collapsed:: true
 		- Grid types
 			- uniform grid: sampling at regular intervals without any need to store grid geometry or grid topology (connection of cells)
 			- rectilinear grid: supports non-uniform sampling
-				- efficient storage information with high complexity in some areas and low complexity in others (also store)
+				- efficient storage information with high complexity in some areas and low complexity in others (also store grid geometry)
+			- structured grid: enables curvilinear shapes where the geometric location of each cell needs to be specified
+			- unstructured grid: complete flexibility but grid geometry as well as grid topology has to be stored explicitly
+	- Geometry
+		- Information about the shape of items with spatial positions
+			- points and one-dimensional lines or curves
+			- two-dimensional surfaces or regions
+			- three-dimensional surfaces volumes
+		-
 -
