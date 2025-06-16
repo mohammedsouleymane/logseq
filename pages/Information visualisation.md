@@ -211,5 +211,16 @@ collapsed:: true
 			- translate the data into more abstract structure to find suitable visual representations
 		- Data abstraction helps to narrow down the design space
 	- Semantics and types
-		- Many aspects of vis design driven by the kind
+		- Many aspects of vis design driven by the kind of data
+			- semantics (real-world meaning) (name, age, size)
+			- types (data as well as datasets) (numbers, string)
+		- What do the following datasets represent?
+			- Basil, 7, S, pear
+	- Data types
+		- Item
+			- individual discrete entity (table row or network node)
+		- Attribute
+			- also referred to as variable or dimension
+			- property that can be measured, observed or logged
+			- e
 -
