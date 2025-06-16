@@ -86,5 +86,14 @@ collapsed:: true
 		- Greater numerical quantities should be represented by more distinct graphical elements
 	- Model of visual perceptual processing
 		- Stage 1: Parallel processing to extract low-level features
+			- billion of neurons working in parallel
+			- orientation, colour, texture and motion
+			- results in a set of feature maps
 		- State 2: pattern perception
-			-
+			- slow serial processing
+			- continuous contours, regions of same colour or texture
+			- two-visual-system theory: "Action" system and "What" system
+		- Stage 3: Visual working memory
+			- only a few objects in visual working memory
+			- may provide answers to visual query (cognitive processing)
+		- Attention affects all three stages
