@@ -101,4 +101,16 @@ collapsed:: true
 		- Where two or more tools can perform that same tasks, choose the one that allows for the most valuable work to be done per unit time.
 		- Consider adopting novel design solution only when the estimated payoff is substantially greater than the cost of learning to use them.
 		- Unless the benefit of novelty outweighs the cost of inconsistency, adopt tools that are consistent with other commonly used tools.
-	-
+	- Gibson's Ecological Optics
+		- Extract properties of surfaces
+			- colour, texture
+		- Ambient optical array
+			- spherical array of light arriving at a given point
+		- Optical flow
+			- dynamic ambient optical array (moving objects, moving viewpoint)
+			- perception of motion patterns
+	- Anatomy of the human eye
+		- variable focus lens
+		- pupil
+		- retina
+			-
