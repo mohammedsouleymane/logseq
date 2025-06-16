@@ -1,4 +1,5 @@
 ## Lecture 1
+collapsed:: true
 	- Gapminder, hans rosling
 		- Let the dataset change you mindset
 		- animated presentation in space and time
@@ -70,12 +71,12 @@
 	- Information visualisation process
 		- Data ->
 		  logseq.order-list-type:: number
-		- Data representation -
+		- Data representation (mapping) ->
 		  logseq.order-list-type:: number
-		- Data pesentation
+		- Data pesentation ->
 		  logseq.order-list-type:: number
-		- perception and visual thinking
+		- perception and visual thinking ->
 		  logseq.order-list-type:: number
-		- interaction ->
+		- interaction -> links back to 1 - 3
 		  logseq.order-list-type:: number
--
+- ## Lecture 2
