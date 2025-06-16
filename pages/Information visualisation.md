@@ -80,3 +80,5 @@ collapsed:: true
 		- interaction -> links back to 1 - 3
 		  logseq.order-list-type:: number
 - ## Lecture 2
+	- General guidelines
+		- design graphic representations should take human sensory cap
