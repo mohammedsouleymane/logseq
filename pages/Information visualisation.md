@@ -54,6 +54,12 @@
 	- **Interactivity is necessary for vis tools handling complexity**
 		- limitation of people and displays make it **impossible to show a large dataset at once**
 		- change level of details
-		- show different aspect of a dataset
-		- different representation and summaries of data
-		- different presentation of data
+		- show **different aspect** of a dataset
+		- different **representation and summaries** of data
+		- different **presentation** of data
+	- Difficulties in design
+		- main issue is that vast majority of the possibilities in the design space will be ineffective for any specific usage context
+		- design might be a poor match with human perceptual and cognitive system
+		- design might be a bad match with the intended task
+		- design alternatives: consider multiple alternative and choose the best one!
+-
