@@ -290,5 +290,15 @@ collapsed:: true
 		- Cluster: grouping items based on similarity of attributes
 		- set: unordered group of items
 		- List(array): ordered group of items
-		- path: ordered set of segments forme
+		- path: ordered set of segments formed by links connecting nodes in a network
+		- compound network(multilevel network): network combined with superimposed tree (with all the nodes of the network as leaves)
+	- Dataset availability
+		- static file (offline)
+			- entire dataset is available all at once
+		- dynamic stream (online)
+			- dataset information trickles in over time
+			- addition, update or deletion of items
+			- adds complexity to the vis process
+				- no longer have all data at a given time
+			-
 -
