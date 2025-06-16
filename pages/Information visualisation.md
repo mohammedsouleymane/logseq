@@ -124,5 +124,12 @@ collapsed:: true
 		- Focus = focus distance
 		- Depth of focus
 			- distance eye-object = 50 cm
-				-
+				- focus lies between 43 and 60 cm
 			- distance eye-object = 3m
+				- focus lies between 1.5m and infinite
+	- Optimal Screen
+		- use a high-resolution display with a moderate viewing angle for data analysis. This applies both to individual data analysis when the screen can be on a desktop and close to the use to collaborative data analysis when the screen muse be larger and farther away.
+	- visual acuity
+		- eyesight = retinal focus + brain interpretation
+		- extent to which we can perceive details
+			-
