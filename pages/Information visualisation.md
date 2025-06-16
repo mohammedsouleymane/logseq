@@ -155,4 +155,8 @@ collapsed:: true
 			- Gouraud shading
 				- mach banding
 			- Phong shading
-				- smooth change with no appreciable Mach bandinga
+				- smooth change with no appreciable Mach banding
+	- Edge enhancement
+		- Consider using Cornsweet contours instead of simple lines to define convoluted bounded regions.
+	- Highligti
+	-
