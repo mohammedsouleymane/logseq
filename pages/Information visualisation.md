@@ -22,7 +22,7 @@ collapsed:: true
 			- humans: perceptual and cognitive capacity
 			- displays: number of pixels
 				- information density (data-ink ratio) = amount of information vs unused space
-	- Why use Visualisation?
+	- Why use Visualisation? (HVES)
 		- Human eyes have superpower
 			- visual system provides very high-bandwidth channel
 		- Visual reasoning is way faster and more reliable than mental reasoning
