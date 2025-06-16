@@ -246,5 +246,20 @@ collapsed:: true
 	- Dataset
 		- collection of information to be analysed
 		- made out of the five data types
-		- complex combination of
+		- complex combination of basic dataset types are common
+	- Tables
+		- flat table
+			- row represents an item of data
+			- column represents an attribute of the dataset
+			- a cell contains the value for a given item attribute
+		- multidimensional table
+			- indexing into a cell via multiple keys
+	- Networks and trees
+		- Network (graph)
+			- defines relationships between two or more nodes (items) via links
+			- nodes can have associated attributes
+			- links can have associated attributes
+			- e.g. people and their friendships or gene interaction network
+		- trees
+			- hiera
 -
