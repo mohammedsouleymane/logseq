@@ -132,4 +132,12 @@ collapsed:: true
 	- visual acuity
 		- eyesight = retinal focus + brain interpretation
 		- extent to which we can perceive details
-			-
+			- ability to identify black symbols on a white back-ground at a standardised distance when the size of the symbols is varied
+		- Important for the maximum density of data on a screen
+	- Brightness
+		- colour space can be divided into luminance (grey scale) and two chromatic (hue and saturation) dimension
+		- light receptors in the eye
+			- do not measure the amount of light on the retina
+			- measure relative light changes over time and over adjacent spots on the retina
+			- eye is a change meter rather than a light meter
+			- Luminance refers to the measured amount of light
