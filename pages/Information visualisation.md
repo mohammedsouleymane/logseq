@@ -203,4 +203,8 @@ collapsed:: true
 	- ColorBrewer 2.0: Colour Advice for Maps
 	- Viz Palette: same concept as colorbrewser
 	-
-- ## Lecture
+- ## Lecture 3 (DATA REPRESENTATION)
+	- Data representation and abstraction
+		- Detailed look at the what part of the what-why-how question
+	-
+-
