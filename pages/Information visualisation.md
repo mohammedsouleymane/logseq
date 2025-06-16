@@ -81,4 +81,10 @@ collapsed:: true
 		  logseq.order-list-type:: number
 - ## Lecture 2
 	- General guidelines
-		- design graphic representations should take human sensory cap
+		- design graphic representations should take human sensory capabilities into account
+		- important data should be represented by graphical elements that are more visually distinct
+		- Greater numerical quantities should be represented by more distinct graphical elements
+	- Model of visual perceptual processing
+		- Stage 1: Parallel processing to extract low-level features
+		- State 2: pattern perception
+			-
