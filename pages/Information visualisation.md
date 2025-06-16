@@ -22,5 +22,12 @@
 			- displays: number of pixels
 				- information density (data-ink ratio) = amount of information vs unused space
 	- Why use Visualisation?
-		- Human eyes have superpower (eyes beat memory)
-			- visual system pro
+		- Human eyes have superpower
+			- visual system provides very high-bandwidth channel
+		- Visual reasoning is way faster and more reliable than mental reasoning
+			- perceptual interferences based on spatial location etc.
+		- External representation or "external cognition"
+			- augment human capacity beyond internal cognition and memory
+			- information can be organised by spatial location
+		- Summarise information without losing details (details on demand)
+		-
