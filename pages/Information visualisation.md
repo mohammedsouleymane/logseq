@@ -97,3 +97,8 @@ collapsed:: true
 			- only a few objects in visual working memory
 			- may provide answers to visual query (cognitive processing)
 		- Attention affects all three stages
+	- Cost and benefits of Visualisation
+		- Where two or more tools can perform that same tasks, choose the one that allows for the most valuable work to be done per unit time.
+		- Consider adopting novel design solution only when the estimated payoff is substantially greater than the cost of learning to use them.
+		- Unless the benefit of novelty outweighs the cost of inconsistency, adopt tools that are consistent with other commonly used tools.
+	-
