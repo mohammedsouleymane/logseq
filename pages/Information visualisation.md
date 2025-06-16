@@ -51,3 +51,9 @@
 			   four datasets that have nearly identical simple descriptive statistics,
 			   yet have very different distributions and appear very different when 
 			  graphed**" wiki)
+	- **Interactivity is necessary for vis tools handling complexity**
+		- limitation of people and displays make it **impossible to show a large dataset at once**
+		- change level of details
+		- show different aspect of a dataset
+		- different representation and summaries of data
+		- different presentation of data
