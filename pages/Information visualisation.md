@@ -39,3 +39,11 @@
 		- visualization tools for presentation (communication)
 			- presenting existing knowledge
 	- Computer in the loop
+		- visualisations of large datasets that might dynamically change over time
+	- Showing dataset details
+		- exploring a dataset to find patterns
+			- not possible if you only see a summary of the dataset
+		- assessing the validity of a statistical model
+			- does the model fit the data?
+		- statistical characterisation (descriptive statistics) of a dataset loses information through summarisatoin
+			- single summary often an oversimplication h
