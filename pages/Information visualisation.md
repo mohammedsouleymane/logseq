@@ -46,4 +46,8 @@
 		- assessing the validity of a statistical model
 			- does the model fit the data?
 		- statistical characterisation (descriptive statistics) of a dataset loses information through summarisatoin
-			- single summary often an oversimplication h
+			- single summary often an oversimplication hiding the true structure of a dataset
+			- anscombe's quartet ("Anscombe's quartet **comprises
+			   four datasets that have nearly identical simple descriptive statistics,
+			   yet have very different distributions and appear very different when 
+			  graphed**" wiki)
