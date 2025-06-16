@@ -216,11 +216,20 @@ collapsed:: true
 			- types (data as well as datasets) (numbers, string)
 		- What do the following datasets represent?
 			- Basil, 7, S, pear
-	- Data types
+	- Data types (IALPG)
 		- Item
 			- individual discrete entity (table row or network node)
 		- Attribute
 			- also referred to as variable or dimension
 			- property that can be measured, observed or logged
-			- e
+			- e.g. price or temperature
+		- Link
+			- relationship between items
+			- e.g. between items (node) in a network
+		- Position
+			- spatial data
+			- e.g. location in two-dimensional or three-dimensional space
+		- Grids
+			- sampling continuous data in term of geometric and topological relationships between its cells
+		-
 -
