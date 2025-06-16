@@ -46,7 +46,7 @@ collapsed:: true
 			- not possible if you only see a summary of the dataset
 		- assessing the validity of a statistical model
 			- does the model fit the data?
-		- statistical characterisation (descriptive statistics) of a dataset loses information through summarisatoin
+		- statistical characterisation (descriptive statistics) of a dataset loses information through summarisation
 			- single summary often an oversimplication hiding the true structure of a dataset
 			- anscombe's quartet ("Anscombe's quartet **comprises
 			   four datasets that have nearly identical simple descriptive statistics,
