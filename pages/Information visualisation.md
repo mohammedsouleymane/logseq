@@ -58,8 +58,12 @@
 		- different **representation and summaries** of data
 		- different **presentation** of data
 	- Difficulties in design
-		- main issue is that vast majority of the possibilities in the design space will be ineffective for any specific usage context
-		- design might be a poor match with human perceptual and cognitive system
-		- design might be a bad match with the intended task
-		- design alternatives: consider multiple alternative and choose the best one!
+		- main issue is that **vast majority of the possibilities** in the design space will be **ineffective for any specific usage context**
+		- design might be a **poor match with human perceptual and cognitive system**
+		- design might be a **bad match with the intended task**
+		- **design alternatives**: consider multiple alternative and choose the best one!
+	- Search space metaphor for vis design
+	- What-Why-How Question
+		- What data is shown
+		- Why is the visualisation tool used
 -
