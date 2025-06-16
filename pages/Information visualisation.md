@@ -197,5 +197,8 @@ collapsed:: true
 	- Colour Contrast illusion
 		- same colour but looks different because of the background colour
 	- Colouring Maps
-		- Use low-saturation colours to colour code large areas. Generally, light colours
+		- Use low-saturation colours to colour code large areas. Generally, light colours will be best because there is more room in colour space in the high-lightness region than in the low-lightness region.
+		- When colours coding large background areas overlaid with small coloured symbols, consider using all low-saturation, high-value (pastel) colours for the background, together with high-saturation symbols on the foreground.
+	- ColorBrewer 2.0: Colour Advice for Maps
+	- Viz Palette
 	-
