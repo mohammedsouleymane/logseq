@@ -206,5 +206,10 @@ collapsed:: true
 - ## Lecture 3 (DATA REPRESENTATION)
 	- Data representation and abstraction
 		- Detailed look at the what part of the what-why-how question
-	-
+		- Provide a language that is meaningful and useful for vis design
+		- Data is typically describe with domain language
+			- translate the data into more abstract structure to find suitable visual representations
+		- Data abstraction helps to narrow down the design space
+	- Semantics and types
+		- Many aspects of vis design driven by the kind
 -
