@@ -149,4 +149,10 @@ collapsed:: true
 		- Simultaneous contrast effects result in large errors for quantitative information in grey scale
 		- avoid using grey scale as a method for representing more than a few (two to four) numerical values
 	- Contrast effects and shading
-		- computer graphics
+		- computer graphics shading algorithms (UGP)
+			- uniforms (flat) shading
+				- chevreul illusion
+			- Gouraud shading
+				- mach banding
+			- Phong shading
+				- smooth change with no appreciable Mach bandinga
