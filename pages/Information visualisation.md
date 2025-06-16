@@ -271,5 +271,9 @@ collapsed:: true
 		- spatial fields
 			- sampling at spatial positions
 			- e.g. medical scan of a human body or measurements in wind tunnel
-			- if spatial position is given with dataset, we talk abut
+			- if spatial position is given with dataset, we talk about scientific visualisation (scivis) (in contrast of information visualisation (inforvis) where the use of space is chosen by the designer)
+		- Grid types
+			- uniform grid: sampling at regular intervals without any need to store grid geometry or grid topology (connection of cells)
+			- rectilinear grid: supports non-uniform sampling
+				- efficient storage information with high complexity in some areas and low complexity in others (also store)
 -
