@@ -65,5 +65,17 @@
 	- Search space metaphor for vis design
 	- What-Why-How Question
 		- What data is shown
-		- Why is the visualisation tool used
+		- Why is the visualisation tool used (task)
+		- How is the vis idiom constructed in terms of design choices
+	- Information visualisation process
+		- Data ->
+		  logseq.order-list-type:: number
+		- Data representation -
+		  logseq.order-list-type:: number
+		- Data pesentation
+		  logseq.order-list-type:: number
+		- perception and visual thinking
+		  logseq.order-list-type:: number
+		- interaction ->
+		  logseq.order-list-type:: number
 -
