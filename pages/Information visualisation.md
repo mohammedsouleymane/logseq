@@ -182,5 +182,9 @@ collapsed:: true
 		- Different colours spaces defined by different triangles (3 primary colours)
 			- sRGB
 			- RGB
-			- adobe R
+			- adobe RGB
+		- hue = pure color (red, blue, green)
+		- saturation = intensity of the colour
+		- luminance = brightness
+	- Saturation of small/large area
 	-
