@@ -164,5 +164,6 @@ collapsed:: true
 		- more subtle grey values can be distinguished at the point of crossover
 		- it subtle grey-level gradation within the bounds of a small  object are important, create low-luminance contrast between the object and its background.
 	- Monitor/projector setup
-		- Ideally, when setting up a monitor for viewing data, a light neutral-coloured wall behind the screen should reflect an amount of light comparable to the level of light coming from the monitor. The wall facing the screen should be of low reflectance (mid- to dark grey) to reduc
+		- Ideally, when setting up a monitor for viewing data, a light neutral-coloured wall behind the screen should reflect an amount of light comparable to the level of light coming from the monitor. The wall facing the screen should be of low reflectance (mid- to dark grey) to reduce reflections from the monitor screen. Lights should be placed so that they do not reflect from the monitor screen.
+		- When setting up a
 	-
