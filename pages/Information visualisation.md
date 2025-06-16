@@ -7,6 +7,12 @@
 		- interactive source code visualisation
 		- enhanced video player
 	- Australia Bushfires
+		- Not a satellite image
 		- 3D visualisation of one month of data
 			- data collected by Nasa
-		- Information visualisation can be misused to di
+		- Information visualisation can be misused to deliver the wrong message
+	- What is Visualisation (Vis)?
+		- **Computer-based visualisation systems provide visual representations of datasets designed to help people carry out tasks more effectively**
+		- Augmentation of human capabilities
+		- A vis idiom is a distinct approach to creating and manipulation visual representations
+			- find best design for a particular task
