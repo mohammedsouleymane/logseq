@@ -283,5 +283,12 @@ collapsed:: true
 			- points and one-dimensional lines or curves
 			- two-dimensional surfaces or regions
 			- three-dimensional surfaces volumes
-		-
+		- Geometry datasets do not necessarily have attributes
+			- e.g. contours derived from a spatial field or shapes generated from raw geographic data (e.g. boundaries of a forest)
+			- shown alone or as backdrop for other data
+	- Other combinations
+		- Cluster: grouping items based on similarity of attributes
+		- set: unordered group of items
+		- List(array): ordered group of items
+		- path: ordered set of segments forme
 -
