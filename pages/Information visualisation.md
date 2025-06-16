@@ -158,5 +158,9 @@ collapsed:: true
 				- smooth change with no appreciable Mach banding
 	- Edge enhancement
 		- Consider using Cornsweet contours instead of simple lines to define convoluted bounded regions.
-	- Highligti
+	- Highlighting via contrast
+		- consider using adjustments in luminance contrast as a highlighting method. It can be applied by reducing the contrast of unimportant items or by locally adjusting the background to increase the luminance contrast of critical areas.
+	- Contrast crispening
+		- more subtle grey values can be distinguished at the point of crossover
+		- it subtle grey-level gradation within the bounds of a small  oj
 	-
