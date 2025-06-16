@@ -187,4 +187,7 @@ collapsed:: true
 		- saturation = intensity of the colour
 		- luminance = brightness
 	- Saturation of small/large area
+		- more saturated = small symbols, thin lines, or other small areas.
+		- less saturated colours = large area
+		- If using colour saturation to encode numerical quantity, use greater saturation to represent greater numerical quantities. Avoid using a
 	-
