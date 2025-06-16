@@ -169,5 +169,10 @@ collapsed:: true
 	- Colour Breaking Camouflage
 		- apples and leaves
 		- using red and green to distinguish the two instead of all grey
-	- Cone
+	- Cone cell sensitivity
+		- Cone cells, located in the retina, are responsible for color vision and are ==most sensitive to bright light.
+	- Colour Blindness
+		- About 10% of the male population and about 1% of the female population have some form of colour vision deficiency
+		- Most commonly a lack of either the L-cons (protanopia) or the M-cones (deuteranponia)
+			- both of these result in an inability to distingui
 	-
