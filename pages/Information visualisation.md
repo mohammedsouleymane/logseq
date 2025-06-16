@@ -140,4 +140,10 @@ collapsed:: true
 			- do not measure the amount of light on the retina
 			- measure relative light changes over time and over adjacent spots on the retina
 			- eye is a change meter rather than a light meter
-			- Luminance refers to the measured amount of light
+			- Luminance refers to the measured amount of light coming from some region of space
+	- Brightness illusion
+		- Retinal ganglion cell receives input from multiple receptors(receptive field)
+		- Processing tries to enhance edges
+			- lateral inhibition from neighbouring neurons
+	- Simultaneous contrast and erros
+		- Simultaneous contrast effects result in large errors
