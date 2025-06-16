@@ -30,4 +30,12 @@
 			- augment human capacity beyond internal cognition and memory
 			- information can be organised by spatial location
 		- Summarise information without losing details (details on demand)
-		-
+	- Human in the loop
+		- many analysis problems are ill specified
+			- many possible questions to be asked
+			- human-in-the-loop exploration making use of human pattern detection
+			- augment human capabilities rather than replacing the human in the loop
+		- exploratory analysis for scientific discovery (data analysis)
+		- visualization tools for presentation (communication)
+			- presenting existing knowledge
+	- Computer in the loop
