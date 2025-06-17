@@ -611,4 +611,7 @@ collapsed:: true
 	- Separability
 		- Channels are not always completely independent from each other (interchannel interference)
 			- ranging from fully separable channels to the inseparably combined integral channels (major interference)
-		-
+		- Visual encoding straightforward with separable channels
+			- encoding of different information in integral channels will fail
+	- Popout
+		- many channels provide visual popout where a distinct item stands out from many others immediately
