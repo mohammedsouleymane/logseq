@@ -570,4 +570,8 @@ collapsed:: true
 		- Magnitude channels
 			- how much of something is there
 			- e.g. size, luminance or saturation colour channels
-	-
+	- Using marks and channels
+		- Progression of chart types
+		- In examples each attribute encoded vis single channel
+			- multiple channels might also be used redundantly
+		-
