@@ -590,6 +590,11 @@ collapsed:: true
 			- how close is human perceptual judgement to some objective measurement of the stimulus?
 		- Different visual channels are perceived with different levels of accuracy
 			- characterised by steven's psychophysical power law
+		- Channel effectiveness mainly based on accuracy but also takes into account (dspg)
+			- discriminability
+			- separability
+			- popout
+			- grouping
 	- Steven's Psychophysical Power law : $S=I^N$
 		- Responses to sensory experience of magnitude are characterisable by power laws
 			- S = perceived sensation
@@ -597,3 +602,5 @@ collapsed:: true
 			- exponent N depends on sensory modality
 			- most stimuli are magnified (superlinear) or compressed (sublinear)
 	- Error rates across channels
+	  ![image.png](../assets/image_1750179591785_0.png)
+	- Channel
