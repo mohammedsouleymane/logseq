@@ -454,5 +454,10 @@ collapsed:: true
 			- abstraction validation (what and why)
 			- idiom validation (how)
 			- algorithm validation
-	- Four nested levels of Vis design
+	- Four nested levels of Vis design (DAIA)
+	  ![image.png](../assets/image_1750172903593_0.png)
+	  Output from upstream level is input to downstream level
+		- errors from upstream levels propagate to downstream levels
+		- highly iterative design problem
+	- Domain Situation
 	-
