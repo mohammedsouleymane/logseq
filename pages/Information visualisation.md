@@ -515,4 +515,9 @@ collapsed:: true
 	- Abstraction validation
 		- identified task abstraction and data abstraction might not solve the target audience's problems
 		- downstream validation includes testing the solution with members of the target audience
-			- qualitative feed
+			- qualitative feedback whether the tool is useful
+			- field study to observe and document how the target audience uses the tool in their real-world workflow
+				- observe changes in behaviour rather than document existing work practices
+	- Idiom validation
+		- Justify the design of the idiom with respect to known perceptual and cognitive principles
+		- Heuristic evaluation or expert revies may be
