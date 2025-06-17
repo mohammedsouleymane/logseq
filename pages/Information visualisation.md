@@ -577,4 +577,8 @@ collapsed:: true
 		- Use of marks and channels guided by the **principles of expressiveness and effectiveness**
 			- after identifying most important attributes ensure that they are encoded with the highest ranked channel
 		- Expressiveness principle
-			- visual encoding should express all of, and only, the information in the dataset attributes
+			- visual encoding should express **all of, and only, the information in the dataset attributes**
+				- ordered attr -> magnitude channels
+				- unordered attr -> identity channels
+		- Effectiveness principle
+			- importance of
