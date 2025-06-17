@@ -625,4 +625,9 @@ collapsed:: true
 		- proximity is the third strongest grouping approach
 		- similarity (hue, motion and shape)
 			- shape and motion channel to be used with care
-	-
+	- Relative versus absolute judgements
+		- perceptual system fundamentally based on relative judgements and not absolute ones (webers's Law)
+			- e.g. position along a scale can be perceived more accurately than pure length judgement without a scale
+		- Perception of luminance is contextual based on the contrast with surrounding colours
+	- Colour (Hue) Perception
+		- Our visual
