@@ -300,5 +300,12 @@ collapsed:: true
 			- addition, update or deletion of items
 			- adds complexity to the vis process
 				- no longer have all data at a given time
-			-
+	- Attribute types
+		- categorial(nominal) attributes
+			- no implicit ordering (often hierachical)
+			- external ordering can be superimposed
+			- e.g. different types of fruits
+	- Ordered attributes
+		- ordinal data (e.g. t-shirt size)
+		- quantitive
 -
