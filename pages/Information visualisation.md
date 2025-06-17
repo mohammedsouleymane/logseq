@@ -494,3 +494,10 @@ collapsed:: true
 				- memory usage
 				- level of match with visual encoding idiom
 			- Separate algorithm design (computational issues) from idiom design (human perception issues)
+	- Threats to Validity
+		- Each design level has their own threats to validity
+			- wrong problem, wrong abstraction, wrong idiom or wrong algorithm
+	- Validation approaches
+		- Can perform an immediate or downstream validation
+			- downstream dependencies add to the difficulty of validation
+				- e.g. poor algorithm desi
