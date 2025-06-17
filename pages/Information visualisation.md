@@ -559,4 +559,14 @@ collapsed:: true
 	- Channels
 	  ![image.png](../assets/image_1750174814274_0.png)
 		- control appearance of mark independently of the dimensionality of the geometric primitive
-		-
+		- Many visual channels
+			- shape, spatial position, colour, motion, size, tilt
+		- **Size and shape** channels cannot be used on all types of marks
+			- e.g. area marks typically not size or shape coded
+	- Channel types
+		- identity channels
+			- **information** about **what** something is
+			- e.g. shape, hue channel
+		- Magnitude channels
+			- how much of something is there
+			- e.g. size, luminance or saturation colour channels
