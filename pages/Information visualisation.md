@@ -362,7 +362,7 @@ collapsed:: true
 			- enables reasoning about similarities
 		- Who has the goal?
 			- designer of the vis or the end user?
-	- Actions
+	- Actions (ASQ)
 		- User goals can be defined by actions at three levels
 			- analyse
 				- consume existing or also produce additional data
