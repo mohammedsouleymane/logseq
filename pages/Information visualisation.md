@@ -365,7 +365,7 @@ collapsed:: true
 		- consume (discover -> present -> enjoy)
 		- produce (annotate -> record -> derive)
 		- most common use case for vis is to consume information that has already been generated
-	- Consume
+	- Consume (DPE)
 		- Discover (Explore)
 			- use vis to find new knowledge that was not previously known
 			- serendipitous observation of unexpected data
@@ -377,5 +377,7 @@ collapsed:: true
 			- communication of information, telling a story with data or guiding au audience through a series of cognitive operations
 			- output of a discover session might be become input for a present session
 		- Enjoy
-			-
+			- a casual encounter with vis (not driven by need to verify or generate a hypothesis)
+	- Produce(AR
+		- generate new material which is often immediately used as input for a next instance
 -
