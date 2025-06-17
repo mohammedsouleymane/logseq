@@ -305,6 +305,7 @@ collapsed:: true
 			- adds complexity to the vis process
 				- no longer have all data at a given time
 	- Attribute types
+	  collapsed:: true
 		- ![image.png](../assets/image_1750163733629_0.png)
 		- categorial(nominal) attributes
 			- no implicit ordering (often hierachical)
@@ -321,6 +322,7 @@ collapsed:: true
 			- hierarchical structures within or between multiple attributes
 			- e.g. time series of daily stock prices where time can be aggregated hierarchically (from days to weeks, months and years)
 	- Key vs value semantics
+	  collapsed:: true
 		- type of an attribute does not tell us about its semantics
 		- key attributes (independent attribute) represents an index that is used to look up value attributes (dependant attributes)
 			- key attributes can be categorical or ordinal
@@ -341,6 +343,7 @@ collapsed:: true
 				- **depends on number of keys**
 				- e.g. 2D or 3D fields
 	- Temporal semantics
+	  collapsed:: true
 		- temporal attribute is any kind of information that is related to time
 		- data about time is complicated to handle
 			- time hierarchy is deeply multiscale (from nanoseconds to hour, decades to millennia)
@@ -351,6 +354,7 @@ collapsed:: true
 			- time-series dataset
 				- ordered sequence of time-values pairs
 	- Task abstraction
+	  collapsed:: true
 		- next we have to investigate the why part of the what-why-how analysis framework
 			- what is the goal of using the vis?
 		- Transforms task description from domain-specific language into abstract form
@@ -370,6 +374,7 @@ collapsed:: true
 		- produce (annotate -> record -> derive)
 		- most common use case for vis is to consume information that has already been generated
 	- Consume (DPE)
+	  collapsed:: true
 		- Discover (Explore)
 			- use vis to find new knowledge that was not previously known
 			- serendipitous observation of unexpected data
@@ -406,5 +411,10 @@ collapsed:: true
 				- data that does not fit well with the backdrop
 			- Features
 				- task-dependent structures of interest
-		- Attributes
+		- Attributes (SM)
+			- single attributes (individual values, min or max)
+			- multiple attributes (dependencies, correlation and similarities)
+		- Network data
+			- network topology as well as specific paths
+		-
 -
