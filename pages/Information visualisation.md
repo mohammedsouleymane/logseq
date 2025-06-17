@@ -440,4 +440,10 @@ collapsed:: true
 		- Summarize (overview)
 		  scope are all possible targets
 - ## Lecture 4
-	-
+	- ![image.png](../assets/image_1750172662202_0.png)
+	- Validation
+		- Huge vis design space and most designs are ineffective
+		- Validate choices right from the beginning of the design process
+			- top-down design (problem-driven work)
+				- start at top situation domain level
+				- major challenge at data/task abstraction:
