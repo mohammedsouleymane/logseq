@@ -478,4 +478,11 @@ collapsed:: true
 					- data from upstream is often transformed into something different
 					- determine which data type supports a visual representation that address a user's problem
 		- Visual Encoding & Interaction Idiom
-			- Specific way (idiom) to create and manipulate the visual
+			- Specific way (idiom) to create and manipulate the visual representation of abstract data
+				- visual encoding idiom
+					- create a "picture" out of the data (what do users see?)
+				- interaction idiom
+					- how do users change what they see?
+			- Design space of the combination of visual encoding and interaction idioms is very large
+				- data and task abstractions help to reduce the number of potential visual encoding and interaction idioms
+				- decision about good or bad matches based on human abilities (visual perception and memory)
