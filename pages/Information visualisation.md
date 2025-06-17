@@ -370,5 +370,12 @@ collapsed:: true
 			- use vis to find new knowledge that was not previously known
 			- serendipitous observation of unexpected data
 			- may be motivated by theories, models or hypotheses
-			- outcome is to generate a new hypothesis or verify (or disconfirm) an existing hypothesis**
+			- outcome is to **generate a new hypothesis or verify (or disconfirm) an existing hypothesis**
+			- need for sophisticated interactive vis idioms since we do not know in advance what the user will need to see
+			- note that the why the vis is being used does not dictate the how
+		- Present (Explain)
+			- communication of information, telling a story with data or guiding au audience through a series of cognitive operations
+			- output of a discover session might be become input for a present session
+		- Enjoy
+			-
 -
