@@ -354,5 +354,15 @@ collapsed:: true
 		- Who has the goal?
 			- designer of the vis or the end user?
 	- Actions
-		- User goals can be
+		- User goals can be defined by actions at three levels
+			- analyse
+				- consume existing or also produce additional data
+			- search
+				- what kind of search is involved (are the target and location known)?
+			- query
+				- need to identify one target, compare some targets or summarise all of the targets.
+	- Analyse
+		- consume (discover -> present -> enjoy)
+		- produce (annotate -> record -> derive)
+		- most omm
 -
