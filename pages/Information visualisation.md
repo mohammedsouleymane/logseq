@@ -619,4 +619,9 @@ collapsed:: true
 			- use popout for a single channel at a time
 		- popout channels
 			- tilt, size, shape, proximity, shadow direction
-	-
+	- Grouping
+		- Containment (links) is the strongest cue for grouping following by connection coming in second
+		- items sharing the same level of a categorical attribute can also be perceived as a group
+		- proximity is the third strongest grouping approach
+		- similarity (hue, motion and shape)
+			- shape and motion channel to be used with care
