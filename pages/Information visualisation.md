@@ -460,4 +460,13 @@ collapsed:: true
 		- errors from upstream levels propagate to downstream levels
 		- highly iterative design problem
 	- Domain Situation
-	-
+		- A domain situation is defined by
+			- target users
+			- domain of interest of target users(each domain might have its own vocabulary)
+			- data of target users
+			- questions(tasks) of target users
+		- Outcome of design process
+			- understanding of user needs (user-centered design)
+		- Challenges and risks
+			- users can often not clearly specify their analysis needs
+			- designers make assumptions (rather than engaging with users)
