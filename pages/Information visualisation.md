@@ -540,4 +540,6 @@ collapsed:: true
 	- ![image.png](../assets/image_1750174343846_0.png)
 	- ![image.png](../assets/image_1750174351765_0.png)
 	-
--
+- ## Lecture 5 (Data presentation)
+	- Marks and Channels
+		-
