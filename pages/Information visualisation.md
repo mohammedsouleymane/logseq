@@ -421,11 +421,14 @@ collapsed:: true
 	- Search
 	  ![image.png](../assets/image_1750165464479_0.png)
 		- Lookup
-		  user knows what they are looking for and where it is
-		- location
-		  user knows what they are looking for but does not know where it is
+			- what: yes
+			- where: yes
+		- locate
+			- what: yes
+			- where: no
 		- Browse
-		  user does not know exactly what they are looking for but has a location in mind where to look
+			- what: no
+			- where: has location in mind
 		- Explore
-		  user does not know what they are lookg
+			- **user does not know what they are looking for and where to search**, often beginning from an overview of everything
 -
