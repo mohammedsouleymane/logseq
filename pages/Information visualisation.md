@@ -522,4 +522,11 @@ collapsed:: true
 		- Justify the design of the idiom with respect to **known perceptual and cognitive principles**
 		- Heuristic evaluation or expert revies may be used to ensure that **no known guidelines are violated**
 		- Downstream validation
-	-
+			- **lab study**
+			- **presentation and qualitative discussion of results**
+			- **quality metrics**
+			- **usability studies**
+	- Algorithm Validation
+		- Analyse computation complexity of algorithms
+		- Downstream validation
+			- executiom time
