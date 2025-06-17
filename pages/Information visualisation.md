@@ -546,4 +546,9 @@ collapsed:: true
 		- **Channels** control the **appearance of marks**
 		- Vis design space described by orthogonal combination of marks and channels
 		- complex visual encodings can be decomposed and analysed in terms of their marks and channels
+	- Marks
+	  ![image.png](../assets/image_1750174687910_0.png)
+		- Basic geometric/graphical element in an image
+		- Zero, one or two dimensional marks
+			- three dimensional marks (volumes) are not used frequently due to limited perception
 	-
