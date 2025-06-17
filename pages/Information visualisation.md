@@ -432,5 +432,11 @@ collapsed:: true
 		  user does not know exactly what they are looking for but has a location in mind where to look
 		- Explore
 		  **user does not know what they are looking for and where to search**, often beginning from an overview of everything
-	- Query
+	- Query (ICS)
+		- Identify
+		  if the search returns known targets (lookup or locate)
+		- Compare
+		  comparing multiple targets, it is more difficult than identifying tasks and requires more complex vis idioms
+		- Summarize (overview)
+		  scope are all possible targets
 -
