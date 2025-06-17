@@ -640,4 +640,10 @@ collapsed:: true
 			- saturation can be used for up to three levels (bins)
 				- strongly interacts with size channel
 			- saturation and hue are non-separable channels for small regions
-	-
+	- comparing HSL lightness
+		- computed HSL lightnss L is the smae for all six colours
+			- true luminance as measured by an instrument
+			- perceived luminance L* represents what we see
+				- more sensitive to certain wavelengths (green and yellow) as shown earlier with spectral sensitivity
+	- No implicit order for Hue
+		-
