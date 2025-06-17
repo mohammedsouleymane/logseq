@@ -683,4 +683,11 @@ collapsed:: true
 			  ![image.png](../assets/image_1750186250344_0.png)
 	- Bivariate colourmaps
 		- safest use of colour channel is to visually encoe a single attribute (univariatie)
-		- in the colourmap cate
+		- in the colourmap categorisation we have seen colour maps encoding two separate attribute (bivariate)
+			- if one of the two attributes is binary then it is straightforward to create a comprehensible bivariate colour colourmap
+				- choose base set of hues and vary the saturation
+			- if both attributes are categorical with multiple levels the results will be poor
+			- combinations of sequential and diverging attributes should be used carefully
+				- appear frequently in vis solutions but some people have difficulties to interpret their meaning
+	- Colourblind-safe colourmaps
+		-
