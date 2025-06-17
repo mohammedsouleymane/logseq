@@ -529,4 +529,9 @@ collapsed:: true
 	- Algorithm Validation
 		- Analyse computation complexity of algorithms
 		- Downstream validation
-			- executiom time
+			- execution time
+			- memory consumption
+			- scalability
+		- Correctness of algorithm
+		- Standard benchmarks might help to compare algorithms
+	-
