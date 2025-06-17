@@ -603,4 +603,8 @@ collapsed:: true
 			- most stimuli are magnified (superlinear) or compressed (sublinear)
 	- Error rates across channels
 	  ![image.png](../assets/image_1750179591785_0.png)
-	- Channel
+	- Discriminability
+		- Quantify the number of distinguishable steps (bins) that are available within a visual channel
+			- some channels (e.g. line width) have a very limited number of bins
+			- small number of bins is not a problem if the number of values to be encoded is also small
+			- number of different values that need to be shown for an attribute must not be greater than the available bins for the visual channel
