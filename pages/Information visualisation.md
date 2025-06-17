@@ -370,6 +370,7 @@ collapsed:: true
 			- query
 				- need to identify one target, compare some targets or summarise all of the targets.
 	- Analyse
+	  collapsed:: true
 		- consume (discover -> present -> enjoy)
 		- produce (annotate -> record -> derive)
 		- most common use case for vis is to consume information that has already been generated
@@ -388,6 +389,7 @@ collapsed:: true
 		- Enjoy
 			- a casual encounter with vis (not driven by need to verify or generate a hypothesis)
 	- Produce(ARD)
+	  collapsed:: true
 	  generate new material which is often immediately used as input for a next instance
 		- Annotate
 			- graphical or textual annotations of existing visualisation elements (might be stored as a new attribute)
@@ -404,6 +406,7 @@ collapsed:: true
 				- adding lat and lng to city name (via lookup in separate DB)
 				- arithmetic operation on existing attributes
 	- Targets
+	  collapsed:: true
 		- All data (TOF)
 			- Trends
 				- high-level characterisation of a pattern in the data (increases, decreases, peaks, plateaus)
@@ -418,17 +421,16 @@ collapsed:: true
 			- network topology as well as specific paths
 		- Spatial data
 			- understanding and comparing geometric shapes
-	- Search
+	- Search (LLBE)
+	  collapsed:: true
 	  ![image.png](../assets/image_1750165464479_0.png)
 		- Lookup
-			- what: yes
-			- where: yes
+		  user knows what they are looking for and where it is
 		- locate
-			- what: yes
-			- where: no
+		  user knows what they are looking for but does not know where it is
 		- Browse
-			- what: no
-			- where: has location in mind
+		  user does not know exactly what they are looking for but has a location in mind where to look
 		- Explore
-			- **user does not know what they are looking for and where to search**, often beginning from an overview of everything
+		  **user does not know what they are looking for and where to search**, often beginning from an overview of everything
+	- Query
 -
