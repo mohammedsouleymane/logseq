@@ -416,5 +416,16 @@ collapsed:: true
 			- multiple attributes (dependencies, correlation and similarities)
 		- Network data
 			- network topology as well as specific paths
-		-
+		- Spatial data
+			- understanding and comparing geometric shapes
+	- Search
+	  ![image.png](../assets/image_1750165464479_0.png)
+		- Lookup
+		  user knows what they are looking for and where it is
+		- location
+		  user knows what they are looking for but does not know where it is
+		- Browse
+		  user does not know exactly what they are looking for but has a location in mind where to look
+		- Explore
+		  user does not know what they are lookg
 -
