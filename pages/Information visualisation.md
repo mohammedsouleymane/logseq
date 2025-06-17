@@ -508,16 +508,18 @@ collapsed:: true
 			- carefully select the subset of validation methods matching the levels of design where contributions are claimed
 	- Domain validation
 		- A field study can help to validate that we are going to address real user needs
-			- observe people in real-word settings
+			- **observe people in real-word settings**
 			- interviews
 		- Downstream validation can for example investigate a solution's adoption rate by the target audience
-			- see what target users do (without bringing them into a lab)
+			- **see what target users do** (without bringing them into a lab)
 	- Abstraction validation
 		- identified task abstraction and data abstraction might not solve the target audience's problems
 		- downstream validation includes testing the solution with members of the target audience
-			- qualitative feedback whether the tool is useful
-			- field study to observe and document how the target audience uses the tool in their real-world workflow
+			- **qualitative feedback** whether the tool is **useful**
+			- **field study to observe and document how the target audience** uses the tool in their **real-world workflow**
 				- observe changes in behaviour rather than document existing work practices
 	- Idiom validation
-		- Justify the design of the idiom with respect to known perceptual and cognitive principles
-		- Heuristic evaluation or expert revies may be
+		- Justify the design of the idiom with respect to **known perceptual and cognitive principles**
+		- Heuristic evaluation or expert revies may be used to ensure that **no known guidelines are violated**
+		- Downstream validation
+	-
