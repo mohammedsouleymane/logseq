@@ -630,4 +630,14 @@ collapsed:: true
 			- e.g. position along a scale can be perceived more accurately than pure length judgement without a scale
 		- Perception of luminance is contextual based on the contrast with surrounding colours
 	- Colour (Hue) Perception
-		- Our visual
+	  ![image.png](../assets/image_1750185491963_0.png)
+		- Our visual system evolved to provide colour constancy
+			- same surface identifiable across illumination conditions
+			- visual system might work against simple colour encodings
+	- Mapping colour
+		- Luminance and saturation are magnitude channels while hue is an identity channel
+			- luminance can be used for two to four levels(bins)
+			- saturation can be used for up to three levels (bins)
+				- strongly interacts with size channel
+			- saturation and hue are non-separable channels for small regions
+	-
