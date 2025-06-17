@@ -486,3 +486,11 @@ collapsed:: true
 			- Design space of the combination of visual encoding and interaction idioms is very large
 				- data and task abstractions help to reduce the number of potential visual encoding and interaction idioms
 				- decision about good or bad matches based on human abilities (visual perception and memory)
+		- Algorithm
+			- Implementation of visual encoding and interaction idioms
+				- can design different algorithms to realise the same idiom
+			- Various factors might impact the choice of a specific algorithm
+				- computational complexity (performance)
+				- memory usage
+				- level of match with visual encoding idiom
+			- Separate algorithm design (computational issues) from idiom design (human perception issues)
