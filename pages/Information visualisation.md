@@ -439,7 +439,8 @@ collapsed:: true
 		  comparing multiple targets, it is more difficult than identifying tasks and requires more complex vis idioms
 		- Summarize (overview)
 		  scope are all possible targets
-- ## Lecture 4
+- ## Lecture 4 (DATA representation)
+  collapsed:: true
 	- ![image.png](../assets/image_1750172662202_0.png)
 	- Validation
 		- Huge vis design space and most designs are ineffective
@@ -534,4 +535,9 @@ collapsed:: true
 			- scalability
 		- Correctness of algorithm
 		- Standard benchmarks might help to compare algorithms
+	- ![image.png](../assets/image_1750174303580_0.png)
+	- ![image.png](../assets/image_1750174322588_0.png)
+	- ![image.png](../assets/image_1750174343846_0.png)
+	- ![image.png](../assets/image_1750174351765_0.png)
 	-
+-
