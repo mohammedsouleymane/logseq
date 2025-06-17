@@ -434,7 +434,8 @@ collapsed:: true
 		  **user does not know what they are looking for and where to search**, often beginning from an overview of everything
 	- Query (ICS)
 		- Identify
-		  if the search returns known targets (lookup or locate)
+			- if the search returns **known targets (lookup or locate)** then identify return their characteristics
+			- if the search **returns targets matching particular characteristics (browse or explore)** the i
 		- Compare
 		  comparing multiple targets, it is more difficult than identifying tasks and requires more complex vis idioms
 		- Summarize (overview)
