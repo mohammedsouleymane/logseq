@@ -702,4 +702,11 @@ collapsed:: true
 	- Tilt/Angle channel
 		- encode magnitude information based on the orientation of a mark
 			- tilt: against global frame
-			- angle:
+			- angle: line with respect to another line
+		- Accuracy of our perception of a tilt/angle is not uniform
+			- very accurate near exact horizontal, vertical or diagonal positions
+	- Other channels
+		- Shape channel
+			- commonly applied to point marks
+			- can also be applied to line marks
+		-
