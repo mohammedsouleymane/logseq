@@ -608,3 +608,7 @@ collapsed:: true
 			- some channels (e.g. line width) have a very limited number of bins
 			- small number of bins is not a problem if the number of values to be encoded is also small
 			- number of different values that need to be shown for an attribute must not be greater than the available bins for the visual channel
+	- Separability
+		- Channels are not always completely independent from each other (interchannel interference)
+			- ranging from fully separable channels to the inseparably combined integral channels (major interference)
+		-
