@@ -681,4 +681,6 @@ collapsed:: true
 				- multiple hues are ordered according to their luminance from lowest to highest
 			- rainbow colourmap
 			  ![image.png](../assets/image_1750186250344_0.png)
-	-
+	- Bivariate colourmaps
+		- safest use of colour channel is to visually encoe a single attribute (univariatie)
+		- in the colourmap cate
