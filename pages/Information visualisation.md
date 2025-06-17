@@ -440,3 +440,4 @@ collapsed:: true
 		- Summarize (overview)
 		  scope are all possible targets
 - ## Lecture 4
+	-
