@@ -371,7 +371,6 @@ collapsed:: true
 			- query
 				- need to identify one target, compare some targets or summarise all of the targets.
 	- Analyse
-	  collapsed:: true
 		- consume (discover -> present -> enjoy)
 		- produce (annotate -> record -> derive)
 		- most common use case for vis is to consume information that has already been generated
@@ -407,7 +406,6 @@ collapsed:: true
 				- adding lat and lng to city name (via lookup in separate DB)
 				- arithmetic operation on existing attributes
 	- Targets
-	  collapsed:: true
 		- All data (TOF)
 			- Trends
 				- high-level characterisation of a pattern in the data (increases, decreases, peaks, plateaus)
