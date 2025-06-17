@@ -318,6 +318,13 @@ collapsed:: true
 			- e.g. time series of daily stock prices where time can be aggregated hierarchically (from days to weeks, months and years)
 	- Key vs value semantics
 		- type of an attribute does not tell us about its semantics
-		- key attributes (independent attribute) represents an inde
+		- key attributes (independent attribute) represents an index that is used to look up value attributes (dependant attributes)
+			- key attributes can be categorical or ordinal
+			- value attributes can be categorical, ordinal or quantitative
+		- Flat tables
+			- key might be implicit (simply the index of the row) or explicit (attribute within table with unique values)
+		- Multidimensional tables
+			- multiple keys are required to look up an item
+			- combination of all keys must be unique for each item
 	-
 -
