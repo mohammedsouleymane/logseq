@@ -204,6 +204,7 @@ collapsed:: true
 	- Viz Palette: same concept as colorbrewser
 	-
 - ## Lecture 3 (DATA REPRESENTATION)
+  collapsed:: true
 	- Data representation and abstraction
 		- Detailed look at the what part of the what-why-how question
 		- Provide a language that is meaningful and useful for vis design
@@ -434,10 +435,10 @@ collapsed:: true
 		  **user does not know what they are looking for and where to search**, often beginning from an overview of everything
 	- Query (ICS)
 		- Identify
-			- if the search returns **known targets (lookup or locate)** then identify return their characteristics
-			- if the search **returns targets matching particular characteristics (browse or explore)** the i
+			- if the search returns **known targets (lookup or locate)** then identify return their **characteristics**
+			- if the search **returns targets matching particular characteristics (browse or explore)** the identify returns **specific references**
 		- Compare
 		  comparing multiple targets, it is more difficult than identifying tasks and requires more complex vis idioms
 		- Summarize (overview)
 		  scope are all possible targets
--
+- ## Lecture 4
