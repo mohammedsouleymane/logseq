@@ -341,5 +341,18 @@ collapsed:: true
 		- data about time is complicated to handle
 			- time hierarchy is deeply multiscale (from nanoseconds to hour, decades to millennia)
 			- temporal scales do not all fit into a strict hierarchy (e.g. weeks do not cleanly fit into months)
-			- transformation and aggre
+			- transformation and aggregation become complex
+		- Time-varying semantics
+			- time is one of the keys attributes (opposed to being a value)
+			- time-series dataset
+				- ordered sequence of time-values pairs
+	- Task abstraction
+		- next we have to investigate the why part of the what-why-how analysis framework
+			- what is the goal of using the vis?
+		- Transforms task description from domain-specific language into abstract form
+			- enables reasoning about similarities
+		- Who has the goal?
+			- designer of the vis or the end user?
+	- Actions
+		- User goals can be
 -
