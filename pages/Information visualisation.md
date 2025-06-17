@@ -657,4 +657,8 @@ collapsed:: true
 		- Categorical colourmaps (qualitative colourmaps) are normally segmented (not continuous)
 			- effective for categorical data (next best channel after position)
 		- good resource for creating colourmaps is colorbrewer
-		-
+		- Can use six to twelve distinguishable hue steps (bins) for small separated regions
+			- includes background colour and default object colours
+			- use easy nameable colours: e.g. red, blue, green, yellow, orange, brown, pink, magenta and cyan
+		- use highly saturated colours for small regions
+		- use low-saturation colours (pastels) for large regions
