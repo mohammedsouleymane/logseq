@@ -690,4 +690,16 @@ collapsed:: true
 			- combinations of sequential and diverging attributes should be used carefully
 				- appear frequently in vis solutions but some people have difficulties to interpret their meaning
 	- Colourblind-safe colourmaps
-		-
+		- A safe strategy is to avoid using the hue channel only
+			- e.g. vary luminance or saturation in addition to hue in categorical colourmaps
+		- Avoid colourmaps emphasising red-green
+		- Use colour blindness simulators and tools such as Viz Palette
+	- Size channels
+		- Suitable for ordered data but interacts with most other channels
+			- length (1D): judgment of length is very accurate
+			- area (2D): judgement of area is less accurate
+			- volume (3D): volume channel is quite inaccurate
+	- Tilt/Angle channel
+		- encode magnitude information based on the orientation of a mark
+			- tilt: against global frame
+			- angle:
