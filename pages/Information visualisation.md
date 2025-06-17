@@ -446,4 +446,13 @@ collapsed:: true
 		- Validate choices right from the beginning of the design process
 			- top-down design (problem-driven work)
 				- start at top situation domain level
-				- major challenge at data/task abstraction:
+				- major challenge at data/task abstraction; mainly use existing idioms
+			- bottom-up design (technique-driven work)
+				- inveniton of new idioms or algorithms
+		- Independently validate all four levels of the design
+			- domain validation
+			- abstraction validation (what and why)
+			- idiom validation (how)
+			- algorithm validation
+	- Four nested levels of Vis design
+	-
