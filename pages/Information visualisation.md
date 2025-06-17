@@ -662,3 +662,9 @@ collapsed:: true
 			- use easy nameable colours: e.g. red, blue, green, yellow, orange, brown, pink, magenta and cyan
 		- use highly saturated colours for small regions
 		- use low-saturation colours (pastels) for large regions
+	- Ordered colourmaps
+		- sequential colourmap ranges from a min value to a max value
+			- use luminance or saturation channel
+		- diverging colourmap
+			- use two hues at the endpoints and a neutral colour as a midpoint
+	-
