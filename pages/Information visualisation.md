@@ -587,4 +587,8 @@ collapsed:: true
 			- choice of which attributes to encode with position is the most central choice in visual encoding
 	- Channel effectiveness
 		- quantify effectiveness via accuracy
-			-
+			- how close is human perceptual judgement to some objective measurement of the stimulus?
+		- Different visual channels are perceived with different levels of accuracy
+			- characterised by steven's psychophysical power law
+	- Steven's Psychophysical Power law
+		- Reponse
