@@ -391,5 +391,14 @@ collapsed:: true
 			- produce new data elements based on existing data elements
 			- strong relationship between the form of the data (attribute and dataset types) and the vis idioms that are effective at presenting it
 			- derived attributes can be used to extend the dataset
-				- from quantiti
+				- from quantitative to ordinal data (water temp -> cold, warm or hot)
+				- adding lat and lng to city name (via lookup in separate DB)
+				- arithmetic operation on existing attributes
+	- Targets (TOF)
+		- Trends
+			- high-level charaacterisation of a pattern in the data (increases)
+		- Outliers
+			- data that does not fit well with the backdrop
+		- Features
+			- task-dependent structures of interest
 -
