@@ -574,4 +574,7 @@ collapsed:: true
 		- Progression of chart types
 		- In examples each attribute encoded vis single channel
 			- multiple channels might also be used redundantly
-		-
+		- Use of marks and channels guided by the **principles of expressiveness and effectiveness**
+			- after identifying most important attributes ensure that they are encoded with the highest ranked channel
+		- Expressiveness principle
+			- visual encoding should express all of, and only, the information in the dataset attributes
