@@ -500,4 +500,11 @@ collapsed:: true
 	- Validation approaches
 		- Can perform an immediate or downstream validation
 			- downstream dependencies add to the difficulty of validation
-				- e.g. poor algorithm desi
+				- e.g. poor algorithm design may have a negative effect when validation an interaction technique
+			- use of mock-ups for early downstream evaluation
+		- Mismatches
+			- mismatch between the level at which the benefit is claimed and the chosen validation methodology
+				- e.g. benefit of new visual encoding idiom cannot be validated by measuring the performance of the algorithm used downstream
+			- carefully select the subset of validation methods matching the levels of design where contributions are claimed
+	- Domain validation
+		-
