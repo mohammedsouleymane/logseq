@@ -329,12 +329,17 @@ collapsed:: true
 		- Fields
 			- independent variable to look up dependent variable
 			- multivariate structure
-				- depends on number of value attributes
+				- **depends on number of value attributes**
 				- scalar field: 1 attr/cell
 				- vector field: 2+ attr/cell
 				- tensor field: many attr/ cell
 			- multidimensional structure
-				- depends on number of keys
+				- **depends on number of keys**
 				- e.g. 2D or 3D fields
-	-
+	- Temporal semantics
+		- temporal attribute is any kind of information that is related to time
+		- data about time is complicated to handle
+			- time hierarchy is deeply multiscale (from nanoseconds to hour, decades to millennia)
+			- temporal scales do not all fit into a strict hierarchy (e.g. weeks do not cleanly fit into months)
+			- transformation and aggre
 -
