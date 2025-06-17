@@ -646,4 +646,15 @@ collapsed:: true
 			- perceived luminance L* represents what we see
 				- more sensitive to certain wavelengths (green and yellow) as shown earlier with spectral sensitivity
 	- No implicit order for Hue
+		- Sometimes learned hue order (not at perception level)
+			- green-yellow-red from traffics lights
+			- rainbows colour ordering
+	- Colourmaps
+		- A colourmap defines a mapping between colours and data values
+		- Colourmaps can be categorical or ordered (sequential or diverging)
+			- use magnitude channels of luminance and saturation for ordered data
+	- Categorical colourmaps
+		- Categorical colourmaps (qualitative colourmaps) are normally segmented (not continuous)
+			- effective for categorical data (next best channel after position)
+		- good resource for creating colourmaps is colorbrewer
 		-
