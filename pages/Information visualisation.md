@@ -378,6 +378,11 @@ collapsed:: true
 			- output of a discover session might be become input for a present session
 		- Enjoy
 			- a casual encounter with vis (not driven by need to verify or generate a hypothesis)
-	- Produce(AR
-		- generate new material which is often immediately used as input for a next instance
+	- Produce(ARD)
+	  generate new material which is often immediately used as input for a next instance
+		- Annotate
+			- graphical or textual annotations of existing visualisation elements (might be stored as a new attribute)
+			- typically a manual user action
+		- Record
+			-
 -
