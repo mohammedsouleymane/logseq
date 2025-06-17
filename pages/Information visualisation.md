@@ -709,4 +709,13 @@ collapsed:: true
 		- Shape channel
 			- commonly applied to point marks
 			- can also be applied to line marks
-		-
+		- Motion channels
+			- direction of motion
+			- velocity of motion
+			- flicker and blinking frequency
+			- very separable from all other static channels
+		- Texture and stippling channel
+			- texture can be simplified by considering it as a combination of the following 3 perceptual dimensions
+				- orientation, scale and contrast
+			- texture can be used to show categorical attributes as well as ordered attributes
+			- stippling fills regions of drawing with short strokes (dashed or dotted lines)
