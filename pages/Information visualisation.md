@@ -625,3 +625,4 @@ collapsed:: true
 		- proximity is the third strongest grouping approach
 		- similarity (hue, motion and shape)
 			- shape and motion channel to be used with care
+	-
