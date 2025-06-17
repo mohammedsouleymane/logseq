@@ -326,5 +326,15 @@ collapsed:: true
 		- Multidimensional tables
 			- multiple keys are required to look up an item
 			- combination of all keys must be unique for each item
+		- Fields
+			- independent variable to look up dependent variable
+			- multivariate structure
+				- depends on number of value attributes
+				- scalar field: 1 attr/cell
+				- vector field: 2+ attr/cell
+				- tensor field: many attr/ cell
+			- multidimensional structure
+				- depends on number of keys
+				- e.g. 2D or 3D fields
 	-
 -
