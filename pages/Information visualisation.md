@@ -667,4 +667,14 @@ collapsed:: true
 			- use luminance or saturation channel
 		- diverging colourmap
 			- use two hues at the endpoints and a neutral colour as a midpoint
-	-
+	- Rainbow vs two-hue colour map
+		- how many hues to use in continuous colourmaps?
+			- high-level structure vs local neighbourhoods
+			- rainbow colourmap makes it easier to discuss specific subranges
+	- Rainbow continuous colourmaps
+		- problems of rainbow continuous colourmaps
+			- hue is used to indicate order despite being an identity channel
+			- scale is not perceptually linear
+			- fine details cannot be perceived via the hue channel
+				- luminance better
+			-
