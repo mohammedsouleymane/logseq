@@ -615,3 +615,8 @@ collapsed:: true
 			- encoding of different information in integral channels will fail
 	- Popout
 		- many channels provide visual popout where a distinct item stands out from many others immediately
+		- most pairs of channels do not support popout
+			- use popout for a single channel at a time
+		- popout channels
+			- tilt, size, shape, proximity, shadow direction
+	-
