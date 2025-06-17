@@ -581,7 +581,7 @@ collapsed:: true
 				- ordered attr -> magnitude channels
 				- unordered attr -> identity channels
 		- Effectiveness principle
-			- importance of attribute should match the salience of the channel
-			- most important attributes encoded with most effective
+			- importance of attribute should match the salience(noticeable) of the channel
+			- most important attributes encoded with most effective channel
 		- Attributes encoded with position will dominate the user's mental model
 			- choice of which attributes to encode with position is the most central choice in visual encoding
