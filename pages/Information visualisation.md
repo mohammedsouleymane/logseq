@@ -364,5 +364,11 @@ collapsed:: true
 	- Analyse
 		- consume (discover -> present -> enjoy)
 		- produce (annotate -> record -> derive)
-		- most omm
+		- most common use case for vis is to consume information that has already been generated
+	- Consume
+		- Discover (Explore)
+			- use vis to find new knowledge that was not previously known
+			- serendipitous observation of unexpected data
+			- may be motivated by theories, models or hypotheses
+			- outcome is to generate a new hypothesis or verify (or disconfirm) an existing hypothesis**
 -
