@@ -585,3 +585,6 @@ collapsed:: true
 			- most important attributes encoded with most effective channel
 		- Attributes encoded with position will dominate the user's mental model
 			- choice of which attributes to encode with position is the most central choice in visual encoding
+	- Channel effectiveness
+		- quantify effectiveness via accuracy
+			-
