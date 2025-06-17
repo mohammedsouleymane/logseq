@@ -301,11 +301,17 @@ collapsed:: true
 			- adds complexity to the vis process
 				- no longer have all data at a given time
 	- Attribute types
+		- ![image.png](../assets/image_1750163733629_0.png)
 		- categorial(nominal) attributes
 			- no implicit ordering (often hierachical)
 			- external ordering can be superimposed
 			- e.g. different types of fruits
 	- Ordered attributes
 		- ordinal data (e.g. t-shirt size)
-		- quantitive
+		- quantitative (e.g. height, temperature or stock price)
+	- Ordering directions
+		- sequential: range max to min (e.g. mountain heights)
+		- diverging (e.g. valleys in the sea and mountains on land)
+		- cyclic (e.g. time measurements like the hour of the day or the day of the week)
+	-
 -
