@@ -551,4 +551,12 @@ collapsed:: true
 		- Basic geometric/graphical element in an image
 		- Zero, one or two dimensional marks
 			- three dimensional marks (volumes) are not used frequently due to limited perception
-	-
+	- Mark types
+		- item marks
+		- link marks
+			- connection marks (pairwise)
+			- containment marks (enclosure or nesting)
+	- Channels
+	  ![image.png](../assets/image_1750174814274_0.png)
+		- control appearance of mark independently of the dimensionality of the geometric primitive
+		-
