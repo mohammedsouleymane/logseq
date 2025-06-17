@@ -470,3 +470,12 @@ collapsed:: true
 		- Challenges and risks
 			- users can often not clearly specify their analysis needs
 			- designers make assumptions (rather than engaging with users)
+		- Data & Task Abstraction
+			- Abstract from answers to domain-specific questions at upstream to a generic representation
+				- questions from different domains situations can map to the same abstract vis task
+					- e.g. browsing, comparing or summarising
+				- Design abstract data
+					- data from upstream is often transformed into something different
+					- determine which data type supports a visual representation that address a user's problem
+		- Visual Encoding & Interaction Idiom
+			- Specific way (idiom) to create and manipulate the visual
