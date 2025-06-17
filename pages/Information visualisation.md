@@ -542,4 +542,8 @@ collapsed:: true
 	-
 - ## Lecture 5 (Data presentation)
 	- Marks and Channels
-		-
+		- **Marks** are basic **graphical elements**(geometric primitives) to represent **items or links**
+		- **Channels** control the **appearance of marks**
+		- Vis design space described by orthogonal combination of marks and channels
+		- complex visual encodings can be decomposed and analysed in terms of their marks and channels
+	-
