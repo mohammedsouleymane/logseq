@@ -677,4 +677,8 @@ collapsed:: true
 			- scale is not perceptually linear
 			- fine details cannot be perceived via the hue channel
 				- luminance better
-			-
+			- the 3 problems of rainbow continuous colourmaps can be addressed by using monotonically increasing luminance colourmaps
+				- multiple hues are ordered according to their luminance from lowest to highest
+			- rainbow colourmap
+			  ![image.png](../assets/image_1750186250344_0.png)
+	-
