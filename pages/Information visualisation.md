@@ -306,12 +306,18 @@ collapsed:: true
 			- no implicit ordering (often hierachical)
 			- external ordering can be superimposed
 			- e.g. different types of fruits
-	- Ordered attributes
-		- ordinal data (e.g. t-shirt size)
-		- quantitative (e.g. height, temperature or stock price)
-	- Ordering directions
-		- sequential: range max to min (e.g. mountain heights)
-		- diverging (e.g. valleys in the sea and mountains on land)
-		- cyclic (e.g. time measurements like the hour of the day or the day of the week)
+		- Ordered attributes
+			- ordinal data (e.g. t-shirt size)
+			- quantitative (e.g. height, temperature or stock price)
+		- Ordering directions
+			- sequential: range max to min (e.g. mountain heights)
+			- diverging (e.g. valleys in the sea and mountains on land)
+			- cyclic (e.g. time measurements like the hour of the day or the day of the week)
+		- Hierarchical attributes
+			- hierarchical structures within or between multiple attributes
+			- e.g. time series of daily stock prices where time can be aggregated hierarchically (from days to weeks, months and years)
+	- Key vs value semantics
+		- type of an attribute does not tell us about its semantics
+		- key attributes (independent attribute) represents an inde
 	-
 -
