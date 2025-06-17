@@ -265,6 +265,7 @@ collapsed:: true
 			- each child node has one parent node
 			- e.g. company organisation chart or biological tree of life
 	- Fields
+	  collapsed:: true
 		- Field
 			- each cell contains measurements or calculation from a continuous domain
 			- continuous data brings along the issues of sampling and interpolation
@@ -279,6 +280,7 @@ collapsed:: true
 			- structured grid: enables curvilinear shapes where the geometric location of each cell needs to be specified
 			- unstructured grid: complete flexibility but grid geometry as well as grid topology has to be stored explicitly
 	- Geometry
+	  collapsed:: true
 		- Information about the shape of items with spatial positions
 			- points and one-dimensional lines or curves
 			- two-dimensional surfaces or regions
@@ -287,12 +289,14 @@ collapsed:: true
 			- e.g. contours derived from a spatial field or shapes generated from raw geographic data (e.g. boundaries of a forest)
 			- shown alone or as backdrop for other data
 	- Other combinations
+	  collapsed:: true
 		- Cluster: grouping items based on similarity of attributes
 		- set: unordered group of items
 		- List(array): ordered group of items
 		- path: ordered set of segments formed by links connecting nodes in a network
 		- compound network(multilevel network): network combined with superimposed tree (with all the nodes of the network as leaves)
 	- Dataset availability
+	  collapsed:: true
 		- static file (offline)
 			- entire dataset is available all at once
 		- dynamic stream (online)
@@ -394,11 +398,13 @@ collapsed:: true
 				- from quantitative to ordinal data (water temp -> cold, warm or hot)
 				- adding lat and lng to city name (via lookup in separate DB)
 				- arithmetic operation on existing attributes
-	- Targets (TOF)
-		- Trends
-			- high-level charaacterisation of a pattern in the data (increases)
-		- Outliers
-			- data that does not fit well with the backdrop
-		- Features
-			- task-dependent structures of interest
+	- Targets
+		- All data (TOF)
+			- Trends
+				- high-level characterisation of a pattern in the data (increases, decreases, peaks, plateaus)
+			- Outliers
+				- data that does not fit well with the backdrop
+			- Features
+				- task-dependent structures of interest
+		- Attributes
 -
