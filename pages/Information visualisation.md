@@ -384,5 +384,12 @@ collapsed:: true
 			- graphical or textual annotations of existing visualisation elements (might be stored as a new attribute)
 			- typically a manual user action
 		- Record
-			-
+			- save or capture visualisation elements
+			- screenshots, bookmarks, parameter settings or interaction logs
+			- e.g. graphical history with a snapshot of the output of each task
+		- Derive
+			- produce new data elements based on existing data elements
+			- strong relationship between the form of the data (attribute and dataset types) and the vis idioms that are effective at presenting it
+			- derived attributes can be used to extend the dataset
+				- from quantiti
 -
