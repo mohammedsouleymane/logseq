@@ -743,3 +743,9 @@ collapsed:: true
 		- Why(Task) Compare rankings, distributions.
 		- How (Encode) Stacked bar charts, slope graphs.
 		- How (Manipulate) Reorder, realign, animated transitions
+	- Animated transitions example
+		- maintain a sense of context between states
+		- what: compound network
+		- how: change with animated transition. Navigation between aggregation levels
+	-
+	-
