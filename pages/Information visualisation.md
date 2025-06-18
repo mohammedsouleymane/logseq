@@ -541,6 +541,7 @@ collapsed:: true
 	- ![image.png](../assets/image_1750174351765_0.png)
 	-
 - ## Lecture 5 (Data presentation)
+  collapsed:: true
 	- Marks and Channels
 		- **Marks** are basic **graphical elements**(geometric primitives) to represent **items or links**
 		- **Channels** control the **appearance of marks**
@@ -719,3 +720,6 @@ collapsed:: true
 				- orientation, scale and contrast
 			- texture can be used to show categorical attributes as well as ordered attributes
 			- stippling fills regions of drawing with short strokes (dashed or dotted lines)
+- ## Lecture 9
+	- View manipulation
+		-
