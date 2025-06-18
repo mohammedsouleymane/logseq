@@ -747,5 +747,20 @@ collapsed:: true
 		- maintain a sense of context between states
 		- what: compound network
 		- how: change with animated transition. Navigation between aggregation levels
-	-
-	-
+	- Element Selection
+		- Different design choices for element selection
+			- Which element can be selection targets?
+				- data items, links, data attributes, levels within a data attribute,....
+			- one kind of selection vs. multiple kinds of selection (e.g. via hover)
+				- multiple mouse buttons or combination  with key presses for more advanced types of selections
+			- selection of single elements vs selection of many elements
+			- selection of primary and secondary target
+				- e.g. for path traversal from source to target in a direct graph
+			- selection often defines the target of a next action
+	- Selection Highlighing
+		- provide immediate visual feedback to users about element selection
+			- different possibilities for highlighting of data items
+				- changing colour
+				- outline
+				- change size
+				-
