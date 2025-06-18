@@ -769,4 +769,8 @@ collapsed:: true
 				- change linewidth, shape
 			- multiple highlighting design choices can be combined
 			- selected items might be connect via explicit visual links (connection marks)
-	-
+	- Context-preserving visual links
+		- what: any data
+		- how: any encoding, highlight with link mark
+		- how: select any element
+		- how: juxtaposed multiple views
