@@ -722,4 +722,24 @@ collapsed:: true
 			- stippling fills regions of drawing with short strokes (dashed or dotted lines)
 - ## Lecture 9
 	- View manipulation
-		-
+		- Why to manipulate and change the view?
+			- dataset might be too large to show everything at once
+				- reduce complexity of single view
+			- single static view might lead to visual clutter
+		- How to manipulate/change a view over time?
+			- select specific elements (items or attributes)
+			- reordering (sorting) of items
+				- find pattern by ordering based on different attributes
+				- change parameters of a particular idiom
+					- range of possible mark sizes
+			- semantic zooming
+			- switch between idioms
+	- Change between Visual encoding idioms
+	- line up example with reordering
+		- Slope graphs (bump charts) with connecting line marks linking the same items together
+	- LineUp
+		- What(Data) Table.
+		- What(Derived) Ordered attribute: weighted combination of selected attributes.
+		- Why(Task) Compare rankings, distributions.
+		- How (Encode) Stacked bar charts, slope graphs.
+		- How (Manipulate) Reorder, realign, animated transitions
