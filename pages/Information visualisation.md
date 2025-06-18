@@ -763,4 +763,10 @@ collapsed:: true
 				- changing colour
 				- outline
 				- change size
-				-
+				- slightly moving items/pattern
+			- different possibilities for highlighting link mark
+				- changing colour
+				- change linewidth, shape
+			- multiple highlighting design choices can be combined
+			- selected items might be connect via explicit visual links (connection marks)
+	-
