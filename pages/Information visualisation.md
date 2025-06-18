@@ -1,5 +1,388 @@
-## Lecture 1
-collapsed:: true
+- google summary
+	- Here is an in-depth summary of each lecture based on the provided sources:
+	- ### Lecture 1: Introduction
+	  A core concept introduced is the definition of visualization (Vis): it is an augmentation of human capabilities, where computer-based visualization systems provide visual representations of datasets to help people carry out tasks more effectively. The "what-why-how" question is presented as a fundamental framework for vis design: "What data is shown?", "Why is the visualisation tool used (task)?", and "How is the vis idiom constructed in terms of design choices?".
+	  
+	  Visualization leverages the human visual system's "superpowers" due to its high-bandwidth channel, allowing for faster and more reliable visual reasoning than mental reasoning. It acts as an external representation or "external cognition" to augment human capacity, summarizing information without losing details ("details on demand"). Visualization supports human-in-the-loop exploration for scientific discovery (data analysis) and communication (presentation of existing knowledge). It is particularly useful for large datasets that dynamically change over time.
+	  
+	  The lecture highlights the importance of showing dataset details rather than just summaries, referencing Anscombe's Quartet as an example where statistical summaries hide the true structure of data. Interactivity is deemed necessary for visualization tools to handle complexity, allowing users to change the level of detail, show different aspects, or view different representations of data.
+	  
+	  Challenges in design are also discussed, emphasizing that most design possibilities will be ineffective. A good design must match the human perceptual and cognitive system and align with the intended task. The information visualization process involves data representation, data presentation, and interaction, with mapping between data and its visual form, and consideration of perception and visual thinking.
+	  
+	  The course includes an assignment involving the realization of an interactive information visualization for a chosen domain and dataset, typically a group project for four students, contributing 40% to the final grade. The final exam is an oral exam in English, covering lecture and exercise content, and counts for 60% of the overall grade, with specific time allocated for assignment questions and course content questions. Both the oral exam and the assignment must have a grade of 8/20 or higher to pass the course.
+	- ### Lecture 2: Human Perception and Colour Theory
+	  
+	  This lecture delves into the principles of human perception and colour theory, crucial for designing effective visualizations. The core general guideline is to design graphic representations that enable quick perception of important data elements and patterns by considering human sensory capabilities. More important data should be represented by more visually distinct graphical elements, and greater numerical quantities by more distinct elements.
+	  
+	  The lecture outlines a three-stage model of visual perceptual processing:
+	- **Stage 1: Parallel processing to extract low-level features** such as orientation, colour, texture, and motion, resulting in feature maps.
+	- **Stage 2: Pattern perception** involving slower serial processing to identify continuous contours or regions of similar colour/texture, linked to the "Action" and "What" visual systems.
+	- **Stage 3: Visual working memory**, which can hold only a few objects and provides answers to visual queries through cognitive processing. Attention influences all three stages.
+	  
+	  The anatomy of the human eye is detailed, including the variable focus lens, pupil, and retina. The retina contains rods (highly sensitive at low light levels) and cones (three distinct colour receptors: S-cones, M-cones, L-cones, supporting trichromacy). The brain constructs what we see, not just the retinal image. Concepts like focal length, depth of focus, visual field, and optimal screen settings (high-resolution display with moderate viewing angle) are discussed, emphasizing visual acuity for maximum data density.
+	  
+	  Brightness is explained as a dimension in colour space, with light receptors measuring relative light changes, making the eye a "change meter" rather than a "light meter". Various brightness illusions are presented, such as the Herman grid, simultaneous brightness contrast, and Chevreul illusion, which arise from the eye's edge-enhancing processing due to lateral inhibition. These contrast effects can lead to significant errors (up to 20%) in quantitative information presented in grayscale. A key guideline is to avoid using grayscale for more than a few numerical values. Shading algorithms in computer graphics (uniform/flat, Gouraud, Phong) are discussed in relation to these illusions. Guidelines for highlighting via luminance contrast and crispening are also provided.
+	  
+	  Colour blindness, affecting about 10% of males and 1% of females, is primarily due to a lack of L-cones (protanopia) or M-cones (deuteranopia), leading to difficulty distinguishing red and green. The lecture touches upon colour measurement (C=rR+gG+bB) and different colour spaces like sRGB and RGB.
+	  
+	  Practical guidelines for colour use include:
+	- Using more saturated colours for small symbols or thin lines and less saturated colours for large areas.
+	- Ensuring luminance contrast when displaying small symbols or text on a differently coloured background.
+	- Using thin border lines with large luminance differences to define shapes when large areas use nearly equiluminous colours.
+	- Using low-saturation, light, pastel colours for large background areas and high-saturation symbols for the foreground when layering.
+	  Tools like ColorBrewer 2.0 and Viz Palette are mentioned as resources for colour advice.
+	  
+	  The lecture concludes with the importance of understanding visual perception for effective information visualization design.
+	- ### Lecture 3: Data Representation
+	  
+	  This lecture focuses on "Data Representation," delving into the "what" part of the what-why-how analysis framework, providing a language for effective visualization design. Data is typically described using domain-specific language and must be translated into abstract structures to find suitable visual representations. Data abstraction helps narrow down the vast design space.
+	  
+	  The lecture distinguishes between semantics (real-world meaning) and types (data and datasets), noting that both drive aspects of vis design.
+	  
+	  **Data Types** are defined as fundamental building blocks:
+	- **Item:** An individual discrete entity, like a table row or network node.
+	- **Attribute:** A property that can be measured, observed, or logged, also called a variable or dimension, e.g., price or temperature.
+	- **Link:** A relationship between items, such as between nodes in a network.
+	- **Position:** Spatial data, like a location in 2D or 3D space.
+	- **Grids:** Sampling continuous data based on geometric and topological relationships between cells.
+	  
+	  **Dataset Types** are collections of these data types:
+	- **Tables:** Collections of information, common types include:
+		- **Flat table:** Rows as items, columns as attributes, cells as values.
+		- **Multidimensional table:** Indexing cells via multiple keys.
+	- **Networks (graphs):** Define relationships between nodes (items) via links, where both nodes and links can have attributes.
+	- **Trees:** Hierarchical structures without cycles, where each child has one parent.
+	- **Fields:** Each cell contains measurements from a continuous domain, with issues of sampling and interpolation.
+		- **Spatial fields:** Sampling at spatial positions; if position is given, it's "scientific visualization" (scivis), unlike "information visualization" (infovis) where space is designer-chosen.
+		- **Grid types:** Uniform, rectilinear, structured, and unstructured grids, differing in how geometry and topology are stored.
+	- **Geometry:** Information about the shape of items with spatial positions (points, lines, surfaces, volumes), which may or may not have attributes.
+	- **Other combinations:** Clusters (grouping by similarity), sets (unordered groups), lists/arrays (ordered groups), paths (ordered segments in a network), and compound networks (network with superimposed tree).
+	  Dataset availability can be static (offline) or dynamic (stream), with dynamic streams adding complexity.
+	  
+	  **Attribute Types** describe the nature of attributes:
+	- **Categorical (nominal):** No implicit ordering, but often hierarchical or externally ordered (e.g., fruit types).
+	- **Ordered:**
+		- **Ordinal:** Well-defined ordering but no arithmetic (e.g., t-shirt size).
+		- **Quantitative:** Measurement of magnitude supporting arithmetic comparison (integers, real numbers; e.g., height).
+	- **Ordering directions:** Sequential (min to max), diverging (e.g., valleys/mountains), and cyclic (values wrap around, e.g., time).
+	- **Hierarchical attributes:** Hierarchical structures within or between attributes (e.g., time series aggregated by day, week, month, year).
+	  
+	  **Key Versus Value Semantics** distinguish attributes based on their role:
+	- A **key attribute** (independent) acts as an index to look up **value attributes** (dependent).
+	- Keys can be categorical or ordinal; values can be any type.
+	- In flat tables, keys can be implicit (row index) or explicit; multidimensional tables require multiple keys.
+	- For fields, keys are independent variables to look up dependent values, leading to multivariate structures (scalar, vector, tensor fields) and multidimensional structures (e.g., 2D/3D fields).
+	  **Temporal Semantics** are specifically addressed, noting the complexity of time data due to its multiscale hierarchy and aggregation challenges.
+	  
+	  The lecture transitions to **Task Abstraction**, the "why" part of the framework, which involves transforming domain-specific task descriptions into abstract forms to reason about similarities. User goals are categorized into three levels of abstraction:
+	- **Analyse:** The most common use case for visualization, involving either **Consume** (finding new knowledge through **Discover/Explore**, presenting existing knowledge through **Present/Explain**, or casual enjoyment) or **Produce** (generating new material through **Annotate**, **Record**, or **Derive** new data elements).
+	- **Search:** Involves knowing or not knowing the target and location: **Lookup** (known target, known location), **Locate** (known target, unknown location), **Browse** (unknown target, known location to look), **Explore** (unknown target, unknown location).
+	- **Query:** After finding targets, perform operations to **Identify** their characteristics, **Compare** multiple targets, or **Summarise** all targets.
+	  
+	  Finally, the lecture mentions different **Targets** that users might be looking for in data: trends, outliers, features, single attributes, multiple attributes (dependencies, correlations, similarities), network topology, specific paths, and geometric shapes.
+	- ### Lecture 4: Analysis and Validation
+	  
+	  Lecture 4 focuses on "Analysis and Validation" in information visualization design, particularly emphasizing the **Four Nested Levels of Vis Design** as outlined by T. Munzner. This framework suggests that design proceeds top-down from abstract concerns to concrete implementation, but validation must occur at each level:
+	- **Domain Situation:** Understanding the target users, their domain of interest, data, and questions (tasks). The outcome is understanding user needs, often through observations or interviews. Challenges include users' inability to clearly specify needs and designers making assumptions.
+	- **Data & Task Abstraction:** Translating domain-specific questions into generic representations (e.g., browsing, comparing, summarizing) and abstracting data into types suitable for visual representation.
+	- **Visual Encoding & Interaction Idiom:** Designing specific ways to create and manipulate visual representations (visual encoding idiom) and how users change what they see (interaction idiom). This level has a large design space, which data and task abstractions help reduce, with choices based on human perception and memory.
+	- **Algorithm:** Implementing the visual encoding and interaction idioms, considering factors like computational complexity, memory usage, and match with the idiom.
+	  
+	  The lecture stresses that most designs in the huge visualization design space are ineffective, making validation crucial from the beginning. Errors at upstream levels propagate downstream, necessitating an iterative design process. Each design level has its own **threats to validity**, such as choosing the wrong problem, abstraction, idiom, or algorithm.
+	  
+	  Various **Validation Approaches** are discussed:
+	- **Immediate vs. Downstream Validation:** Immediate validation checks a specific design choice, while downstream validation assesses the impact of a choice on subsequent levels. Mismatches can occur if validation methods don't align with the claimed benefits (e.g., algorithm performance doesn't validate a visual encoding idiom).
+	- **Domain Validation:** Aims to confirm real user needs are addressed. Methods include field studies (observing users in real-world settings) and semi-structured interviews (e.g., contextual inquiry). Downstream validation can involve observing a solution's adoption rate.
+	- **Abstraction Validation:** Checks if identified task and data abstractions solve the target audience's problems. Downstream methods include qualitative feedback from target users and field studies to observe behavioral changes.
+	- **Idiom Validation:** Justifies the idiom's design based on perceptual and cognitive principles. Methods include heuristic evaluation or expert reviews to prevent guideline violations. Downstream validation can use controlled experiments in lab settings (measuring time and errors), qualitative discussion of results (showing images/videos), quantitative quality metrics (e.g., edge crossings for graphs), and usability studies.
+	- **Algorithm Validation:** Analyzes computational aspects like complexity, execution time, memory consumption, and scalability. It also verifies the correctness of the algorithm against the idiom specification. Standard benchmarks can be used for comparison.
+	  
+	  The lecture provides examples of case studies (MatrixExplorer, Genealogical Graphs, Flow Maps, LiveRAC, Sizing the Horizon) to illustrate how these validation methods are applied in practice.
+	- ### Lecture 5: Data Presentation
+	  
+	  Lecture 5, "Data Presentation," focuses on how to visually encode data, building upon the previous discussion of data types. The core concepts are **Marks** and **Channels**.
+	- **Marks:** These are the basic graphical elements or geometric primitives used to represent items or links in a visualization. They are classified by their spatial dimensions: zero-dimensional (points), one-dimensional (lines), or two-dimensional (areas). Three-dimensional marks (volumes) are less common due to perceptual limitations.
+		- **Mark Types:**
+			- **Item marks:** Represent individual data items (e.g., points for cities).
+			- **Link marks:** Represent relationships between items:
+				- **Connection marks:** Pairwise relationships via lines (e.g., lines connecting nodes in a network).
+				- **Containment marks:** Hierarchical relationships using areas (e.g., nested rectangles in a treemap).
+	- **Channels:** These control the appearance of marks and can be applied independently of the mark's dimensionality. Many visual channels exist: spatial position, shape, colour (hue, saturation, luminance), motion (flicker, direction, velocity), size (length, area, volume), and tilt (angle). Note that size and shape channels may not be applicable to all mark types (e.g., area marks are typically not size or shape coded).
+		- **Channel Types:**
+			- **Identity channels:** Convey what something *is* (e.g., shape, hue, motion pattern).
+			- **Magnitude channels:** Convey *how much* of something there is (e.g., size, luminance, saturation, angle).
+			  
+			  The lecture emphasizes that the use of marks and channels is guided by two key principles:
+	- **Expressiveness Principle:** A visual encoding should express *all* and *only* the information in the dataset attributes. Ordered data should be shown using magnitude channels; unordered (categorical) data should use identity channels to avoid implying non-existent ordering.
+	- **Effectiveness Principle:** The importance of an attribute should match the salience (impact) of the channel used to encode it. The choice of which attributes to encode with spatial position is the most central, as position dominates a user's mental model.
+	  
+	  **Channel Effectiveness** is quantified by several factors:
+	- **Accuracy:** How closely human perceptual judgment matches objective measurements (e.g., Steven's Psychophysical Power Law, which describes how sensory experience relates to physical intensity). Position along a common scale is the most accurate channel, while volume is quite inaccurate.
+	- **Discriminability:** The number of distinguishable steps or "bins" available within a channel. Channels like line width have limited bins; the number of data values should not exceed available bins.
+	- **Separability:** How independent channels are from each other. Fully separable channels allow clear encoding of different information, while integral channels (e.g., saturation and hue for small regions) lead to interference.
+	- **Popout (Preattentive Processing):** The ability of a distinct item to stand out immediately from others, indicating massively parallel processing of low-level features. Channels like colour hue, tilt, size, shape, and proximity can cause popout. Popout is typically effective for a single channel at a time.
+	- **Grouping:** How channels facilitate the perception of items as a group. Containment is the strongest cue, followed by connection, proximity, and similarity (hue, motion, shape).
+	  
+	  Other perceptual considerations include:
+	- **Relative vs. Absolute Judgements:** The perceptual system is based on relative judgments (Weber's Law), meaning position along a scale is perceived more accurately than pure length judgments. Luminance perception is contextual, based on contrast.
+	- **Colour (Hue) Perception:** Our visual system evolved for colour constancy, which can sometimes work against simple colour encodings. Luminance and saturation are magnitude channels, while hue is an identity channel.
+	- **Colourmaps:** Define mappings between colours and data values, categorized as categorical or ordered (sequential, diverging). Guidelines include using magnitude channels (luminance, saturation) for ordered data, and specific hues for categorical data. Problems with rainbow colourmaps (hue indicating order, non-linear perception, poor fine detail) are highlighted, recommending monotonically increasing luminance colourmaps instead. Bivariate colourmaps are generally discouraged unless one attribute is binary. Colourblind-safe colourmaps are essential, avoiding red-green emphasis and using tools like Viz Palette.
+	- **Size Channels:** Length is highly accurate, area is less accurate, and volume is quite inaccurate, suitable for ordered data.
+	- **Tilt/Angle Channel:** Encodes magnitude based on mark orientation, with higher accuracy near horizontal, vertical, or diagonal positions.
+	- **Shape Channel:** Applied to points and lines, can distinguish many bins but interacts strongly with size.
+	- **Motion Channels:** Direction, velocity, flicker, and blinking frequencies are very separable and strongly draw attention, requiring careful use.
+	- **Texture and Stippling:** Can convey categorical or ordered attributes through dimensions like orientation, scale, and contrast.
+	- ### Lecture 6: Data Processing and Visualisation Toolkits
+	  
+	  Lecture 6, "Data Processing and Visualisation Frameworks," explores the tools and libraries available for creating visual representations of datasets. These frameworks support diverse purposes, including interactive data exploration, presentations, dashboards, business intelligence, and interactive storytelling.
+	  
+	  The lecture covers several prominent programming languages and their associated visualization libraries:
+	- **R:** A free open-source programming language and environment primarily for statistical computing and graphics. It boasts effective data handling, operators for array/matrix calculations, and a large collection of data analysis packages. **ggplot2** is highlighted as a data visualization package for R, implementing Leland Wilkinson's Grammar of Graphics. **RStudio IDE** provides integrated tools like syntax highlighting, code completion, and a workspace browser for enhanced productivity.
+	- **Dash:** An interactive visualization library that works with both R and Python. It combines Plotly graphing with a UI framework, using Flask for the backend (Python) and React.js for the frontend, and supports streaming data.
+	- **D3.js (Data-Driven Documents):** A flexible JavaScript library that combines powerful visualization components with a data-driven approach to DOM manipulation. It's based on web standards (HTML5, SVG, CSS), allowing data to be bound to document elements for transformation based on visual properties. D3.js is very powerful and customizable due to its low-level API, but has a steep learning curve. It builds on earlier academic projects like prefuse, Flare, and Protovis. Libraries like NVD3, plotly.js, or Plotly's Chart Studio offer higher-level interfaces for non-programmers.
+	- **React-Vis:** A React.js visualization library maintained by Uber, which is open-source and facilitates visualization creation using HTML tags rather than direct JavaScript DOM manipulation.
+	- **Python:** A versatile language used with several libraries for data processing and visualization:
+		- **NumPy:** Fundamental package for scientific computing.
+		- **pandas:** A data analysis and manipulation tool.
+		- **Matplotlib:** A library for creating static, animated, and interactive visualizations, with its Pyplot module offering a MATLAB-like interface.
+		- **Seaborn:** A data visualization library with a high-level interface built on Matplotlib.
+		- **Altair:** Enables declarative visualizations in Python.
+	- **Bokeh:** An interactive visualization library for Python that allows export to HTML (for custom CSS/HTML), features widgets for interactive controls, and supports tooltips for data access, including streaming data via WebSockets.
+	- **Streamlit:** Another interactive visualization library for Python, known for easy formatting with markdown and rapid prototyping. It supports Matplotlib, Seaborn, and Altair visualizations and also handles streaming data via WebSockets.
+	  
+	  Beyond programming libraries, the lecture introduces specialized visualization tools and platforms:
+	- **Leaflet:** A JavaScript library specifically for interactive tiled maps, supporting data layers (SVG) on top of map tiles and smooth interaction across devices.
+	- **Deck.gl:** A large-scale open-source WebGL-powered data visualization framework from Uber's Vis.gl, focusing on 3D map visualizations with support for streaming data and cartographic projections.
+	- **Tableau:** A business intelligence tool for visual data analysis, known for creating interactive dashboards and handling huge, fast-changing datasets with integrations to various file types and database solutions (e.g., Hadoop, Amazon AWS, MySQL, SAP).
+	- **Microsoft Power BI:** A business analysis tool providing interactive visualizations and business intelligence capabilities, enabling end users to create reports and dashboards. It connects to hundreds of data sources, including cloud-based BI services, and simplifies data preparation and analysis.
+	- **Google Charts:** A free data visualization tool for creating interactive charts embeddable on websites, producing pure HTML5 and SVG output, and integrating dynamic data sources with Google dashboards and controls.
+	- **Datawrapper:** Offers a simple interface for uploading data and creating embeddable visualizations, originally for journalists, enabling end-user authoring without programming skills and supporting PDF export.
+	- **Infogram:** A web-based drag-and-drop platform for data visualization and infographics, allowing non-designers to create effective visualizations with a WYSIWYG editor and numerous chart types.
+	  
+	  The lecture concludes by mentioning other solutions like Shiny, FusionCharts, Grafana, Chartist.js, and ChartBlocks, indicating the vast landscape of visualization tools.
+	- ### Lecture 7: Design Guidelines and Principles
+	  
+	  Lecture 7 covers essential "Design Guidelines and Principles" for information visualization, primarily based on Tamara Munzner's "Rules of Thumb". These guidelines aim to improve the effectiveness and usability of visualizations.
+	- **No Unjustified 3D:**
+		- 3D visualization is only justified for tasks involving shape understanding of inherently three-dimensional structures (e.g., spatial data like medical scans, fluid flows, molecular interactions), where benefits outweigh costs.
+		- **Costs of 3D:**
+			- **Power of the Plane:** Human perception is highly optimized for 2D, and importance on a plane is influenced by reading conventions.
+			- **Disparity of Depth:** We perceive about 2.05D, not true 3D, with significantly less accuracy for depth (N=0.67 in Steven's Psychophysical Power Law) compared to 2D lengths (N=1.0). Stereo displays only slightly improve depth perception.
+			- **Occlusion Hides Information:** The most powerful depth cue, occlusion, inherently hides parts of the data, requiring costly interactive navigation (motion parallax) and increased cognitive load to remember obscured information.
+			- **Perspective Distortion Dangers:** Foreshortening makes objects appear smaller and shifts their position, distorting visual encoding of abstract data (e.g., making bar heights in a 3D bar chart harder to judge).
+			- **Shadows and Shading:** Can add visual clutter and interfere with colour channels, with shadows potentially being mistaken for data marks.
+			- **Tilted Text is Not Legible:** Text designed for 2D displays becomes blocky and less readable when tilted in 3D.
+	- **No Unjustified 2D:**
+		- Laying out data in 2D space must also be justified against simpler 1D lists. Lists can offer higher information density and are excellent for lookup tasks.
+		- 2D layouts are beneficial when a task requires understanding the topological structure of a network, where showing relationships explicitly outweighs the spatial cost.
+	- **Eyes Beat Memory:**
+		- Comparing views simultaneously visible (side-by-side) imposes much lower cognitive load than relying on memorized previous views.
+		- **Memory and Attention:** Short-term (working) memory and human attention have limited capacity, making conscious search difficult for many items.
+		- **Animation vs. Side-by-Side Views:** While animation can be powerful for smooth transitions and context maintenance, it often imposes significant cognitive load, especially for complex changes.
+		- **Change Blindness:** Users may fail to notice major changes if their attention is directed elsewhere, making complex multi-frame animations difficult to track.
+	- **Resolution Over Immersion:**
+		- There's a critical trade-off between pixel resolution and immersion (e.g., in virtual reality). The number of pixels is a major constraint in visualization design, and immersion rarely justifies the cost in resolution.
+		- Immersive environments are often special-purpose and not integrated with typical computer-based workflows, hindering task switching. They might be helpful for specific shape understanding tasks like protein folding.
+	- **Overview First, Zoom and Filter, Details on Demand:**
+		- This is Ben Shneiderman's "Visual Information-Seeking Mantra".
+		- **Overview:** Summarizes the dataset, showing all items simultaneously to help identify regions for further investigation, often presented at the start of exploration. Geometric zooming alone might be insufficient, requiring aggregation or semantic zooming.
+		- **Zoom and Filter:** Allows users to reduce the data shown or change the level of detail.
+		- **Details on Demand:** Specific details pop up in response to user selection, or detail views can be permanently visible alongside an overview.
+	- **Responsiveness is Required:**
+		- Users need immediate visual feedback (within one second) for actions, such as highlighting selections or drawing new frames during navigation.
+		- For longer actions, a progress indicator should be shown.
+		- Interaction design should consider latency (e.g., clicking vs. hovering for details) and different feedback mechanisms (fixed pane, popup, visual highlight). Interactivity also incurs human time and attention costs.
+	- **Get it Right in Black and White:**
+		- This guideline, by Maureen Stone, emphasizes designing critical aspects of the visualization to be legible even in black and white. It suggests using the luminance channel for the most important attributes.
+	- **Function First, Form Next:**
+		- Prioritize the function and effectiveness of the design over its aesthetic form. An effective but "ugly" design can be refined, but a beautiful, ineffective one cannot.
+		- However, visual beauty does matter, as users prefer equally effective but more beautiful designs.
+	- ### Lecture 8: Visualisation Techniques
+	  
+	  Lecture 8 delves into specific "Visualisation Techniques" for encoding different types of datasets: tables, spatial data, and networks/trees. It focuses on various "idioms" or ways information can be visualized.
+	  
+	  The choice of spatial arrangement is crucial because the use of space dominates a user's mental model and planar position offers the most effective channels for both ordered and categorical attributes.
+	  
+	  **1. Arrange Tables:**
+	- **Keys and Values:** The distinction between key (independent index) and value (dependent data) attributes is central. Keys typically define spatial regions, while values are shown within them.
+	- **Scatterplot (Bubble Plot):** Visually encodes two quantitative value attributes using horizontal and vertical spatial position for point marks. Additional attributes can be encoded with colour (categorical) or size (quantitative, forming a bubble plot). Useful for finding trends, outliers, distributions, and correlations.
+	- **Separate, Order & Align Regions:** For categorical attributes, spatial regions are used to group similar items. This involves separating, ordering, and optionally aligning regions. A 1D list alignment is common, with values shown on a second dimension (e.g., bar charts).
+	- **Bar Chart:** Encodes one quantitative value attribute and one categorical key attribute. Value is shown with aligned vertical position using line marks, and the key attribute separates marks horizontally. Ordering by data-driven attributes (e.g., weight) aids trend perception.
+	- **Stacked Bar Chart:** For multidimensional tables with one quantitative value and two categorical keys. Sub-bars, length-coded and stacked vertically, encode the value for each category of the secondary key. Useful for part-to-whole relationships and trend finding.
+	- **Streamgraph:** Visualizes time-series data (quantitative value, ordered time key, categorical key) emphasizing the continuity of horizontal layers. Layer height encodes counts, suitable for finding trends.
+	- **Dot Chart:** Similar to a bar chart but uses point marks instead of lines for the quantitative attribute.
+	- **Line Chart:** Best used for ordered key attributes to emphasize trends, as using it for categorical data implies non-existent trends (violates expressiveness). Aspect ratio can be "banked to 45°" for better angle judgment.
+	- **Matrix Alignment:** For datasets with two keys, arranged in a 2D matrix.
+		- **Heatmap:** Two categorical key attributes, one quantitative value attribute. Area marks in a 2D matrix alignment with a diverging colourmap, good for finding clusters, outliers, and summaries.
+		- **Scatterplot Matrix (SPLOM):** Arranges scatterplots in a 2D matrix to show pairwise relationships between many attributes. Useful for finding correlation, trends, and outliers.
+		- **Volumetric Grids & Recursive Subdivision:** For 3D fields; volumetric grids are generally not recommended for abstract data due to perceptual issues.
+	- **Spatial Axis Orientation:**
+		- **Rectilinear layouts:** Orthogonal horizontal and vertical axes.
+		- **Parallel layouts:** Parallel coordinates visualize many quantitative attributes at once, showing trends, outliers, and correlations.
+		- **Radial layouts:** Items distributed around a circle using angle, efficient for periodic patterns. Examples include radial bar charts (length coding, radial layout for periodic patterns), pie charts (area marks, angle channel for part-whole relationships, but less accurate than bar charts), and polar area charts (area marks, length channel, radial layout). Normalised stacked bar charts are also discussed for part-to-whole relationships.
+	- **Spatial Layout Density:**
+		- **Dense layout:** Uses small, packed marks for overview, sometimes single pixels, limiting channels to position and colour.
+		- **Space-filling layout:** Fills all available space (e.g., treemaps), using area marks and containment, maximizing space for colour coding and labels, but eliminating white space.
+		  
+		  **2. Arrange Spatial Data:**
+	- Primary importance is given to the provided spatial position as the layout substrate.
+	- **Geometry:** Data derived from raw sources (e.g., geographic data) can be used as a backdrop, with cartographic data used to size-code marks (e.g., city population).
+		- **Choropleth Map:** Uses given geographic geometry for area mark boundaries, with a sequential segmented colourmap for a quantitative attribute per region, useful for finding clusters.
+	- **Spatial Fields:** Scalar fields (single value per cell, e.g., medical scans), vector fields (multiple values, e.g., fluid dynamics), and tensor fields (matrix per cell, e.g., stress).
+		- **Isocontours:** Uses isolines to represent contours of scalar values, with close lines indicating rapid change.
+		- **Topographic Terrain Maps:** Use derived isolines from 2D spatial fields to query shape.
+		  
+		  **3. Arrange Networks and Trees:**
+	- Connections (links) can be represented by node-link diagrams, adjacency matrices, or enclosure.
+	- **Node-Link Diagrams:** Use explicit connection marks, well-suited for understanding network topology (e.g., shortest paths, adjacent nodes). Examples include triangular vertical, spline radial, rectangular horizontal, and bubble tree layouts.
+		- **Force-Directed Placement (SFDP):** Nodes are point marks, links are connection marks. Highly scalable for larger networks via multilevel algorithms, good for exploring topology and paths.
+	- **Adjacency Matrix View:** Network nodes are laid out along horizontal and vertical edges of a square, with links indicated by coloured area marks at cell intersections. Offers better scalability, predictability, and stability than node-link diagrams, but is poor for understanding topological structure.
+	- **Enclosure (Containment):** Uses containment marks (nesting) to show complete hierarchical structure, applicable only to trees, not general networks.
+		- **Treemaps:** Use area marks and containment with a rectilinear layout to encode trees. Effective for querying attributes at leaf nodes and can scale to millions of nodes/links.
+		- **GrouseFlocks:** A visualization for compound networks (tree superimposed on a network), showing network nodes as tree leaves.
+	- ### Lecture 9: View Manipulation and Reduction
+	  
+	  Lecture 9 covers "View Manipulation and Reduction," which are critical interactive techniques for handling visual complexity in visualizations, especially with large datasets.
+	  
+	  **View Manipulation:** This involves changing a view over time to reduce complexity or visual clutter. Ways to manipulate a view include:
+	- Selecting specific elements (items or attributes).
+	- Reordering (sorting) items to find patterns based on different attributes.
+	- Changing parameters of a specific idiom (e.g., mark sizes).
+	- Semantic zooming.
+	- Switching between different visualization idioms.
+	- Examples include **LineUp** (slope graphs with reordering and animated transitions to compare rankings) and **Animated Transitions** (maintaining context between states).
+	  
+	  **Element Selection and Highlighting:**
+	- **Element Selection:** Involves choosing which elements (data items, links, attributes, attribute levels) can be targets. This can be for single or multiple elements, and can distinguish between primary and secondary targets. Selection often defines the target for a subsequent action.
+	- **Selection Highlighting:** Provides immediate visual feedback when elements are selected. This can be achieved by changing colour (hue, luminance, saturation for popout), adding/changing outlines, changing size, or using motion coding (e.g., slight movement) for data items. For link marks, colour, linewidth, or shape can be changed. Multiple highlighting choices can be combined, and selected items can be connected via explicit visual links (Context-preserving Visual Links).
+	  
+	  **Navigation: Changing Viewpoint:**
+	- Navigation helps users explore large, complex datasets from different perspectives, often combining filtering and aggregation.
+	- Key aspects of navigation are:
+		- **Zooming:** Moving the virtual camera closer or further away from the image plane, changing the number of visible items and their detail level.
+			- **Geometric Zooming:** Simply scales the view.
+			- **Semantic Zooming:** In contrast, the fundamental appearance of objects changes based on the number of available pixels; details are added or removed, and different idioms might be used at different semantic zoom levels. Constrained navigation limits camera motion to prevent users from getting lost.
+		- **Panning (translating):** Moving the camera parallel to the image plane (up/down, side-to-side).
+		- **Rotating:** Spinning the camera around its axis (rarely used in 2D navigation).
+		  
+		  **Reduction:** This is a strategy for dealing with complexity by reducing the number of visible elements, either through filtering or aggregation. It's a bidirectional operation, allowing reduction or increase of elements.
+	- **Reducing Attributes:** The number of attributes can be reduced in three ways:
+		- **Slice:** A single attribute value defines which items are extracted (e.g., 3D to 2D reduction of spatial data).
+		- **Cut:** A plane divides the viewing volume, hiding everything on one side.
+		- **Project:** All items are shown, but specific attributes are omitted (often used with multiple views, e.g., 2D projections of a 3D scene).
+	- **Filtering:** Eliminates elements based on attribute values, often through dynamic queries where users interactively choose ranges via UI widgets.
+		- **Item filtering:** Reduces the number of items.
+		- **Attribute filtering:** Keeps items but reduces the number of shown attributes.
+		- A challenge is that users might forget about filtered elements ("out of sight, out of mind"). Examples include **FilmFinder** and **DOSFA** (Dimensional Ordering, Spacing and Filtering Approach) for document collections.
+	- **Aggregation:** Combines many elements into a derived element (summary) rather than eliminating them. A challenge is that aggregation might hide interesting signals in the dataset (e.g., Anscombe's Quartet).
+		- **Item aggregation:** Interactive aggregation/deaggregation of item sets.
+		- **Attribute aggregation:** Grouping attributes by similarity or synthesizing new attributes based on averages; includes dimensionality reduction.
+		- Examples: **Histograms** (aggregate quantitative values into bins), **Continuous Scatterplots** (aggregate overplot density), **Boxplot Charts** (show distribution spread/skew), and **Spatial Aggregation** (challenges with modifiable areal unit problem - MAUP).
+		- **Dimensionality Reduction (DR):** Preserves meaningful structure using fewer attributes, assuming hidden structure/redundancy. Multidimensional Scaling (MDS) is a complex form of DR. Reduced data is often visualized as a scatterplot or SPLOM; only large clusters should be considered reliable.
+	- ### Lecture 10: Interaction
+	  
+	  Lecture 10 emphasizes "Interaction" as a fundamental necessity for visualization tools, especially when dealing with complex data and display limitations. It outlines five major approaches for handling visual complexity: deriving new data, view manipulation, reduction (filtering/aggregation), **faceting into multiple views**, and **embedding (focus+context)**.
+	  
+	  **1. Facet Into Multiple Views:** This approach deals with complexity by dividing information across multiple views.
+	- **Juxtapose Views Side by Side:** Views are placed next to each other, which can be enhanced by **coordination of views** to create **linked views**.
+		- **Sharing of Encoding:** All channels are handled identically for an identical visual encoding. **Multiform views** have some aspects of visual encoding different between views, perhaps showing subsets of attributes to reduce clutter.
+		- **Linked Highlighting (Brushing):** Interactively selected items in one view are highlighted with the same colour in all other linked views, revealing how a continuous region in one view distributes across others. The **Exploratory Data Visualizer** is given as an example.
+		- **Sharing of Data:** Views can either show all the data (**shared data**) or a subset.
+			- **Overview-detail (subset):** One view shows the entire dataset (overview), and another shows detailed information about a selected subset. This can involve subset data with shared encoding (e.g., bird's-eye map) or multiform views (e.g., details-on-demand).
+			- **Small Multiples:** Multiple views with the same visual encoding but different partitions of the data, often aligned in a matrix to facilitate comparison.
+		- **Partitioning into Views:** Data is divided between views based on attributes, typically categorical variables. This can use list or matrix alignment, or recursive subdivision. Examples include partitioning bar charts and Hierarchical Visual Expression (HiVE).
+	- **Superimpose Views as Layers:** Multiple layers are placed on top of each other.
+		- Design choices include the number of layers (often two: background/foreground), distinction of layers (non-overlapping visual channels), static vs. dynamic layers, and partitioning of items into layers.
+		- Examples: **Cartographic Layering** (regions, roads, distinguished by colour saturation/luminance/size), **Superimposed Line Charts** (CPU utilization for machines, coloured by machine), and **Hierarchical Edge Bundles** (network and hierarchy layers with distinct colours).
+		  
+		  **2. Embed: Focus+Context:** This approach displays both detailed information (focus) and overview information (context) within a single view, aiming to avoid disorientation from navigation techniques like geometric zooming.
+	- **Elide and Superimpose Data:** Some items are omitted or summarized (context), while focus items are shown in detail. Dynamic aggregation can be used for context, and superimposed layers can also create focus+context (e.g., **Toolglass and Magic Lenses**).
+	- **Distortion:** Geometric distortion of contextual regions to provide more space for detail in the focus region. Design choices include number/shape/locality of foci and interaction metaphors (e.g., movable lenses). While good for topological network structures, distortion can severely impair length judgments and may not be immediately obvious to users.
+		- Examples: **DOITrees** (multiple foci), **Fisheye Lens** (single, local radial focus, movable lens), **Hyperbolic Geometry** (single global radial focus by projecting from hyperbolic to Euclidean space), and **Nonlinear Magnification Fields** (multiple, local arbitrary regions). Graph exploration often combines techniques like fisheye lenses with highlighting.
+	- ### Lecture 11: Dashboards
+	  
+	  Lecture 11 is dedicated to "Dashboards," defining them, identifying common design mistakes, and outlining strategies for effective design.
+	  
+	  A dashboard is formally defined as "a visual display of the most important information needed to achieve one or more objectives; consolidated and arranged on a single screen so the information can be monitored at a glance".
+	  
+	  Key characteristics of dashboards include:
+	- **Visual Displays:** Combine text and graphics, with an emphasis on graphics for efficiency and richer meaning.
+	- **Display Information for Objectives:** Offer access to a collection of information, often from diverse sources, typically focusing on Key Performance Indicators (KPIs).
+	- **Fit on One Screen:** All information should be entirely visible "at a glance" without requiring scrolling or navigating multiple screens. Information might be refreshed in real time depending on objectives.
+	- **Monitor Information at a Glance:** Information is presented as summaries or exceptions, with the main goal of showing what requires attention and a secondary goal of offering details for action.
+	- **Small, Concise, Clear, and Intuitive Display Mechanisms:** Visualizations should not require much screen space, and the choice of technique (line charts, gauges, traffic signals) should be well-suited to the needs.
+	- **Customized:** Displayed information must be tailored to specific individuals, groups, or functions.
+	  
+	  The lecture outlines **13 Common Mistakes in Dashboard Design** by Stephen Few:
+	- **Exceeding the Boundaries of a Single Screen:** Fragmenting data across multiple screens or requiring scrolling hides information and reduces effectiveness.
+	- **Supplying Inadequate Context for the Data:** Data presented without reference points (e.g., targets, comparisons) is meaningless.
+	- **Displaying Excessive Detail or Precision:** Overly precise measures slow down interpretation without benefits.
+	- **Choosing a Deficient Measure:** The measure chosen might be accurate but not the clearest way to communicate the intended message (e.g., using absolute values instead of percentages for deviations).
+	- **Choosing Inappropriate Visualization Technique:** Using techniques poorly suited for the data or task (e.g., circles for unidimensional variables due to poor area comparison, pie charts for comparisons, or gratuitous spatial representations).
+	- **Introducing Meaningless Variety:** Unnecessary diversity in visualization types forces perceptual shifts, wasting user time and effort.
+	- **Using Poorly Designed Visualization Technique:** Issues like legends requiring excessive eye movement, inefficient ordering of elements, sensory overload from bright colours, lack of delimiters for numbers, or occluded text/needles. Emphasizes maximizing the "data-ink ratio" and avoiding "chart junk". Almost always avoid 3D graphs for business data due to occlusion.
+	- **Encoding Quantitative Data Inaccurately:** Wrong axis scales or other design issues leading to misinterpretation.
+	- **Arranging Data Poorly:** Lack of visual balance (e.g., placing important data in least prominent areas), unnecessary segmentation, or poor arrangement for comparisons (e.g., side-by-side instead of above-below for related items). Most important data must "pop out".
+	- **Highlighting Important Data Ineffectively or Not at All:** Failing to direct the viewer's eyes to the most crucial information first.
+	- **Cluttering Display with Useless Decoration:** Using logos, titles, background gradients, or unnecessary background maps that distract from the data.
+	- **Misusing or Overusing Colour:** Excessive or inappropriate use of colour.
+	- **Designing an Unattractive Visual Display:** An ugly dashboard discourages use; beauty should enhance data display without distracting from or obscuring it.
+	  
+	  Finally, the lecture provides **Strategies for Effective Dashboard Design**:
+	- **Condensing Information with Summaries and Exceptions:** Representing large sets of numbers as single summaries (sums, averages) or highlighting critical values (exceptions) that require attention.
+	- **Maximising the Data-Ink-Ratio:** Eliminating unnecessary "non-data ink" (decoration, banners, chart junk like grids, borders, 3D effects) and de-emphasizing remaining non-data ink (e.g., thin lines, muted controls). Conversely, enhancing "data ink" by highlighting the most important data (statically or dynamically).
+	- **Designing Dashboards for Usability/UX:**
+		- **Organize Information to Support its Meaning and Use:** Grouping by business functions, co-locating related items, delineating groups with minimal visual means (e.g., white space), supporting meaningful comparisons (combining items in single encoding, placing close, brushing/linking, comparative values, colour for grouping), and discouraging meaningless comparisons.
+		- **Make the Viewing Experience Aesthetically Pleasing:** Choosing colours appropriately (minimal bright colours, less saturated/natural colours, pale background), and using legible fonts (decent size, no ornaments, different font for headings).
+	- ### Lecture 12: Case Studies and Course Review
+	  
+	  Lecture 12 serves as a "Case Studies and Course Review," applying the "what-why-how" analysis framework and the four levels of validation to existing visualization systems. This helps students understand possibilities for designing new systems.
+	  
+	  The lecture analyzes four significant case studies:
+	- **Scagnostics SPLOM (Scatterplot Matrix):**
+		- A scalable idiom for exploring scatterplot matrices.
+		- It uses **scagnostics** (scatterplot computer-guided diagnostics) which are nine measurements (monotonic, stringy, skinny, convex, striated, sparse, clumpy, skewed, outlying) that categorize the point distribution of scatterplots.
+		- These measurements are then shown in a new "scagnostics SPLOM," which is effectively a "scatterplot of scatterplots," where each point represents an entire scatterplot from the original SPLOM.
+		- It features **linked highlighting** between views, and selecting a point triggers a popup with the full scatterplot.
+		- **What (Data):** Table; **What (Derived):** Nine quantitative attributes per scatterplot (pairwise combinations of original attributes).
+		- **Why (Tasks):** Identify, compare, and summarize distributions and correlation.
+		- **How (Encode):** Scatterplot, scatterplot matrix; **How (Manipulate):** Select; **How (Facet):** Juxtaposed small-multiple views coordinated with linked highlighting, popup detail view.
+		- **Scale:** Original attributes: dozens.
+	- **Hierarchical Clustering Explorer (HCE):**
+		- Designed for systematic exploration of multidimensional tables, originally for genomics (genes vs. experimental conditions, with gene activity as quantitative value).
+		- It derives a **cluster hierarchy** of items based on similarity measures.
+		- Scalability targets were high (100-20,000 genes, 2-80 experimental conditions).
+		- Scalability is achieved through a combination of visual encoding and interaction idioms.
+		- **What (Derived):** Hierarchical clustering of table rows and columns (for cluster heatmap); quantitative derived attributes for each original attribute and pairwise combination; quantitative derived attribute for ranking criteria.
+		- **Why (Tasks):** Find correlation between attributes; find clusters, gaps, outliers, trends within items.
+		- **How (Encode):** Cluster heatmap, scatterplots, histograms; **How (Reduce):** Dynamic filtering, dynamic aggregation; **How (Manipulate):** Navigate with pan/scroll; **How (Facet):** Multiform views with linked highlighting and shared spatial position; overview-detail with selection in overview populating detail view.
+		- **Scale:** Genes: 20,000; Conditions: 80; Gene activity: 1,600,000.
+	- **PivotGraph:**
+		- Encodes a **derived network** from an original network by aggregating groups of nodes and links into a "roll-up" based on categorical attribute values (up to two attributes).
+		- Highly scalable, summarizing arbitrarily large numbers of nodes and links from the original network.
+		- Visual complexity of the derived network depends on the number of attribute levels for the two roll-up attributes.
+		- Complements standard network encoding idioms (node-link, matrix views) and can be used as a linked multiform view.
+		- Well-suited for comparison across attributes at the aggregate level, but not for understanding topological network features.
+		- **What (Data):** Network; **What (Derived):** Derived network of aggregate nodes and links by roll-up into two chosen attributes.
+		- **Why (Task):** Cross-attribute comparison of node groups.
+		- **How (Encode):** Nodes linked with connection marks, size; **How (Manipulate):** Change with animated transitions; **How (Reduce):** Aggregation, filtering.
+		- **Scale:** Original network nodes/links: unlimited; Rollup attributes: 2; Levels per roll-up attribute: several, up to one dozen.
+	- **InterRing:**
+		- Visual encoding and interaction idioms for tree exploration.
+		- Uses a **space-filling radial layout** for encoding the hierarchy.
+		- Features a **multifocus focus+context distortion approach** for interaction.
+		- Employs structure-based colouring (redundant) which is useful for coordination with other views.
+		- Works well in combination with other views, supporting selection, navigation, roll-up/drill-down, and direct editing of the hierarchy.
+		- **What (Data):** Tree.
+		- **Why (Task):** Selection, rollup/drilldown, hierarchy editing.
+		- **How (Encode):** Radial, space-filling layout; colour by tree structure; **How (Facet):** Linked colouring and highlighting; **How (Reduce):** Embed: distort; multiple foci.
+		- **Scale:** Nodes: hundreds (labelled), thousands (dense); Levels in tree: dozens.
+		  
+		  The lecture then provides a comprehensive **Course Summary** covering all previously discussed topics, reinforcing the key concepts from each lecture. This summary serves as a guide for understanding the scope of the final oral exam, which covers content from both lectures and exercise sessions, including any videos shown. Students are expected to understand basic concepts and be able to report on all aspects of their assignment. The course also mentions opportunities for MA and PhD theses in various related fields.
+		  
+		  <!--EndFragment-->
+- ## Lecture 1
+  collapsed:: true
 	- Gapminder, hans rosling
 		- Let the dataset change you mindset
 		- animated presentation in space and time
@@ -721,6 +1104,7 @@ collapsed:: true
 			- texture can be used to show categorical attributes as well as ordered attributes
 			- stippling fills regions of drawing with short strokes (dashed or dotted lines)
 - ## Lecture 9
+  collapsed:: true
 	- View manipulation
 		- Why to manipulate and change the view?
 			- dataset might be too large to show everything at once
@@ -774,3 +1158,4 @@ collapsed:: true
 		- how: any encoding, highlight with link mark
 		- how: select any element
 		- how: juxtaposed multiple views
+-
