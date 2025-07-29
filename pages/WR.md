@@ -41,7 +41,7 @@
 - ### Leg het verschil uit tussen sterke en zwakke numerieke stabiliteit.
 	- Een algoritme is sterk stabiel als haar **relatieve fout vergelijkbaar is met de machineprecisie**. Door stabilisatie brengt men een zwak stabiel dichter bij een sterk stabiel algoritme.
 	-
-	- Een algoritme is zwak stabiel als haar **onvermijdelijke fout vergelijkbaar is met de conditionering van het probleem. Dus relatieve fout is vergelijkbaar met de conditiegetal $\times$ machineprecisie**
+	- Een algoritme is zwak stabiel als haar onvermijdelijke fout vergelijkbaar is met de conditionering van het probleem. Dus relatieve fout is vergelijkbaar met de conditiegetal $\times$ machineprecisie
 	-
 - ### Formuleer een numeriek stabiele methode voor het berekenen van de functie $f(x) = \frac{1}{1+2x} - \frac{1-x}{1+x}$ voor $x \approx 0$. Leg uit waarom in de buurt van $x \approx 0$ er een numeriek probleem optreedt. Is het probleem in de buurt van $x \approx 0$ goed geconditioneerd?
 	-
