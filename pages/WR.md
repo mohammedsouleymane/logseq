@@ -46,6 +46,7 @@
 - ### Formuleer een numeriek stabiele methode voor het berekenen van de functie $f(x) = \frac{1}{1+2x} - \frac{1-x}{1+x}$ voor $x \approx 0$. Leg uit waarom in de buurt van $x \approx 0$ er een numeriek probleem optreedt. Is het probleem in de buurt van $x \approx 0$ goed geconditioneerd?
 	-
 - ### Bereken de complexiteit van de achterwaartse substitutie in volgend algoritme:
+  collapsed:: true
 	- ![image.png](../assets/image_1749658335279_0.png)
 	- 1
 	- $$1 + \sum_{k=1}^{n-1} 2(n-k) + 1 $$
@@ -53,6 +54,7 @@
 	  $$= n^2$$b
 	-
 - ### Bereken de complexiteit van de Gausseliminatie in volgendalgoritme:
+  collapsed:: true
 	- ![image.png](../assets/image_1749659362900_0.png)
 	-
 	-
@@ -61,6 +63,7 @@
 	  $$2 \sum (n-j)^2 + 2(n-j)$$
 	  $$\approx \frac{2}{3}n^3$$
 - ### Bereken de complexiteit van de QR-ontbinding in volgende algoritme:
+  collapsed:: true
 	- ![image.png](../assets/image_1749656767347_0.png)
 	- 2n-1 (n \times en n-1 +)
 	- n (n \div)
