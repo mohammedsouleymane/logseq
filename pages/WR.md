@@ -90,14 +90,14 @@
 	  $n^2 - \frac{n(n-1)}{2} - n = \frac{n(n+1)}{2}$ onbekenden
 	  Samen zijn er dus n^2 onbekenden wat de stelling bewijs.
 - ## Leg het principe re-orthogonalisatie uit
-  Re-orthogonalisatie past men toe in de QR-ontbinding wanneer er een gebrek is aan stabiliteit.
-  Er werd aangetoond dat deze aanpak leidt tot een sterk stabiel algoritme, zelfs na beperkt
-  aantal iteraties. (rounding error analysis of the classical gram-schmidt orthogonalization
-  process)
-  Verklaar waarom deze stap zonder afrondsfouten overbodig is
-  In de paper rond round-off error analysis of the gram-schmidt algorithm with
-  reorthogonalization wordt vermeld dat voor welgevormde matrices zonder afrondfouten de
-  berekende vectoren heel dicht liggen bij machine precisie en de reorthogonalisatie overbodig
-  is, maar bij ill-conditioned matrices de uiteindelijke fout veel groter is. Een toepassing van 2
-  iteraties volstaat om stabiel te zien.
+	- Re-orthogonalisatie past men toe in de QR-ontbinding wanneer er een gebrek is aan stabiliteit.
+	  Er werd aangetoond dat deze aanpak leidt tot een sterk stabiel algoritme, zelfs na beperkt
+	  aantal iteraties. (rounding error analysis of the classical gram-schmidt orthogonalization
+	  process)
+	  Verklaar waarom deze stap zonder afrondsfouten overbodig is
+	  In de paper rond round-off error analysis of the gram-schmidt algorithm with
+	  reorthogonalization wordt vermeld dat voor welgevormde matrices zonder afrondfouten de
+	  berekende vectoren heel dicht liggen bij machine precisie en de reorthogonalisatie overbodig
+	  is, maar bij ill-conditioned matrices de uiteindelijke fout veel groter is. Een toepassing van 2
+	  iteraties volstaat om stabiel te zien.
 -
