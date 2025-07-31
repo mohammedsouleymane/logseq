@@ -1,5 +1,4 @@
 ### Formuleer de 64-bit IEEE standaard voor floating point getallen en bereken de computerprecisie.
-collapsed:: true
 	- De 64 bit IEEE standaard voor floating point of beter gekend als de "double" maakt gebruikt van 64 bits waarvan 53 mantisse and 11 bit exponent.
 	- We gebruiken de standaard om floating getallen voor te stellen als volgt: 
 	  $$fl(x) = \pm i_0.i_1....i_p \times 2^e$$
@@ -29,7 +28,6 @@ collapsed:: true
 		- De macht van 10 is positief maar vraag niet een extra cijfer zodat p cijfers voldoende zijn. Om de verschil uit te drukken hebben we maximaal p cijfers nodig
 		  Stelling van Sterbenz duidt aan dat het rekenen met machinegetallen minder gevoelig is dan niet rekenen met niet-machine getallen.
 - ### Hoe definieer je de conditionering en conditiegetal? Wat stelt dit getal precies voor?
-  collapsed:: true
 	- De conditionering onderstelt de numerieke bewerkingen als perfect, maar **bestudeert de invloed van een invoerfout of pertubatie**. Dit is een afrondfout analyse. Hoe propageert de **initiele afrondingfout zich naar het eindresultaat**. Hoe rekengevoelig is het eindresultaat ten gevolgen van fouten aan de start.
 	- Stel dat we de functie $F(x)$ willen evalueren met invoer $x \in \mathbb{R}$. Aangezien de invoer een afrondfout heeft beschouwen we dit eerste orde analyse
 	  $$F(fl(x)) = F(x+\Delta x) \approx F(x) + F'(x) \cdot \Delta x$$
@@ -41,7 +39,6 @@ collapsed:: true
 	  je mag verwachten dat je 3 bijhorende cijfers nog extra zal verliezen
 	  hoe hoger hoe numberiek gevoeliger
 - ### Leg het verschil uit tussen sterke en zwakke numerieke stabiliteit.
-  collapsed:: true
 	- Een algoritme is sterk stabiel als haar **relatieve fout vergelijkbaar is met de machineprecisie**. Door stabilisatie brengt men een zwak stabiel dichter bij een sterk stabiel algoritme.
 	-
 	- Een algoritme is zwak stabiel als haar onvermijdelijke fout vergelijkbaar is met de conditionering van het probleem. Dus relatieve fout is vergelijkbaar met de conditiegetal $\times$ machineprecisie
@@ -49,7 +46,6 @@ collapsed:: true
 - ### Formuleer een numeriek stabiele methode voor het berekenen van de functie $f(x) = \frac{1}{1+2x} - \frac{1-x}{1+x}$ voor $x \approx 0$. Leg uit waarom in de buurt van $x \approx 0$ er een numeriek probleem optreedt. Is het probleem in de buurt van $x \approx 0$ goed geconditioneerd?
 	-
 - ### Bereken de complexiteit van de achterwaartse substitutie in volgend algoritme:
-  collapsed:: true
 	- ![image.png](../assets/image_1749658335279_0.png)
 	- 1
 	- $$1 + \sum_{k=1}^{n-1} 2(n-k) + 1 $$
@@ -57,7 +53,6 @@ collapsed:: true
 	  $$= n^2$$b
 	-
 - ### Bereken de complexiteit van de Gausseliminatie in volgendalgoritme:
-  collapsed:: true
 	- ![image.png](../assets/image_1749659362900_0.png)
 	-
 	-
@@ -66,7 +61,6 @@ collapsed:: true
 	  $$2 \sum (n-j)^2 + 2(n-j)$$
 	  $$\approx \frac{2}{3}n^3$$
 - ### Bereken de complexiteit van de QR-ontbinding in volgende algoritme:
-  collapsed:: true
 	- ![image.png](../assets/image_1749656767347_0.png)
 	- 2n-1 (n \times en n-1 +)
 	- n (n \div)
