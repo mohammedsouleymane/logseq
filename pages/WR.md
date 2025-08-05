@@ -84,11 +84,11 @@
 	  logseq.order-list-type:: number
 	- Aan gezien $Q'Q = 1$ vinden we dat 
 	  logseq.order-list-type:: number
-	  $[Q'Q]_{uv} = q_u, q_v = 1$ is als $u=v$
-	  anders 0
-	  Dit levert $\frac{n(n-1)}{2}$ vergelijkingen op die nul moeten worden en N die 1 moeten worden. De matrix Q heeft 
-	  $n^2 - \frac{n(n-1)}{2} - n = \frac{n(n+1)}{2}$ onbekenden
-	  Samen zijn er dus n^2 onbekenden wat de stelling bewijs.
+		- $[Q'Q]_{uv} = q_u, q_v = 1$ is als $u=v$
+		- anders 0
+		  Dit levert $\frac{n(n-1)}{2}$ vergelijkingen op die nul moeten worden en N die 1 moeten worden. De matrix Q heeft 
+		  $n^2 - \frac{n(n-1)}{2} - n = \frac{n(n+1)}{2}$ onbekenden
+		  Samen zijn er dus $n^2$ onbekenden wat de stelling bewijs.
 - ## Leg het principe re-orthogonalisatie uit
 	- Re-orthogonalisatie past men toe in de QR-ontbinding wanneer er een gebrek is aan stabiliteit.
 	  Er werd aangetoond dat deze aanpak leidt tot een sterk stabiel algoritme, zelfs na beperkt
