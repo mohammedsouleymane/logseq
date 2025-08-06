@@ -70,9 +70,9 @@
 	- 2n(j-1)
 	- 2n-1
 	- n
-	- $$3n - 1 \sum_{j=2}^n (4n-1)(j-1) + 3n - 1$$
-	  $$3n - 1 \sum_{j=2}^n 4nj - n - j $$
-	  $$3n - 1 4n(\frac{n(n+1)}{2}) \sum_{j=2}^n- n - j \approx 2n^3$$
+	- $$3n - 1 + \sum_{j=2}^n (4n-1)(j-1) + 3n - 1$$
+	  $$3n - 1 + \sum_{j=2}^n 4nj - n - j $$
+	  $$3n - 1 + 4n(\frac{n(n+1)}{2}) \sum_{j=2}^n- n - j \approx 2n^3$$
 - ### Bewijs de uniciteit van de LU-decompositie.
 	- Stelsel van Crout heeft hoogstens 1 oplossing
 	- LU-decompositie zijn voor beide driehoekige matrices. Aantal in te vullen plaatsen is dus: $n + (n-1) ... +1 = \frac{n(n+1)}{2}$
