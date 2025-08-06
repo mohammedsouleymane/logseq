@@ -61,7 +61,7 @@
 	  $$2 \sum (n-j)^2 + 2(n-j)$$
 	  $$\approx \frac{2}{3}n^3$$
 - ### Bereken de complexiteit van de QR-ontbinding in volgende algoritme:
-	- ![image.png](../assets/image_1749656767347_0.png)
+	- ![image.png](../assets/image_1754508245344_0.png)
 	- 2n-1 (n \times en n-1 +)
 	- n (n \div)
 	- =3n - 1
