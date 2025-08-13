@@ -1,5 +1,6 @@
 # TQBF and FQBF: PSPACE-Complete Problems
 	- ## 1. Definition of the TQBF Problem
+	  collapsed:: true
 		- **TQBF (True Quantified Boolean Formula)** is the problem of determining whether a given quantified Boolean formula (QBF) is true.
 		- A **quantified Boolean formula (QBF)** is a Boolean formula with leading **existential (∃)** and **universal (∀)** quantifiers. Each variable in the formula must be within the scope of a quantifier.
 		- A QBF is either **TRUE** or **FALSE**. For example:
@@ -11,6 +12,7 @@
 		  
 		  ---
 	- ## 2. Complexity of TQBF
+	  collapsed:: true
 		- **TQBF is PSPACE-complete.**
 		- **PSPACE** is the class of decision problems solvable by a deterministic Turing machine using polynomial space.
 		- PSPACE-completeness means a problem is among the "hardest" problems in PSPACE.
@@ -31,6 +33,7 @@
 			  
 			  ---
 	- ## 3. Complexity of the FQBF Problem
+	  collapsed:: true
 		- **FQBF (False Quantified Boolean Formula)** is the problem of determining whether a given QBF is **false**.
 		- **FQBF is PSPACE-complete**, as it is the complement of TQBF.
 		- Since PSPACE = coPSPACE, if a problem is in PSPACE, its complement is also in PSPACE.
@@ -39,6 +42,7 @@
 		  
 		  ---
 	- ## Summary
+	  collapsed:: true
 		- **TQBF is a PSPACE-complete problem**, meaning it is one of the hardest problems in PSPACE. The problem is to determine if a quantified Boolean formula is **true**.
 		- **FQBF is the complement of TQBF**. Since PSPACE = coPSPACE, **FQBF is also PSPACE-complete**.
 		- Both problems remain fundamental in computational complexity, with important implications for theoretical computer science.
@@ -116,7 +120,6 @@
 		  
 		  <!--EndFragment-->
 - # NP, coNP, and Certificates
-  collapsed:: true
 	- ### 1. Definitions of the Class NP:
 	  collapsed:: true
 		- **Direct Definition**: NP is the class of decision problems that can be solved by a nondeterministic Turing machine (NTM) in polynomial time. This means there exists an NTM that, for any input of size *n*, halts in at most *n^k* steps for some constant *k*. If at least one of the computation branches of the NTM accepts the input, then the input is considered to be in the language.
