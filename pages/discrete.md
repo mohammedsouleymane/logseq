@@ -55,17 +55,11 @@
 		  $$n = k - m \leq k \leq n$$
 		  en dat is een tegenspraak
 		- Notatie
-		  Zij $x \in \mathbb{R}$. Dan noteren we 
-		  #+BEGIN_EXPORT latex
-		  
-		  \begin{aligned}
-		  $$\lceil x \rceil &= \text{kleinste geheel getal } \geq x$$
-		  $$\lfloor x \rfloor &= \text{grootste geheel getal } \leq x$$
-		  \end{aligned}
-		  #+END_EXPORT
-		- $ \lceil x \rceil &= \text{kleinste geheel getal } \geq x$
+		  Zij $x \in \mathbb{R}$. Dan noteren we
+			- $$\lceil x \rceil = \text{kleinste geheel getal } \geq x$$
+			  $$\lfloor x \rfloor = \text{grootste geheel getal } \leq x$$
+		-
 	- Boom
-	  collapsed:: true
 		- Definitie
 		  Een samenhangende ongerichte simpele graaf zonder cyclus noemen we een boom.
 		- Eigenschappen
