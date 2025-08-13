@@ -172,19 +172,11 @@
 	  **Stelling**
 	  Het aantal keuzes van $k$ elementen uit een verzameling van $n$ elementen, zonder volgorde en zonder herhaling, bedraagt
 	  
-	  $$
-	  
-	  \binom{n}{k}.
-	  
-	  $$
+	  $$\binom{n}{k}.$$
 	  
 	  We merken ook nog op dat
 	  
-	  $$
-	  
-	  \binom{n}{n - k} = \binom{n}{k}.
-	  
-	  $$
+	  $$\binom{n}{n - k} = \binom{n}{k}.$$
 	  
 	  **Bewijs**
 	  Zij $A$ een verzameling en $k \in \mathbb{N}$. Een $k$**-deelverzameling** van $A$ is een deelverzameling met $k$ elementen.
@@ -192,52 +184,27 @@
 	  Gegeven is $|A| = n$. Hoeveel $k$-deelverzamelingen heeft $A$?
 	  Kiezen we $k$ elementen uit $A$ met ordening, dan zullen we eenzelfde deelverzameling meerdere keren kiezen. Beschouw de verzameling
 	  
-	  $$
-	  
-	  S = \{(B, f) \mid B \subset A, |B| = k \text{ en } f \text{ een ordening van } B\}.
-	  
-	  $$
+	  $$S = \{(B, f) \mid B \subset A, |B| = k \text{ en } f \text{ een ordening van } B\}.$$
 	  
 	  Dan kunnen we $|S|$ op twee manieren tellen: enerzijds
 	  
-	  $$
-	  
-	  |S| = x \times k!
-	  
-	  $$
+	  $$|S| = x \times k!$$
 	  
 	  met $x$ het aantal $k$-deelverzamelingen van $A$ en $k!$ het aantal ordeningen van een gegeven $k$-deelverzameling. Anderzijds is
 	  
-	  $$
-	  
-	  |S| = 1 \times \frac{n!}{(n - k)!}
-	  
-	  $$
+	  $$|S| = 1 \times \frac{n!}{(n - k)!}$$
 	  
 	  want we kunnen op $\frac{n!}{(n - k)!}$ manieren $k$ elementen kiezen uit $A$ met volgorde. Natuurlijk bepaalt elk van die keuzes juist één $k$-deelverzameling.
 	  We hebben dus
 	  
-	  $$
-	  
-	  x = \frac{n!}{(n - k)! k!}
-	  
-	  $$
+	  $$x = \frac{n!}{(n - k)! k!}$$
 	  
 	  Voor $n \geq k$ noteren we
 	  
-	  $$
-	  
-	  \frac{n!}{(n - k)! k!}
-	  
-	  $$
-	  
+	  $$\frac{n!}{(n - k)! k!}$$
 	  als
 	  
-	  $$
-	  
-	  \binom{n}{k}.
-	  
-	  $$
+	  $$\binom{n}{k}.$$
 	  
 	  **Notatie**
 	  De verzameling van alle $k$-deelverzamelingen van $A$ noteren we als $\binom{A}{k}$
