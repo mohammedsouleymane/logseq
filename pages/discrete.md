@@ -1,16 +1,14 @@
 - Bewijzen
 	- Bezout
-	  collapsed:: true
 		- [Bezout's Identity | Brilliant Math & Science Wiki](https://brilliant.org/wiki/bezouts-identity/)
 		- De bewijs van Bézout's identiteit maakt gebruikt van a,b ∈ ℤ, a delen door b geeft een rest van r1 < |b| en ggd(a,b) = ggd(r1, b). Vervolgens hebben we door herhaalde toepassingen van het Euclidische delingsalgoritme.
-		  $$a = bx_{1} + r{1}, 0 < r{1} < |b| 
-		  \\b = r_{1}x_{2} + r_{2}, 0 < r_{2} < r_{1}
-		  \\.....
-		  \\ r_{n-1} = r_{n}x_{n+1} + r_{n+1}, 0 < r_{n+1} < r_{n}
-		  \\r_{n} = r_{n+1}x_{n+2}$$
+		  $$a = bx_{1} + r{1}, 0 < r{1} < |b|$$
+		  $$b = r_{1}x_{2} + r_{2}, 0 < r_{2} < r_{1}$$
+		  $$.....$$
+		  $$r_{n-1} = r_{n}x_{n+1} + r_{n+1}, 0 < r_{n+1} < r_{n}$$
+		  $$r_{n} = r_{n+1}x_{n+2}$$
 		  waar de rn+1 is de laatste niet-nulzijnde rest in het delingsproces. Nu, zoals geïllustreerd in het bovenstaande voorbeeld, kunnen we de voorlaatste vergelijking gebruiken om op te lossen voor rn+1 als een combinatie van rn en rn - 1. Als we dit uitvouwen, kunnen we het oplossen voor rn als een combinatie van rn-1 en rn-2, enz. totdat we uiteindelijk schrijven rn+1 als een lineaire combinatie van a en b. Sinds rn+1 de laatste niet-nulzijnde rest in het delingsproces is, is het de grootste gemene deler van a en b wat de identiteit van bezout bewijst.
 	- chinese resttelling
-	  collapsed:: true
 		- **stelling** Zij $m_{1},m_{2},...,m_{n}$ paarsgewijs relatief prieme natuurlijke getallen en $a_{1},a_{2},...,a_{n}$ willekeurige gehele getallen. Dan heeft het stelsel
 			- $$x \equiv 2 (mod 3) 
 			  \\x \equiv 3 (mod 5)
@@ -40,7 +38,6 @@
 	    
 	  Dan is $P(n)$ waar voor alle $n \in \mathbb{N}$
 	- Identiteit van pascal
-	  collapsed:: true
 		- $\binom{n- 1}{r - 1} + \binom{n- 1}{r} = \binom{n}{r}$
 		  $\binom{n- 1}{r - 1} + \binom{n- 1}{r} = \frac{(n-1)!}{(n-r)!(r-1)!} + \frac{(n-1)!}{(n-1-r)!r!}$
 		  $\frac{(n-1)!r}{(n-r)!r!} + \frac{(n-1)!(n-r)}{(n-r)!r!}$
@@ -67,13 +64,11 @@
 		  \end{aligned}
 		  #+END_EXPORT
 	- Boom
-	  collapsed:: true
 		- Definitie
 		  Een samenhangende ongerichte simpele graaf zonder cyclus noemen we een boom.
 		- Eigenschappen
 			- Een top van graad 1 in een boom heet een blad.
 			- Een boom op $n \geq 2$ toppen heeft minstens twee bladeren.
-			  collapsed:: true
 				- Bewijs
 				  Neem een top $t$ van de boom. Dan zijn er twee mogelijkheden:
 				- $t$ is geen blad. Wandel dan vanuit $t$ naar een buur, dan nog een buur, enz. zonder ooit een top tweemaal te bezoeken. Omdat de boom eindig is, stopt dit in een zekere top $s$. Dit moet een blad zijn, want als het proces gestopt zou zijn omdat $s$ meerderen buren zou hebbe die reeds eerder bezocht werden, betekent dit dat er meerdere paden van $t$ naar $s$ zijn, tegenspraak.
@@ -82,7 +77,6 @@
 				- $t$ is een blad. Neem dan de enige buur van $t$ in plaats van $t$. Deze top heeft graad $\geq 2$ tenzij de boom bestaat uit 2 toppen die 1 boog vormen. Maar in dit geld het lemma duidelijk.
 				-
 			- Een boom n toppen heeft n - 1 bogen.
-			  collapsed:: true
 				- Bewijs (per inductie op n)
 				- ### Basisstap ( n=1 )
 				  
@@ -132,11 +126,9 @@
 		  werken we uit aan de hand van de distributiviteit. De term met $a^{n-i}b^i$ ontstaat door in $i$ factoren $(a + b)$ de b te kiezen (en in de overige natuurlijk de a). De coëfficiënt die hoort bij $a^{n-i}b^i$ is bijgevolg gelijk aan het aantal keuzes van $i$ objecten uit n. Dat is $\binom{n}{i}$.
 		-
 	- Euler
-	  collapsed:: true
 		- Definitie
 		  Een pad in een ongerichte multigraaf $\mathcal{G}$ heet een Eulerpad indien het elke boog van $\mathcal{G}$  precies 1 maal bevat. Een gesloten Eulerpad is een Eulercyclus. Een multigraaf die een Eulercyclus bevat heet een Eulergraaf.
 		- Stelling
-		  collapsed:: true
 		  Zij $\mathcal{G}$ een ongerichte multigraaf zonder geïsoleerde toppen. Dan geld dat $\mathcal{G}$ een Eulergraaf is als en slechts al $\mathcal{G}$  samenhangend is en alle toppen van $\mathcal{G}$  even graad hebben.
 			- Bewijs
 				- $Rightarrow$ Omdat $\mathcal{G}$  een Eulercyclus heeft, bestaat $\forall{a,b} \in V$ een pad van a naar b, namelijk dat deel van de cyclus dat start in a en aankomt in b. Dus $\mathcal{G}$  is samenhangend. 
