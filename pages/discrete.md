@@ -10,9 +10,9 @@
 		  waar de rn+1 is de laatste niet-nulzijnde rest in het delingsproces. Nu, zoals geïllustreerd in het bovenstaande voorbeeld, kunnen we de voorlaatste vergelijking gebruiken om op te lossen voor rn+1 als een combinatie van rn en rn - 1. Als we dit uitvouwen, kunnen we het oplossen voor rn als een combinatie van rn-1 en rn-2, enz. totdat we uiteindelijk schrijven rn+1 als een lineaire combinatie van a en b. Sinds rn+1 de laatste niet-nulzijnde rest in het delingsproces is, is het de grootste gemene deler van a en b wat de identiteit van bezout bewijst.
 	- chinese resttelling
 		- **stelling** Zij $m_{1},m_{2},...,m_{n}$ paarsgewijs relatief prieme natuurlijke getallen en $a_{1},a_{2},...,a_{n}$ willekeurige gehele getallen. Dan heeft het stelsel
-			- $$x \equiv 2 (mod 3) 
-			  \\x \equiv 3 (mod 5)
-			  \\x \equiv 1 (mod 7)$$
+			- $$x \equiv 2 (mod 3)$$ 
+			  $$x \equiv 3 (mod 5)$$
+			  $$x \equiv 1 (mod 7)$$
 			  een oplossing die uniek is modulo m = $m_{1},m_{2},...,m_{n}$.
 			  Dwz een unieke oplossing x met $0 \leq x < m$ en alle andere oplossingen congruent modulo me t deze x.
 		- Bewijs
@@ -59,11 +59,13 @@
 		  #+BEGIN_EXPORT latex
 		  
 		  \begin{aligned}
-		  \lceil x \rceil &= \text{kleinste geheel getal } \geq x \\
-		  \lfloor x \rfloor &= \text{grootste geheel getal } \leq x
+		  $$\lceil x \rceil &= \text{kleinste geheel getal } \geq x$$
+		  $$\lfloor x \rfloor &= \text{grootste geheel getal } \leq x$$
 		  \end{aligned}
 		  #+END_EXPORT
+		- $ \lceil x \rceil &= \text{kleinste geheel getal } \geq x$
 	- Boom
+	  collapsed:: true
 		- Definitie
 		  Een samenhangende ongerichte simpele graaf zonder cyclus noemen we een boom.
 		- Eigenschappen
