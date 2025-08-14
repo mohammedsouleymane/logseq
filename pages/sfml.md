@@ -166,6 +166,7 @@
 	  
 	  Each of these topics invites many deeper questions—about how to best balance bias and variance, how to choose an optimal kernel function for SVMs, or how to design effective exploration–exploitation strategies in reinforcement learning. Would you like to dive even deeper into any one of these areas, perhaps exploring specific algorithmic challenges or real-world case studies?
 - # Proofs
+  collapsed:: true
 	- d+1
 		- We want to show that:
 		  
@@ -1152,6 +1153,7 @@
 		  Would you like to explore further how these ideas have influenced modern approaches to regularization, model selection, or even recent advances in deep learning?
 	-
 - sv notebook
+  collapsed:: true
 	- Here’s your lecture summary formatted clearly and professionally, while preserving the original text structure and flow (not bulletized), and improving overall readability and coherence:
 	- ---
 	- **Lecture 1: Introduction to Machine Learning and the Learning Problem**
