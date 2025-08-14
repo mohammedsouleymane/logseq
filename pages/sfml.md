@@ -286,9 +286,7 @@
 		  * $\text{VCdim} \geq d + 1$
 		  * $\text{VCdim} \leq d + 1$
 - # Lectures
-  collapsed:: true
 	- ## Lecture 1
-	  collapsed:: true
 		- Below is a detailed, structured summary of the content in **SFML-Lecture01.pdf**:
 		  
 		  ---
@@ -371,7 +369,6 @@
 		  
 		  This lecture lays a robust foundation for understanding the statistical principles that enable machine learning models to predict, classify, and make decisions in uncertain environments.
 	- ## Lecture 2
-	  collapsed:: true
 		- Below is a detailed summary of the lecture transcript contained in **sfml-02_default.pdf**, which is the second lecture of the course "Statistical Foundations of Machine Learning." This lecture delves into linear models from both classification and regression perspectives while using concrete examples, practical algorithms, and insights about feature engineering and nonlinear transformations.
 		  
 		  ---
@@ -462,7 +459,6 @@
 		  
 		  Would you like to delve deeper into aspects of feature transformation, or perhaps explore examples of how these approaches play out in today’s advanced machine learning practices?
 	- ## Lecture 3
-	  collapsed:: true
 		- Below is a detailed summary of the lecture transcript from **sfml-03_default.pdf**, which discusses the theory of generalization in machine learning. The lecture weaves together intuitive analogies, combinatorial reasoning, and formal arguments to explain how one can guarantee that a model learned on a finite training set will generalize to unseen data.
 		  
 		  ---
