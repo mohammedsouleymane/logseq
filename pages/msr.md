@@ -201,8 +201,9 @@
 		- Define a focused, feasible research question.
 		- Operationalize the question into measurable components.
 		- Plan data analysis methods.
-		- Obtain ethical permissions, especially for human subjects.
-		- Conduct pilot experiments and fine-tune setups.
+		- permissions, especially for human subjects.
+		- pilot experiments
+		- fine-tune setups.
 		- Execute the full experiment.
 	- **Ethical Considerations**:
 		- Recruitment methods, participant consent, and privacy must meet ethical standards.
