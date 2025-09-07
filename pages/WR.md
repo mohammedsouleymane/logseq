@@ -121,6 +121,9 @@ collapsed:: true
 - Ax = b berekenen met QR
 	- $A = QR$
 	  $QRx = b$
-	  $Q'Q
+	  $Q'QRx = Q'b$ we weten $(Q'Q = I)$ dus
+	  $Rx = Q'b$ R is een boven driehoeks
+	  $$
+	-
 -
 -
