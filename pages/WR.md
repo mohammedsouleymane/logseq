@@ -121,9 +121,8 @@ collapsed:: true
 - Ax = b berekenen met QR
 	- $A = QR$
 	  $QRx = b$
-	  $Q'QRx = Q'b$ we weten $(Q'Q = I)$ dus
-	  $Rx = Q'b$ R is een boven driehoeks
-	  $$
+	  $Q'(QRx) = Q'b$ we weten $(Q'Q = I)$ dus
+	  $Rx = Q'b$ R is een boven driehoeksmatrix dus $x$ berekenen met achterwaartse substitutie
 	-
 -
 -
