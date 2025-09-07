@@ -110,5 +110,6 @@ collapsed:: true
 		  is, maar bij ill-conditioned matrices de uiteindelijke fout veel groter is. Een toepassing van 2
 		  iteraties volstaat om stabiel te zien.
 - Ax = b berekenen met LU
-	- $$Ax = LU
-	  LUx = b$$
+	- $Ax = LU$
+	  $LUx = b \text{ dus A vervangen in de vergelijking}$
+-
