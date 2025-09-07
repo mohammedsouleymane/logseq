@@ -115,6 +115,7 @@ collapsed:: true
 	- $Ly = b$ berekenen
 	  y is een vector $Ux = y$
 	  dus $Ly = b$
-	  we weten dat L een onderdriehoeks
+	  $L$ is een onderdriehoeksmatrix dus $y$berekenen met voorwaartse substitutie
+	- $Ux = y$ berekenen nu dat we y hebben
 -
 -
