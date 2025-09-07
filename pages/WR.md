@@ -110,12 +110,17 @@ collapsed:: true
 		  is, maar bij ill-conditioned matrices de uiteindelijke fout veel groter is. Een toepassing van 2
 		  iteraties volstaat om stabiel te zien.
 - Ax = b berekenen met LU
-	- $Ax = LU$
+	- $A = LU$
 	  $LUx = b \text{ dus A vervangen in de vergelijking}$
 	- $Ly = b$ berekenen
 	  y is een vector $Ux = y$
 	  dus $Ly = b$
 	  $L$ is een onderdriehoeksmatrix dus $y$berekenen met voorwaartse substitutie
 	- $Ux = y$ berekenen nu dat we y hebben
+	  $U$ is een bovendriehoeksmatrix dus kunne we $x$ berekenen met achterwaartse substitutie
+- Ax = b berekenen met QR
+	- $A = QR$
+	  $QRx = b$
+	  $Q'Q
 -
 -
