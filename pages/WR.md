@@ -112,4 +112,9 @@ collapsed:: true
 - Ax = b berekenen met LU
 	- $Ax = LU$
 	  $LUx = b \text{ dus A vervangen in de vergelijking}$
+	- $Ly = b$ berekenen
+	  y is een vector $Ux = y$
+	  dus $Ly = b$
+	  we weten dat L een onderdriehoeks
+-
 -
