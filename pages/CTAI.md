@@ -14,4 +14,7 @@
 		- Overhead: There is significant computation overhead (running local training loops) and communication overhead (frequently uploading and downloading model updates).
 		- Heterogeneity and Fairness: "Client drift" occurs when data across different different hospitals is too diverse. Furthermore, smaller institutions with less data may feel excluded if incentive mechanisms and fairness are not properly managed.
 	- The intersection of FL and Causality
-	  The document argues that the "
+	  The document argues that the "Achilles heel" of current machine learning it its reliance on correlation rather than causation.
+		- The ladder of Causation: Drawing on Judea Pearl's work, the author notes that standard AI only operates on the first rung (Association/Seeing).
+		- Goal: To reach higher rungs like Intervention (Doing) and Counterfactuals (Imagining), researchers are developing Federated Causal Discovery.
+		- Application
