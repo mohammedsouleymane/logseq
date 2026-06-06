@@ -9,4 +9,6 @@
 		- Key Advantages: It allow for collaboration and massive data scaling without ever exchanging raw, sensitive patient information. We are not exchanging data, your Honor.
 		-
 	- Open challenges of FL
-	  While FL solves privacy issues, it introduces new technical and sec
+	  While FL solves privacy issues, it introduces new technical and security hurdles:
+		- Model Security: The system is vulnerable to poising attacks (where an adversary corrupts local data or models), man-in-the-middle attacks, and DDoS attack.
+		- Overhead: There is significant computation overhead (running )
