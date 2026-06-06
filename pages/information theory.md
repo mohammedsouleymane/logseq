@@ -1,5 +1,4 @@
 ## Information Theory - Off the top of your head
-collapsed:: true
 	- The entropy $H(X)$ of the discrete source $X$ equals. #card
 	  card-last-interval:: 4.75
 	  card-repeats:: 1
