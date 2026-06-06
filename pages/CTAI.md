@@ -17,4 +17,4 @@
 	  The document argues that the "Achilles heel" of current machine learning it its reliance on correlation rather than causation.
 		- The ladder of Causation: Drawing on Judea Pearl's work, the author notes that standard AI only operates on the first rung (Association/Seeing).
 		- Goal: To reach higher rungs like Intervention (Doing) and Counterfactuals (Imagining), researchers are developing Federated Causal Discovery.
-		- Application
+		- Application: This approach is being used by the AIMS group at VUB to study cognitive deterioration in Multiple Sclerosis (MS) across and international network, allowing for explainable-by-design models that support causal interventions
