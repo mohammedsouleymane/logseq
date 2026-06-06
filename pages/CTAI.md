@@ -1,3 +1,5 @@
 - Causal Federated Learning
 	- Why AI lags in Medicine
 		- Data issue: data imbalance, lack of overall data, biased data set
+		- Privacy and Legal Constraints: Regulations like GDPR and the complexity of data consent make sharing raw, private patient data between institutions extremely difficult
+		- Institutional "Agendas": Different types of hospitals (government, private, non-profit)
