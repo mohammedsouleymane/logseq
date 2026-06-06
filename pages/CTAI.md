@@ -6,5 +6,7 @@
 	- Solution: Federated Learning
 	  Federated Learning is presented as a privacy-preserving alternative to traditional centralized training. Instead of moving data to a central server, the model is move to the data.
 		- Mechanism: Local institutions (hospitals, research centers) train local models on their own private data. They then send only model updates or weights to a central Federated Server. The server aggregates these updates to create a Global Model, which then redistributed back to the participants.
-		- Key Advantages: It allow for
+		- Key Advantages: It allow for collaboration and massive data scaling without ever exchanging raw, sensitive patient information. We are not exchanging data, your Honor.
 		-
+	- Open challenges of FL
+	  While FL solves privacy issues, it introduces new technical and sec
