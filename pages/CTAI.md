@@ -11,4 +11,7 @@
 	- Open challenges of FL
 	  While FL solves privacy issues, it introduces new technical and security hurdles:
 		- Model Security: The system is vulnerable to poising attacks (where an adversary corrupts local data or models), man-in-the-middle attacks, and DDoS attack.
-		- Overhead: There is significant computation overhead (running )
+		- Overhead: There is significant computation overhead (running local training loops) and communication overhead (frequently uploading and downloading model updates).
+		- Heterogeneity and Fairness: "Client drift" occurs when data across different different hospitals is too diverse. Furthermore, smaller institutions with less data may feel excluded if incentive mechanisms and fairness are not properly managed.
+	- The intersection of FL and Causality
+	  The document argues that the "
