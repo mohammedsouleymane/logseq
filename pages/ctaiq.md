@@ -198,3 +198,28 @@
   <!--EndFragment-->
 -
 -
+-
+- **Explainable AI (XAI)** is a field dedicated to providing human-understandable explanations for the outcomes of algorithmic decision-making systems. Its primary goals are to **build user trust**, allow for error correction, detect hidden biases, and ensure compliance with transparency regulations like the **EU AI Act**.
+- ### **How We Achieve Explainability**
+  
+  Explainability can be achieved through different lenses depending on the scope of the explanation and what part of the model is being examined:
+- #### **1. Local vs. Global Explainability**
+- **Local Explainability:** Focuses on explaining a **specific, individual prediction**. For a rocket, this would answer: *"Why was this specific launch on Tuesday aborted?"*.
+- **Global Explainability:** Seeks to provide a **general understanding** of how the model behaves across all data. For a rocket, this would answer: *"What are the most important factors the model generally considers for a successful launch?"*
+- #### **2. Features vs. Training Data (Attribution)**
+- **Feature Attribution:** Identifies which **input variables** (e.g., fuel levels, wind speed, temperature) were most influential in a specific decision.
+- **Data Attribution:** Explains a decision by identifying which specific **training samples** from the past most influenced the model's current behavior. It points to the "experiences" the model learned from.
+  
+  ---
+- ### **Example: A Rocket Launch Model**
+  
+  Imagine an AI model designed to decide whether a rocket is "Clear to Launch" or must be "Aborted" based on real-time sensor data.
+- **Association (Seeing):** At the lowest level of the **Ladder of Causation**, the model simply sees patterns. It might notice that when the "Fuel Pressure" light is green, launches are usually successful, but it doesn't necessarily understand the physical "why".
+- **Intervention (Doing):** On the second rung, we can test the model by **manipulating variables**. If we artificially increase the "Wind Speed" value in the simulation, we can observe exactly at what point the model changes its decision to "Abort".
+- **Counterfactual Explanation (Local/Feature):** If a launch is aborted, a counterfactual provides the operator with a "lever" for understanding. The AI might explain: **"If the wind speed had been 5 km/h lower (the minimal change), the rocket would have been cleared for launch"**.
+- **Data Attribution (Local):** If the AI aborts a launch despite seemingly good conditions, data attribution could reveal that the model is being influenced by **three specific historical test flights** in its training data where similar atmospheric conditions led to a catastrophic failure.
+- **Global Explainability:** The system provides a summary dashboard showing that, across all 500 simulated launches, "Engine Temperature" is the **most significant feature** influencing the model's safety threshold.
+- **Algorithmic Recourse:** This provides the engineers with a **plan of action**. It doesn't just say "Abort"; it provides instructions on what specific parameters (like fuel mix or launch angle) need to be adjusted to reach the "Clear to Launch" state.
+  
+  <!--EndFragment-->
+-
