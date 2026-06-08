@@ -74,4 +74,106 @@
   <!--EndFragment-->
 -
 -
+- **Influence functions** are a method from robust statistics used in AI attribution to identify which specific training data points most influenced a machine learning model's prediction for a new test sample. They serve as a computationally efficient alternative to the "Leave-One-Out" (LOO) method, which requires retraining a model multiple times to measure the impact of removing individual data points.
+- ### **Core Mechanism**
+  
+  Instead of physically removing a data point and retraining the model—which is "exhaustively expensive" for large datasets—influence functions approximate the change in model parameters by **upweighting** a specific training sample ($z_{train}$) by an infinitesimal amount ($\epsilon$).
+  
+  The influence of a training point on the test loss is mathematically decomposed into an expression involving:
+- **Gradients of Test Loss:** Measuring how the loss on a specific test sample changes with respect to model parameters.
+- **Gradients of Training Data Loss:** Measuring the model's error on the training sample being investigated.
+- **Hessian Matrix ($H$):** A matrix of second-order derivatives that describes the local geometry of the loss function. Because explicitly constructing this matrix is "super expensive," researchers use specialized products to compute it without full construction.
+- ### **Limitations and Challenges**
+- **Computational Cost:** While more efficient than retraining, calculating the Hessian matrix remains a significant hurdle.
+- **Susceptibility to Outliers:** Influence-based methods are highly sensitive to **class outliers**—data points that look like one class but are labeled as another, or are ambiguous. These outliers often show high influence across many test points because the model's decision boundary "tries too hard" to fit them, leading to potentially misleading explanations.
+- ### **Advanced Applications and Robustness**
+  
+  To address these limitations, researchers have developed more stable versions and applications:
+- **InfProto:** This method bridges local and global explainability by providing a **robust version of the influence function**. It identifies both prototypes (general patterns) and influential instances (specific influencers) in a single process, which is preferred by 68% of users over standard local or global explanations.
+- **Federated Learning:** In decentralized systems, local gradient calculations are used to measure the influence of a specific client's update. This helps detect **client drift**, where an update from a participant with a massive amount of data might bias the global model away from the true optimum.
+- **User Intent Customization:** Modern attribution frameworks allow users to customize how they view influence based on their needs, such as investigating a wrong prediction by looking at "opposers" (points that would have pushed the model toward the correct answer).
+  
+  <!--EndFragment-->
+-
+- For a school implementing an **autonomous AI grading system**, the Responsible AI lifecycle would be governed by the three high-level stages of **Design, Build, and Operate**. Crucially, because the **EU AI Act** specifically classifies "exam correction with AI" as a **High-Risk AI system**, the school would face strict transparency and auditability obligations throughout this cycle.
+- ### **I. Design Phase: Strategic Alignment and Risk Assessment**
+  
+  Before development begins, the school must answer the fundamental question: **"Should we build this system?"**.
+- **Risk Identification:** The school must map organizational risks to this specific use-case, identifying potential harms such as **accuracy errors** (misinformed grades) and **fairness issues** (discrimination against specific student groups).
+- **Democratic Development:** Following the "Citicode" project's approach, the school should involve three groups in the design: domain experts (teachers), students (the "citizens" affected), and school leadership (the "politicians" resolving ideological conflicts over grading criteria).
+- **Establishment of Governance:** An **AI Governance Policy** must be created to define accountability and rules for usage, ensuring the system is included in an official **AI Inventory**.
+- ### **II. Build Phase: Mitigation and Evaluation**
+  
+  During the building stage, the focus shifts to technical controls to minimize intrinsic risks.
+- **Debiasing and Fairness:** The system must undergo **fairness audits** to ensure it does not discriminate based on **protected attributes** like race or gender. Developers should use causal models to ensure these attributes do not "directly influence" the grade.
+- **Attribution and Explainability:** The system should use **attribution methods** (like Shapley values or ContextCite) to trace a grade back to specific evidence in a student's answer, preventing "black-box" decisions.
+- **Adversarial Testing:** The model should be subjected to **adversarial testing** to ensure students cannot "jailbreak" or manipulate the grading criteria through prompt injection.
+- **Skill Blending Process (SBP):** Rather than full autonomy, the school might design a **hybrid intelligence system** where the AI processes the initial data but results are sent for **Human Validation** before being finalized.
+- ### **III. Operate Phase: Monitoring and Recourse**
+  
+  Once deployed, the system requires continuous oversight to remain compliant and ethical.
+- **Transparency and Disclosure:** Under the EU AI Act, students must be informed that an AI system is correcting their exams.
+- **Audit-Ready Logging:** The school must maintain "trust-and-trace" documentation, including **request waterfalls** and **data lineage**, to satisfy auditors and prove every grade is grounded in verifiable sources.
+- **Algorithmic Recourse:** If a student receives an unfavorable grade, the system should provide **algorithmic recourse**—a clear plan or set of instructions explaining the "minimal changes" needed to have achieved a different outcome.
+- **Right to Human Review:** Students must be granted the right to request a **human verification** of their exam that is independent of the AI system's assessment.
+- **Performance Monitoring:** The school must use real-time dashboards to monitor for **model drift** or a drop in accuracy that might occur as the curriculum evolves.
+  
+  <!--EndFragment-->
+-
+-
+-
+- **What is federated learning?**
+  Federated learning is a privacy-preserving approach where multiple institutions train local machine learning models on their own private data and only share the model weights with a central server. The central server aggregates these local updates into a **global model**, allowing for collaboration without ever exchanging the raw, sensitive data itself.
+- **What are its challenges?**
+  Major challenges include model security vulnerabilities such as **poisoning** and man-in-the-middle attacks, alongside significant **computation and communication overhead** during the iterative training process. Additionally, the system faces "**client drift**" where diverse local datasets bias the model, and it struggles with incentive mechanisms to ensure fairness among contributors.
+- **Why would you not want your company to use it?**
+  A company might reject this approach because the constant back-and-forth transfer of large model updates can lead to **massive payloads** and extremely slow training times. There is also the critical risk that sophisticated adversaries could **inverse model weights** to reconstruct original proprietary data points, potentially compromising corporate secrets or user privacy.
+- <!--EndFragment-->
+-
+- The evolution of Large Language Models (LLMs) from 2020 to 2026 has been defined by a shift from simple text prediction to complex reasoning and autonomous action, all accelerated by the architectural breakthrough of the **Transformer**.
+- ### **The Foundation: The Transformer Breakthrough (2017)**
+  
+  The current era of AI began with the landmark paper **"Attention is all you need" (Vaswani, 2017)**, which introduced the **Transformer architecture**.
+- **Self-Attention Mechanism:** Unlike previous sequential models, Transformers use an **attention block** to map correlations between all tokens in a sentence simultaneously. This allows the model to understand context dynamically—for example, correctly identifying that the word "it" refers to an "animal" and not a "street" based on surrounding descriptors like "tired."
+- **Capturing Long-Range Dependencies:** By using attention to identify relationships between distant tokens, Transformers significantly improved the ability to process complex sequential data.
+- **Stackability and Scale:** This architecture allowed researchers to stack hundreds of attention layers (e.g., **GPT-2 had 48 layers**, while **Llama 3 has 80**), enabling models to process trillions of data points and develop "emergent" abilities.
+- ### **The Timeline of Evolution (2020–2026)**
+- **2020: The Scaling Era (GPT-3):** With **175 billion parameters**, GPT-3 demonstrated that massive scale enables **few-shot learning**, allowing models to perform tasks based on just a few examples in a prompt.
+- **2022: Accessibility and Alignment (ChatGPT):** This year brought LLMs to the mainstream, utilizing **Reinforcement Learning from Human Feedback (RLHF)** to ensure models were helpful, harmless, and followed editorial boundaries.
+- **2023: Multimodal Reasoning (GPT-4):** Models evolved to process and discuss **images, audio, and video** alongside text, expanding their interaction modalities.
+- **2024: Thinking Models and Efficiency:**
+	- **Inference Tokens:** Models like **OpenAI o1** and **DeepSeek R1** began generating hidden **inference tokens** to "think step-by-step" before answering, following the philosophy that **"thinking more" is better than "knowing more."**
+	- **Mixture of Experts (MoE):** Architecture like **DeepSeek V3** optimized compute by routing tokens to specific experts; a 671B parameter model might only activate **37B parameters per token**, maintaining speed at scale.
+- **2025: The Rise of AI Agents:** Models moved beyond static chat into **AI Agents** that use the **ReAct (Reason and Act)** framework to observe environments, use tools (via protocols like MCP), and execute actions like coding and testing autonomously.
+- **2026: Frontier Models and Massive Context:** Current iterations like **GPT-5.5**, **Gemini 3.1**, and **Claude 4.7** feature **context windows** of millions of tokens, allowing them to process entire codebases or 6,000-page documents in a single prompt.
+- ### **The Impact of Transformers on Acceleration**
+  
+  The Transformer's efficiency has led to a dramatic expansion in what models can handle:
+- **Context Engineering:** Larger context windows allow for "Context Engineering," where full legal documents or books are used as inputs without the need for traditional chunking.
+- **Bridging Local and Global Knowledge:** Through **Retrieval-Augmented Generation (RAG)**, the Transformer's attention mechanism helps ground LLM answers in external, verifiable documents to prevent hallucinations.
+- **The "Junior Paradox":** As Transformer-based agents automate entry-level tasks like boilerplate coding and research, the industry faces a challenge in training new hires to develop the high-level judgment that AI cannot yet replicate.
+  
+  <!--EndFragment-->
+-
+- **Sequence learning** involves creating mathematical models based on "legitimate" or normal sequences of data to perform three primary tasks: **recognition** (identifying known patterns), **prediction** (forecasting future values), and **generation** (producing synthetic data). In the context of time series, this often requires breaking a long sequence into smaller, contiguous parts using a **sliding window**.
+- ### **The Matrix Profile for Anomaly Detection**
+  
+  The **Matrix Profile** is a powerful meta-structure used to identify patterns and irregularities within these sequences. It is constructed by calculating a "distance profile" for every possible segment in a time series, which measures how similar each segment is to every other part of the data.
+- **Motifs:** These are recurring subsequences that have a very **low distance** to each other in the matrix profile. They represent "normal" or expected behavior.
+- **Discords (Anomalies):** These are subsequences that are maximally different from all others. In the matrix profile, a discord is the segment with the **highest distance** to its nearest neighbor, indicating it is an outlier that does not match any known pattern.
+- ### **Illustration: Ice Cream Sales**
+  
+  Imagine a dataset of daily ice cream sales over a summer.
+- **Motifs:** A typical "legitimate" sequence might show a pattern where sales are low in the morning, peak during the heat of the afternoon, and taper off in the evening. Because this happens almost every day, these segments will have a low distance to each other, forming a **motif**.
+- **Discords:** If sales suddenly drop to zero in the middle of a blazing hot Tuesday afternoon, this specific segment will be unlike any other "hot afternoon" segment in the history. In the matrix profile, this segment will show a very **high distance** to its nearest neighbor and be flagged as a **discord** (anomaly).
+- ### **Robustness to Shifting Peaks**
+  
+  A critical question in sequence learning is whether the model is robust if a peak (such as the highest point of sales) occurs at different times on different days.
+- **Distance Sensitivity:** Standard **Euclidean distance** is highly sensitive to the exact timing of data points; if two identical shapes are slightly shifted in time, the Euclidean distance between them will be large.
+- **Dimensionality Reduction:** To mitigate some of this sensitivity and improve speed, practitioners use **Piecewise Approximations** (like PAA or SAX), which partition sequences into non-overlapping frames and approximate them with average values or symbols. This helps summarize the general "shape" of the data rather than focusing on exact point-by-point matches.
+- **The "No One-Size-Fits-All" Rule:** Ultimately, sequence learning's robustness depends on the training data. If your "legitimate" training set includes days where peaks naturally shift (e.g., due to changing weather patterns), the model will learn that these shifts are **normal** behavior. However, if the model has only ever seen peaks at 2:00 PM, a shift to 5:00 PM will likely be flagged as an anomaly because it deviates from the "expected normal behavior" described in its training sequences.
+  
+  <!--EndFragment-->
+-
+-
 -
