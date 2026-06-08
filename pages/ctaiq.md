@@ -176,4 +176,25 @@
   <!--EndFragment-->
 -
 -
+- The **Brain-Computer Interface (BCI) decoding pipeline**, as illustrated on slide 31 of Arnau Dillen's presentation, follows a sequential process to translate neural activity into physical actions.
+- ### **The BCI Pipeline Stages**
+- **Signal Acquisition:** Capturing brain activity, typically through **Electroencephalography (EEG)**, which measures electrical impulses using sensors placed on the scalp.
+- **Pre-processing:** EEG signals are inherently noisy and must be cleaned. This involves **filtering** the data (usually between 8-35 Hz for motor imagery) and removing "bad data" or artifacts caused by muscle movements.
+- **Feature Extraction:** Identifying specific patterns related to the user's intent. A standard technique used is **Common Spatial Patterns (CSP)**, which localizes where brain activity is strongest for a particular imagined movement.
+- **Classification:** Using machine learning models to interpret the extracted features. Standard pipelines often employ **Linear Discriminant Analysis (LDA)** to categorize the brain signals into specific classes, such as "left hand" or "right hand" movements.
+- **Action Execution:** The final classification result is sent to a device (such as a robot arm or "cobot") to perform the requested physical action.
+  
+  ---
+- ### **Potential Drawbacks of This Pipeline**
+  
+  While functional, this specific pipeline faces several significant challenges and drawbacks:
+- **Extreme Signal Noise:** EEG signals are very weak and easily corrupted by **artifacts**, such as the electrical activity from tensing facial muscles or blinking.
+- **High Variability:** Brain activity is unique to every individual and **changes over time**. A model trained on one person rarely works for another, and a model that works for a user in the morning may become unreliable just one hour later.
+- **Complexity Limits:** It is difficult to distinguish between many different movements; currently, a classifier that can accurately recognize just **four different movements** is considered a major achievement.
+- **User Fatigue:** The process requires intense mental focus, which leads to significant **fatigue**. Users often find the necessary calibration phase (10–15 minutes) both exhausting and boring.
+- **Skill Acquisition:** Using a BCI is a skill that must be learned. Users require extensive training sessions to learn how to reliably generate the brain signals that the model is designed to decode.
+- **Extensive Setup Time:** Standard pipelines using "wet" electrodes require the application of conductive gel to every sensor, which can take up to **30 minutes of preparation** before an experiment can even begin.
+  
+  <!--EndFragment-->
+-
 -
