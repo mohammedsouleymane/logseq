@@ -44,33 +44,33 @@
 		- **Availability:** Ensuring authorized users have timely and reliable access to assets upon demand. This is supported by **redundancy**, **backups**, and **fault tolerance**.
 		  
 		  The **CIA+ model** extends these concepts to include properties like **accuracy** (keeping info free from error), **authenticity** (assuring information is genuine), **possession** (independent control of info), and **utility** (the value of info for a specific purpose).
-		- ### Threats and Attacks
+	- ### Security Approaches
+	  
+	  High-level philosophies guide the design of security policies:
+		- **Zero Trust:** A model based on the principle of **"never trust, always verify,"** where no person or device is trusted by default, even inside a network perimeter. It requires continuous authentication and authorization.
+		- **Defense in Depth:** A holistic approach that uses **multiple layers of defense mechanisms** (Physical, Network, Host, Data, and Application layers). If one layer is compromised, others remain to provide a barrier.
+		- **The Defender’s Dilemma:** A core challenge where the **attacker only needs to succeed once**, while the **defender must be constantly vigilant** and get everything right all the time.
 		  
-		  Understanding security requires distinguishing between weaknesses and the actions taken against them:
-			- **Vulnerability:** A bug, flaw, or weakness in a system's software, hardware, or processes that can be exploited. Examples include **system misconfigurations**, weak/default passwords, or unpatched software.
-			- **Threat:** Any circumstance or event with the potential to damage or abuse assets. Threats are categorized by the **STRIDE model**, which identifies **Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege**.
-			- **Attack:** A **deliberate action** intended to exploit a vulnerability to harm assets. Examples include **malware**, **phishing**, **spoofing** (impersonation), and **wiretapping** (unauthorized interception).
-			- **Denial of Service (DoS):** An attack that renders an asset unavailable to intended users, which can be **volumetric, protocol-based, or even physical** (like cutting cables).
-		- ### Security Policies and Mechanisms
-		  
-		  Security is attained through a structured approach of rules and enforcement:
-			- **Security Policy:** A specification of what is and is not allowed in a system to protect assets, often expressed in terms of CIA+.
-			- **Security Mechanism:** The method used to **enforce a security policy**. For example, if a policy requires secrecy, the mechanism might be the use of **encryption**.
-			- **Countermeasures (Controls):** Measures used to detect, fix, or prevent risks, ranging from security software and audits to **awareness training**.
-			- **Mechanism Types:** These can **prevent, deter, deflect, mitigate, detect, or recover** from an attack.
-		- ### Modeling Security
-		  
-		  To rigorously define a security problem, practitioners use models consisting of three ingredients:
-			- **System Model:** A description of the assets and their potential vulnerabilities.
-			- **Threat Model:** An assessment of the intentions and power of potential attackers (e.g., the attacker can listen on a channel but lacks physical access).
-			- **Security Policy:** The specific properties of the system that must be preserved.
-			  
-			  Examples include **Communications Security models** (focusing on message confidentiality/integrity) and **Access Control models** (such as the Unix multi-user file system permission model).
-		- ### Security Approaches
-		  
-		  High-level philosophies guide the design of security policies:
-			- **Zero Trust:** A model based on the principle of **"never trust, always verify,"** where no person or device is trusted by default, even inside a network perimeter. It requires continuous authentication and authorization.
-			- **Defense in Depth:** A holistic approach that uses **multiple layers of defense mechanisms** (Physical, Network, Host, Data, and Application layers). If one layer is compromised, others remain to provide a barrier.
-			- **The Defender’s Dilemma:** A core challenge where the **attacker only needs to succeed once**, while the **defender must be constantly vigilant** and get everything right all the time.
-			  
-			  <!--EndFragment-->
+		  <!--EndFragment-->
+	- ### Threats and Attacks
+	  
+	  Understanding security requires distinguishing between weaknesses and the actions taken against them:
+		- **Vulnerability:** A bug, flaw, or weakness in a system's software, hardware, or processes that can be exploited. Examples include **system misconfigurations**, weak/default passwords, or unpatched software.
+		- **Threat:** Any circumstance or event with the potential to damage or abuse assets. Threats are categorized by the **STRIDE model**, which identifies **Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege**.
+		- **Attack:** A **deliberate action** intended to exploit a vulnerability to harm assets. Examples include **malware**, **phishing**, **spoofing** (impersonation), and **wiretapping** (unauthorized interception).
+		- **Denial of Service (DoS):** An attack that renders an asset unavailable to intended users, which can be **volumetric, protocol-based, or even physical** (like cutting cables).
+- ### Modeling Security
+  
+  To rigorously define a security problem, practitioners use models consisting of three ingredients:
+	- **System Model:** A description of the assets and their potential vulnerabilities.
+	- **Threat Model:** An assessment of the intentions and power of potential attackers (e.g., the attacker can listen on a channel but lacks physical access).
+	- **Security Policy:** The specific properties of the system that must be preserved.
+	  
+	  Examples include **Communications Security models** (focusing on message confidentiality/integrity) and **Access Control models** (such as the Unix multi-user file system permission model).
+- ### Security Policies and Mechanisms
+  
+  Security is attained through a structured approach of rules and enforcement:
+	- **Security Policy:** A specification of what is and is not allowed in a system to protect assets, often expressed in terms of CIA+.
+	- **Security Mechanism:** The method used to **enforce a security policy**. For example, if a policy requires secrecy, the mechanism might be the use of **encryption**.
+	- **Countermeasures (Controls):** Measures used to detect, fix, or prevent risks, ranging from security software and audits to **awareness training**.
+	- **Mechanism Types:** These can **prevent, deter, deflect, mitigate, detect, or recover** from an attack.
