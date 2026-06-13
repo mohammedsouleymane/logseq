@@ -39,14 +39,14 @@
 - ### CIA+ Properties
   
   The **CIA triad** represents the three core pillars of computer security:
-- **Confidentiality:** Ensuring that assets are accessed only by authorized parties. Key mechanisms include **authentication** (verifying identity), **authorization** (enforcing access rights), and **encryption**.
-- **Integrity:** Guarding assets against unauthorized or improper modification. It is maintained through properties like **hashing** (one-way cryptographic functions) and **digital signatures**.
-- **Availability:** Ensuring authorized users have timely and reliable access to assets upon demand. This is supported by **redundancy**, **backups**, and **fault tolerance**.
-  
-  The **CIA+ model** extends these concepts to include properties like **accuracy** (keeping info free from error), **authenticity** (assuring information is genuine), **possession** (independent control of info), and **utility** (the value of info for a specific purpose).
-- ### Threats and Attacks
-  
-  Understanding security requires distinguishing between weaknesses and the actions taken against them:
+	- **Confidentiality:** Ensuring that assets are accessed only by authorized parties. Key mechanisms include **authentication** (verifying identity), **authorization** (enforcing access rights), and **encryption**.
+	- **Integrity:** Guarding assets against unauthorized or improper modification. It is maintained through properties like **hashing** (one-way cryptographic functions) and **digital signatures**.
+	- **Availability:** Ensuring authorized users have timely and reliable access to assets upon demand. This is supported by **redundancy**, **backups**, and **fault tolerance**.
+	  
+	  The **CIA+ model** extends these concepts to include properties like **accuracy** (keeping info free from error), **authenticity** (assuring information is genuine), **possession** (independent control of info), and **utility** (the value of info for a specific purpose).
+	- ### Threats and Attacks
+	  
+	  Understanding security requires distinguishing between weaknesses and the actions taken against them:
 - **Vulnerability:** A bug, flaw, or weakness in a system's software, hardware, or processes that can be exploited. Examples include **system misconfigurations**, weak/default passwords, or unpatched software.
 - **Threat:** Any circumstance or event with the potential to damage or abuse assets. Threats are categorized by the **STRIDE model**, which identifies **Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege**.
 - **Attack:** A **deliberate action** intended to exploit a vulnerability to harm assets. Examples include **malware**, **phishing**, **spoofing** (impersonation), and **wiretapping** (unauthorized interception).
